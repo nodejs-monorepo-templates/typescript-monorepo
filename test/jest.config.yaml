@@ -1,0 +1,27 @@
+projects:
+  - displayName: standardjs
+    runner: jest-runner-standard
+    testMatch: ['<rootDir>/**/*.js']
+    testPathIgnorePatterns:
+      - /node_modules/
+      - /coverage/
+  - displayName: test
+    setupTestFrameworkScriptFile: jest-extended
+    transform:
+      '\.jsx?$': 'babel-jest'
+      '\.tsx?$': 'ts-jest'
+      '\.(yaml|yml)$': 'yaml-jest'
+    testRegex: (test|spec|check)\.(jsx?|tsx?)$
+    moduleFileExtensions:
+      - ts
+      - tsx
+      - js
+      - jsx
+      - json
+      - node
+    coveragePathIgnorePatterns:
+      - /node_modules/
+      - \/type-check\/
+      - \/unit-tests\/
+      - \/.polyfill\/
+    testEnvironment: node

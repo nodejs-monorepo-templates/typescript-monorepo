@@ -1,0 +1,24 @@
+# top-most
+root = true
+
+# end of line
+insert_final_newline = true
+
+# charset
+[*.{js,sh,json,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss,{x,y,ht}ml}]
+charset = utf-8
+
+# tab
+[*.{js,sh,json,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss,{x,y,ht}ml}]
+indent_style = space
+indent_size = 2
+
+# EOL
+[*.{sh,zsh,1,2,3}]
+end_of_line = lf
+[*.{c,h}{,pp,xx},cc,hh]
+end_of_line = crlf
+
+# Trailing White Space
+[*.{js,sh,json,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss,{x,y,ht}ml}]
+trim_trailing_whitespace = true

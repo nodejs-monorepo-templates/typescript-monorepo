@@ -1,0 +1,37 @@
+branches:
+  except:
+    - gh-pages
+
+environment:
+  matrix:
+    - nodejs_version: 8
+    - nodejs_version: 9
+
+cache:
+  - '%USERPROFILE%\.nuget\packages'
+  - '%APPDATA%\npm'
+  - '%APPDATA%\npm-cache'
+  - node_modules
+
+image: Visual Studio 2015
+
+clone_folder: C:\Projects\Main
+
+clone_depth: 1
+
+install:
+  - cmd: echo "Repo URL" && git remote get-url origin
+  - ps: Install-Product node $env:nodejs_version
+  - cmd: IF %nodejs_version% EQU 0.8 npm -g install npm@2
+  - cmd: IF %nodejs_version% EQU 0.8 set PATH=%APPDATA%\npm;%PATH%
+  - cmd: npm -g install npm
+  - cmd: IF %nodejs_version% NEQ 0.8 set PATH=%APPDATA%\npm;%PATH%
+  - cmd: npm install
+
+test_script:
+  - cmd: echo "NodeJS version" && node --version
+  - cmd: echo "NPM version" && npm --version
+  - cmd: echo "Test" && npm test
+
+build_script:
+  - cmd: npm run pack

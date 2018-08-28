@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`spawn function works 1`] = `
+"
+status: 123
+stderr: ''
+stdout: |
+  { JSON5: { hello: 'world' }, TypeScript: 'Hello World !!' }
+
+"
+`;
+
+exports[`spawnSync function works 1`] = `
+"
+error: !<tag:yaml.org,2002:js/undefined> ''
+signal: null
+status: 123
+stderr: ''
+stdout: |
+  { JSON5: { hello: 'world' }, TypeScript: 'Hello World !!' }
+
+"
+`;

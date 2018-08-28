@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+"
+error: null
+signal: null
+status: 123
+stderr: (Empty)
+stdout: |
+  { JSON5: { hello: 'world' }, TypeScript: 'Hello World !!' }
+
+"
+`;
