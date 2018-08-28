@@ -1,5 +1,5 @@
 {
-  "name": "clean-typescript-build.private",
+  "name": "clean-typescript-build.tool",
   "version": "0.0.0",
   "description": "Clean TypeScript products from packages/typescript",
   "private": true,
@@ -13,7 +13,6 @@
     "url": "https://github.com/ksxnodemodules/nodemonorepo/issues"
   },
   "bin": {
-    "clean-typescript-build.private": "bin.js",
     "clean-typescript-build": "bin.js"
   },
   "dependencies": {

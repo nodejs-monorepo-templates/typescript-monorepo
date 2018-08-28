@@ -1,5 +1,5 @@
 {
-  "name": "preloaded-node.private",
+  "name": "preloaded-node.tool",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -12,7 +12,6 @@
     "url": "https://github.com/ksxnodemodules/nodemonorepo/issues"
   },
   "bin": {
-    "preloaded-node.private": "bin.js",
     "preloaded-node": "bin.js"
   },
   "index": "index.js",
