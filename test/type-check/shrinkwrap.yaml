@@ -1,0 +1,17 @@
+dependencies:
+  test-spawn.tool: 'link:../../tools/test-spawn'
+  typescript: 3.0.3
+packages:
+  /typescript/3.0.3:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-kk80vLW9iGtjMnIv11qyxLqZm20UklzuR2tL0QAnDIygIUIemcZMxlMWudl9OOt76H3ntVzcTiddQ1/pAAJMYg==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  test-spawn.tool: '*'
+  typescript: ^3.0.1

@@ -1,7 +1,6 @@
 {
-  "name": "clean-typescript-build.tool",
+  "name": "tsconfig.tool",
   "version": "0.0.0",
-  "description": "Clean TypeScript products from packages/typescript",
   "private": true,
   "license": "MIT",
   "homepage": "https://github.com/ksxnodemodules/nodemonorepo#readme",
@@ -12,12 +11,5 @@
   "bugs": {
     "url": "https://github.com/ksxnodemodules/nodemonorepo/issues"
   },
-  "main": "index.js",
-  "bin": {
-    "clean-typescript-build": "bin.js"
-  },
-  "dependencies": {
-    "clean-typescript-build": "^0.0.4",
-    "places.tool": "*"
-  }
+  "main": "tsconfig.json"
 }

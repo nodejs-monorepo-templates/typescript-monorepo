@@ -16,11 +16,11 @@ temp.*
 *.temp
 *.tern-project
 *.tern-project.json
-/packages/typescript/**/*.d.ts
-/packages/typescript/**/*.js
-/packages/typescript/**/*.map
-/packages/*/*/.npmignore
-!*.inrepo*
+*.js
+*.d.ts
+!/tools/**/*.js
+!/tools/**/*.d.ts
+!/test/type-check/index.test.js
 
 # Lockfiles
 #   * Yarn's and NPM's are ignored for I use PNPM

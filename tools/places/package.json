@@ -1,7 +1,6 @@
 {
-  "name": "clean-typescript-build.tool",
+  "name": "places.tool",
   "version": "0.0.0",
-  "description": "Clean TypeScript products from packages/typescript",
   "private": true,
   "license": "MIT",
   "homepage": "https://github.com/ksxnodemodules/nodemonorepo#readme",
@@ -14,10 +13,7 @@
   },
   "main": "index.js",
   "bin": {
-    "clean-typescript-build": "bin.js"
-  },
-  "dependencies": {
-    "clean-typescript-build": "^0.0.4",
-    "places.tool": "*"
+    "places.tool": "bin.js",
+    "places": "bin.js"
   }
 }
