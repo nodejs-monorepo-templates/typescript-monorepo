@@ -1,4 +1,4 @@
 module.exports = {
-  bin: require.resolve('./bin.js'),
+  bin: require.resolve('typescript/bin/tsc'),
   config: require.resolve('./tsconfig.json')
 }
