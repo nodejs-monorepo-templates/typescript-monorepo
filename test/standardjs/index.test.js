@@ -1,12 +1,11 @@
 'use strict'
 const cmd = require('test-spawn.tool')
 
-it('TypeScript: Type Check', () => {
+it('JavaScript Coding Style: Standard', () => {
   cmd({
     defaultExecutable: 'node',
     argvPrefix: [
-      require.resolve('typescript/bin/tsc'),
-      '--noEmit'
+      require.resolve('standard/bin/cmd')
     ],
     envMiddleName: 'STANDARDJS'
   })

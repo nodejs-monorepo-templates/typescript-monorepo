@@ -1,2 +1,2 @@
 #! /usr/bin/env node
-tsc $@
+node tools/typescript/bin.js $@

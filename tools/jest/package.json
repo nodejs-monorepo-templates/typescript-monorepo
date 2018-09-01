@@ -1,5 +1,5 @@
 {
-  "name": "tsconfig.tool",
+  "name": "jest.tool",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -11,5 +11,16 @@
   "bugs": {
     "url": "https://github.com/ksxnodemodules/nodemonorepo/issues"
   },
-  "main": "tsconfig.json"
+  "main": "index.js",
+  "bin": "bin.js",
+  "dependencies": {
+    "jest": "^23.5.0",
+    "babel-jest": "^23.4.2",
+    "yaml-jest": "^1.0.5",
+    "standard": "^12.0.1",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.3",
+    "tslib": "^1.9.3",
+    "places.tool": "*"
+  }
 }

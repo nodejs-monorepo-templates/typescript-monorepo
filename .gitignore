@@ -21,7 +21,8 @@ temp.*
 !jest.config.js
 !/tools/**/*.js
 !/tools/**/*.d.ts
-!/test/type-check/index.test.js
+!/test/standardjs/*.test.js
+!/test/type-check/*.test.js
 
 # Lockfiles
 #   * Yarn's and NPM's are ignored for I use PNPM

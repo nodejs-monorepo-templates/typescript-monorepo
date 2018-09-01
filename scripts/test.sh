@@ -5,7 +5,7 @@ function delim () {
   echo ''
 }
 
-clean-typescript-build || exit $?
+bash scripts/clean-typescript-build.sh || exit $?
 
 delim
-jest --coverage $@ || exit $?
+node tools/jest/bin.js --coverage $@ || exit $?

@@ -1,16 +1,6 @@
 'use strict'
 const places = require('places.tool')
 
-const standardjs = {
-  displayName: 'standardjs',
-  runner: require.resolve('jest-runner-standard'),
-  testMatch: ['<rootDir>/**/*.js'],
-  testPathIgnorePatterns: [
-    '/node_modules/',
-    '/coverage/'
-  ]
-}
-
 const test = {
   displayName: 'test',
   transform: {
@@ -34,7 +24,6 @@ const test = {
 
 module.exports = {
   projects: [
-    standardjs,
     test
   ]
 }

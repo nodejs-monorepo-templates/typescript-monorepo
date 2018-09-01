@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "standard": "^12.0.1",
+    "test-spawn.tool": "*"
+  }
+}
