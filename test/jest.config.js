@@ -1,8 +1,40 @@
 'use strict'
-const path = require('path')
-const fs = require('fs')
-const yaml = require('js-yaml')
-const filename = path.resolve(__dirname, 'jest.config.yaml')
-const filecontent = fs.readFileSync(filename, 'utf8')
-const config = yaml.safeLoad(filecontent)
-module.exports = config
+const places = require('places.tool')
+
+const standardjs = {
+  displayName: 'standardjs',
+  runner: require.resolve('jest-runner-standard'),
+  testMatch: ['<rootDir>/**/*.js'],
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/coverage/'
+  ]
+}
+
+const test = {
+  displayName: 'test',
+  transform: {
+    '\\.jsx?$': require.resolve('babel-jest'),
+    '\\.tsx?$': require.resolve('ts-jest'),
+    '\\.(yaml|yml)$': require.resolve('yaml-jest')
+  },
+  testRegex: '(test|spec|check)\\.(jsx?|tsx?)$',
+  moduleFileExtensions: [
+    'ts',
+    'tsx',
+    'js',
+    'jsx',
+    'json',
+    'node'
+  ],
+  coveragePathIgnorePatterns: [
+    places.test
+  ]
+}
+
+module.exports = {
+  projects: [
+    standardjs,
+    test
+  ]
+}
