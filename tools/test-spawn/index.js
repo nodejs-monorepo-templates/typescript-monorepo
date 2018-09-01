@@ -2,8 +2,8 @@
 
 function main ({
   path = require('path'),
-  childProcess: {spawnSync} = require('child_process'),
-  process: {env} = require('process'),
+  childProcess: { spawnSync } = require('child_process'),
+  process: { env } = require('process'),
   argvPrefix = [],
   argvSuffix = [],
   alwaysPrintStdIO = false,

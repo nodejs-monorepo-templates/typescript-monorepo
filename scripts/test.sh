@@ -1,3 +1,11 @@
 #! /usr/bin/env bash
-cd ./test
-pnpm test -- $@
+
+function delim () {
+  echo ''
+  echo ''
+}
+
+clean-typescript-build || exit $?
+
+delim
+jest --coverage $@ || exit $?
