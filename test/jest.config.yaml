@@ -6,7 +6,6 @@ projects:
       - /node_modules/
       - /coverage/
   - displayName: test
-    setupTestFrameworkScriptFile: jest-extended
     transform:
       '\.jsx?$': 'babel-jest'
       '\.tsx?$': 'ts-jest'

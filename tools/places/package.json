@@ -15,5 +15,8 @@
   "bin": {
     "places.tool": "bin.js",
     "places": "bin.js"
+  },
+  "dependencies": {
+    "@types/node": "^10.9.4"
   }
 }

@@ -1,3 +1,3 @@
-declare export const project: string
-declare export const test: string
-declare export const tools: string
+export declare const project: string
+export declare const test: string
+export declare const tools: string

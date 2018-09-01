@@ -16,12 +16,13 @@
   },
   "index": "index.js",
   "dependencies": {
-    "ts-node": "^7.0.0",
-    "typescript": "^3.0.1",
-    "json5": "^2.0.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3",
+    "json5": "^2.0.1",
+    "tslib": "^1.9.3",
     "tsconfig.tool": "*",
     "@types/json5": "^0.0.30",
-    "@types/node": "^10.5.4"
+    "@types/node": "^10.9.4"
   },
   "engines": {
     "node": ">= 8.9.0"
