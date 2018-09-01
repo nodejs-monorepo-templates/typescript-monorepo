@@ -18,6 +18,7 @@ temp.*
 *.tern-project.json
 *.js
 *.d.ts
+!jest.config.js
 !/tools/**/*.js
 !/tools/**/*.d.ts
 !/test/type-check/index.test.js
