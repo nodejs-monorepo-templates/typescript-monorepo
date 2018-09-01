@@ -8,8 +8,6 @@ branches:
 language: node_js
 
 node_js:
-  - '8'
-  - '9'
   - '10'
 
 cache:
@@ -30,7 +28,7 @@ install:
   - bash sh/ci/install.sh
 
 script:
-  - pnpm test -- --runInBand
+  - pnpm test
   - pnpm run build
 
 after_script:
