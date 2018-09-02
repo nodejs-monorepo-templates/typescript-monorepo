@@ -3,5 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
-  "bin": "bin.js"
+  "bin": "bin.js",
+  "dependencies": {
+    "typescript": "^3.0.3"
+  }
 }
