@@ -68,7 +68,7 @@ function main ({ testPath }) {
 
     mustBePublic()
 
-    for (const key of ['version', ...matchingKeys]) {
+    for (const key of [...matchingKeys, 'version', 'dependencies']) {
       if (!manifest[key]) {
         reasons.push(`Missing field "${key}"`)
         continue
@@ -76,6 +76,12 @@ function main ({ testPath }) {
 
       if (!deepEqual(manifest[key], globalManifest[key])) {
         reasons.push(`Field "${key}" does not match its global conterpart`)
+      }
+    }
+
+    for (const name of ['@types/node', 'tslib']) {
+      if (!manifest.dependencies[name]) {
+        reasons.push(`Missing dependency "${name}"`)
       }
     }
 
