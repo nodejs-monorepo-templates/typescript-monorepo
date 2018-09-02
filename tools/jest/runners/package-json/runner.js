@@ -34,6 +34,7 @@ function main ({ testPath }) {
   const rule = (fn, msg) => () => fn(manifest) && reasons.push(msg)
   const mustHaveName = rule(() => !manifest.name, 'Missing field "name"')
   const mustNotHaveName = rule(() => 'name' in manifest, 'Field "name" is not necessary')
+  const mustHaveVersion = rule(() => !manifest.version, 'Missing field "version"')
   const mustNotHaveVersion = rule(() => 'version' in manifest, 'Field "version" is not necessary')
   const mustBePrivate = rule(() => !manifest.private, 'Must have field "private" set to true')
   const mustBePublic = rule(() => 'private' in manifest, 'Must not have field "private"')
@@ -43,6 +44,7 @@ function main ({ testPath }) {
     mustNotHaveVersion()
 
     for (const key of matchingKeys) {
+      if (key in manifest) continue
       reasons.push(`Missing field "${key}"`)
     }
 
@@ -59,6 +61,7 @@ function main ({ testPath }) {
 
   if (resolvedPath.startsWith(places.packages)) {
     mustHaveName()
+    mustHaveVersion()
 
     if (manifest.name !== containerBaseName) {
       reasons.push(
@@ -68,7 +71,7 @@ function main ({ testPath }) {
 
     mustBePublic()
 
-    for (const key of [...matchingKeys, 'version', 'dependencies']) {
+    for (const key of matchingKeys) {
       if (!manifest[key]) {
         reasons.push(`Missing field "${key}"`)
         continue
@@ -79,12 +82,17 @@ function main ({ testPath }) {
       }
     }
 
+    const requiredDependencies = ['@types/node', 'tslib']
+
     if ('dependencies' in manifest) {
-      for (const name of ['@types/node', 'tslib']) {
-        if (!manifest.dependencies[name]) {
-          reasons.push(`Missing dependency "${name}"`)
-        }
+      for (const name of requiredDependencies) {
+        if (name in manifest.dependencies) continue
+        reasons.push(`Missing dependency "${name}"`)
       }
+    } else {
+      reasons.push(
+        ...requiredDependencies.map(name => `Missing dependency "${name}"`)
+      )
     }
 
     return getResult()
@@ -101,10 +109,7 @@ function main ({ testPath }) {
     }
 
     mustBePrivate()
-
-    if (!manifest.version) {
-      reasons.push('Missing field "version"')
-    }
+    mustHaveVersion()
 
     for (const key of matchingKeys) {
       if (key in manifest) {
