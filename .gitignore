@@ -29,6 +29,7 @@ temp.*
 yarn.lock
 package-lock.json
 !shrinkwrap.yaml
+shrinkwrap.yaml.*
 
 # Logs
 logs
