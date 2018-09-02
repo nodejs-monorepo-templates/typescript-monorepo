@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
-  "homepage": "https://github.com/ksxnodemodules/nodemonorepo#readme",
+  "homepage": "https://github.com/KSXGitHub/application-installer.git#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ksxnodemodules/nodemonorepo.git"
+    "url": "git+https://github.com/KSXGitHub/application-installer.git.git"
   },
   "bugs": {
-    "url": "https://github.com/ksxnodemodules/nodemonorepo/issues"
+    "url": "https://github.com/KSXGitHub/application-installer.git/issues"
   },
   "bin": {
     "preloaded-node": "bin.js"
