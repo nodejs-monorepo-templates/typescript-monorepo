@@ -34,15 +34,13 @@ function main ({ testPath }) {
   const rule = (fn, msg) => () => fn(manifest) && reasons.push(msg)
   const mustHaveName = rule(() => !manifest.name, 'Missing field "name"')
   const mustNotHaveName = rule(() => 'name' in manifest, 'Field "name" is not necessary')
+  const mustNotHaveVersion = rule(() => 'version' in manifest, 'Field "version" is not necessary')
   const mustBePrivate = rule(() => !manifest.private, 'Must have field "private" set to true')
   const mustBePublic = rule(() => 'private' in manifest, 'Must not have field "private"')
 
-  if (!manifest.version) {
-    reasons.push('Missing field "version"')
-  }
-
   if (resolvedPath === globalManifestPath) {
     mustBePrivate()
+    mustNotHaveVersion()
 
     for (const key of matchingKeys) {
       reasons.push(`Missing field "${key}"`)
@@ -70,7 +68,7 @@ function main ({ testPath }) {
 
     mustBePublic()
 
-    for (const key of matchingKeys) {
+    for (const key of ['version', ...matchingKeys]) {
       if (!manifest[key]) {
         reasons.push(`Missing field "${key}"`)
         continue
@@ -96,12 +94,23 @@ function main ({ testPath }) {
 
     mustBePrivate()
 
+    if (!manifest.version) {
+      reasons.push('Missing field "version"')
+    }
+
+    for (const key of matchingKeys) {
+      if (key in manifest) {
+        reasons.push(`Field "${key}" is not necessary`)
+      }
+    }
+
     return getResult()
   }
 
   if (resolvedPath.startsWith(places.test)) {
     mustNotHaveName()
     mustBePrivate()
+    mustNotHaveVersion()
     return getResult()
   }
 }
