@@ -11,6 +11,7 @@ function main ({ testPath }) {
   const resolvedPath = path.resolve(testPath)
   const container = path.dirname(resolvedPath)
   const containerBaseName = path.basename(container)
+  const manifest = require(resolvedPath)
   const matchingKeys = ['license', 'author', 'homepage', 'repository', 'bugs']
 
   const getResult = () => reasons.length
@@ -30,7 +31,6 @@ function main ({ testPath }) {
       }
     })
 
-  const manifest = require(resolvedPath)
   const rule = (fn, msg) => () => fn(manifest) && reasons.push(msg)
   const mustHaveName = rule(() => !manifest.name)
   const mustNotHaveName = rule(() => 'name' in manifest)
