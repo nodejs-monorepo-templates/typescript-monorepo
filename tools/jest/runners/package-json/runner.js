@@ -30,14 +30,19 @@ function main ({ testPath }) {
       }
     })
 
-  const rule = (fn, msg) => manifest => fn(manifest) && reasons.push(msg)
-  const mustHaveName = rule(manifest => !manifest.name)
-  const mustNotHaveName = rule(manifest => 'name' in manifest)
-  const mustBePrivate = rule(manifest => !manifest.private)
-  const mustBePublic = rule(manifest => 'private' in manifest) // not even "private": false is allowed
+  const manifest = require(resolvedPath)
+  const rule = (fn, msg) => () => fn(manifest) && reasons.push(msg)
+  const mustHaveName = rule(() => !manifest.name)
+  const mustNotHaveName = rule(() => 'name' in manifest)
+  const mustBePrivate = rule(() => !manifest.private)
+  const mustBePublic = rule(() => 'private' in manifest) // not even "private": false is allowed
+
+  if (!manifest.version) {
+    reasons.push('Missing field "version"')
+  }
 
   if (resolvedPath === globalManifestPath) {
-    mustBePrivate(globalManifest)
+    mustBePrivate()
 
     for (const key of matchingKeys) {
       reasons.push(`Missing field "${key}"`)
@@ -46,10 +51,8 @@ function main ({ testPath }) {
     return getResult()
   }
 
-  const manifest = require(resolvedPath)
-
   if (resolvedPath.startsWith(places.packages)) {
-    mustHaveName(manifest)
+    mustHaveName()
 
     if (manifest.name !== containerBaseName) {
       reasons.push(
@@ -57,7 +60,7 @@ function main ({ testPath }) {
       )
     }
 
-    mustBePublic(manifest)
+    mustBePublic()
 
     for (const key of matchingKeys) {
       if (!manifest[key]) {
@@ -74,7 +77,7 @@ function main ({ testPath }) {
   }
 
   if (resolvedPath.startsWith(places.tools)) {
-    mustHaveName(manifest)
+    mustHaveName()
 
     const expectedName = containerBaseName + '.tool'
     if (manifest.name !== expectedName) {
@@ -83,14 +86,14 @@ function main ({ testPath }) {
       )
     }
 
-    mustBePrivate(manifest)
+    mustBePrivate()
 
     return getResult()
   }
 
   if (resolvedPath.startsWith(places.test)) {
-    mustNotHaveName(manifest)
-    mustBePrivate(manifest)
+    mustNotHaveName()
+    mustBePrivate()
     return getResult()
   }
 }
