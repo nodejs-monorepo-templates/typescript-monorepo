@@ -1,5 +1,5 @@
 {
-  "name": "khai-hello-world",
+  "name": "test-monorepo-hello-world",
   "version": "0.0.0",
   "dependencies": {
     "tslib": "^1.9.3",

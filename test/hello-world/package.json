@@ -2,6 +2,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "khai-hello-world": "*"
+    "test-monorepo-hello-world": "*"
   }
 }
