@@ -79,9 +79,11 @@ function main ({ testPath }) {
       }
     }
 
-    for (const name of ['@types/node', 'tslib']) {
-      if (!manifest.dependencies[name]) {
-        reasons.push(`Missing dependency "${name}"`)
+    if ('dependencies' in manifest) {
+      for (const name of ['@types/node', 'tslib']) {
+        if (!manifest.dependencies[name]) {
+          reasons.push(`Missing dependency "${name}"`)
+        }
       }
     }
 
