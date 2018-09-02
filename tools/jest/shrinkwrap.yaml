@@ -4,6 +4,7 @@ dependencies:
   fast-deep-equal: 2.0.1
   jest: 23.5.0
   places.tool: 'link:../places'
+  semver: 5.5.1
   standard: 12.0.1
   ts-jest: 23.1.4
   tslib: 1.9.3
@@ -4571,6 +4572,7 @@ specifiers:
   fast-deep-equal: ^2.0.1
   jest: ^23.5.0
   places.tool: '*'
+  semver: ^5.5.1
   standard: ^12.0.1
   ts-jest: ^23.1.4
   tslib: ^1.9.3
