@@ -6,6 +6,7 @@ dependencies:
   tsconfig.tool: 'link:../tsconfig'
   tslib: 1.9.3
   typescript: 3.0.3
+  typescript.tool: 'link:../typescript'
 packages:
   /@types/json5/0.0.30:
     dev: false
@@ -116,6 +117,6 @@ specifiers:
   '@types/node': ^10.9.4
   json5: ^2.0.1
   ts-node: ^7.0.1
-  tsconfig.tool: '*'
   tslib: ^1.9.3
   typescript: ^3.0.3
+  typescript.tool: '*'
