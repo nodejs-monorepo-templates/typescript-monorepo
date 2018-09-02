@@ -32,10 +32,10 @@ function main ({ testPath }) {
     })
 
   const rule = (fn, msg) => () => fn(manifest) && reasons.push(msg)
-  const mustHaveName = rule(() => !manifest.name)
-  const mustNotHaveName = rule(() => 'name' in manifest)
-  const mustBePrivate = rule(() => !manifest.private)
-  const mustBePublic = rule(() => 'private' in manifest) // not even "private": false is allowed
+  const mustHaveName = rule(() => !manifest.name, 'Missing field "name"')
+  const mustNotHaveName = rule(() => 'name' in manifest, 'Field "name" is not necessary')
+  const mustBePrivate = rule(() => !manifest.private, 'Must have field "private" set to true')
+  const mustBePublic = rule(() => 'private' in manifest, 'Must not have field "private"')
 
   if (!manifest.version) {
     reasons.push('Missing field "version"')
@@ -48,7 +48,15 @@ function main ({ testPath }) {
       reasons.push(`Missing field "${key}"`)
     }
 
+    if ('dependencies' in manifest) {
+      reasons.push('Use "devDependencies" instead')
+    }
+
     return getResult()
+  }
+
+  if ('devDependencies' in manifest) {
+    reasons.push('Only global manifest is allowed to have "devDependencies"')
   }
 
   if (resolvedPath.startsWith(places.packages)) {
