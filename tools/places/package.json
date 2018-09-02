@@ -2,15 +2,6 @@
   "name": "places.tool",
   "version": "0.0.0",
   "private": true,
-  "license": "MIT",
-  "homepage": "https://github.com/KSXGitHub/application-installer.git#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KSXGitHub/application-installer.git.git"
-  },
-  "bugs": {
-    "url": "https://github.com/KSXGitHub/application-installer.git/issues"
-  },
   "main": "index.js",
   "bin": {
     "places.tool": "bin.js",

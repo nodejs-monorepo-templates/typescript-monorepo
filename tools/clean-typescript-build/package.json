@@ -1,17 +1,7 @@
 {
   "name": "clean-typescript-build.tool",
   "version": "0.0.0",
-  "description": "Clean TypeScript products from packages/typescript",
   "private": true,
-  "license": "MIT",
-  "homepage": "https://github.com/KSXGitHub/application-installer.git#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KSXGitHub/application-installer.git.git"
-  },
-  "bugs": {
-    "url": "https://github.com/KSXGitHub/application-installer.git/issues"
-  },
   "main": "index.js",
   "bin": {
     "clean-typescript-build": "bin.js"
