@@ -5,7 +5,14 @@ const {
   coveragePathIgnorePatterns
 } = require('./lib/contants')
 
-module.exports = {
+const packageJson = {
+  displayName: 'validate',
+  testRegex: 'package\\.json$',
+  runner: require.resolve('./runners/package-json')
+}
+
+const test = {
+  displayName: 'test',
   transform: {
     '\\.jsx?$': require.resolve('babel-jest'),
     '\\.tsx?$': require.resolve('ts-jest'),
@@ -15,3 +22,10 @@ module.exports = {
   moduleFileExtensions,
   coveragePathIgnorePatterns
 }
+
+const projects = [
+  packageJson,
+  test
+]
+
+module.exports = { projects }
