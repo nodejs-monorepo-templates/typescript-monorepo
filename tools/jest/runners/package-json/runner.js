@@ -31,7 +31,7 @@ function main ({ testPath }) {
       }
     })
 
-  const rule = (fn, msg) => () => fn(manifest) && reasons.push(msg)
+  const rule = (fn, msg) => () => fn() && reasons.push(msg)
   const mustHaveName = rule(() => !manifest.name, 'Missing field "name"')
   const mustNotHaveName = rule(() => 'name' in manifest, 'Field "name" is not necessary')
   const mustHaveVersion = rule(() => !manifest.version, 'Missing field "version"')
