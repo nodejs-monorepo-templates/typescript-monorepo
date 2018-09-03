@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/KSXGitHub/application-installer.git#readme",
+  "homepage": "https://github.com/nodejs-monorepo-templates/typescript-monorepo.git#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KSXGitHub/application-installer.git.git"
+    "url": "git+https://github.com/nodejs-monorepo-templates/typescript-monorepo.git.git"
   },
   "bugs": {
-    "url": "https://github.com/KSXGitHub/application-installer.git/issues"
+    "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo.git/issues"
   },
   "dependencies": {
     "tslib": "^1.9.3",
