@@ -1,8 +1,10 @@
 dependencies:
   babel-jest: 23.4.2
+  convenient-typescript-utilities: 0.0.1
   create-jest-runner: 0.4.0
   fast-deep-equal: 2.0.1
   jest: 23.5.0
+  parse-dependency-range: 0.0.1
   places.tool: 'link:../places'
   semver: 5.5.1
   standard: 12.0.1
@@ -108,6 +110,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-2AK3tUO1g2x3iqaReXq/APPZfqk=
+  /@types/node/10.9.4:
+    dev: false
+    resolution:
+      integrity: sha512-fCHV45gS+m3hH17zgkgADUSi2RR1Vht6wOZ0jyHP8rjiQra9f+mIcgwPQHllmDocYOstIEbKlxbFDYlgrTPYqw==
+  /@types/semver/5.5.0:
+    dev: false
+    resolution:
+      integrity: sha512-41qEJgBH/TWgo5NFSvBCJ1qkoi3Q6ONSF2avrHq1LVEZfYpdHmj0y9SuTK+u9ZhG1sYQKBL1AWXKyLWP4RaUoQ==
   /abab/2.0.0:
     dev: false
     resolution:
@@ -807,6 +817,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-/ozxhP9mcLa67wGp1IYaXL7EEgo=
+  /convenient-typescript-utilities/0.0.1:
+    dependencies:
+      '@types/node': 10.9.4
+      tslib: 1.9.3
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-MnpMgVHF5IZPGOdYUVvD72iwLAi7f1Sv5LlwUuusp9IvjvXwWnQi8lRAja6HOLlQlPpMw2niz2av9EBVHbplEQ==
   /convert-source-map/1.5.1:
     dev: false
     resolution:
@@ -3221,6 +3240,18 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
+  /parse-dependency-range/0.0.1:
+    dependencies:
+      '@types/node': 10.9.4
+      '@types/semver': 5.5.0
+      convenient-typescript-utilities: 0.0.1
+      semver: 5.5.1
+      tslib: 1.9.3
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-j8oKcpTT8P08lto3LzcMJxQ8izXCC5tzf3vAEEtediN1u+VEojBbvdShBNQSOXEivmTC80XVj/RDdSyXb/dJ0w==
   /parse-glob/3.0.4:
     dependencies:
       glob-base: 0.3.0
@@ -4568,9 +4599,11 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   babel-jest: ^23.4.2
+  convenient-typescript-utilities: ^0.0.1
   create-jest-runner: ^0.4.0
   fast-deep-equal: ^2.0.1
   jest: ^23.5.0
+  parse-dependency-range: ^0.0.1
   places.tool: '*'
   semver: ^5.5.1
   standard: ^12.0.1

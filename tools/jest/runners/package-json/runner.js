@@ -3,6 +3,8 @@ const fs = require('fs')
 const deepEqual = require('fast-deep-equal')
 const semver = require('semver')
 const runner = require('create-jest-runner')
+const depRange = require('parse-dependency-range')
+const { unwrap } = require('convenient-typescript-utilities').func
 const places = require('places.tool')
 const globalManifestPath = path.resolve(places.project, 'package.json')
 const globalManifest = require(globalManifestPath)
@@ -15,7 +17,8 @@ function main ({ testPath }) {
   const containerBaseName = path.basename(container)
   const manifest = require(resolvedPath)
   const matchingKeys = ['license', 'author', 'homepage', 'repository', 'bugs']
-  const rule = (fn, msg) => () => fn() && reasons.push(msg)
+  const pushif = (fn, msg) => unwrap(fn) && reasons.push(unwrap(msg))
+  const rule = (fn, msg) => () => pushif(fn, msg)
   const mustHaveName = rule(() => !manifest.name, 'Missing field "name"')
   const mustNotHaveName = rule(() => 'name' in manifest, 'Field "name" is not necessary')
   const mustHaveVersion = rule(() => !manifest.version, 'Missing field "version"')
@@ -36,11 +39,66 @@ function main ({ testPath }) {
       }
 
       const { name: actualName, version } = require(depManifestPath)
+      const parsedVersion = depRange.parse(range)
 
-      if (actualName !== name || !semver.satisfies(version, range)) {
-        reasons.push(
-          `Expected ${name}@${range} (${field}) but received ${actualName}@${version} (node_modules)`
-        )
+      switch (parsedVersion.type) {
+        case depRange.Type.Semver: {
+          const condition =
+            actualName !== name || !semver.satisfies(version, range)
+
+          const message = () =>
+            `Expected ${name}@${range} (${field}) but received ${actualName}@${version} (node_modules)`
+
+          pushif(condition, message)
+          break
+        }
+
+        case depRange.Type.Local: {
+          {
+            const expected = path.resolve(parsedVersion.path)
+            const received = container
+            const condition = expected !== received
+
+            const message = () =>
+              `Expected ${name} ("${range}") to be at "${expected}" but received "${received}" instead`
+
+            pushif(condition, message)
+          }
+
+          {
+            const expected = depRange.LocalUrl.Protocol.File
+            const received = parsedVersion.protocol
+            const condition = expected !== received
+
+            const message = () =>
+              `Expected "${expected}" as protocol but received "${received}" instead`
+
+            pushif(condition, message)
+          }
+
+          break
+        }
+
+        case depRange.Type.Git: {
+          const condition =
+            parsedVersion.url.protocol === depRange.GitUrl.Protocol.Local
+
+          const message =
+            'Do not use "git+file:" protocol to link local package, use "file:" instead'
+
+          pushif(condition, message)
+          break
+        }
+
+        case depRange.Type.Latest: {
+          reasons.push('Do not use "latest"')
+          break
+        }
+
+        case depRange.Type.Unknown: {
+          reasons.push(`SyntaxError: Unrecognizable syntax: ${JSON.stringify(range)}`)
+          break
+        }
       }
     }
   }
