@@ -71,8 +71,8 @@ function main ({ testPath }) {
           treatLocalDependency(name)
 
           {
-            const expected = path.resolve(parsedVersion.path)
-            const received = container
+            const expected = path.resolve(container, parsedVersion.path)
+            const received = fs.realpathSync(path.resolve(container, 'node_modules', name))
             const condition = expected !== received
 
             const message = () =>
