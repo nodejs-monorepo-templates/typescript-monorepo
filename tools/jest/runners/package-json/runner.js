@@ -5,7 +5,7 @@ const semver = require('semver')
 const runner = require('create-jest-runner')
 const depRange = require('parse-dependency-range')
 const { unwrap } = require('convenient-typescript-utilities').func
-const places = require('places.tool')
+const places = require('@tools/places')
 const globalManifestPath = path.resolve(places.project, 'package.json')
 const globalManifest = require(globalManifestPath)
 

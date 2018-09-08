@@ -1,6 +1,6 @@
 'use strict'
 const path = require('path')
-const places = require('places.tool')
+const places = require('@tools/places')
 
 const moduleFileExtensions = [
   'ts',

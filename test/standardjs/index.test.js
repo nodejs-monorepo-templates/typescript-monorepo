@@ -1,5 +1,5 @@
 'use strict'
-const cmd = require('test-spawn.tool')
+const cmd = require('@tools/test-spawn')
 
 it('JavaScript Coding Style: Standard', () => {
   cmd({
