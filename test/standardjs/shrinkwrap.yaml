@@ -1,6 +1,6 @@
 dependencies:
+  '@tools/test-spawn': 'link:../../tools/test-spawn'
   standard: 12.0.1
-  test-spawn.tool: 'link:../../tools/test-spawn'
 packages:
   /acorn-jsx/4.1.1:
     dependencies:
@@ -1511,5 +1511,5 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@tools/test-spawn': 'file:../../tools/test-spawn'
   standard: ^12.0.1
-  test-spawn.tool: '*'

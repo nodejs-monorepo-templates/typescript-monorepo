@@ -1,7 +1,6 @@
 dependencies:
+  '@tools/places': 'link:../places'
   clean-typescript-build: 0.0.4
-  fs-tree-utils: 'link:../../typescript/fs-tree-utils'
-  places.tool: 'link:../places'
 packages:
   /@types/fs-extra/5.0.4:
     dependencies:
@@ -415,6 +414,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=
+      tarball: 'http://registry.npmjs.org/wrap-ansi/-/wrap-ansi-2.1.0.tgz'
   /xregexp/4.0.0:
     dev: false
     resolution:
@@ -454,5 +454,5 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@tools/places': 'file:../places'
   clean-typescript-build: ^0.0.4
-  places.tool: '*'

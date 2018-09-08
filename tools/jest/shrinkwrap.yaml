@@ -1,11 +1,11 @@
 dependencies:
+  '@tools/places': 'link:../places'
   babel-jest: 23.4.2
   convenient-typescript-utilities: 0.0.1
   create-jest-runner: 0.4.0
   fast-deep-equal: 2.0.1
   jest: 23.5.0
   parse-dependency-range: 0.0.1
-  places.tool: 'link:../places'
   semver: 5.5.1
   standard: 12.0.1
   ts-jest: 23.1.4
@@ -4584,6 +4584,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NwW69J42EsCSanF8kyn5upxvjp5ds+t3+udGBeTbFnERA+lF541DDpMawzo4z6W/QrzNM18D+BPMiOBibnFV5A==
+      tarball: 'http://registry.npmjs.org/yargs/-/yargs-11.1.0.tgz'
   /yargs/3.10.0:
     dependencies:
       camelcase: 1.2.1
@@ -4594,17 +4595,18 @@ packages:
     optional: true
     resolution:
       integrity: sha1-9+572FfdfB0tOMDnTvvWgdFDH9E=
+      tarball: 'http://registry.npmjs.org/yargs/-/yargs-3.10.0.tgz'
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@tools/places': 'file:../places'
   babel-jest: ^23.4.2
   convenient-typescript-utilities: ^0.0.1
   create-jest-runner: ^0.4.0
   fast-deep-equal: ^2.0.1
   jest: ^23.5.0
   parse-dependency-range: ^0.0.1
-  places.tool: '*'
   semver: ^5.5.1
   standard: ^12.0.1
   ts-jest: ^23.1.4

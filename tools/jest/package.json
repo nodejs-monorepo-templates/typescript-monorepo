@@ -1,5 +1,5 @@
 {
-  "name": "jest.tool",
+  "name": "@tools/jest",
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
@@ -17,6 +17,6 @@
     "tslib": "^1.9.3",
     "parse-dependency-range": "^0.0.1",
     "convenient-typescript-utilities": "^0.0.1",
-    "places.tool": "*"
+    "@tools/places": "file:../places"
   }
 }

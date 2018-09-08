@@ -1,5 +1,5 @@
 {
-  "name": "clean-typescript-build.tool",
+  "name": "@tools/clean-typescript-build",
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "clean-typescript-build": "^0.0.4",
-    "places.tool": "*"
+    "@tools/places": "file:../places"
   }
 }

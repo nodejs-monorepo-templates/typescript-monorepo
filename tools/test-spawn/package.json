@@ -1,5 +1,5 @@
 {
-  "name": "test-spawn.tool",
+  "name": "@tools/test-spawn",
   "version": "0.0.0",
   "private": true
 }

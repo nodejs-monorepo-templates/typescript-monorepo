@@ -1,5 +1,4 @@
 dependencies:
-  khai-hello-world: 'link:../../packages/hello-world'
   test-monorepo-hello-world: 'link:../../packages/test-monorepo-hello-world'
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9

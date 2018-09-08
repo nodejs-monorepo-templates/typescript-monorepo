@@ -1,5 +1,5 @@
 {
-  "name": "preloaded-node.tool",
+  "name": "@tools/preloaded-node",
   "version": "0.0.0",
   "private": true,
   "bin": {
@@ -11,7 +11,7 @@
     "typescript": "^3.0.3",
     "json5": "^2.0.1",
     "tslib": "^1.9.3",
-    "typescript.tool": "*",
+    "@tools/typescript": "file:../typescript",
     "@types/json5": "^0.0.30",
     "@types/node": "^10.9.4"
   },
