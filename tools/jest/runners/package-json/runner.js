@@ -223,7 +223,7 @@ function main ({ testPath }) {
   if (resolvedPath.startsWith(places.tools)) {
     mustHaveName()
 
-    const expectedName = containerBaseName + '.tool'
+    const expectedName = `@tools/${containerBaseName}`
     if (manifest.name !== expectedName) {
       reasons.push(
         `Expected package's name to be "${expectedName}" but received "${manifest.name}" instead`
