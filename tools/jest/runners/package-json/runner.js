@@ -26,9 +26,23 @@ function main ({ testPath }) {
   const mustBePrivate = rule(() => !manifest.private, 'Must have field "private" set to true')
   const mustBePublic = rule(() => 'private' in manifest, 'Must not have field "private"')
 
+  const createLocalDependencyTreater = field => {
+    switch (field) {
+      case 'dependencies':
+        return name =>
+          reasons.push(`Local dependency should not be listed in "dependencies": ${name}`)
+      case 'devDependencies':
+        return () => () => {}
+    }
+
+    throw new RangeError(`Invalid field: ${JSON.stringify(field)}`)
+  }
+
   const checkDependency = field => {
     const dependencies = manifest[field]
     if (!dependencies) return
+
+    const treatLocalDependency = createLocalDependencyTreater(field)
 
     for (const [name, range] of Object.entries(dependencies)) {
       const depManifestPath = path.resolve(container, 'node_modules', name, 'package.json')
@@ -54,6 +68,8 @@ function main ({ testPath }) {
         }
 
         case depRange.Type.Local: {
+          treatLocalDependency(name)
+
           {
             const expected = path.resolve(parsedVersion.path)
             const received = container
