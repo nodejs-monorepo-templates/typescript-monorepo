@@ -26,23 +26,41 @@ function main ({ testPath }) {
   const mustBePrivate = rule(() => !manifest.private, 'Must have field "private" set to true')
   const mustBePublic = rule(() => 'private' in manifest, 'Must not have field "private"')
 
-  const createLocalDependencyTreater = field => {
-    switch (field) {
-      case 'dependencies':
-        return name =>
-          reasons.push(`Local dependency should not be listed in "dependencies": ${name}`)
-      case 'devDependencies':
-        return () => () => {}
-    }
-
-    throw new RangeError(`Invalid field: ${JSON.stringify(field)}`)
+  const isPrivateDependency = name => {
+    const dependencyManifestPath = path.resolve(container, 'node_modules', name, 'package.json')
+    const dependencyManifest = require(dependencyManifestPath)
+    return dependencyManifest.private
   }
+
+  const createDependencyTreater = privateDependant => privateDependant
+    ? {
+      local () {},
+      semver: {
+        ifPrivate (name) {
+          if (isPrivateDependency(name)) {
+            reasons.push(`Private dependencies should use "file:" protocol: ${name}`)
+          }
+        }
+      }
+    }
+    : {
+      local (name) {
+        reasons.push(`Local dependencies should not be listed in "dependencies": ${name}`)
+      },
+      semver: {
+        ifPrivate (name) {
+          if (isPrivateDependency(name)) {
+            reasons.push(`Public package should not use private dependencies: ${name}`)
+          }
+        }
+      }
+    }
 
   const checkDependency = field => {
     const dependencies = manifest[field]
     if (!dependencies) return
 
-    const treatLocalDependency = createLocalDependencyTreater(field)
+    const treatDependency = createDependencyTreater(manifest.private)
 
     for (const [name, range] of Object.entries(dependencies)) {
       const depManifestPath = path.resolve(container, 'node_modules', name, 'package.json')
@@ -57,18 +75,22 @@ function main ({ testPath }) {
 
       switch (parsedVersion.type) {
         case depRange.Type.Semver: {
-          const condition =
-            actualName !== name || !semver.satisfies(version, range)
+          treatDependency.semver.ifPrivate(name)
 
-          const message = () =>
-            `Expected ${name}@${range} (${field}) but received ${actualName}@${version} (node_modules)`
+          {
+            const condition =
+              actualName !== name || !semver.satisfies(version, range)
 
-          pushif(condition, message)
+            const message = () =>
+              `Expected ${name}@${range} (${field}) but received ${actualName}@${version} (node_modules)`
+
+            pushif(condition, message)
+          }
           break
         }
 
         case depRange.Type.Local: {
-          treatLocalDependency(name)
+          treatDependency.local(name)
 
           {
             const expected = path.resolve(container, parsedVersion.path)
