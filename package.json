@@ -24,5 +24,8 @@
       "jest": true,
       "node": true
     }
+  },
+  "engines": {
+    "pnpm": ">= 2.16.0"
   }
 }
