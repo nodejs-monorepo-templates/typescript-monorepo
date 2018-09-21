@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "dependencies": {
+    "@tools/places": "file:../../tools/places"
+  }
+}
