@@ -1,7 +1,21 @@
 dependencies:
   '@tools/places': 'link:../../tools/places'
+  '@types/semver': 5.5.0
+  semver: 5.5.1
+packages:
+  /@types/semver/5.5.0:
+    dev: false
+    resolution:
+      integrity: sha512-41qEJgBH/TWgo5NFSvBCJ1qkoi3Q6ONSF2avrHq1LVEZfYpdHmj0y9SuTK+u9ZhG1sYQKBL1AWXKyLWP4RaUoQ==
+  /semver/5.5.1:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-PqpAxfrEhlSUWge8dwIp4tZnQ25DIOthpiaHNIthsjEFQD6EvqUKUDM7L8O2rShkFccYo1VjJR0coWfNkCubRw==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../../tools/places'
+  '@types/semver': ^5.5.0
+  semver: ^5.5.1

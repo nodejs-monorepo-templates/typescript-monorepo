@@ -1,6 +1,8 @@
 {
   "private": true,
   "dependencies": {
-    "@tools/places": "file:../../tools/places"
+    "semver": "^5.5.1",
+    "@tools/places": "file:../../tools/places",
+    "@types/semver": "^5.5.0"
   }
 }
