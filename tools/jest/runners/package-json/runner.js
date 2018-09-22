@@ -221,17 +221,9 @@ function main ({ testPath }) {
   }
 
   if (resolvedPath.startsWith(places.tools)) {
-    mustHaveName()
-
-    const expectedName = `@tools/${containerBaseName}`
-    if (manifest.name !== expectedName) {
-      reasons.push(
-        `Expected package's name to be "${expectedName}" but received "${manifest.name}" instead`
-      )
-    }
-
+    mustNotHaveName()
+    mustNotHaveVersion()
     mustBePrivate()
-    mustHaveVersion()
 
     for (const key of matchingKeys) {
       if (key in manifest) {
