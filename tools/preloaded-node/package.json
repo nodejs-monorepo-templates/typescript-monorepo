@@ -1,6 +1,4 @@
 {
-  "name": "@tools/preloaded-node",
-  "version": "0.0.0",
   "private": true,
   "bin": {
     "preloaded-node": "bin.js"
