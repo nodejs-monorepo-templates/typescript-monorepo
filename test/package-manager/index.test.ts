@@ -1,8 +1,8 @@
 import path from 'path'
-import {existsSync} from 'fs'
-import {spawnSync} from 'child_process'
+import { existsSync } from 'fs'
+import { spawnSync } from 'child_process'
 import semver from 'semver'
-import {project} from '@tools/places'
+import { project } from '@tools/places'
 
 const mkfn = (file: string, pkgmgr: string) => () => {
   if (existsSync(path.resolve(project, file))) {
@@ -20,14 +20,14 @@ it('Not using npm', mkfn('package-lock.json', 'npm'))
 it('Not using yarn', mkfn('yarn.lock', 'yarn'))
 
 it('Using correct version of pnpm', () => {
-  const {stdout, stderr, status, error, signal} = spawnSync('pnpm', ['--version'], {encoding: 'utf8'})
+  const { stdout, stderr, status, error, signal } = spawnSync('pnpm', ['--version'], { encoding: 'utf8' })
 
   if (status || error) {
-    console.info({status, error, signal, stderr})
+    console.info({ status, error, signal, stderr })
     throw new Error('Failed to run "pnpm --version"')
   }
 
-  const {engines} = require(path.resolve(project, 'package.json'))
+  const { engines } = require(path.resolve(project, 'package.json'))
   const range = engines && engines.pnpm
 
   if (!range) {
