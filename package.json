@@ -15,6 +15,8 @@
     "@types/node": "^10.9.4"
   },
   "scripts": {
+    "standardjs": "bash scripts/standardjs.sh",
+    "standardjs:fix": "bash scripts/standardjs.sh --fix",
     "tslint": "bash scripts/tslint.sh",
     "tslint:fix": "bash scripts/tslint.sh --fix",
     "test": "bash scripts/test.sh",
