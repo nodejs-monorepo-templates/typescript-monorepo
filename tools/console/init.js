@@ -1,0 +1,11 @@
+'use strict'
+global.glob = require('glob')
+global.globPromise = require('glob-promise')
+global.places = require('@tools/places')
+console.info('INTERACTIVE NODEJS CONSOLE')
+console.info('==========================')
+console.info('')
+console.info('You can load TypeScript files using require function')
+console.info('You can load JSON5 files using require function')
+console.info(`Use "require('<package-name>')" to load "/packages/<package-name>"`)
+console.info()
