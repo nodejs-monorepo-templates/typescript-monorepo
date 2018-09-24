@@ -15,6 +15,7 @@
     "@types/node": "^10.9.4"
   },
   "scripts": {
+    "preloaded-node": "bash scripts/preloaded-node.sh",
     "standardjs": "bash scripts/standardjs.sh",
     "standardjs:fix": "bash scripts/standardjs.sh --fix",
     "tslint": "bash scripts/tslint.sh",
