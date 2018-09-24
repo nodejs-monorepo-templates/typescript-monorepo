@@ -5,7 +5,7 @@
   "bin": {
     "preloaded-node": "bin.js"
   },
-  "index": "index.js",
+  "main": "index.js",
   "dependencies": {
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3",
