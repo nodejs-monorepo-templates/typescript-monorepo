@@ -16,13 +16,8 @@ temp.*
 *.temp
 *.tern-project
 *.tern-project.json
-*.js
-*.d.ts
+*.map
 !jest.config.js
-!/tools/**/*.js
-!/tools/**/*.d.ts
-!/test/standardjs/*.test.js
-!/test/type-check/*.test.js
 
 # Lockfiles
 #   * Yarn's and NPM's are ignored for I use PNPM
