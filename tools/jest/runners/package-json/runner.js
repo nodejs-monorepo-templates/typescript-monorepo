@@ -95,7 +95,7 @@ function main ({ testPath }) {
               actualName !== name || !semver.satisfies(version, range)
 
             const message = () =>
-              `Expected ${name}@${range} (${field}) but received ${actualName}@${version} (node_modules)`
+              `Expecting ${name}@${range} (${field}) but received ${actualName}@${version} (node_modules)`
 
             pushif(condition, message)
           }
@@ -111,7 +111,7 @@ function main ({ testPath }) {
             const condition = expected !== received
 
             const message = () =>
-              `Expected ${name} ("${range}") to be at "${expected}" but received "${received}" instead`
+              `Expecting ${name} ("${range}") to be at "${expected}" but received "${received}" instead`
 
             pushif(condition, message)
           }
@@ -122,7 +122,7 @@ function main ({ testPath }) {
             const condition = expected !== received
 
             const message = () =>
-              `Expected "${expected}" as protocol but received "${received}" instead`
+              `Expecting "${expected}" as protocol but received "${received}" instead`
 
             pushif(condition, message)
           }
@@ -200,7 +200,7 @@ function main ({ testPath }) {
 
     if (manifest.name !== containerBaseName) {
       reasons.push(
-        `Expected package's name to be "${containerBaseName}" but received "${manifest.name}" instead`
+        `Expecting package's name to be "${containerBaseName}" but received "${manifest.name}" instead`
       )
     }
 
@@ -239,7 +239,7 @@ function main ({ testPath }) {
     const expectedName = `@tools/${containerBaseName}`
     if (manifest.name !== expectedName) {
       reasons.push(
-        `Expected package's name to be "${expectedName}" but received "${manifest.name}" instead`
+        `Expecting package's name to be "${expectedName}" but received "${manifest.name}" instead`
       )
     }
 
