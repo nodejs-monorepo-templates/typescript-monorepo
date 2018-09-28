@@ -1,7 +1,8 @@
 dependencies:
+  hello-world: 'link:../../packages/hello-world'
   test-monorepo-hello-world: 'link:../../packages/test-monorepo-hello-world'
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  test-monorepo-hello-world: '*'
+  hello-world: 'file:../../packages/hello-world'

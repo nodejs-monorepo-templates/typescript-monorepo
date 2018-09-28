@@ -1,6 +1,6 @@
 {
   "private": true,
   "dependencies": {
-    "test-monorepo-hello-world": "*"
+    "hello-world": "file:../../packages/hello-world"
   }
 }

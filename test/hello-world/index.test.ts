@@ -1,4 +1,4 @@
-import fn from 'test-monorepo-hello-world'
+import fn from 'hello-world'
 
 it('matches snapshot', () => {
   expect(fn()).toMatchSnapshot()
