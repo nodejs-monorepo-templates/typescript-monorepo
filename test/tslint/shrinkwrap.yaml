@@ -1,8 +1,6 @@
 dependencies:
-  '@tools/places': 'link:../../tools/places'
   '@tools/test-spawn': 'link:../../tools/test-spawn'
   '@tools/tslint': 'link:../../tools/tslint'
-  '@tools/typescript': 'link:../../tools/typescript'
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3

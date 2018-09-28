@@ -12,7 +12,7 @@ packages:
     dependencies:
       '@types/events': 1.2.0
       '@types/minimatch': 3.0.3
-      '@types/node': 10.10.3
+      '@types/node': 10.11.1
     dev: false
     resolution:
       integrity: sha512-k1M3Y8Ge0bOkG7U5IZObIhkrzZHMpuFpd5RJK9Gh8ekq0EhiezLLqv2ow14ylTKqXTHSqM6AMySbWEHRo+7qdQ==
@@ -20,10 +20,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
-  /@types/node/10.10.3:
+  /@types/node/10.11.1:
     dev: false
     resolution:
-      integrity: sha512-dWk7F3b0m6uDLHero7tsnpAi9r2RGPQHGbb0/VCv7DPJRMFtk3RonY1/29vfJKnheRMBa7+uF+vunlg/mBGlxg==
+      integrity: sha512-Mash7eQv0HOs/fBVywUGR7NLSXyMl3XHkIo/kcWBgD9ppwPYOp8UDFxZfKy9hWeVHT2p+69vgXTPbPpoeqoM8w==
   /balanced-match/1.0.0:
     dev: false
     resolution:

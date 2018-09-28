@@ -1,11 +1,11 @@
 dependencies:
-  '@types/node': 10.9.4
+  '@types/node': 10.11.1
   tslib: 1.9.3
 packages:
-  /@types/node/10.9.4:
+  /@types/node/10.11.1:
     dev: false
     resolution:
-      integrity: sha512-fCHV45gS+m3hH17zgkgADUSi2RR1Vht6wOZ0jyHP8rjiQra9f+mIcgwPQHllmDocYOstIEbKlxbFDYlgrTPYqw==
+      integrity: sha512-Mash7eQv0HOs/fBVywUGR7NLSXyMl3XHkIo/kcWBgD9ppwPYOp8UDFxZfKy9hWeVHT2p+69vgXTPbPpoeqoM8w==
   /tslib/1.9.3:
     dev: false
     resolution:
