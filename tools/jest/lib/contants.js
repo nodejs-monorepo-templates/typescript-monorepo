@@ -1,5 +1,4 @@
 'use strict'
-const path = require('path')
 const places = require('@tools/places')
 
 const moduleFileExtensions = [
@@ -13,7 +12,7 @@ const moduleFileExtensions = [
 
 const coveragePathIgnorePatterns = [
   places.test,
-  path.resolve(places.tools, 'test-spawn')
+  places.tools
 ]
 
 module.exports = {
