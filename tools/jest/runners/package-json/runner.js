@@ -26,8 +26,11 @@ function main ({ testPath }) {
   const mustBePrivate = rule(() => !manifest.private, 'Must have field "private" set to true')
   const mustBePublic = rule(() => 'private' in manifest, 'Must not have field "private"')
 
+  const getDependencyPath = (name, ...args) =>
+    path.resolve(container, 'node_modules', name, ...args)
+
   const isPrivateDependency = name => {
-    const dependencyManifestPath = path.resolve(container, 'node_modules', name, 'package.json')
+    const dependencyManifestPath = getDependencyPath(name, 'package.json')
     const dependencyManifest = require(dependencyManifestPath)
     return dependencyManifest.private
   }
@@ -36,6 +39,14 @@ function main ({ testPath }) {
     ? {
       local () {},
       semver: {
+        ifLocal (name) {
+          const shortpath = getDependencyPath(name)
+          const realpath = fs.realpathSync(shortpath)
+          const dirname = path.dirname(realpath)
+          if ([places.packages, places.tools].includes(dirname)) {
+            reasons.push(`Expecting local package to use 'file:' but received semver: ${name}`)
+          }
+        },
         ifPrivate (name) {
           if (isPrivateDependency(name)) {
             reasons.push(`Private dependencies should use "file:" protocol: ${name}`)
@@ -48,6 +59,7 @@ function main ({ testPath }) {
         reasons.push(`Local dependencies should not be listed in "dependencies": ${name}`)
       },
       semver: {
+        ifLocal () {},
         ifPrivate (name) {
           if (isPrivateDependency(name)) {
             reasons.push(`Public package should not use private dependencies: ${name}`)
@@ -75,6 +87,7 @@ function main ({ testPath }) {
 
       switch (parsedVersion.type) {
         case depRange.Type.Semver: {
+          treatDependency.semver.ifLocal(name)
           treatDependency.semver.ifPrivate(name)
 
           {
