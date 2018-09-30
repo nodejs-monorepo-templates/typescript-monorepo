@@ -18,6 +18,8 @@ const dict = {
       for (const [subCmd, { describe }] of Object.entries(dict)) {
         console.info(`  - ${subCmd}: ${describe}`)
       }
+
+      console.info()
     }
   },
 
