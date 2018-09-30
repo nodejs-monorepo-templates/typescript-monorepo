@@ -27,18 +27,13 @@ const dict = {
 
   workspace: {
     describe: 'Invoke nested-workspace-helper',
-
-    act: mkspawn(
-      'node',
-      commands.nestedWorkspaceHelpder
-    )
+    act: mkspawn(commands.nestedWorkspaceHelpder)
   },
 
   mismatches: {
     describe: 'Check for mismatched versions',
 
     act: mkspawn(
-      'node',
       commands.nestedWorkspaceHelpder,
       'verman',
       'mismatches',
