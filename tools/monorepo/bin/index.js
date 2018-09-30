@@ -34,8 +34,16 @@ const dict = {
   }
 }
 
-for (const [subCmd, { act }] of Object.entries(dict)) {
-  if (cmd !== subCmd) continue
-  act()
-  break
+if (!cmd) {
+  dict.help.act()
+  process.exit(1)
+} else if (cmd in dict) {
+  for (const [subCmd, { act }] of Object.entries(dict)) {
+    if (cmd !== subCmd) continue
+    act()
+    break
+  }
+} else {
+  console.error(`[ERROR] Unknown command: ${cmd}`)
+  process.exit(2)
 }
