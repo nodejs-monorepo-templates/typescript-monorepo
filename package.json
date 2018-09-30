@@ -11,6 +11,7 @@
     "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo.git/issues"
   },
   "devDependencies": {
+    "toolcheck": "^0.0.3",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.9.4"
   },
