@@ -5,6 +5,8 @@ const places = require('@tools/places')
 const { commands } = require('../index')
 const [cmd, ...argv] = process.argv.slice(2)
 
+const mkspawn = (...args) => () => spawnSync('node', ...args, ...argv).exit()
+
 const dict = {
   help: {
     describe: 'Print usage',
@@ -26,25 +28,21 @@ const dict = {
   workspace: {
     describe: 'Invoke nested-workspace-helper',
 
-    act: spawnSync.bind(
-      null,
+    act: mkspawn(
       'node',
-      commands.nestedWorkspaceHelpder,
-      ...argv
+      commands.nestedWorkspaceHelpder
     )
   },
 
   mismatches: {
     describe: 'Check for mismatched versions',
 
-    act: spawnSync.bind(
-      null,
+    act: mkspawn(
       'node',
       commands.nestedWorkspaceHelpder,
       'verman',
       'mismatches',
-      places.packages,
-      ...argv
+      places.packages
     )
   }
 }
