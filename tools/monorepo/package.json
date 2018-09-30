@@ -1,0 +1,10 @@
+{
+  "name": "@tools/monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "nested-workspace-helper": "^0.2.6",
+    "exec-inline": "^0.0.1",
+    "@tools/places": "file:../places"
+  }
+}
