@@ -6,6 +6,14 @@ const { commands } = require('../index')
 const [cmd, ...argv] = process.argv.slice(2)
 
 switch (cmd) {
+  case 'help':
+  case '?':
+    console.info('Usage:')
+    console.info('  $ monorepo <command> [args]')
+    console.info()
+    console.info('Commands:', ['help', 'mismatches'])
+    break
+
   case 'mismatches':
     spawnSync(
       commands.nestedWorkspaceHelpder,
@@ -14,8 +22,8 @@ switch (cmd) {
       places.project,
       ...argv
     )
-
     break
+
   default:
     console.error(`[ERROR] Unknown command ${cmd}`)
     process.exit(-1)
