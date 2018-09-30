@@ -43,7 +43,7 @@ const dict = {
       commands.nestedWorkspaceHelpder,
       'verman',
       'mismatches',
-      places.project,
+      places.packages,
       ...argv
     )
   }
