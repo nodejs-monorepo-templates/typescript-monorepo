@@ -5,26 +5,33 @@ const places = require('@tools/places')
 const { commands } = require('../index')
 const [cmd, ...argv] = process.argv.slice(2)
 
-switch (cmd) {
-  case 'help':
-  case '?':
-    console.info('Usage:')
-    console.info('  $ monorepo <command> [args]')
-    console.info()
-    console.info('Commands:', ['help', 'mismatches'])
-    break
+const dict = {
+  help: {
+    describe: 'Print usage',
 
-  case 'mismatches':
-    spawnSync(
+    act () {
+      console.info('Usage:')
+      console.info('  $ monorepo <command> [args]')
+      console.info()
+      console.info('Commands:', ['help', 'mismatches'])
+    }
+  },
+
+  mismatches: {
+    describe: 'Check for mismatched versions',
+
+    act: spawnSync.bind(null, [
       commands.nestedWorkspaceHelpder,
       'verman',
       'mismatches',
       places.project,
       ...argv
-    )
-    break
+    ])
+  }
+}
 
-  default:
-    console.error(`[ERROR] Unknown command ${cmd}`)
-    process.exit(-1)
+for (const [subCmd, { act }] of Object.entries(dict)) {
+  if (cmd !== subCmd) continue
+  act()
+  break
 }
