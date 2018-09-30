@@ -18,6 +18,7 @@
   "scripts": {
     "console": "node tools/console/bin.js",
     "preloaded-node": "node tools/preloaded-node/bin.js",
+    "monorepo": "node tools/monorepo/bin",
     "standardjs": "bash scripts/standardjs.sh",
     "standardjs:fix": "bash scripts/standardjs.sh --fix",
     "tslint": "bash scripts/tslint.sh",
