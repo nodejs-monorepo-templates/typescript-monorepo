@@ -26,22 +26,26 @@ const dict = {
   workspace: {
     describe: 'Invoke nested-workspace-helper',
 
-    act: spawnSync.bind(null, [
+    act: spawnSync.bind(
+      null,
+      'node',
       commands.nestedWorkspaceHelpder,
       ...argv
-    ])
+    )
   },
 
   mismatches: {
     describe: 'Check for mismatched versions',
 
-    act: spawnSync.bind(null, [
+    act: spawnSync.bind(
+      null,
+      'node',
       commands.nestedWorkspaceHelpder,
       'verman',
       'mismatches',
       places.project,
       ...argv
-    ])
+    )
   }
 }
 
