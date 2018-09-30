@@ -13,7 +13,11 @@ const dict = {
       console.info('Usage:')
       console.info('  $ monorepo <command> [args]')
       console.info()
-      console.info('Commands:', ['help', 'mismatches'])
+      console.info('Commands:')
+
+      for (const [subCmd, { describe }] of Object.entries(dict)) {
+        console.info(`  - ${subCmd}: ${describe}`)
+      }
     }
   },
 
