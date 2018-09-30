@@ -21,6 +21,15 @@ const dict = {
     }
   },
 
+  workspace: {
+    describe: 'Invoke nested-workspace-helper',
+
+    act: spawnSync.bind(null, [
+      commands.nestedWorkspaceHelpder,
+      ...argv
+    ])
+  },
+
   mismatches: {
     describe: 'Check for mismatched versions',
 
