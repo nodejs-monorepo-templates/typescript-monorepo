@@ -3,7 +3,7 @@ dependencies:
   chalk: 2.4.1
   exec-inline: 0.0.1
   nested-workspace-helper: 0.2.6
-  number-enum: 2.2.0
+  number-enum: 2.2.4
 packages:
   /@babel/runtime/7.1.2:
     dependencies:
@@ -398,17 +398,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8=
-  /number-enum/2.2.0:
+  /number-enum/2.2.4:
     dependencies:
       iter-tools: 6.1.4
-      parallel-iterable: 3.0.1
     dev: false
     engines:
       node: '>= 8.9.0'
-    peerDependencies:
-      typescript: ^3.0.3
     resolution:
-      integrity: sha512-411ztt00Qgt76oMswE2iKWDdOZuH5s2KyywkZajdQCa08onAAgTtQ3+qwV1+226OSLBeIl9j+jJWRjHtkxF/cw==
+      integrity: sha512-zMhbUScpBuIuorPXW2pbEz24Y1YcO48QUvu1vAGZFQC9fg71maCuT+rgfK3NRDjG6KbHTnz9dVSq96P8wD+trw==
   /number-is-nan/1.0.1:
     dev: false
     engines:
@@ -466,15 +463,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-hMp0onDKIajHfIkdRk3P4CdCmErkYAxxDtP3Wx/4nZ3aGlau2VKh3mZpcuFkH27WQkL/3WBCPOktzA9ZOAnMQQ==
-  /parallel-iterable/3.0.1:
-    dependencies:
-      x-iterable-base: 4.0.1
-      x-iterable-utils: 1.0.1
-    dev: false
-    engines:
-      node: '>= 6.0.0'
-    resolution:
-      integrity: sha1-mkAzvj/quPlFGdqQZyP2CcqHrRA=
   /path-exists/3.0.0:
     dev: false
     engines:
@@ -532,18 +520,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
-  /simple-class-utils/0.3.0:
-    dev: false
-    engines:
-      node: '>=6.0.0'
-    resolution:
-      integrity: sha1-bUYj9QgTcViZL+Puxcbz8Q8N3rs=
-  /simple-function-utils/2.3.0:
-    dev: false
-    engines:
-      node: '>=5.0.0'
-    resolution:
-      integrity: sha1-3VdNdPXohkiU1JYlnh9JO/9yUTQ=
   /sprintf-js/1.0.3:
     dev: false
     resolution:
@@ -650,23 +626,6 @@ packages:
     resolution:
       integrity: sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=
       tarball: 'http://registry.npmjs.org/wrap-ansi/-/wrap-ansi-2.1.0.tgz'
-  /x-iterable-base/4.0.1:
-    dependencies:
-      simple-class-utils: 0.3.0
-      simple-function-utils: 2.3.0
-    dev: false
-    engines:
-      node: '>=6.0.0'
-    resolution:
-      integrity: sha512-xizoCftGtsDTKtu3xd5VMziVkJZ8TsQs/zKcfZsXILB1tcNbwZeGjCqW/2BXcxK9gkMwyoSa4qKRjj21KOxfgA==
-  /x-iterable-utils/1.0.1:
-    dependencies:
-      x-iterable-base: 4.0.1
-    dev: false
-    engines:
-      node: '>= 6.0.0'
-    resolution:
-      integrity: sha1-xlhPMy/7zeHpJFt7XcBtLps+nMY=
   /xregexp/4.0.0:
     dev: false
     resolution:
@@ -706,4 +665,4 @@ specifiers:
   chalk: ^2.4.1
   exec-inline: ^0.0.1
   nested-workspace-helper: ^0.2.6
-  number-enum: ^2.2.0
+  number-enum: ^2.2.4
