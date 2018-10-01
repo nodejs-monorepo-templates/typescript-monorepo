@@ -19,13 +19,13 @@ const dict = {
       console.info()
       console.info('Commands:')
       for (const [subCmd, { describe }] of Object.entries(dict)) {
-        console.info(`  - ${subCmd}: ${describe}`)
+        console.info(`  ${subCmd}: ${describe}`)
       }
 
       console.info()
       console.info('Exit Status Codes:')
       for (const [name, code] of Object.entries(ExitStatusCode)) {
-        console.info(`  - ${code}: ${name}`)
+        console.info(`  ${code}: ${name}`)
       }
 
       console.info()
