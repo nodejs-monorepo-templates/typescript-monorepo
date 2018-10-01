@@ -2,7 +2,8 @@
 const process = require('process')
 const { spawnSync } = require('exec-inline')
 const places = require('@tools/places')
-const { commands } = require('../index')
+const { commands, enums } = require('../index')
+const { ExitStatusCode } = enums
 const [cmd, ...argv] = process.argv.slice(2)
 
 const mkspawn = (...args) => () => spawnSync('node', ...args, ...argv).exit()
@@ -44,10 +45,10 @@ const dict = {
 
 if (!cmd) {
   dict.help.act()
-  process.exit(1)
+  process.exit(ExitStatusCode.InsufficientArguments)
 } else if (cmd in dict) {
   dict[cmd].act()
 } else {
   console.error(`[ERROR] Unknown command: ${cmd}`)
-  process.exit(2)
+  process.exit(ExitStatusCode.UnknownCommand)
 }

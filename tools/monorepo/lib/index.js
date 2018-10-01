@@ -1,2 +1,3 @@
 const commands = require('./commands')
-module.exports = { commands }
+const enums = require('./enums')
+module.exports = { commands, enums }
