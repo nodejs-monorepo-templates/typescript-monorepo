@@ -2,3 +2,4 @@ names:
   - git
   - node
   - bash # for scripts
+  - pnpm # for installing packages and managing monorepo
