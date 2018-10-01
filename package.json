@@ -16,6 +16,7 @@
     "@types/node": "^10.9.4"
   },
   "scripts": {
+    "mismatches": "bash scripts/mismatches.sh",
     "console": "node tools/console/bin.js",
     "preloaded-node": "node tools/preloaded-node/bin.js",
     "monorepo": "node tools/monorepo/bin",
@@ -25,7 +26,8 @@
     "tslint:fix": "bash scripts/tslint.sh --fix",
     "test": "bash scripts/test.sh",
     "build": "bash scripts/build.sh",
-    "clean-typescript-build": "node tools/clean-typescript-build/bin.js"
+    "clean-typescript-build": "node tools/clean-typescript-build/bin.js",
+    "prepublishOnly": "bash scripts/prepublish.sh"
   },
   "standard": {
     "env": {
