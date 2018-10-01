@@ -17,7 +17,8 @@
   },
   "scripts": {
     "mismatches": "bash scripts/mismatches.sh",
-    "console": "node tools/console/bin.js",
+    "repl": "node tools/repl/bin.js",
+    "console": "node tools/repl/bin.js",
     "preloaded-node": "node tools/preloaded-node/bin.js",
     "monorepo": "node tools/monorepo/bin",
     "standardjs": "bash scripts/standardjs.sh",
