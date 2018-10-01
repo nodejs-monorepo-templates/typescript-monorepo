@@ -1,5 +1,6 @@
 dependencies:
   '@tools/places': 'link:../places'
+  chalk: 2.4.1
   exec-inline: 0.0.1
   nested-workspace-helper: 0.2.6
   number-enum: 2.2.0
@@ -702,6 +703,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
+  chalk: ^2.4.1
   exec-inline: ^0.0.1
   nested-workspace-helper: ^0.2.6
   number-enum: ^2.2.0

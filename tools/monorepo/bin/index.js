@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 const process = require('process')
+const chalk = require('chalk').default
 const { spawnSync } = require('exec-inline')
 const places = require('@tools/places')
 const { commands, enums } = require('../index')
@@ -13,19 +14,20 @@ const dict = {
     describe: 'Print usage',
 
     act () {
-      console.info('Usage:')
+      const title = text => console.info('\n' + chalk.bold(text))
+      const member = (key, value) => console.info(`  ${key}: ${chalk.dim(value)}`)
+
+      title('Usage:')
       console.info('  $ monorepo <command> [args]')
 
-      console.info()
-      console.info('Commands:')
+      title('Commands:')
       for (const [subCmd, { describe }] of Object.entries(dict)) {
-        console.info(`  ${subCmd}: ${describe}`)
+        member(subCmd, describe)
       }
 
-      console.info()
-      console.info('Exit Status Codes:')
+      title('Exit Status Codes:')
       for (const [name, code] of Object.entries(ExitStatusCode)) {
-        console.info(`  ${code}: ${name}`)
+        member(code, name)
       }
 
       console.info()
@@ -49,12 +51,15 @@ const dict = {
   }
 }
 
+const printError = message =>
+  console.error(chalk.red('[ERROR]'), message)
+
 if (!cmd) {
   dict.help.act()
   process.exit(ExitStatusCode.InsufficientArguments)
 } else if (cmd in dict) {
   dict[cmd].act()
 } else {
-  console.error(`[ERROR] Unknown command: ${cmd}`)
+  printError(`Unknown command: ${cmd}`)
   process.exit(ExitStatusCode.UnknownCommand)
 }
