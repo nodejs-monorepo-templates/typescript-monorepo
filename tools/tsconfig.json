@@ -1,5 +1,5 @@
 {
-  "extends": "./typescript/tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "noEmit": true
   }
