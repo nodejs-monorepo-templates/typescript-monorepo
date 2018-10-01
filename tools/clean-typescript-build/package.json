@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "clean-typescript-build": "^0.0.4",
+    "exec-inline": "^0.0.1",
     "@tools/places": "file:../places"
   }
 }

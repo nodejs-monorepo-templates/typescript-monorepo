@@ -1,7 +1,5 @@
 #! /usr/bin/env node
-const { spawnSync } = require('child_process')
-const process = require('process')
+const suffix = require('process').argv.slice(2)
+const { spawnSync } = require('exec-inline')
 const prefix = require('./index').argv
-const suffix = process.argv.slice(2)
-const { status } = spawnSync('node', [...prefix, ...suffix], { stdio: 'inherit' })
-process.exit(status)
+spawnSync('node', ...prefix, ...suffix)

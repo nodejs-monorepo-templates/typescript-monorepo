@@ -1,9 +1,14 @@
 dependencies:
   '@tools/places': 'link:../places'
+  exec-inline: 0.0.1
   tslint: 5.11.0
   tslint-config-standard: 8.0.1
   typescript: 3.1.1
 packages:
+  /@types/node/10.11.3:
+    dev: false
+    resolution:
+      integrity: sha512-3AvcEJAh9EMatxs+OxAlvAEs7OTy6AG94mcH1iqyVDwVVndekLxzwkWQ/Z4SDbY6GO2oyUXyWW8tQ4rENSSQVQ==
   /ansi-regex/2.1.1:
     dev: false
     engines:
@@ -136,6 +141,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs=
+  /exec-inline/0.0.1:
+    dependencies:
+      '@types/node': 10.11.3
+      tslib: 1.9.3
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-81L/2VOB8DyHW/nrdHJ2qVb9HH4UgX0BdCDWzmjWgWnXwM13wErSNDOWsb13wXpzU+pfvAw/slqIJ8CKD9ETng==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -332,6 +346,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
+  exec-inline: ^0.0.1
   tslint: ^5.11.0
   tslint-config-standard: ^8.0.1
   typescript: ^3.0.3
