@@ -56,6 +56,7 @@ const printError = message =>
 
 if (!cmd) {
   dict.help.act()
+  printError('Insufficient Arguments')
   process.exit(ExitStatusCode.InsufficientArguments)
 } else if (cmd in dict) {
   dict[cmd].act()
