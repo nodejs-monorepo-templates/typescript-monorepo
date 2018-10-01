@@ -52,7 +52,7 @@ const dict = {
 }
 
 const printError = message =>
-  console.error(chalk.red('[ERROR]'), message)
+  console.error(chalk.red('[ERROR]'), message, '\n')
 
 if (!cmd) {
   dict.help.act()
