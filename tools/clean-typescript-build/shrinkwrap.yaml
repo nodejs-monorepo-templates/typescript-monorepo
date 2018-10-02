@@ -1,18 +1,14 @@
 dependencies:
   '@tools/places': 'link:../places'
-  clean-typescript-build: 0.0.4
+  clean-typescript-build: 0.0.7
   exec-inline: 0.0.1
 packages:
   /@types/fs-extra/5.0.4:
     dependencies:
-      '@types/node': 10.11.1
+      '@types/node': 10.11.3
     dev: false
     resolution:
       integrity: sha512-DsknoBvD8s+RFfSGjmERJ7ZOP1HI0UZRA3FSI+Zakhrc/Gy26YQsLI+m5V5DHxroHRJqCDLKJp7Hixn8zyaF7g==
-  /@types/node/10.11.1:
-    dev: false
-    resolution:
-      integrity: sha512-Mash7eQv0HOs/fBVywUGR7NLSXyMl3XHkIo/kcWBgD9ppwPYOp8UDFxZfKy9hWeVHT2p+69vgXTPbPpoeqoM8w==
   /@types/node/10.11.3:
     dev: false
     resolution:
@@ -21,10 +17,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-6vkbUF1cg9CIaeZiSvbk6e25rOBbXBXixiZiV4Eai4WgwrmI3wBaH/TKE0tp9JEfzQFrv3eOoI0EjdBJaUfnIQ==
-  /@types/yargs/11.1.2:
+  /@types/yargs/12.0.1:
     dev: false
     resolution:
-      integrity: sha512-zG61PAp2OcoIBjRV44wftJj6AJgzJrOc32LCYOBqk9bdgcdzK5DCJHV9QZJ60+Fu+fOn79g8Ks3Gixm4CfkZ+w==
+      integrity: sha512-UVjo2oH79aRNcsDlFlnQ/iJ67Jd7j6uSg7jUJP/RZ/nUjAh5ElmnwlD5K/6eGgETJUgCHkiWn91B8JjXQ6ubAw==
   /ansi-regex/2.1.1:
     dev: false
     engines:
@@ -43,14 +39,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
-  /clean-typescript-build/0.0.4:
+  /clean-typescript-build/0.0.7:
     dependencies:
       '@types/fs-extra': 5.0.4
-      '@types/node': 10.11.1
+      '@types/node': 10.11.3
       '@types/ramda': 0.25.38
-      '@types/yargs': 11.1.2
+      '@types/yargs': 12.0.1
       fs-extra: 7.0.0
-      fs-tree-utils: 0.1.5
+      fs-tree-utils: 0.1.6
       ramda: 0.25.0
       tslib: 1.9.3
       yargs: 12.0.2
@@ -59,7 +55,7 @@ packages:
       node: ^8.9.0
     hasBin: true
     resolution:
-      integrity: sha512-F0BJVpQ0lHBoCbpL3PSKLnylmQOZulv25UB5ZkpCd5ZXetUA1NTqqjolOscVZ4O5N1DparNBOV7eo+JNXB6I5g==
+      integrity: sha512-fGl3WMKGZcOZr/3ZFD1p8aBqI/JUaGfTcLZPHWpq73K0HGeHP+zxjWNotcX1Hh2/h5CSY2+v/MorIg8ynqSTuA==
   /cliui/4.1.0:
     dependencies:
       string-width: 2.1.1
@@ -135,20 +131,20 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-EglNDLRpmaTWiD/qraZn6HREAEAHJcJOmxNEYwq6xeMKnVMAy3GUcFB+wXt2C6k4CNvB/mP1y/U3dzvKKj5OtQ==
-  /fs-tree-utils/0.1.5:
+  /fs-tree-utils/0.1.6:
     dependencies:
       '@types/fs-extra': 5.0.4
-      '@types/node': 10.11.1
+      '@types/node': 10.11.3
       '@types/ramda': 0.25.38
       fs-extra: 7.0.0
-      monorepo-shared-assets: 0.0.16
+      monorepo-shared-assets: 0.0.17
       ramda: 0.25.0
       tslib: 1.9.3
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-jmGuV0qrbqcTYUiYBnzA8emCGxf1VLbHksf4plNNRfl+LJOxHSmu3YZro486Dn+vzzCR3GlRzzWv06qncWl/Nw==
+      integrity: sha512-qsOeiFlr2zfQXkLziZh5FLxRPHmUm3Cfwj4cTjVVVij1gtHGkS11/6nxGA1l7ndvb2d+iKiQartR0cewodT5zg==
   /get-caller-file/1.0.3:
     dev: false
     resolution:
@@ -248,9 +244,9 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
-  /monorepo-shared-assets/0.0.16:
+  /monorepo-shared-assets/0.0.17:
     dependencies:
-      '@types/node': 10.11.1
+      '@types/node': 10.11.3
       '@types/ramda': 0.25.38
       immutable: 3.8.2
       ramda: 0.25.0
@@ -259,7 +255,7 @@ packages:
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-TsF/r4j3iC3siZv27+m57ydDrw6meuXSQ+Rc8CWcvYRXlYQfrOEK+6No3pAhXlyqR6k7OVC+L+pJyW+OU+hPOg==
+      integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
   /nice-try/1.0.5:
     dev: false
     resolution:
@@ -409,6 +405,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
+      tarball: 'http://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz'
   /strip-ansi/4.0.0:
     dependencies:
       ansi-regex: 3.0.0
@@ -490,5 +487,5 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
-  clean-typescript-build: ^0.0.4
+  clean-typescript-build: ^0.0.7
   exec-inline: ^0.0.1
