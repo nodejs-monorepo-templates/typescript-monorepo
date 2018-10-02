@@ -3127,13 +3127,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-hxSPZbRZvSDuOvADntOElzJpenIR7wXJkuoUcUtS0erbgt2fgeaoPIYretfKpslMhfFDY4k0MZ2F5CUzhBsSvQ==
-  /spdx-exceptions/2.2.0:
+  /spdx-exceptions/2.1.0:
     dev: false
     resolution:
-      integrity: sha512-2XQACfElKi9SlVb1CYadKDXvoajPgBVPn/gOQLrTvHdElaVhr7ZEbqJaRnJLVNeaI4cMEAgVCeBMKF6MWRDCRA==
+      integrity: sha512-4K1NsmrlCU1JJgUrtgEeTVyfx8VaYea9J9LvARxhbHtVtohPs/gFGG5yy49beySjlIMhhXZ4QqujIZEfS4l6Cg==
   /spdx-expression-parse/3.0.0:
     dependencies:
-      spdx-exceptions: 2.2.0
+      spdx-exceptions: 2.1.0
       spdx-license-ids: 3.0.1
     dev: false
     resolution:
@@ -3639,15 +3639,15 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
-  babel-jest: ^23.4.2
+  babel-jest: ^23.6.0
   convenient-typescript-utilities: ^0.0.2
-  create-jest-runner: ^0.4.0
+  create-jest-runner: ^0.4.1
   fast-deep-equal: ^2.0.1
-  jest: ^23.5.0
+  jest: ^23.6.0
   just-try: ^2.1.0
   parse-dependency-range: ^0.0.2
   semver: ^5.5.1
-  ts-jest: ^23.1.4
+  ts-jest: ^23.10.3
   tslib: ^1.9.3
-  typescript: ^3.0.3
+  typescript: ^3.1.1
   yaml-jest: ^1.0.5

@@ -2,7 +2,7 @@ dependencies:
   '@tools/typescript': 'link:../typescript'
   '@types/json5': 0.0.30
   '@types/node': 10.11.3
-  json5: 2.0.1
+  json5: 2.1.0
   ts-node: 7.0.1
   tslib: 1.9.3
   typescript: 3.1.1
@@ -31,7 +31,7 @@ packages:
       node: '>=0.3.1'
     resolution:
       integrity: sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA==
-  /json5/2.0.1:
+  /json5/2.1.0:
     dependencies:
       minimist: 1.2.0
     dev: false
@@ -39,7 +39,7 @@ packages:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-t6N/86QDIRYvOL259jR5c5TbtMnekl2Ib314mGeMh37zAwjgbWHieqijPH7pWaogmJq1F2I4Sphg19U1s+ZnXQ==
+      integrity: sha512-8Mh9h6xViijj36g7Dxi+Y4S6hNGV96vcJZr/SrlHh1LR/pEn/8j/+qIBbs44YKl69Lrfctp4QD+AdWLTMqEZAQ==
   /make-error/1.3.5:
     dev: false
     resolution:
@@ -115,7 +115,7 @@ specifiers:
   '@tools/typescript': 'file:../typescript'
   '@types/json5': ^0.0.30
   '@types/node': ^10.11.3
-  json5: ^2.0.1
+  json5: ^2.1.0
   ts-node: ^7.0.1
   tslib: ^1.9.3
-  typescript: ^3.0.3
+  typescript: ^3.1.1

@@ -1681,10 +1681,10 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@types/jest': ^23.3.1
+  '@types/jest': ^23.3.2
   '@types/node': ^10.11.3
   standard: ^12.0.1
   toolcheck: ^0.0.5
   tslint: ^5.11.0
   tslint-config-standard: ^8.0.1
-  typescript: ^3.0.3
+  typescript: ^3.1.1

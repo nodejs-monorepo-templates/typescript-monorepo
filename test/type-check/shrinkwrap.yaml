@@ -14,4 +14,4 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/test-spawn': 'file:../../tools/test-spawn'
-  typescript: ^3.0.3
+  typescript: ^3.1.1
