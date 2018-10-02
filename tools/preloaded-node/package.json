@@ -13,7 +13,7 @@
     "tslib": "^1.9.3",
     "@tools/typescript": "file:../typescript",
     "@types/json5": "^0.0.30",
-    "@types/node": "^10.9.4"
+    "@types/node": "^10.11.3"
   },
   "engines": {
     "node": ">= 8.9.0"

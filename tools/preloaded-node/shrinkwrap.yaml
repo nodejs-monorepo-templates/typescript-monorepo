@@ -1,7 +1,7 @@
 dependencies:
   '@tools/typescript': 'link:../typescript'
   '@types/json5': 0.0.30
-  '@types/node': 10.11.1
+  '@types/node': 10.11.3
   json5: 2.0.1
   ts-node: 7.0.1
   tslib: 1.9.3
@@ -11,10 +11,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==
-  /@types/node/10.11.1:
+  /@types/node/10.11.3:
     dev: false
     resolution:
-      integrity: sha512-Mash7eQv0HOs/fBVywUGR7NLSXyMl3XHkIo/kcWBgD9ppwPYOp8UDFxZfKy9hWeVHT2p+69vgXTPbPpoeqoM8w==
+      integrity: sha512-3AvcEJAh9EMatxs+OxAlvAEs7OTy6AG94mcH1iqyVDwVVndekLxzwkWQ/Z4SDbY6GO2oyUXyWW8tQ4rENSSQVQ==
   /arrify/1.0.1:
     dev: false
     engines:
@@ -114,7 +114,7 @@ shrinkwrapVersion: 3
 specifiers:
   '@tools/typescript': 'file:../typescript'
   '@types/json5': ^0.0.30
-  '@types/node': ^10.9.4
+  '@types/node': ^10.11.3
   json5: ^2.0.1
   ts-node: ^7.0.1
   tslib: ^1.9.3
