@@ -14,8 +14,8 @@
     "ts-jest": "^23.1.4",
     "typescript": "^3.0.3",
     "tslib": "^1.9.3",
-    "parse-dependency-range": "^0.0.1",
-    "convenient-typescript-utilities": "^0.0.1",
+    "parse-dependency-range": "^0.0.2",
+    "convenient-typescript-utilities": "^0.0.2",
     "@tools/places": "file:../places"
   }
 }
