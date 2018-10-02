@@ -5,7 +5,7 @@ dependencies:
   create-jest-runner: 0.4.1
   fast-deep-equal: 2.0.1
   jest: 23.6.0
-  parse-dependency-range: 0.0.1
+  parse-dependency-range: 0.0.2
   semver: 5.5.1
   ts-jest: 23.10.3
   tslib: 1.9.3
@@ -628,15 +628,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-  /convenient-typescript-utilities/0.0.1:
-    dependencies:
-      '@types/node': 10.11.3
-      tslib: 1.9.3
-    dev: false
-    engines:
-      node: '>= 8.9.0'
-    resolution:
-      integrity: sha512-MnpMgVHF5IZPGOdYUVvD72iwLAi7f1Sv5LlwUuusp9IvjvXwWnQi8lRAja6HOLlQlPpMw2niz2av9EBVHbplEQ==
   /convenient-typescript-utilities/0.0.2:
     dependencies:
       '@types/node': 10.11.3
@@ -2567,18 +2558,18 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
-  /parse-dependency-range/0.0.1:
+  /parse-dependency-range/0.0.2:
     dependencies:
       '@types/node': 10.11.3
       '@types/semver': 5.5.0
-      convenient-typescript-utilities: 0.0.1
+      convenient-typescript-utilities: 0.0.2
       semver: 5.5.1
       tslib: 1.9.3
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-j8oKcpTT8P08lto3LzcMJxQ8izXCC5tzf3vAEEtediN1u+VEojBbvdShBNQSOXEivmTC80XVj/RDdSyXb/dJ0w==
+      integrity: sha512-h8+WOtdk86kSkw1Zi67NZfY9TdRFfO/1/uUVorq8XcAwIQRAMlFEwJZrLNgQgz0Useh3Q80bbzb/ymK3KLmw0w==
   /parse-glob/3.0.4:
     dependencies:
       glob-base: 0.3.0
@@ -3646,7 +3637,7 @@ specifiers:
   create-jest-runner: ^0.4.0
   fast-deep-equal: ^2.0.1
   jest: ^23.5.0
-  parse-dependency-range: ^0.0.1
+  parse-dependency-range: ^0.0.2
   semver: ^5.5.1
   ts-jest: ^23.1.4
   tslib: ^1.9.3
