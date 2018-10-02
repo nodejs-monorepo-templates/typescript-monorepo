@@ -5,6 +5,7 @@ dependencies:
   create-jest-runner: 0.4.1
   fast-deep-equal: 2.0.1
   jest: 23.6.0
+  just-try: 2.0.1
   parse-dependency-range: 0.0.2
   semver: 5.5.1
   ts-jest: 23.10.3
@@ -2090,6 +2091,12 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-MT5mvB5cwG5Di8G3SZwuXFastqI=
+  /just-try/2.0.1:
+    dev: false
+    engines:
+      node: '>= 6.0.0'
+    resolution:
+      integrity: sha1-xASxtDnL0Ut25El6LC8UVSI4qWw=
   /kind-of/3.2.2:
     dependencies:
       is-buffer: 1.1.6
@@ -3637,6 +3644,7 @@ specifiers:
   create-jest-runner: ^0.4.0
   fast-deep-equal: ^2.0.1
   jest: ^23.5.0
+  just-try: ^2.0.1
   parse-dependency-range: ^0.0.2
   semver: ^5.5.1
   ts-jest: ^23.1.4
