@@ -17,7 +17,7 @@
     "typescript": "^3.0.3",
     "toolcheck": "^0.0.5",
     "@types/jest": "^23.3.1",
-    "@types/node": "^10.9.4"
+    "@types/node": "^10.11.3"
   },
   "scripts": {
     "mismatches": "bash scripts/mismatches.sh",
