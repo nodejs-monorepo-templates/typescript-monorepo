@@ -96,7 +96,7 @@ function main ({ testPath }) {
         if (name in globalDependencies) {
           const expectedRange = globalDependencies[name]
           if (expectedRange && range !== expectedRange) {
-            reasons.push(`Expecting ${name} to be ${expectedRange} but received ${range}`)
+            reasons.push(`Expecting "${name}": "${expectedRange}" but received "${name}": ${range}"`)
           }
 
           justTry(() => {
@@ -104,7 +104,7 @@ function main ({ testPath }) {
               path.resolve(places.project, 'node_modules', name, 'package.json')
             ).version
             if (version !== expectedVersion) {
-              reasons.push(`Expecting ${name} to be ${expectedVersion} but received ${version}`)
+              reasons.push(`Expecting ${name}@${expectedVersion} (${field}) but received ${name}@${version} (global)`)
             }
           })
         }
