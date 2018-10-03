@@ -3,7 +3,7 @@ dependencies:
   chalk: 2.4.1
   exec-inline: 0.0.1
   nested-workspace-helper: 0.2.6
-  number-enum: 2.2.4
+  number-enum: 3.0.0
 packages:
   /@babel/runtime/7.1.2:
     dependencies:
@@ -219,6 +219,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=
+      tarball: 'http://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz'
   /graceful-fs/4.1.11:
     dev: false
     engines:
@@ -398,14 +399,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8=
-  /number-enum/2.2.4:
+  /number-enum/3.0.0:
     dependencies:
       iter-tools: 6.1.4
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-zMhbUScpBuIuorPXW2pbEz24Y1YcO48QUvu1vAGZFQC9fg71maCuT+rgfK3NRDjG6KbHTnz9dVSq96P8wD+trw==
+      integrity: sha512-y1YQ+1EXdFajhhUzobNBOhnKDbX57VRfwpeUIVR3mfWQeGKR3aR252Djs0nBAu71bHb3lFYyVpMOzT8xcZgB2w==
   /number-is-nan/1.0.1:
     dev: false
     engines:
@@ -665,4 +666,4 @@ specifiers:
   chalk: ^2.4.1
   exec-inline: ^0.0.1
   nested-workspace-helper: ^0.2.6
-  number-enum: ^2.2.4
+  number-enum: ^3.0.0
