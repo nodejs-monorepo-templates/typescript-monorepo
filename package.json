@@ -31,8 +31,10 @@
     "tslint:fix": "bash scripts/tslint.sh --fix",
     "test": "bash scripts/test.sh",
     "build": "bash scripts/build.sh",
+    "clean": "bash scripts/clean.sh",
     "clean-typescript-build": "node tools/clean-typescript-build/bin.js",
-    "prepublishOnly": "bash scripts/prepublish.sh"
+    "prepublishOnly": "bash scripts/prepublish.sh",
+    "postpublish": "bash scripts/postpublish.sh"
   },
   "standard": {
     "env": {
