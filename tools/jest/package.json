@@ -15,7 +15,7 @@
     "typescript": "^3.1.1",
     "tslib": "^1.9.3",
     "parse-dependency-range": "^0.0.2",
-    "convenient-typescript-utilities": "^0.0.2",
+    "convenient-typescript-utilities": "^0.0.3",
     "just-try": "^2.1.0",
     "@tools/places": "file:../places"
   }
