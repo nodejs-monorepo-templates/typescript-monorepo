@@ -7,7 +7,8 @@ const { commands, enums } = require('../index')
 const { ExitStatusCode } = enums
 const [cmd, ...argv] = process.argv.slice(2)
 
-const mkspawn = (...args) => () => spawnSync('node', ...args, ...argv).exit()
+const mkspawn = (...args) => () => spawnSync('node', ...args, ...argv).exit.onerror()
+const callCmd = (cmd, ...args) => spawnSync('node', __filename, cmd, ...args)
 
 const dict = {
   help: {
@@ -48,6 +49,67 @@ const dict = {
       'mismatches',
       places.packages
     )
+  },
+
+  prepublish: {
+    describe: 'Commands that run before publishing packages',
+
+    act () {
+      callCmd('createIgnoreFiles')
+      callCmd('mismatches')
+      callCmd('test')
+      callCmd('build')
+    }
+  },
+
+  publish: {
+    describe: 'Publish packages versions that have yet to publish',
+
+    act () {
+      callCmd('prepublish')
+
+      console.info('Publishing packages...')
+      spawnSync(
+        commands.nestedWorkspaceHelpder,
+        'publish',
+        places.packages,
+        ...argv
+      ).exit.onerror()
+
+      callCmd('postpublish')
+    }
+  },
+
+  postpublish: {
+    describe: 'Commands that run after publishing packages',
+
+    act () {
+      spawnSync('pnpm', 'run', 'clean')
+    }
+  },
+
+  createIgnoreFiles: {
+    describe: 'Create .npmignore files in every packages',
+
+    act () {
+      console.info('[TODO] Implement createIgnoreFiles')
+    }
+  },
+
+  test: {
+    describe: 'Run all tests in production mode',
+
+    act () {
+      spawnSync('pnpm', 'test', '--', '--ci').exit.onerror()
+    }
+  },
+
+  build: {
+    describe: 'Compile TypeScript',
+
+    act () {
+      spawnSync('pnpm', 'run', 'build').exit.onerror()
+    }
   }
 }
 
