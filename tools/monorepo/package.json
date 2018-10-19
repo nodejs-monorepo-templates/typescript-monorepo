@@ -6,7 +6,7 @@
     "chalk": "^2.4.1",
     "number-enum": "^3.0.0",
     "nested-workspace-helper": "^0.2.6",
-    "exec-inline": "^0.0.1",
+    "exec-inline": "^0.0.2",
     "@tools/places": "file:../places"
   }
 }
