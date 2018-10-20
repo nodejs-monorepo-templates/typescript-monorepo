@@ -1,0 +1,6 @@
+#! /usr/bin/env node
+require('exec-inline').spawnSync(
+  'node',
+  require('@tools/preloaded-node').bin,
+  require.resolve('./main.ts')
+)

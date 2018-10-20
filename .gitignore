@@ -18,6 +18,7 @@ temp.*
 *.tern-project.json
 *.map
 !jest.config.js
+/*/*/.npmignore
 
 # Lockfiles
 #   * Yarn's and NPM's are ignored for I use PNPM

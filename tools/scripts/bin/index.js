@@ -128,7 +128,11 @@ const dict = {
     describe: 'Create .npmignore files in every packages',
 
     act () {
-      console.info('[TODO] Implement createIgnoreFiles')
+      spawnSync(
+        'node',
+        require.resolve('@tools/ignore-file/bin/write/index'),
+        ...argv
+      ).exit.onerror()
     }
   },
 
