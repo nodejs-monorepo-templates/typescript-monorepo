@@ -4,7 +4,7 @@ const process = require('process')
 const chalk = require('chalk').default
 const { spawnSync } = require('exec-inline')
 const places = require('@tools/places')
-const { enums } = require('../index')
+const { commands, enums } = require('../index')
 const { ExitStatusCode } = enums
 const [cmd, ...argv] = process.argv.slice(2)
 
@@ -38,14 +38,14 @@ const dict = {
 
   workspace: {
     describe: 'Invoke nested-workspace-helper',
-    act: mkspawn(require.resolve('@tools/workspace/bin'))
+    act: mkspawn(commands.workspace)
   },
 
   mismatches: {
     describe: 'Check for mismatched versions',
 
     act: mkspawn(
-      require.resolve('@tools/workspace/bin'),
+      commands.workspace,
       'verman',
       'mismatches',
       places.packages
@@ -60,7 +60,7 @@ const dict = {
 
       spawnSync(
         'node',
-        require('@tools/jest').bin,
+        commands.jest,
         '--coverage',
         ...argv
       ).exit.onerror()
@@ -102,7 +102,7 @@ const dict = {
 
       console.info('Publishing packages...')
       spawnSync(
-        require.resolve('@tools/workspace/bin'),
+        commands.workspace,
         'publish',
         places.packages,
         ...argv
@@ -139,7 +139,7 @@ const dict = {
   buildTypescript: {
     describe: 'Compile TypeScript files',
     act: mkspawn(
-      require.resolve('@tools/typescript/bin'),
+      commands.typescript,
       '--project',
       path.resolve(places.project, 'tsconfig.json')
     )
@@ -147,22 +147,22 @@ const dict = {
 
   cleanTypescriptBuild: {
     describe: 'Clean TSC build products',
-    act: mkspawn(require.resolve('@tools/clean-typescript-build/bin'))
+    act: mkspawn(commands.cleanTypescriptBuild)
   },
 
   runPreloadedNode: {
     describe: 'Run node with registered modules',
-    act: mkspawn(require.resolve('@tools/preloaded-node/bin'))
+    act: mkspawn(commands.preloadedNode)
   },
 
   runStandardJS: {
     describe: 'Lint JavaScript codes with StandardJS',
-    act: mkspawn(require.resolve('@tools/standardjs/bin'))
+    act: mkspawn(commands.standardjs)
   },
 
   runTSLint: {
     describe: 'Lint TypeScript codes with TSLint',
-    act: mkspawn(require.resolve('@tools/tslint/bin'))
+    act: mkspawn(commands.tslint)
   }
 }
 

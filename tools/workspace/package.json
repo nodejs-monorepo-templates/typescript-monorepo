@@ -1,5 +1,5 @@
 {
-  "name": "@tools/scripts",
+  "name": "@tools/workspace",
   "version": "0.0.0",
   "private": true,
   "main": "./index.js",
