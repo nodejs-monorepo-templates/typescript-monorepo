@@ -34,7 +34,9 @@
     "test": "execute test",
     "build": "execute build",
     "clean": "execute clean",
-    "clean-typescript-build": "execute cleanTypescriptBuild"
+    "clean-typescript-build": "execute cleanTypescriptBuild",
+    "project-publish": "execute publish",
+    "project-publish:dry": "execute publish --dry"
   },
   "standard": {
     "env": {
