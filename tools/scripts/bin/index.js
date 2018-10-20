@@ -145,7 +145,7 @@ const dict = {
     act: mkspawn(
       commands.typescript,
       '--project',
-      path.resolve(places.project, 'tsconfig.json')
+      path.resolve(places.packages, 'tsconfig.json')
     )
   },
 
