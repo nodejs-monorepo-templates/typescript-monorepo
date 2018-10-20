@@ -1,0 +1,13 @@
+{
+  "name": "@tools/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.js",
+  "bin": "./bin.js",
+  "dependencies": {
+    "number-enum": "^3.0.0",
+    "nested-workspace-helper": "^0.2.6",
+    "exec-inline": "^0.0.2",
+    "@tools/places": "file:../places"
+  }
+}

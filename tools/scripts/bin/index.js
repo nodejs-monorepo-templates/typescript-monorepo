@@ -4,7 +4,7 @@ const process = require('process')
 const chalk = require('chalk').default
 const { spawnSync } = require('exec-inline')
 const places = require('@tools/places')
-const { commands, enums } = require('../index')
+const { enums } = require('../index')
 const { ExitStatusCode } = enums
 const [cmd, ...argv] = process.argv.slice(2)
 
@@ -38,14 +38,14 @@ const dict = {
 
   workspace: {
     describe: 'Invoke nested-workspace-helper',
-    act: mkspawn(commands.nestedWorkspaceHelpder)
+    act: mkspawn(require.resolve('@tools/workspace/bin'))
   },
 
   mismatches: {
     describe: 'Check for mismatched versions',
 
     act: mkspawn(
-      commands.nestedWorkspaceHelpder,
+      require.resolve('@tools/workspace/bin'),
       'verman',
       'mismatches',
       places.packages
@@ -102,7 +102,7 @@ const dict = {
 
       console.info('Publishing packages...')
       spawnSync(
-        commands.nestedWorkspaceHelpder,
+        require.resolve('@tools/workspace/bin'),
         'publish',
         places.packages,
         ...argv
