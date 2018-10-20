@@ -21,15 +21,15 @@ cache:
 before_install:
   - curl -L https://unpkg.com/@pnpm/self-installer | node
   - pnpm --version
-  - bash scripts/ci/before-install.sh
+  - bash ci/before-install.sh
 
 install:
   - pnpm recursive install
-  - bash scripts/ci/install.sh
+  - bash ci/install.sh
 
 script:
   - pnpm test
   - pnpm run build
 
 after_script:
-  - bash scripts/ci/after-script.sh
+  - bash ci/after-script.sh
