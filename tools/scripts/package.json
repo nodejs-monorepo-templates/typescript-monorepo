@@ -1,5 +1,5 @@
 {
-  "name": "@tools/monorepo",
+  "name": "@tools/scripts",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
