@@ -132,7 +132,7 @@ const dict = {
     describe: 'Run all tests in production mode',
 
     act () {
-      spawnSync('pnpm', 'test', '--', '--ci').exit.onerror()
+      callCmd('test', '--ci')
     }
   },
 
