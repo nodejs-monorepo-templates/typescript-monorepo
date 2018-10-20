@@ -8,7 +8,7 @@ const { ExitStatusCode } = enums
 const [cmd, ...argv] = process.argv.slice(2)
 
 const mkspawn = (...args) => () => spawnSync('node', ...args, ...argv).exit.onerror()
-const callCmd = (cmd, ...args) => spawnSync('node', __filename, cmd, ...args)
+const callCmd = (cmd, ...args) => spawnSync('node', __filename, cmd, ...args).exit.onerror()
 
 const dict = {
   help: {
