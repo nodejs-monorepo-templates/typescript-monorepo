@@ -11,7 +11,7 @@ const [cmd, ...argv] = process.argv.slice(2)
 const mkspawn = (...args) => () => spawnSync('node', ...args, ...argv).exit.onerror()
 
 const callCmd = (cmd, ...args) => {
-  console.info(chalk.inverse('@call'), chalk.bold(cmd), ...args)
+  console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
   spawnSync('node', __filename, cmd, ...args).exit.onerror()
 }
 
