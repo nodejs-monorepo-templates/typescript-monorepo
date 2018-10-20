@@ -57,7 +57,7 @@ const dict = {
     act () {
       callCmd('createIgnoreFiles')
       callCmd('mismatches')
-      callCmd('test')
+      callCmd('testAll')
       callCmd('build')
     }
   },
@@ -96,7 +96,7 @@ const dict = {
     }
   },
 
-  test: {
+  testAll: {
     describe: 'Run all tests in production mode',
 
     act () {
