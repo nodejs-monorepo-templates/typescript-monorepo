@@ -25,6 +25,7 @@
     "repl": "node tools/repl/bin.js",
     "console": "node tools/repl/bin.js",
     "preloaded-node": "node tools/preloaded-node/bin.js",
+    "execute": "execute",
     "workspace": "execute workspace",
     "standardjs": "execute standardjs",
     "standardjs:fix": "execute standardjs --fix",
