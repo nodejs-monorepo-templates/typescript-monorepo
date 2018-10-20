@@ -116,7 +116,7 @@ const dict = {
     describe: 'Commands that run after publishing packages',
 
     act () {
-      spawnSync('pnpm', 'run', 'clean')
+      callCmd('clean')
     }
   },
 
