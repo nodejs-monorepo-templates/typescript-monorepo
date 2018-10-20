@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+const path = require('path')
 const process = require('process')
 const chalk = require('chalk').default
 const { spawnSync } = require('exec-inline')
@@ -49,6 +50,37 @@ const dict = {
       'mismatches',
       places.packages
     )
+  },
+
+  test: {
+    describe: 'Run tests',
+
+    act () {
+      callCmd('clean')
+
+      spawnSync(
+        'node',
+        require('@tools/jest').bin,
+        '--coverage',
+        ...argv
+      ).exit.onerror()
+    }
+  },
+
+  build: {
+    describe: 'Build all products',
+
+    act () {
+      callCmd('buildTypescript')
+    }
+  },
+
+  clean: {
+    describe: 'Clean build products',
+
+    act () {
+      callCmd('cleanTypescriptBuild')
+    }
   },
 
   prepublish: {
@@ -104,12 +136,33 @@ const dict = {
     }
   },
 
-  build: {
-    describe: 'Compile TypeScript',
+  buildTypescript: {
+    describe: 'Compile TypeScript files',
+    act: mkspawn(
+      require.resolve('@tools/typescript/bin'),
+      '--project',
+      path.resolve(places.project, 'tsconfig.json')
+    )
+  },
 
-    act () {
-      spawnSync('pnpm', 'run', 'build').exit.onerror()
-    }
+  cleanTypescriptBuild: {
+    describe: 'Clean TSC build products',
+    act: mkspawn(require.resolve('@tools/clean-typescript-build/bin'))
+  },
+
+  runPreloadedNode: {
+    describe: 'Run node with registered modules',
+    act: mkspawn(require.resolve('@tools/preloaded-node/bin'))
+  },
+
+  runStandardJS: {
+    describe: 'Lint JavaScript codes with StandardJS',
+    act: mkspawn(require.resolve('@tools/standardjs/bin'))
+  },
+
+  runTSLint: {
+    describe: 'Lint TypeScript codes with TSLint',
+    act: mkspawn(require.resolve('@tools/tslint/bin'))
   }
 }
 

@@ -1,5 +1,11 @@
 dependencies:
+  '@tools/clean-typescript-build': 'link:../clean-typescript-build'
+  '@tools/jest': 'link:../jest'
   '@tools/places': 'link:../places'
+  '@tools/preloaded-node': 'link:../preloaded-node'
+  '@tools/standardjs': 'link:../standardjs'
+  '@tools/tslint': 'link:../tslint'
+  '@tools/typescript': 'link:../typescript'
   chalk: 2.4.1
   exec-inline: 0.0.2
   nested-workspace-helper: 0.2.6
@@ -662,7 +668,13 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@tools/clean-typescript-build': 'file:../clean-typescript-build'
+  '@tools/jest': 'file:../jest'
   '@tools/places': 'file:../places'
+  '@tools/preloaded-node': 'file:../preloaded-node'
+  '@tools/standardjs': 'file:../standardjs'
+  '@tools/tslint': 'file:../tslint'
+  '@tools/typescript': 'file:../typescript'
   chalk: ^2.4.1
   exec-inline: ^0.0.2
   nested-workspace-helper: ^0.2.6
