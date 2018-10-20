@@ -2,10 +2,10 @@
 const path = require('path')
 const process = require('process')
 const chalk = require('chalk').default
-const { spawnSync } = require('exec-inline')
 const places = require('@tools/places')
-const { commands, enums } = require('../index')
+const { commands, enums, functions } = require('../index')
 const { ExitStatusCode } = enums
+const { spawnSync } = functions
 const [cmd, ...argv] = process.argv.slice(2)
 
 const mkspawn = (...args) => () => spawnSync('node', ...args, ...argv).exit.onerror()
