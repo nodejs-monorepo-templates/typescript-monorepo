@@ -1,5 +1,4 @@
 #! /usr/bin/env node
-require('@tools/preloaded-node/register')
 const path = require('path')
 const process = require('process')
 const places = require('@tools/places')
