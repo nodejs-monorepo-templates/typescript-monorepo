@@ -15,8 +15,10 @@ const spawn = (...args) =>
 const spawnSync = (...args) =>
   require('child_process').spawnSync(bin, ...args)
 
-module.exports = {
+Object.assign(exports, {
   bin,
   spawn,
   spawnSync
-}
+})
+
+Object.defineProperty(exports, '__esModule', { value: true })
