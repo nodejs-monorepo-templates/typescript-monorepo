@@ -350,4 +350,4 @@ specifiers:
   exec-inline: ^0.0.2
   tslint: ^5.11.0
   tslint-config-standard: ^8.0.1
-  typescript: ^3.1.1
+  typescript: ^3.1.3
