@@ -130,7 +130,7 @@ const dict = {
     act () {
       spawnSync(
         'node',
-        require.resolve('@tools/ignore-file/bin/write/index'),
+        require.resolve('@tools/ignore-file/bin/write'),
         ...argv
       ).exit.onerror()
     }

@@ -1,7 +1,9 @@
-import path from 'path'
-import process from 'process'
-import * as places from '@tools/places'
-import { writeIgnoreFiles } from '../../index'
+#! /usr/bin/env node
+require('@tools/preloaded-node/register')
+const path = require('path')
+const process = require('process')
+const places = require('@tools/places')
+const { writeIgnoreFiles } = require('../index')
 const basename = '.npmignore'
 const basefile = path.resolve(places.packages, basename)
 

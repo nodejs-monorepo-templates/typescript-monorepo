@@ -4,7 +4,7 @@
   "private": true,
   "main": "index.js",
   "bin": {
-    "write-ignore-files": "./bin/write/index"
+    "write-ignore-files": "./bin/write.js"
   },
   "dependencies": {
     "minimatch": "^3.0.4",
