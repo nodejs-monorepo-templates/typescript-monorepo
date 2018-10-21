@@ -1,0 +1,17 @@
+{
+  "name": "@tools/git-tag-versions",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "bin": {
+    "git-tag-versions": "bin.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "yargs": "^12.0.2",
+    "git-ts": "^0.0.5",
+    "nested-workspace-helper": "^0.2.6",
+    "@types/yargs": "^12.0.1",
+    "@tools/places": "file:../places"
+  }
+}

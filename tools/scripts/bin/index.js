@@ -158,6 +158,11 @@ const dict = {
     act: mkspawn(commands.cleanTypescriptBuild)
   },
 
+  gitTagVersions: {
+    describe: 'Create tags for every package based on their current version',
+    act: mkspawn(commands.gitTagVersions)
+  },
+
   runPreloadedNode: {
     describe: 'Run node with registered modules',
     act: mkspawn(commands.preloadedNode)

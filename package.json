@@ -35,6 +35,8 @@
     "build": "execute build",
     "clean": "execute clean",
     "clean-typescript-build": "execute cleanTypescriptBuild",
+    "git-tag-versions": "execute gitTagVersions",
+    "git-tag-versions:dry": "execute gitTagVersions --dry",
     "project-publish": "execute publish",
     "project-publish:dry": "execute publish --dry"
   },

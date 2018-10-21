@@ -10,6 +10,7 @@
     "number-enum": "^3.0.0",
     "exec-inline": "^0.0.2",
     "@tools/clean-typescript-build": "file:../clean-typescript-build",
+    "@tools/git-tag-versions": "file:../git-tag-versions",
     "@tools/ignore-file": "file:../ignore-file",
     "@tools/jest": "file:../jest",
     "@tools/places": "file:../places",
