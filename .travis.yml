@@ -19,7 +19,7 @@ cache:
     - $HOME/.node_libraries
 
 before_install:
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - npm install --global pnpm
   - pnpm --version
   - bash ci/before-install.sh
 
