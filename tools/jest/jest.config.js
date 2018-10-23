@@ -20,7 +20,12 @@ const test = {
   },
   testRegex: '(test|spec|check)\\.(jsx?|tsx?)$',
   moduleFileExtensions,
-  coveragePathIgnorePatterns
+  coveragePathIgnorePatterns,
+  globals: {
+    'ts-jest': {
+      diagnostics: false
+    }
+  }
 }
 
 const projects = [
