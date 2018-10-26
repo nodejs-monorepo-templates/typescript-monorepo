@@ -11,6 +11,7 @@ const moduleFileExtensions = [
 ]
 
 const coveragePathIgnorePatterns = [
+  '\\.json$',
   places.test,
   places.tools
 ]

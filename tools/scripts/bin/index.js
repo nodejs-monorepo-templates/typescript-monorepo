@@ -65,6 +65,7 @@ const dict = {
       spawnSync(
         'node',
         commands.jest,
+        '--coverage',
         ...argv
       ).exit.onerror()
     }
