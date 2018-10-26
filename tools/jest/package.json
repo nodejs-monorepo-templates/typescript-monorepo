@@ -17,6 +17,7 @@
     "parse-dependency-range": "^0.0.2",
     "convenient-typescript-utilities": "^0.0.3",
     "just-try": "^2.1.0",
+    "@tools/files": "file:../files",
     "@tools/places": "file:../places"
   }
 }

@@ -1,4 +1,5 @@
 'use strict'
+const files = require('@tools/files')
 const places = require('@tools/places')
 
 const moduleFileExtensions = [
@@ -10,6 +11,8 @@ const moduleFileExtensions = [
   'node'
 ]
 
+const collectCoverageFrom = files.PACKAGED_TYPESCRIPT
+
 const coveragePathIgnorePatterns = [
   places.test,
   places.tools
@@ -17,5 +20,6 @@ const coveragePathIgnorePatterns = [
 
 module.exports = {
   moduleFileExtensions,
+  collectCoverageFrom,
   coveragePathIgnorePatterns
 }

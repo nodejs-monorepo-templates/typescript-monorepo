@@ -1,12 +1,8 @@
 'use strict'
-const {
-  TEST_WITHOUT_COVERAGE = 'false'
-} = require('process').env
-
-const collectCoverage = TEST_WITHOUT_COVERAGE.toLowerCase() !== 'true'
 
 const {
   moduleFileExtensions,
+  collectCoverageFrom,
   coveragePathIgnorePatterns
 } = require('./lib/contants')
 
@@ -25,7 +21,7 @@ const test = {
   },
   testRegex: '(test|spec|check)\\.(jsx?|tsx?)$',
   moduleFileExtensions,
-  collectCoverage,
+  collectCoverageFrom,
   coveragePathIgnorePatterns,
   globals: {
     'ts-jest': {
