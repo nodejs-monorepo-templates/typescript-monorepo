@@ -1,7 +1,7 @@
 dependencies:
   '@tools/places': 'link:../places'
   exec-inline: 0.0.2
-  nested-workspace-helper: 0.2.6
+  nested-workspace-helper: 0.2.7
   number-enum: 3.0.0
 packages:
   /@babel/runtime/7.1.2:
@@ -12,7 +12,7 @@ packages:
       integrity: sha512-Y3SCjmhSupzFB6wcv1KmmFucH6gDVnI30WjOcicV10ju0cZjak3Jcs67YLIXBrmZYw1xCrVeJPbycFwrqNyxpg==
   /@types/fs-extra/5.0.4:
     dependencies:
-      '@types/node': 10.11.7
+      '@types/node': 10.12.0
     dev: false
     resolution:
       integrity: sha512-DsknoBvD8s+RFfSGjmERJ7ZOP1HI0UZRA3FSI+Zakhrc/Gy26YQsLI+m5V5DHxroHRJqCDLKJp7Hixn8zyaF7g==
@@ -22,7 +22,7 @@ packages:
       integrity: sha512-JRDtMPEqXrzfuYAdqbxLot1GvAr/QvicIZAnOAigZaj8xVMhuSJTg/xsv9E1TvyL+wujYhRLx9ZsQ0oFOSmwyA==
   /@types/node-fetch/2.1.2:
     dependencies:
-      '@types/node': 10.11.7
+      '@types/node': 10.12.0
     dev: false
     resolution:
       integrity: sha512-XroxUzLpKuL+CVkQqXlffRkEPi4Gh3Oui/mWyS7ztKiyqVxiU+h3imCW5I2NQmde5jK+3q++36/Q96cyRWsweg==
@@ -30,6 +30,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-yOxFfkN9xUFLyvWaeYj90mlqTJ41CsQzWKS3gXdOMOyPVacUsymejKxJ4/pMW7exouubuEeZLJawGgcNGYlTeg==
+  /@types/node/10.12.0:
+    dev: false
+    resolution:
+      integrity: sha512-3TUHC3jsBAB7qVRGxT6lWyYo2v96BMmD2PTcl47H25Lu7UXtFH/2qqmKiVrnel6Ne//0TFYf6uvNX+HW2FRkLQ==
   /@types/ramda/0.25.39:
     dev: false
     resolution:
@@ -197,7 +201,7 @@ packages:
   /fs-tree-utils/0.1.6:
     dependencies:
       '@types/fs-extra': 5.0.4
-      '@types/node': 10.11.7
+      '@types/node': 10.12.0
       '@types/ramda': 0.25.39
       fs-extra: 7.0.0
       monorepo-shared-assets: 0.0.17
@@ -344,7 +348,7 @@ packages:
       integrity: sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
   /monorepo-shared-assets/0.0.17:
     dependencies:
-      '@types/node': 10.11.7
+      '@types/node': 10.12.0
       '@types/ramda': 0.25.39
       immutable: 3.8.2
       ramda: 0.25.0
@@ -354,11 +358,11 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
-  /nested-workspace-helper/0.2.6:
+  /nested-workspace-helper/0.2.7:
     dependencies:
       '@types/fs-extra': 5.0.4
       '@types/js-yaml': 3.11.2
-      '@types/node': 10.11.7
+      '@types/node': 10.12.0
       '@types/node-fetch': 2.1.2
       '@types/ramda': 0.25.39
       '@types/semver': 5.5.0
@@ -378,7 +382,7 @@ packages:
       node: '>= 8.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-/Jdg0oFiz0atAsJ2pi9jmTq7eoL4sZI89WfnjKXo11QqTm/MjJX3QwoLquOcyYNFMMH0M9fWWJUD0gK5OiQkhQ==
+      integrity: sha512-s3YCmK5y7MLg95N1MJz1klg135JqyVYlFRLtRoJcGpkAC0eKxFaIY1TVILbygh4HO1DRhgq/Bx0syNsRWwJBzg==
   /nice-try/1.0.5:
     dev: false
     resolution:
@@ -659,5 +663,5 @@ shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
   exec-inline: ^0.0.2
-  nested-workspace-helper: ^0.2.6
+  nested-workspace-helper: ^0.2.7
   number-enum: ^3.0.0
