@@ -1,7 +1,7 @@
 dependencies:
   '@tools/places': 'link:../places'
   exec-inline: 0.0.2
-  nested-workspace-helper: 0.2.7
+  nested-workspace-helper: 0.2.8
   number-enum: 3.0.0
 packages:
   /@babel/runtime/7.1.2:
@@ -12,7 +12,7 @@ packages:
       integrity: sha512-Y3SCjmhSupzFB6wcv1KmmFucH6gDVnI30WjOcicV10ju0cZjak3Jcs67YLIXBrmZYw1xCrVeJPbycFwrqNyxpg==
   /@types/fs-extra/5.0.4:
     dependencies:
-      '@types/node': 10.12.0
+      '@types/node': 10.12.1
     dev: false
     resolution:
       integrity: sha512-DsknoBvD8s+RFfSGjmERJ7ZOP1HI0UZRA3FSI+Zakhrc/Gy26YQsLI+m5V5DHxroHRJqCDLKJp7Hixn8zyaF7g==
@@ -22,22 +22,18 @@ packages:
       integrity: sha512-JRDtMPEqXrzfuYAdqbxLot1GvAr/QvicIZAnOAigZaj8xVMhuSJTg/xsv9E1TvyL+wujYhRLx9ZsQ0oFOSmwyA==
   /@types/node-fetch/2.1.2:
     dependencies:
-      '@types/node': 10.12.0
+      '@types/node': 10.12.1
     dev: false
     resolution:
       integrity: sha512-XroxUzLpKuL+CVkQqXlffRkEPi4Gh3Oui/mWyS7ztKiyqVxiU+h3imCW5I2NQmde5jK+3q++36/Q96cyRWsweg==
-  /@types/node/10.11.7:
+  /@types/node/10.12.1:
     dev: false
     resolution:
-      integrity: sha512-yOxFfkN9xUFLyvWaeYj90mlqTJ41CsQzWKS3gXdOMOyPVacUsymejKxJ4/pMW7exouubuEeZLJawGgcNGYlTeg==
-  /@types/node/10.12.0:
+      integrity: sha512-i1sl+WCX2OCHeUi9oi7PiCNUtYFrpWhpcx878vpeq/tlZTKzcFdHePlyFHVbWqeuKN0SRPl/9ZFDSTsfv9h7VQ==
+  /@types/ramda/0.25.40:
     dev: false
     resolution:
-      integrity: sha512-3TUHC3jsBAB7qVRGxT6lWyYo2v96BMmD2PTcl47H25Lu7UXtFH/2qqmKiVrnel6Ne//0TFYf6uvNX+HW2FRkLQ==
-  /@types/ramda/0.25.39:
-    dev: false
-    resolution:
-      integrity: sha512-GJr1BOUjtdLexxQLhflMw1tCDav3csdUTC7twHx0GZUF9RTWGnJkYnUFAZE5cv1YnefgZabdfC8GvtJgVmQL7A==
+      integrity: sha512-2wJUkK/jY//CECZZrFb1LBreCkwuA9RY4P1GpGV35vLg/cJQUFs0dSUEvQANPjnoa4Kv8hsVFvM0v8xS5cPydg==
   /@types/semver/5.5.0:
     dev: false
     resolution:
@@ -159,7 +155,7 @@ packages:
       integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
   /exec-inline/0.0.2:
     dependencies:
-      '@types/node': 10.11.7
+      '@types/node': 10.12.1
       tslib: 1.9.3
     dev: false
     engines:
@@ -201,8 +197,8 @@ packages:
   /fs-tree-utils/0.1.6:
     dependencies:
       '@types/fs-extra': 5.0.4
-      '@types/node': 10.12.0
-      '@types/ramda': 0.25.39
+      '@types/node': 10.12.1
+      '@types/ramda': 0.25.40
       fs-extra: 7.0.0
       monorepo-shared-assets: 0.0.17
       ramda: 0.25.0
@@ -348,8 +344,8 @@ packages:
       integrity: sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
   /monorepo-shared-assets/0.0.17:
     dependencies:
-      '@types/node': 10.12.0
-      '@types/ramda': 0.25.39
+      '@types/node': 10.12.1
+      '@types/ramda': 0.25.40
       immutable: 3.8.2
       ramda: 0.25.0
       tslib: 1.9.3
@@ -358,13 +354,13 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
-  /nested-workspace-helper/0.2.7:
+  /nested-workspace-helper/0.2.8:
     dependencies:
       '@types/fs-extra': 5.0.4
       '@types/js-yaml': 3.11.2
-      '@types/node': 10.12.0
+      '@types/node': 10.12.1
       '@types/node-fetch': 2.1.2
-      '@types/ramda': 0.25.39
+      '@types/ramda': 0.25.40
       '@types/semver': 5.5.0
       '@types/yargs': 12.0.1
       chalk: 2.4.1
@@ -375,6 +371,7 @@ packages:
       node-fetch: 2.2.0
       ramda: 0.25.0
       semver: 5.6.0
+      smart-publish: 0.0.2
       tslib: 1.9.3
       yargs: 12.0.2
     dev: false
@@ -382,7 +379,7 @@ packages:
       node: '>= 8.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-s3YCmK5y7MLg95N1MJz1klg135JqyVYlFRLtRoJcGpkAC0eKxFaIY1TVILbygh4HO1DRhgq/Bx0syNsRWwJBzg==
+      integrity: sha512-f2AInCDKpIMfiqLEM8Qd3co7xIBVfqpEVjwl+/tTdCdN7KSnLNbVlwdSUD5Ce0Ryz0wRB1hdyjZUghI2seF9qg==
   /nice-try/1.0.5:
     dev: false
     resolution:
@@ -522,6 +519,20 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
+  /smart-publish/0.0.2:
+    dependencies:
+      '@types/node': 10.12.1
+      '@types/semver': 5.5.0
+      chalk: 2.4.1
+      exec-inline: 0.0.2
+      semver: 5.6.0
+      tslib: 1.9.3
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-q2Cq+gdGbJ0zUBcJ0vUTyndQvbE6VJsgxndZkb65gg7esObCHxw3LENjM56lIQHtKSon6Ai8yr4YOyw+uYNLGQ==
   /sprintf-js/1.0.3:
     dev: false
     resolution:
@@ -663,5 +674,5 @@ shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
   exec-inline: ^0.0.2
-  nested-workspace-helper: ^0.2.7
+  nested-workspace-helper: ^0.2.8
   number-enum: ^3.0.0
