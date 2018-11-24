@@ -23,7 +23,7 @@ const test = {
     '\\.tsx?$': require.resolve('ts-jest'),
     '\\.(yaml|yml)$': require.resolve('yaml-jest')
   },
-  testRegex: '(test|spec|check)\\.(jsx?|tsx?)$',
+  testRegex: '\\.(test|spec|check)\\.(jsx?|tsx?)$',
   moduleFileExtensions,
   collectCoverage,
   coveragePathIgnorePatterns,
