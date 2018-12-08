@@ -1,11 +1,11 @@
 dependencies:
-  '@types/node': 10.12.0
+  '@types/node': 10.12.12
   tslib: 1.9.3
 packages:
-  /@types/node/10.12.0:
+  /@types/node/10.12.12:
     dev: false
     resolution:
-      integrity: sha512-3TUHC3jsBAB7qVRGxT6lWyYo2v96BMmD2PTcl47H25Lu7UXtFH/2qqmKiVrnel6Ne//0TFYf6uvNX+HW2FRkLQ==
+      integrity: sha512-Pr+6JRiKkfsFvmU/LK68oBRCQeEg36TyAbPhc2xpez24OOZZCuoIhWGTd39VZy6nGafSbxzGouFPTFD/rR1A0A==
   /tslib/1.9.3:
     dev: false
     resolution:
@@ -14,5 +14,5 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@types/node': ^10.12.0
+  '@types/node': ^10.12.12
   tslib: ^1.9.3

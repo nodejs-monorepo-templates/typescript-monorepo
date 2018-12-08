@@ -4,7 +4,7 @@ dependencies:
   '@types/fs-extra': 5.0.4
   '@types/js-yaml': 3.11.2
   '@types/minimatch': 3.0.3
-  fs-extra: 7.0.0
+  fs-extra: 7.0.1
   fs-tree-utils: 0.1.6
   js-yaml: 3.12.0
   minimatch: 3.0.4
@@ -70,6 +70,16 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-EglNDLRpmaTWiD/qraZn6HREAEAHJcJOmxNEYwq6xeMKnVMAy3GUcFB+wXt2C6k4CNvB/mP1y/U3dzvKKj5OtQ==
+  /fs-extra/7.0.1:
+    dependencies:
+      graceful-fs: 4.1.15
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: false
+    engines:
+      node: '>=6 <7 || >=8'
+    resolution:
+      integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
   /fs-tree-utils/0.1.6:
     dependencies:
       '@types/fs-extra': 5.0.4
@@ -90,6 +100,10 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=
+  /graceful-fs/4.1.15:
+    dev: false
+    resolution:
+      integrity: sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
   /immutable/3.8.2:
     dev: false
     engines:
@@ -107,7 +121,7 @@ packages:
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
-      graceful-fs: 4.1.11
+      graceful-fs: 4.1.15
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /minimatch/3.0.4:
@@ -155,7 +169,7 @@ specifiers:
   '@types/fs-extra': ^5.0.4
   '@types/js-yaml': ^3.11.2
   '@types/minimatch': ^3.0.3
-  fs-extra: ^7.0.0
+  fs-extra: ^7.0.1
   fs-tree-utils: ^0.1.6
   js-yaml: ^3.12.0
   minimatch: ^3.0.4
