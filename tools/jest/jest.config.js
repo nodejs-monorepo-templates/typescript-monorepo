@@ -8,7 +8,7 @@ const collectCoverage = TEST_WITHOUT_COVERAGE.toLowerCase() !== 'true'
 const {
   moduleFileExtensions,
   coveragePathIgnorePatterns
-} = require('./lib/contants')
+} = require('./lib/constants')
 
 const packageJson = {
   displayName: 'validate',
