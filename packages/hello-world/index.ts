@@ -1,1 +1,1 @@
-export = () => Object.freeze({ hello: 'world' as 'world' })
+export default () => Object.freeze({ hello: 'world' as 'world' })
