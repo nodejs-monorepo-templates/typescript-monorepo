@@ -19,6 +19,7 @@ temp.*
 *.map
 !jest.config.js
 /*/*/.npmignore
+.vscode
 
 # Lockfiles
 #   * Yarn's and NPM's are ignored for I use PNPM
