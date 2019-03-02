@@ -75,6 +75,8 @@ const dict = {
     describe: 'Build all products',
 
     act () {
+      callCmd('buildTypescript', '--module', 'esnext')
+      mkspawn(commands.makeMJS)()
       callCmd('buildTypescript')
     }
   },

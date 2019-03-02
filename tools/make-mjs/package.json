@@ -1,0 +1,12 @@
+{
+  "name": "@tools/make-mjs",
+  "version": "0.0.0",
+  "private": true,
+  "bin": "bin.js",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "fs-tree-utils": "^0.1.6",
+    "@types/fs-extra": "^5.0.4",
+    "@tools/places": "file:../places"
+  }
+}

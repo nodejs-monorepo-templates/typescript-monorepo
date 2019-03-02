@@ -13,6 +13,7 @@
     "@tools/git-tag-versions": "file:../git-tag-versions",
     "@tools/ignore-file": "file:../ignore-file",
     "@tools/jest": "file:../jest",
+    "@tools/make-mjs": "file:../make-mjs",
     "@tools/places": "file:../places",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/standardjs": "file:../standardjs",

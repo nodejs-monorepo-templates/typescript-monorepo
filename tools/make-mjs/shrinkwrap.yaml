@@ -1,0 +1,98 @@
+dependencies:
+  '@tools/places': 'link:../places'
+  '@types/fs-extra': 5.0.5
+  fs-extra: 7.0.1
+  fs-tree-utils: 0.1.6
+packages:
+  /@types/fs-extra/5.0.5:
+    dependencies:
+      '@types/node': 11.10.4
+    dev: false
+    resolution:
+      integrity: sha512-w7iqhDH9mN8eLClQOYTkhdYUOSpp25eXxfc6VbFOGtzxW34JcvctH2bKjj4jD4++z4R5iO5D+pg48W2e03I65A==
+  /@types/node/10.12.29:
+    dev: false
+    resolution:
+      integrity: sha512-J/tnbnj8HcsBgCe2apZbdUpQ7hs4d7oZNTYA5bekWdP0sr2NGsOpI/HRdDroEi209tEvTcTtxhD0FfED3DhEcw==
+  /@types/node/11.10.4:
+    dev: false
+    resolution:
+      integrity: sha512-wa09itaLE8L705aXd8F80jnFpxz3Y1/KRHfKsYL2bPc0XF+wEWu8sR9n5bmeu8Ba1N9z2GRNzm/YdHcghLkLKg==
+  /@types/ramda/0.25.51:
+    dev: false
+    resolution:
+      integrity: sha512-xcmtfHIgF9SYjhGdsZR1nQslxG4hu0cIpFfLQ4CWdw3KzHvl7ki1AzFLQUkbDTG42ZN3ZsQfdRzXRlkAvbIy5Q==
+  /fs-extra/7.0.1:
+    dependencies:
+      graceful-fs: 4.1.15
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: false
+    engines:
+      node: '>=6 <7 || >=8'
+    resolution:
+      integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
+  /fs-tree-utils/0.1.6:
+    dependencies:
+      '@types/fs-extra': 5.0.5
+      '@types/node': 10.12.29
+      '@types/ramda': 0.25.51
+      fs-extra: 7.0.1
+      monorepo-shared-assets: 0.0.17
+      ramda: 0.25.0
+      tslib: 1.9.3
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-qsOeiFlr2zfQXkLziZh5FLxRPHmUm3Cfwj4cTjVVVij1gtHGkS11/6nxGA1l7ndvb2d+iKiQartR0cewodT5zg==
+  /graceful-fs/4.1.15:
+    dev: false
+    resolution:
+      integrity: sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
+  /immutable/3.8.2:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
+  /jsonfile/4.0.0:
+    dev: false
+    optionalDependencies:
+      graceful-fs: 4.1.15
+    resolution:
+      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+  /monorepo-shared-assets/0.0.17:
+    dependencies:
+      '@types/node': 10.12.29
+      '@types/ramda': 0.25.51
+      immutable: 3.8.2
+      ramda: 0.25.0
+      tslib: 1.9.3
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
+  /ramda/0.25.0:
+    dev: false
+    resolution:
+      integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
+  /tslib/1.9.3:
+    dev: false
+    resolution:
+      integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
+  /universalify/0.1.2:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@tools/places': 'file:../places'
+  '@types/fs-extra': ^5.0.4
+  fs-extra: ^7.0.1
+  fs-tree-utils: ^0.1.6
