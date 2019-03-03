@@ -1,17 +1,17 @@
 dependencies:
   '@tools/test-spawn': 'link:../../tools/test-spawn'
-  typescript: 3.2.2
+  typescript: 3.3.3333
 packages:
-  /typescript/3.2.2:
+  /typescript/3.3.3333:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-VCj5UiSyHBjwfYacmDuc/NOk4QQixbE+Wn7MFJuS0nRuPQbof132Pw4u53dm264O8LPc2MVsc7RJNml5szurkg==
+      integrity: sha512-JjSKsAfuHBE/fB2oZ8NxtRTk5iGcg6hkYXMnZ3Wc+b2RSqejEqTaem11mHASMnFilHrax3sLK0GDzcJrekZYLw==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/test-spawn': 'file:../../tools/test-spawn'
-  typescript: ^3.2.2
+  typescript: ^3.3.3333

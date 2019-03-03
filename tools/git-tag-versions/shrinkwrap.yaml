@@ -1,10 +1,10 @@
 dependencies:
   '@tools/places': 'link:../places'
-  '@types/yargs': 12.0.8
+  '@types/yargs': 12.0.9
   chalk: 2.4.2
   git-ts: 0.0.5
   nested-workspace-helper: 0.2.9
-  yargs: 13.1.0
+  yargs: 13.2.1
 packages:
   /@types/fs-extra/5.0.4:
     dependencies:
@@ -46,6 +46,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-OMSKUmZ09gbzITzx4nxnJqhprWC7JqsmlrEsVtb+cv3GXHNpv0kktqxhboKX52FnMggkQvT5ezt8pxTWyKpJHA==
+  /@types/yargs/12.0.9:
+    dev: false
+    resolution:
+      integrity: sha512-sCZy4SxP9rN2w30Hlmg5dtdRwgYQfYRiLo9usw8X9cxlf+H4FqM1xX7+sNH7NNKVdbXMJWqva7iyy+fxh/V7fA==
   /ansi-regex/2.1.1:
     dev: false
     engines:
@@ -682,7 +686,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Lhz8TLaYnxq/2ObqHDql8dX8CJi97oHxrjUcYtzKbbykPtVW9WB+poxI+NM2UIzsMgNCZTIf0AQwsjK5yMAqZw==
-  /yargs/13.1.0:
+  /yargs/13.2.1:
     dependencies:
       cliui: 4.1.0
       find-up: 3.0.0
@@ -697,14 +701,14 @@ packages:
       yargs-parser: 13.0.0
     dev: false
     resolution:
-      integrity: sha512-1UhJbXfzHiPqkfXNHYhiz79qM/kZqjTE8yGlEjZa85Q+3+OwcV6NRkV7XOV1W2Eom2bzILeUn55pQYffjVOLAg==
+      integrity: sha512-HgY0xHGmPPakg6kEDufqxZuXVtvPZcipORC8O7S44iEnwsUmP+qnhReHc6d1dyeIZkrPmYFblh45Z2oeDn++fQ==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
-  '@types/yargs': ^12.0.1
-  chalk: ^2.4.1
+  '@types/yargs': ^12.0.9
+  chalk: ^2.4.2
   git-ts: ^0.0.5
   nested-workspace-helper: ^0.2.9
-  yargs: ^13.0.0
+  yargs: ^13.2.1

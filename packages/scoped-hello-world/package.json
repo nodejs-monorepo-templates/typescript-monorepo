@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "tslib": "^1.9.3",
-    "@types/node": "^10.12.12"
+    "@types/node": "^11.10.4"
   }
 }

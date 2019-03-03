@@ -6,7 +6,7 @@
     "execute": "./bin/index.js"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "number-enum": "^3.0.0",
     "exec-inline": "^0.0.2",
     "@tools/clean-typescript-build": "file:../clean-typescript-build",

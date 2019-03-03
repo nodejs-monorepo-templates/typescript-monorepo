@@ -1,12 +1,12 @@
 dependencies:
-  '@types/node': 10.12.12
+  '@types/node': 11.10.4
 packages:
-  /@types/node/10.12.12:
+  /@types/node/11.10.4:
     dev: false
     resolution:
-      integrity: sha512-Pr+6JRiKkfsFvmU/LK68oBRCQeEg36TyAbPhc2xpez24OOZZCuoIhWGTd39VZy6nGafSbxzGouFPTFD/rR1A0A==
+      integrity: sha512-wa09itaLE8L705aXd8F80jnFpxz3Y1/KRHfKsYL2bPc0XF+wEWu8sR9n5bmeu8Ba1N9z2GRNzm/YdHcghLkLKg==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@types/node': ^10.12.12
+  '@types/node': ^11.10.4
