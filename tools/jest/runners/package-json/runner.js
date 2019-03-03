@@ -238,7 +238,7 @@ function main ({ testPath }) {
       }
 
       if (!deepEqual(manifest[key], globalManifest[key])) {
-        reasons.push(`Field "${key}" does not match its global conterpart`)
+        reasons.push(`Field "${key}" does not match its global counterpart`)
       }
     }
 
