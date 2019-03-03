@@ -27,6 +27,15 @@ function main ({ testPath }) {
   const mustBePrivate = rule(() => !manifest.private, 'Must have field "private" set to true')
   const mustBePublic = rule(() => 'private' in manifest, 'Must not have field "private"')
 
+  const checkName = (dirname, pkgname) => {
+    if (dirname === pkgname) return
+
+    const matches = /^@[a-z0-9.-]+\/([a-z0-9.-]+)$/i.exec(pkgname)
+    if (matches[1] === dirname) return
+
+    reasons.push(`Expecting package's name to be "${dirname}" but received "${pkgname}" instead`)
+  }
+
   const getDependencyPath = (name, ...args) =>
     path.resolve(container, 'node_modules', name, ...args)
 
@@ -222,14 +231,8 @@ function main ({ testPath }) {
   if (resolvedPath.startsWith(places.packages)) {
     mustHaveName()
     mustHaveVersion()
-
-    if (manifest.name !== containerBaseName) {
-      reasons.push(
-        `Expecting package's name to be "${containerBaseName}" but received "${manifest.name}" instead`
-      )
-    }
-
     mustBePublic()
+    checkName(containerBaseName, manifest.name)
 
     for (const key of matchingKeys) {
       if (!manifest[key]) {
