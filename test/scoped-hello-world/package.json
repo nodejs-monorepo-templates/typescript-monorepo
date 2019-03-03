@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "dependencies": {
+    "@scope-name/scoped-hello-world": "file:../../packages/scoped-hello-world"
+  }
+}

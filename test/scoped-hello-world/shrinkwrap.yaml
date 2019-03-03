@@ -1,0 +1,7 @@
+dependencies:
+  '@scope-name/scoped-hello-world': 'link:../../packages/scoped-hello-world'
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@scope-name/scoped-hello-world': 'file:../../packages/scoped-hello-world'

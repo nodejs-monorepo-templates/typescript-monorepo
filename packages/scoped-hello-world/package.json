@@ -1,0 +1,18 @@
+{
+  "name": "@scope-name/scoped-hello-world",
+  "version": "0.0.0",
+  "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/nodejs-monorepo-templates/typescript-monorepo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs-monorepo-templates/typescript-monorepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo/issues"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3",
+    "@types/node": "^10.12.12"
+  }
+}
