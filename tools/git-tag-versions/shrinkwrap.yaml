@@ -4,7 +4,7 @@ dependencies:
   chalk: 2.4.2
   git-ts: 0.0.5
   nested-workspace-helper: 0.2.9
-  yargs: 13.2.1
+  yargs: 13.2.2
 packages:
   /@types/fs-extra/5.0.4:
     dependencies:
@@ -686,7 +686,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Lhz8TLaYnxq/2ObqHDql8dX8CJi97oHxrjUcYtzKbbykPtVW9WB+poxI+NM2UIzsMgNCZTIf0AQwsjK5yMAqZw==
-  /yargs/13.2.1:
+  /yargs/13.2.2:
     dependencies:
       cliui: 4.1.0
       find-up: 3.0.0
@@ -701,7 +701,7 @@ packages:
       yargs-parser: 13.0.0
     dev: false
     resolution:
-      integrity: sha512-HgY0xHGmPPakg6kEDufqxZuXVtvPZcipORC8O7S44iEnwsUmP+qnhReHc6d1dyeIZkrPmYFblh45Z2oeDn++fQ==
+      integrity: sha512-WyEoxgyTD3w5XRpAQNYUB9ycVH/PQrToaTXdYXRdOXvEy1l19br+VJsc0vcO8PTGg5ro/l/GY7F/JMEBmI0BxA==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -711,4 +711,4 @@ specifiers:
   chalk: ^2.4.2
   git-ts: ^0.0.5
   nested-workspace-helper: ^0.2.9
-  yargs: ^13.2.1
+  yargs: ^13.2.2
