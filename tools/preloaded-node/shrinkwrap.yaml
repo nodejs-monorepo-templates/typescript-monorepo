@@ -3,7 +3,7 @@ dependencies:
   '@types/json5': 0.0.30
   '@types/node': 11.10.5
   json5: 2.1.0
-  ts-node: 8.0.2
+  ts-node: 8.0.3
   tslib: 1.9.3
   typescript: 3.3.3333
 packages:
@@ -59,7 +59,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
-  /ts-node/8.0.2:
+  /ts-node/8.0.3:
     dependencies:
       arg: 4.1.0
       diff: 3.5.0
@@ -73,7 +73,7 @@ packages:
     peerDependencies:
       typescript: '>=2.0'
     resolution:
-      integrity: sha512-MosTrinKmaAcWgO8tqMjMJB22h+sp3Rd1i4fdoWY4mhBDekOwIAKI/bzmRi7IcbCmjquccYg2gcF6NBkLgr0Tw==
+      integrity: sha512-2qayBA4vdtVRuDo11DEFSsD/SFsBXQBRZZhbRGSIkmYmVkWjULn/GGMdG10KVqkaGndljfaTD8dKjWgcejO8YA==
   /tslib/1.9.3:
     dev: false
     resolution:
@@ -99,6 +99,6 @@ specifiers:
   '@types/json5': ^0.0.30
   '@types/node': ^11.10.5
   json5: ^2.1.0
-  ts-node: ^8.0.2
+  ts-node: ^8.0.3
   tslib: ^1.9.3
   typescript: ^3.3.3333
