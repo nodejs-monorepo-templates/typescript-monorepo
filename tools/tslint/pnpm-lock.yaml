@@ -4,11 +4,12 @@ dependencies:
   tslint: 5.13.1
   tslint-config-standard: 8.0.1
   typescript: 3.3.3333
+lockfileVersion: 5
 packages:
-  /@types/node/10.12.0:
+  /@types/node/10.12.30:
     dev: false
     resolution:
-      integrity: sha512-3TUHC3jsBAB7qVRGxT6lWyYo2v96BMmD2PTcl47H25Lu7UXtFH/2qqmKiVrnel6Ne//0TFYf6uvNX+HW2FRkLQ==
+      integrity: sha512-nsqTN6zUcm9xtdJiM9OvOJ5EF0kOI8f1Zuug27O/rgtxCRJHGqncSWfCMZUP852dCKPsDsYXGvBhxfRjDBkF5Q==
   /ansi-regex/2.1.1:
     dev: false
     engines:
@@ -142,7 +143,7 @@ packages:
       integrity: sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs=
   /exec-inline/0.0.2:
     dependencies:
-      '@types/node': 10.12.0
+      '@types/node': 10.12.30
       tslib: 1.9.3
     dev: false
     engines:
@@ -293,7 +294,7 @@ packages:
     dependencies:
       doctrine: 0.7.2
       tslib: 1.9.0
-      tsutils: 3.1.0
+      tsutils: 3.2.0
     dev: false
     peerDependencies:
       tslint: ^5.0.0
@@ -331,16 +332,16 @@ packages:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
     resolution:
       integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
-  /tsutils/3.1.0:
+  /tsutils/3.2.0:
     dependencies:
       tslib: 1.9.3
     dev: false
     engines:
       node: '>= 6'
     peerDependencies:
-      typescript: '>=2.8.0 || >= 3.2.0-dev'
+      typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev'
     resolution:
-      integrity: sha512-rmGhespW+nZMtdkc4JJefYSjux2uCDZxCTLU+nu8gvm+gM+YT0W5XAygHxaeOwRAHZ+SoPdrovZmAlZ2a0KSlw==
+      integrity: sha512-CvWEadl8VwlxOq6F3hfNbGrrRVSAjN2EPCEBgcbCUVDUxmwkV5254OGKsITNxDz8IGDQPAw7YJMtBHniHu2tbA==
   /typescript/3.3.3333:
     dev: false
     engines:
@@ -352,9 +353,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../places'
   exec-inline: ^0.0.2

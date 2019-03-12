@@ -2,6 +2,7 @@ dependencies:
   '@tools/places': 'link:../places'
   '@types/js-yaml': 3.12.0
   js-yaml: 3.12.2
+lockfileVersion: 5
 packages:
   /@types/js-yaml/3.12.0:
     dev: false
@@ -32,9 +33,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
 specifiers:
   '@tools/places': ../places
   '@types/js-yaml': ^3.12.0

@@ -2,6 +2,7 @@ dependencies:
   '@tools/places': 'link:../../tools/places'
   '@types/semver': 5.5.0
   semver: 5.6.0
+lockfileVersion: 5
 packages:
   /@types/semver/5.5.0:
     dev: false
@@ -12,9 +13,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
 specifiers:
   '@tools/places': 'file:../../tools/places'
   '@types/semver': ^5.5.0

@@ -1,20 +1,21 @@
 dependencies:
   '@tools/typescript': 'link:../typescript'
   '@types/json5': 0.0.30
-  '@types/node': 11.10.5
+  '@types/node': 11.11.1
   json5: 2.1.0
   ts-node: 8.0.3
   tslib: 1.9.3
   typescript: 3.3.3333
+lockfileVersion: 5
 packages:
   /@types/json5/0.0.30:
     dev: false
     resolution:
       integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==
-  /@types/node/11.10.5:
+  /@types/node/11.11.1:
     dev: false
     resolution:
-      integrity: sha512-DuIRlQbX4K+d5I+GMnv+UfnGh+ist0RdlvOp+JZ7ePJ6KQONCFQv/gKYSU1ZzbVdFSUCKZOltjmpFAGGv5MdYA==
+      integrity: sha512-2azXFP9n4aA2QNLkKm/F9pzKxgYj1SMawZ5Eh9iC21RH3XNcFsivLVU2NhpMgQm7YobSByvIol4c42ZFusXFHQ==
   /arg/4.1.0:
     dev: false
     resolution:
@@ -91,9 +92,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-+Wo/p5VRfxUgBUGy2j/6KX2mj9AYJWOHuhMjMcbBFc3y54o9/4buK1ksBvuiK01C3kby8DH9lSmJdSxw+4G/2Q==
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
 specifiers:
   '@tools/typescript': 'file:../typescript'
   '@types/json5': ^0.0.30

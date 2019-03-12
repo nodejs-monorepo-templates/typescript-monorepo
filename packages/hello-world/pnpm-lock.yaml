@@ -1,18 +1,16 @@
 dependencies:
-  '@types/node': 11.10.5
+  '@types/node': 11.11.1
   tslib: 1.9.3
+lockfileVersion: 5
 packages:
-  /@types/node/11.10.5:
+  /@types/node/11.11.1:
     dev: false
     resolution:
-      integrity: sha512-DuIRlQbX4K+d5I+GMnv+UfnGh+ist0RdlvOp+JZ7ePJ6KQONCFQv/gKYSU1ZzbVdFSUCKZOltjmpFAGGv5MdYA==
+      integrity: sha512-2azXFP9n4aA2QNLkKm/F9pzKxgYj1SMawZ5Eh9iC21RH3XNcFsivLVU2NhpMgQm7YobSByvIol4c42ZFusXFHQ==
   /tslib/1.9.3:
     dev: false
     resolution:
       integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
 specifiers:
   '@types/node': ^11.10.5
   tslib: ^1.9.3
