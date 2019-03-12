@@ -12,8 +12,8 @@ codecov
 ((stcode|=$?))
 
 echo 'Diffing lock file...'
-echo '  → shrinkwrap.yaml ≏ shrinkwrap.yaml.old.tmp'
-diff shrinkwrap.yaml shrinkwrap.yaml.old.tmp
+echo '  → pnpm-lock.yaml ≏ pnpm-lock.yaml.old.tmp'
+diff pnpm-lock.yaml pnpm-lock.yaml.old.tmp
 
 echo 'Checking warnings...'
 echo '  → node-warnings.log'
