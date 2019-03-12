@@ -1704,8 +1704,8 @@ packages:
       integrity: sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
 specifiers:
   '@tools/scripts': 'file:./tools/scripts'
-  '@types/jest': ^24.0.9
-  '@types/node': ^11.10.5
+  '@types/jest': ^24.0.11
+  '@types/node': ^11.11.1
   standard: ^12.0.1
   toolcheck: ^0.0.5
   tslint: ^5.13.1

@@ -95,7 +95,7 @@ packages:
 specifiers:
   '@tools/typescript': 'file:../typescript'
   '@types/json5': ^0.0.30
-  '@types/node': ^11.10.5
+  '@types/node': ^11.11.1
   json5: ^2.1.0
   ts-node: ^8.0.3
   tslib: ^1.9.3
