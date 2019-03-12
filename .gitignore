@@ -25,8 +25,8 @@ temp.*
 #   * Yarn's and NPM's are ignored for I use PNPM
 yarn.lock
 package-lock.json
-!shrinkwrap.yaml
-shrinkwrap.yaml.*
+!pnpm-lock.yaml
+pnpm-lock.yaml.*
 
 # Logs
 logs
