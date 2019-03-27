@@ -8,7 +8,7 @@ dependencies:
   jest: 24.4.0
   just-try: 2.1.0
   parse-dependency-range: 0.0.2
-  semver: 5.6.0
+  semver: 6.0.0
   ts-jest: 24.0.0
   tslib: 1.9.3
   typescript: 3.3.3333
@@ -1794,6 +1794,7 @@ packages:
       jest-environment-jsdom: 24.4.0
       jest-environment-node: 24.4.0
       jest-get-type: 24.3.0
+      jest-haste-map: 24.4.0
       jest-jasmine2: 24.4.0_jest-haste-map@24.4.0
       jest-regex-util: 24.3.0
       jest-resolve: 24.4.0_7d0ddb9c39ce5839dd7c00199e0ed5df
@@ -1923,6 +1924,7 @@ packages:
       expect: 24.4.0
       is-generator-fn: 2.0.0
       jest-each: 24.4.0
+      jest-haste-map: 24.4.0
       jest-matcher-utils: 24.4.0
       jest-message-util: 24.3.0
       jest-runtime: 24.4.0
@@ -2016,6 +2018,7 @@ packages:
       chalk: 2.4.2
       jest-haste-map: 24.4.0
       jest-pnp-resolver: 1.2.1_jest-resolve@24.4.0
+      jest-resolve: 24.4.0_7d0ddb9c39ce5839dd7c00199e0ed5df
       realpath-native: 1.1.0
     dev: false
     engines:
@@ -3130,6 +3133,11 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
+  /semver/6.0.0:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-0UewU+9rFapKFnlbirLi3byoOuhrSsli/z/ihNnvM24vgF+8sNBiI1LZPBSH9wJKUwaUbw+s3hToDLCXkrghrQ==
   /set-blocking/2.0.0:
     dev: false
     resolution:
@@ -3781,7 +3789,7 @@ specifiers:
   jest: ^24.4.0
   just-try: ^2.1.0
   parse-dependency-range: ^0.0.2
-  semver: ^5.6.0
+  semver: ^6.0.0
   ts-jest: ^24.0.0
   tslib: ^1.9.3
   typescript: ^3.3.3333
