@@ -1,4 +1,6 @@
 'use strict'
+const path = require('path')
+
 const {
   TEST_WITHOUT_COVERAGE = 'false'
 } = require('process').env
@@ -29,7 +31,8 @@ const test = {
   coveragePathIgnorePatterns,
   globals: {
     'ts-jest': {
-      diagnostics: false
+      diagnostics: false,
+      tsConfig: path.resolve(__dirname, 'tsconfig.test.json')
     }
   }
 }
