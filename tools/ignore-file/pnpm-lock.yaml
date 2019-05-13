@@ -1,10 +1,10 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
-  '@types/fs-extra': 5.1.0
+  '@types/fs-extra': 7.0.0
   '@types/js-yaml': 3.12.1
   '@types/minimatch': 3.0.3
-  fs-extra: 8.0.0
+  fs-extra: 8.0.1
   fs-tree-utils: 0.1.6
   js-yaml: 3.13.1
   minimatch: 3.0.4
@@ -13,10 +13,16 @@ lockfileVersion: 5
 packages:
   /@types/fs-extra/5.1.0:
     dependencies:
-      '@types/node': 12.0.0
+      '@types/node': 12.0.1
     dev: false
     resolution:
       integrity: sha512-AInn5+UBFIK9FK5xc9yP5e3TQSPNNgjHByqYcj9g5elVBnDQcQL7PlO1CIRy2gWlbwK7UPYqi7vRvFA44dCmYQ==
+  /@types/fs-extra/7.0.0:
+    dependencies:
+      '@types/node': 12.0.1
+    dev: false
+    resolution:
+      integrity: sha512-ndoMMbGyuToTy4qB6Lex/inR98nPiNHacsgMPvy+zqMLgSxbt8VtWpDArpGp69h1fEDQHn1KB+9DWD++wgbwYA==
   /@types/js-yaml/3.12.1:
     dev: false
     resolution:
@@ -29,10 +35,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Fvm24+u85lGmV4hT5G++aht2C5I4Z4dYlWZIh62FAfFO/TfzXtPpoLI6I7AuBWkIFqZCnhFOoTT7RjjaIL5Fjg==
-  /@types/node/12.0.0:
+  /@types/node/12.0.1:
     dev: false
     resolution:
-      integrity: sha512-Jrb/x3HT4PTJp6a4avhmJCDEVrPdqLfl3e8GGMbpkGGdwAV5UGlIs4vVEfsHHfylZVOKZWpOqmqFH8CbfOZ6kg==
+      integrity: sha512-7sy7DKVJrCTbaAERJZq/CU12bzdmpjRr321/Ne9QmzhB3iZ//L16Cizcni5hHNbANxDbxwMb9EFoWkM8KPkp0A==
   /@types/ramda/0.25.51:
     dev: false
     resolution:
@@ -75,7 +81,7 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
-  /fs-extra/8.0.0:
+  /fs-extra/8.0.1:
     dependencies:
       graceful-fs: 4.1.15
       jsonfile: 4.0.0
@@ -84,7 +90,7 @@ packages:
     engines:
       node: '>=6 <7 || >=8'
     resolution:
-      integrity: sha512-3hU7dzpfqG+A7gloPULls7j9mKDzpCyMOTBvQS0lZfqVfjA6/m0AkLXq0O1vnfP5roXjjL1DuUGKapr8vJWmQw==
+      integrity: sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
   /fs-tree-utils/0.1.6:
     dependencies:
       '@types/fs-extra': 5.1.0
@@ -162,7 +168,7 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
-  '@types/fs-extra': ^5.0.5
+  '@types/fs-extra': ^7.0.0
   '@types/js-yaml': ^3.12.0
   '@types/minimatch': ^3.0.3
   fs-extra: ^8.0.0
