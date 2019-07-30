@@ -2,8 +2,8 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
   glob: 7.1.3
-  glob-promise: 3.4.0
-lockfileVersion: 5
+  glob-promise: 3.4.0_glob@7.1.3
+lockfileVersion: 5.1
 packages:
   /@types/events/1.2.0:
     dev: false
@@ -44,9 +44,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /glob-promise/3.4.0:
+  /glob-promise/3.4.0_glob@7.1.3:
     dependencies:
       '@types/glob': 7.1.1
+      glob: 7.1.3
     dev: false
     engines:
       node: '>=4'

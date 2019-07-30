@@ -1,7 +1,7 @@
 dependencies:
   '@tools/test-spawn': 'link:../../tools/test-spawn'
   '@tools/tslint': 'link:../../tools/tslint'
-lockfileVersion: 5
+lockfileVersion: 5.1
 specifiers:
   '@tools/test-spawn': 'file:../../tools/test-spawn'
   '@tools/tslint': 'file:../../tools/tslint'

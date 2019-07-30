@@ -1,5 +1,5 @@
 dependencies:
   '@scope-name/scoped-hello-world': 'link:../../packages/scoped-hello-world'
-lockfileVersion: 5
+lockfileVersion: 5.1
 specifiers:
   '@scope-name/scoped-hello-world': 'file:../../packages/scoped-hello-world'
