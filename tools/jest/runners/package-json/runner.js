@@ -304,6 +304,13 @@ function main ({ testPath }) {
     mustNotHaveVersion()
     return getResult()
   }
+
+  {
+    const expectedPlaces = Object.values(places).join(' or ')
+    reasons.push(`Unexpected path: package.json are expected to be in ${expectedPlaces}`)
+    reasons.push(`Hint: Edit ${__filename} to allow new places`)
+    return getResult()
+  }
 }
 
 module.exports = main
