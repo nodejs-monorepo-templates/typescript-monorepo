@@ -12,7 +12,7 @@
     "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo/issues"
   },
   "dependencies": {
-    "tslib": "^1.9.3",
-    "@types/node": "^11.11.1"
+    "tslib": "^1.10.0",
+    "@types/node": "^12.6.8"
   }
 }

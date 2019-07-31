@@ -1,8 +1,8 @@
 dependencies:
   '@tools/places': 'link:../places'
   exec-inline: 0.0.2
-  tslint: 5.16.0_typescript@3.5.3
-  tslint-config-standard: 8.0.1_tslint@5.16.0+typescript@3.5.3
+  tslint: 5.18.0_typescript@3.5.3
+  tslint-config-standard: 8.0.1_tslint@5.18.0+typescript@3.5.3
   typescript: 3.5.3
 lockfileVersion: 5.1
 packages:
@@ -244,20 +244,20 @@ packages:
     dev: false
     resolution:
       integrity: sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
-  /tslint-config-standard/8.0.1_tslint@5.16.0+typescript@3.5.3:
+  /tslint-config-standard/8.0.1_tslint@5.18.0+typescript@3.5.3:
     dependencies:
-      tslint-eslint-rules: 5.4.0_tslint@5.16.0+typescript@3.5.3
+      tslint-eslint-rules: 5.4.0_tslint@5.18.0+typescript@3.5.3
     dev: false
     peerDependencies:
       tslint: '*'
       typescript: '*'
     resolution:
       integrity: sha512-OWG+NblgjQlVuUS/Dmq3ax2v5QDZwRx4L0kEuDi7qFY9UI6RJhhNfoCV1qI4el8Fw1c5a5BTrjQJP0/jhGXY/Q==
-  /tslint-eslint-rules/5.4.0_tslint@5.16.0+typescript@3.5.3:
+  /tslint-eslint-rules/5.4.0_tslint@5.18.0+typescript@3.5.3:
     dependencies:
       doctrine: 0.7.2
       tslib: 1.9.0
-      tslint: 5.16.0_typescript@3.5.3
+      tslint: 5.18.0_typescript@3.5.3
       tsutils: 3.10.0_typescript@3.5.3
       typescript: 3.5.3
     dev: false
@@ -266,7 +266,7 @@ packages:
       typescript: ^2.2.0 || ^3.0.0
     resolution:
       integrity: sha512-WlSXE+J2vY/VPgIcqQuijMQiel+UtmXS+4nvK4ZzlDiqBfXse8FAvkNnTcYhnQyOTW5KFM+uRRGXxYhFpuBc6w==
-  /tslint/5.16.0_typescript@3.5.3:
+  /tslint/5.18.0_typescript@3.5.3:
     dependencies:
       '@babel/code-frame': 7.0.0
       builtin-modules: 1.1.1
@@ -287,9 +287,9 @@ packages:
       node: '>=4.8.0'
     hasBin: true
     peerDependencies:
-      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
+      typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
     resolution:
-      integrity: sha512-UxG2yNxJ5pgGwmMzPMYh/CCnCnh0HfPgtlVRDs1ykZklufFBL1ZoTlWFRz2NQjcoEiDoRp+JyT0lhBbbH/obyA==
+      integrity: sha512-Q3kXkuDEijQ37nXZZLKErssQVnwCV/+23gFEMROi8IlbaBG6tXqLPQJ5Wjcyt/yHPKBC+hD5SzuGaMora+ZS6w==
   /tsutils/2.29.0_typescript@3.5.3:
     dependencies:
       tslib: 1.10.0
@@ -324,6 +324,6 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   exec-inline: ^0.0.2
-  tslint: ^5.13.1
+  tslint: ^5.18.0
   tslint-config-standard: ^8.0.1
-  typescript: ^3.3.3333
+  typescript: ^3.5.3
