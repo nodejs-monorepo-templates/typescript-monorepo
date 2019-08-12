@@ -176,6 +176,14 @@ const dict = {
   runTSLint: {
     describe: 'Lint TypeScript codes with TSLint',
     act: mkspawn(commands.tslint)
+  },
+
+  new: {
+    describe: 'Create new folder',
+    async act () {
+      const main = require('@tools/create-new-folder')
+      await main()
+    }
   }
 }
 
