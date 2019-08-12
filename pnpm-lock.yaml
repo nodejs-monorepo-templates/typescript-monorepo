@@ -4,6 +4,7 @@ devDependencies:
   '@types/node': 12.6.8
   standard: 13.1.0
   toolcheck: 0.0.5
+  tslib: 1.10.0
   tslint: 5.18.0_typescript@3.5.3
   tslint-config-standard: 8.0.1_tslint@5.18.0+typescript@3.5.3
   typescript: 3.5.3
@@ -1741,6 +1742,7 @@ specifiers:
   '@types/node': ^12.6.8
   standard: ^13.1.0
   toolcheck: ^0.0.5
+  tslib: ^1.10.0
   tslint: ^5.18.0
   tslint-config-standard: ^8.0.1
   typescript: ^3.5.3
