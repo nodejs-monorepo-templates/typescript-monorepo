@@ -1,0 +1,15 @@
+{
+  "name": "@tools/create-new-folder",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "bin": "bin.js",
+  "dependencies": {
+    "inquirer": "^6.5.1",
+    "fs-extra": "^8.1.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/fs-extra": "^8.0.0",
+    "@tools/pkgcfg": "file:../pkgcfg",
+    "@tools/places": "file:../places"
+  }
+}
