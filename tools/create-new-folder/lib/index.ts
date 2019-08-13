@@ -5,8 +5,15 @@ import yargs from 'ts-yargs'
 import * as fsx from 'fs-extra'
 import * as config from '@tools/pkgcfg'
 import * as places from '@tools/places'
-import { createLogger, writeJSON } from '@tools/utils'
-const rootManifest = require(path.resolve(places.project, 'package.json'))
+import {
+  createLogger,
+  writeJSON,
+  PackageManifest,
+  TestManifest,
+  ToolManifest,
+  loadRootManifest
+} from '@tools/utils'
+const rootManifest = loadRootManifest()
 
 const { editor, silent } = yargs
   .option('editor', {
@@ -69,13 +76,13 @@ async function promptRemaining (): Promise<Remaining> {
       name: 'author',
       message: 'Field "author" of package.json',
       type: 'input',
-      default: String(rootManifest.author)
+      default: rootManifest.author
     },
     {
       name: 'license',
       message: 'Field "license" of package.json',
       type: 'input',
-      default: rootManifest.license || 'MIT'
+      default: rootManifest.license || 'MIT' // empty string → 'MIT'
     }
   ])
 }
@@ -128,7 +135,7 @@ export async function newPackage (name: string) {
   const { description, author, license } = await promptRemaining()
   const { homepage, repository, bugs, devDependencies } = rootManifest
 
-  const manifest = {
+  const manifest: PackageManifest = {
     name: scope ? `@${scope}/${name}` : name,
     version: '0.0.0',
     description: description || undefined, // empty string → undefined
@@ -178,7 +185,7 @@ export async function newTest (name: string) {
     }
   }
 
-  const manifest = {
+  const manifest: TestManifest = {
     private: true,
     ...await getSubjectDeps()
   }
@@ -191,7 +198,7 @@ export async function newTest (name: string) {
  * @param name Folder name
  */
 export async function newTool (name: string) {
-  const manifest = {
+  const manifest: ToolManifest = {
     name: '@tools/' + name,
     version: '0.0.0',
     private: true
