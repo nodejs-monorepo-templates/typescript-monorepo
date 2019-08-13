@@ -1,13 +1,13 @@
 'use strict'
-const path = require('path')
-const chalk = require('chalk').default
-const places = require('@tools/places')
+import path from 'path'
+import chalk from 'chalk'
+import * as places from '@tools/places'
 const prefix = chalk.dim('$')
 const node = chalk.dim('node')
 const projectPrfx = '<project>'
 const program = chalk.bold
 
-module.exports = (first, second, ...rest) => {
+export function formatCommand (first: string, second: string, ...rest: string[]) {
   const formatedRest = rest.map(x => x.replace(places.project, projectPrfx))
 
   if (first === 'node') {
@@ -34,3 +34,5 @@ module.exports = (first, second, ...rest) => {
     ...formatedRest
   ]
 }
+
+export default formatCommand
