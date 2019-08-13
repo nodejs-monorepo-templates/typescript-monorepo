@@ -18,7 +18,7 @@ function main (cmd: string, argv: readonly string[]) {
 
   function callCmd (cmd: keyof typeof dict, ...args: string[]) {
     console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
-    spawnSync('node', script, cmd, ...args).exit.onerror()
+    main(cmd, args)
   }
 
   class Command {
