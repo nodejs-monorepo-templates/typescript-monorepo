@@ -5,18 +5,26 @@ const { prompt } = require('inquirer')
 const fsx = require('fs-extra')
 const config = require('@tools/pkgcfg')
 const places = require('@tools/places')
-const { esm } = require('@tools/utils')
+const { esm, logger } = require('@tools/utils')
 const rootManifest = require(path.resolve(places.project, 'package.json'))
 
-const { editor } = require('ts-yargs')
+const { editor, silent } = require('ts-yargs')
   .option('editor', {
     alias: 'e',
     describe: 'Open file after creation',
     type: 'string',
     default: ''
   })
+  .option('silent', {
+    alias: ['quiet', 'q'],
+    describe: 'Whether to log actions to the terminal',
+    type: 'boolean',
+    default: false
+  })
   .help()
   .argv
+
+const log = logger(silent)
 
 /**
  * Choose a scope from a list of scopes
@@ -102,7 +110,7 @@ async function openEditor (filename) {
   const opener = await getOpener()
 
   if (opener) {
-    console.info(`Executing ${opener} ${filename}`)
+    log(`Executing ${opener} ${filename}`)
     spawnSync(opener, [filename], { stdio: 'inherit' })
   }
 }
@@ -120,7 +128,7 @@ async function writeManifest (container, name, manifest) {
   const content = JSON.stringify(manifest, undefined, 2) + '\n'
   await fsx.mkdir(dirname)
   await fsx.writeFile(filename, content)
-  console.info(`Created file ${filename}`)
+  log(`Created file ${filename}`)
   await openEditor(filename)
 }
 
