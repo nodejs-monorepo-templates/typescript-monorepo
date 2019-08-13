@@ -97,9 +97,9 @@ export interface TestManifest extends Manifest {
 }
 
 export interface ToolManifest extends Manifest {
-  readonly name: string
+  readonly name?: undefined
   readonly version: '0.0.0'
-  readonly private?: false
+  readonly private: true
   readonly description?: undefined
   readonly homepage?: undefined
   readonly license?: undefined
