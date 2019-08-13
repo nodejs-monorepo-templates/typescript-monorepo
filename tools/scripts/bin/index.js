@@ -181,7 +181,7 @@ const dict = {
   new: {
     describe: 'Create new folder',
     async act () {
-      const main = require('@tools/create-new-folder')
+      const { main } = require('@tools/create-new-folder')
       await main()
     }
   }
