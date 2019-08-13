@@ -8,18 +8,12 @@ const esm = require('../esm')
 
 /**
  * Create a logger function
- * @param {'silent' | 'stdout' | 'stderr'} target Where to log to
+ * @param {boolean} silent Where to log to
+ * @param {LogFunc=} log Log function
  * @returns {LogFunc}
  */
-function createLogger (target) {
-  switch (target) {
-    case 'silent':
-      return () => undefined
-    case 'stdout':
-      return console.info
-    case 'stderr':
-      return console.error
-  }
+function createLogger (silent, log = console.info) {
+  return silent ? () => undefined : log
 }
 
 Object.defineProperty(createLogger, '__esModule', { value: true })
