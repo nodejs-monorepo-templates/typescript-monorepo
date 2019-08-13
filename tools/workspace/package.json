@@ -7,7 +7,7 @@
   "dependencies": {
     "number-enum": "^3.0.0",
     "nested-workspace-helper": "^0.2.9",
-    "exec-inline": "^0.0.2",
+    "exec-inline": "^0.0.3",
     "@tools/places": "file:../places"
   }
 }
