@@ -57,7 +57,7 @@ export interface RootManifest extends Manifest {
   readonly main?: undefined
   readonly types?: undefined
   readonly dependencies?: undefined
-  readonly devDependencies?: DependencyDict
+  readonly devDependencies: DependencyDict
   readonly peerDependencies?: undefined
   readonly optionalDependencies?: undefined
   readonly scripts: ScriptDict
