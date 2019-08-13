@@ -13,16 +13,22 @@ function mkspawn (...args: [string, ...string[]]) {
   return () => spawnSync('node', ...args, ...argv).exit.onerror()
 }
 
-function callCmd (cmd: string, ...args: string[]) {
+function callCmd (cmd: keyof typeof dict, ...args: string[]) {
   console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
   spawnSync('node', script, cmd, ...args).exit.onerror()
 }
 
-const dict = {
-  help: {
-    describe: 'Print usage',
+class Command {
+  constructor (
+    public readonly describe: string,
+    public readonly act: () => void
+  ) {}
+}
 
-    act () {
+class Dict {
+  public readonly help = new Command(
+    'Print usage',
+    () => {
       const title = (text: string) => console.info('\n' + chalk.bold(text))
       const member = (key: string, value: string) => console.info(`  ${key}: ${chalk.dim(value)}`)
 
@@ -41,28 +47,26 @@ const dict = {
 
       console.info()
     }
-  },
+  )
 
-  workspace: {
-    describe: 'Invoke nested-workspace-helper',
-    act: mkspawn(commands.workspace)
-  },
+  public readonly workspace = new Command(
+    'Invoke nested-workspace-helper',
+    mkspawn(commands.workspace)
+  )
 
-  mismatches: {
-    describe: 'Check for mismatched versions',
-
-    act: mkspawn(
+  public readonly mismatches = new Command(
+    'Check for mismatched versions',
+    mkspawn(
       commands.workspace,
       'verman',
       'mismatches',
       places.packages
     )
-  },
+  )
 
-  test: {
-    describe: 'Run tests',
-
-    act () {
+  public readonly test = new Command(
+    'Run tests',
+    () => {
       callCmd('clean')
 
       spawnSync(
@@ -72,39 +76,31 @@ const dict = {
         ...argv
       ).exit.onerror()
     }
-  },
+  )
 
-  build: {
-    describe: 'Build all products',
+  public readonly build = new Command(
+    'Build all products',
+    () => callCmd('buildTypescript')
+  )
 
-    act () {
-      callCmd('buildTypescript')
-    }
-  },
+  public readonly clean = new Command(
+    'Clean build products',
+    () => callCmd('cleanTypescriptBuild')
+  )
 
-  clean: {
-    describe: 'Clean build products',
-
-    act () {
-      callCmd('cleanTypescriptBuild')
-    }
-  },
-
-  prepublish: {
-    describe: 'Commands that run before publishing packages',
-
-    act () {
+  public readonly prepublish = new Command(
+    'Commands that run before publishing packages',
+    () => {
       callCmd('createIgnoreFiles')
       callCmd('mismatches')
       callCmd('testAll')
       callCmd('build')
     }
-  },
+  )
 
-  publish: {
-    describe: 'Publish packages versions that have yet to publish',
-
-    act () {
+  public readonly publish = new Command(
+    'Publish packages versions that have yet to publish',
+    () => {
       callCmd('prepublish')
 
       console.info('Publishing packages...')
@@ -117,78 +113,73 @@ const dict = {
 
       callCmd('postpublish')
     }
-  },
+  )
 
-  postpublish: {
-    describe: 'Commands that run after publishing packages',
+  public readonly postpublish = new Command(
+    'Commands that run after publishing packages',
+    () => callCmd('clean')
+  )
 
-    act () {
-      callCmd('clean')
-    }
-  },
-
-  createIgnoreFiles: {
-    describe: 'Create .npmignore files in every packages',
-
-    act () {
+  public readonly createIgnoreFiles = new Command(
+    'Create .npmignore files in every packages',
+    () => {
       spawnSync(
         'node',
         require.resolve('@tools/ignore-file/bin/write'),
         ...argv
       ).exit.onerror()
     }
-  },
+  )
 
-  testAll: {
-    describe: 'Run all tests in production mode',
+  public readonly testAll = new Command(
+    'Run all tests in production mode',
+    () => callCmd('test', '--ci')
+  )
 
-    act () {
-      callCmd('test', '--ci')
-    }
-  },
-
-  buildTypescript: {
-    describe: 'Compile TypeScript files',
-    act: mkspawn(
+  public readonly buildTypescript = new Command(
+    'Compile TypeScript files',
+    mkspawn(
       commands.typescript,
       '--project',
       path.resolve(places.packages, 'tsconfig.json')
     )
-  },
+  )
 
-  cleanTypescriptBuild: {
-    describe: 'Clean TSC build products',
-    act: mkspawn(commands.cleanTypescriptBuild)
-  },
+  public readonly cleanTypescriptBuild = new Command(
+    'Clean TSC build products',
+    mkspawn(commands.cleanTypescriptBuild)
+  )
 
-  gitTagVersions: {
-    describe: 'Create tags for every package based on their current version',
-    act: mkspawn(commands.gitTagVersions)
-  },
+  public readonly gitTagVersions = new Command(
+    'Create tags for every package based on their current version',
+    mkspawn(commands.gitTagVersions)
+  )
 
-  runPreloadedNode: {
-    describe: 'Run node with registered modules',
-    act: mkspawn(commands.preloadedNode)
-  },
+  public readonly runPreloadedNode = new Command(
+    'Run node with registered modules',
+    mkspawn(commands.preloadedNode)
+  )
 
-  runStandardJS: {
-    describe: 'Lint JavaScript codes with StandardJS',
-    act: mkspawn(commands.standardjs)
-  },
+  public readonly runStandardJS = new Command(
+    'Lint JavaScript codes with StandardJS',
+    mkspawn(commands.standardjs)
+  )
 
-  runTSLint: {
-    describe: 'Lint TypeScript codes with TSLint',
-    act: mkspawn(commands.tslint)
-  },
+  public readonly runTSLint = new Command(
+    'Lint TypeScript codes with TSLint',
+    mkspawn(commands.tslint)
+  )
 
-  new: {
-    describe: 'Create new folder',
-    async act () {
+  public readonly new = new Command(
+    'Create new folder',
+    async () => {
       const { main } = require('@tools/create-new-folder')
       await main()
     }
-  }
+  )
 }
+
+const dict = new Dict()
 
 function printError (message: string) {
   console.error(chalk.red('[ERROR]'), message, '\n')
