@@ -11,7 +11,7 @@ dependencies:
   '@tools/typescript': 'link:../typescript'
   '@tools/workspace': 'link:../workspace'
   chalk: 2.4.2
-  exec-inline: 0.0.2
+  exec-inline: 0.0.3
   number-enum: 3.0.0
 lockfileVersion: 5.1
 packages:
@@ -28,10 +28,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-IvfvnMdSaLBateu0jfsYIpZTxAc2cKEXEMiezGGN75QcBcecDUKd3PgLAncT0oOgxKy8dd8hrJKj9MfzgfZd6g==
-  /@types/node/10.12.30:
+  /@types/node/12.7.1:
     dev: false
     resolution:
-      integrity: sha512-nsqTN6zUcm9xtdJiM9OvOJ5EF0kOI8f1Zuug27O/rgtxCRJHGqncSWfCMZUP852dCKPsDsYXGvBhxfRjDBkF5Q==
+      integrity: sha512-aK9jxMypeSrhiYofWWBf/T7O+KwaiAHzM4sveCdWPn71lzUSMimRnKzhXDKfKwV1kWoBo2P1aGgaIYGLf9/ljw==
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -74,15 +74,15 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /exec-inline/0.0.2:
+  /exec-inline/0.0.3:
     dependencies:
-      '@types/node': 10.12.30
-      tslib: 1.9.3
+      '@types/node': 12.7.1
+      tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-Y37NLc/InNSvORukAagfNmkXiqwgqixZDJFQ6xm0H2wruImOte9g3151nmjWS+WpzdSyFpDUoAZxpqNVZTKoUQ==
+      integrity: sha512-r+QZ65SwH5tD25rUYktVrWMLaaouuGAc9Z0WohbTVW0YQ+F592kuqdb5782hbj92roxMJEDDPNwvqn+bXuGguw==
   /has-flag/3.0.0:
     dev: false
     engines:
@@ -125,10 +125,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  /tslib/1.9.3:
+  /tslib/1.10.0:
     dev: false
     resolution:
-      integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
+      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
   /typescript-compare/0.0.2:
     dependencies:
       typescript-logic: 0.0.0
@@ -185,5 +185,5 @@ specifiers:
   '@tools/typescript': 'file:../typescript'
   '@tools/workspace': 'file:../workspace'
   chalk: ^2.4.2
-  exec-inline: ^0.0.2
+  exec-inline: ^0.0.3
   number-enum: ^3.0.0
