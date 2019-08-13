@@ -1,0 +1,5 @@
+dependencies:
+  '@tools/preloaded-node': 'link:../preloaded-node'
+lockfileVersion: 5.1
+specifiers:
+  '@tools/preloaded-node': 'file:../preloaded-node'
