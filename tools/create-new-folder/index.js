@@ -48,10 +48,20 @@ async function chooseScope (choices) {
 
 /**
  * Ask remaining question
- * @returns {Promise.<{ name: string, author: string, license: string }>}
+ * @returns {Promise.<{
+ *  description: string,
+ *  name: string,
+ *  author: string,
+ *  license: string
+ * }>}
  */
 async function promptRemaining () {
   return prompt([
+    {
+      name: 'description',
+      message: 'Field "description" of package.json',
+      type: 'input'
+    },
     {
       name: 'author',
       message: 'Field "author" of package.json',
@@ -119,12 +129,13 @@ async function writeManifest (container, name, manifest) {
  */
 async function newPackage (name) {
   const scope = await chooseScope(config.scopes)
-  const { author, license } = await promptRemaining()
+  const { description, author, license } = await promptRemaining()
   const { homepage, repository, bugs, devDependencies } = rootManifest
 
   const manifest = {
     name: scope ? `@${scope}/${name}` : name,
     version: '0.0.0',
+    description: description || undefined,
     author,
     license,
     homepage,
