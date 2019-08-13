@@ -1,9 +1,21 @@
 const path = require('path')
+const { spawnSync } = require('child_process')
+const process = require('process')
 const { prompt } = require('inquirer')
 const fsx = require('fs-extra')
 const config = require('@tools/pkgcfg')
 const places = require('@tools/places')
 const rootManifest = require(path.resolve(places.project, 'package.json'))
+
+const { editor } = require('ts-yargs')
+  .option('editor', {
+    alias: 'e',
+    describe: 'Open file after creation',
+    type: 'string',
+    default: ''
+  })
+  .help()
+  .argv
 
 /**
  * Choose a scope from a list of scopes
@@ -56,6 +68,35 @@ async function promptRemaining () {
 }
 
 /**
+ * Ask to open an editor
+ * @param {string} filename File to open
+ * @returns {Promise.<void>}
+ */
+async function openEditor (filename) {
+  async function getOpener () {
+    if (editor) return editor
+
+    const { EDITOR } = process.env
+    if (!EDITOR) return null
+
+    const { confirmation } = await prompt({
+      name: 'confirmation',
+      message: `Execute ${EDITOR} ${filename}`,
+      type: 'confirm'
+    })
+
+    return confirmation ? EDITOR : null
+  }
+
+  const opener = await getOpener()
+
+  if (opener) {
+    console.info(`Executing ${opener} ${filename}`)
+    spawnSync(opener, [filename], { stdio: 'inherit' })
+  }
+}
+
+/**
  * Write manifest file
  * @param {string} container Place of the folder
  * @param {string} name Name of the folder
@@ -68,6 +109,8 @@ async function writeManifest (container, name, manifest) {
   const content = JSON.stringify(manifest, undefined, 2) + '\n'
   await fsx.mkdir(dirname)
   await fsx.writeFile(filename, content)
+  console.info(`Created file ${filename}`)
+  await openEditor(filename)
 }
 
 /**
