@@ -131,7 +131,7 @@ export async function newPackage (name: string) {
   const manifest = {
     name: scope ? `@${scope}/${name}` : name,
     version: '0.0.0',
-    description: description || undefined,
+    description: description || undefined, // empty string → undefined
     author,
     license,
     homepage,
