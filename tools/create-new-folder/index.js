@@ -222,7 +222,8 @@ async function main () {
     {
       name: 'name',
       message: 'Folder name',
-      type: 'input'
+      type: 'input',
+      validate: input => Boolean(input)
     }
   ])
 
