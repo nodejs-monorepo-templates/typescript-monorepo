@@ -5,7 +5,7 @@ import yargs from 'ts-yargs'
 import * as fsx from 'fs-extra'
 import * as config from '@tools/pkgcfg'
 import * as places from '@tools/places'
-import { createLogger } from '@tools/utils'
+import { createLogger, writeJSON } from '@tools/utils'
 const rootManifest = require(path.resolve(places.project, 'package.json'))
 
 const { editor, silent } = yargs
@@ -113,9 +113,8 @@ async function openEditor (filename: string) {
 async function writeManifest (container: string, name: string, manifest: any) {
   const dirname = path.join(container, name)
   const filename = path.join(dirname, 'package.json')
-  const content = JSON.stringify(manifest, undefined, 2) + '\n'
   await fsx.mkdir(dirname)
-  await fsx.writeFile(filename, content)
+  await writeJSON(filename, manifest)
   log(`Created file ${filename}`)
   await openEditor(filename)
 }
