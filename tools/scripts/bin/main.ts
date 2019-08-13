@@ -17,8 +17,8 @@ class Command {
 type CommandName = Exclude<keyof Dict, 'mkspawn' | 'callCmd'>
 
 abstract class Dict {
-  protected abstract mkspawn (cmd: string, ...args: string[]): () => void
-  protected abstract callCmd (cmd: CommandName, ...args: string[]): void
+  protected abstract mkspawn (script: string, ...args: string[]): () => void
+  protected abstract callCmd (command: CommandName, ...args: string[]): void
 
   public readonly help = new Command(
     'Print usage',
