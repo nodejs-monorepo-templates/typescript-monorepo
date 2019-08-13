@@ -200,8 +200,10 @@ export function loadManifest (filename: string): LoadedResult {
   return { type, manifest }
 }
 
+export const rootManifestPath = path.join(places.project, 'package.json')
+
 export function loadRootManifest (): RootManifest {
-  return require(places.project)
+  return require(rootManifestPath)
 }
 
 interface Loader<Return> {
