@@ -3,7 +3,6 @@ import process from 'process'
 import chalk from 'chalk'
 import * as places from '@tools/places'
 import { commands, enums, functions } from '../index'
-const script = require.resolve('./index.js')
 const { ExitStatusCode } = enums
 const { spawnSync } = functions
 const [cmd, ...argv] = process.argv.slice(2)
