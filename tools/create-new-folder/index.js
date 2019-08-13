@@ -161,7 +161,7 @@ async function newTest (name) {
 
     const dependency = 'file:' + path.relative(
       path.join(places.test, name),
-      subjectPath
+      path.join(places.packages, name)
     )
 
     return {
