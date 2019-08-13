@@ -11,6 +11,7 @@
     "@types/inquirer": "^6.5.0",
     "@types/fs-extra": "^8.0.0",
     "@tools/pkgcfg": "file:../pkgcfg",
-    "@tools/places": "file:../places"
+    "@tools/places": "file:../places",
+    "@tools/utils": "file:../utils"
   }
 }

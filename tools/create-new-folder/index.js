@@ -5,6 +5,7 @@ const { prompt } = require('inquirer')
 const fsx = require('fs-extra')
 const config = require('@tools/pkgcfg')
 const places = require('@tools/places')
+const { esm } = require('@tools/utils')
 const rootManifest = require(path.resolve(places.project, 'package.json'))
 
 const { editor } = require('ts-yargs')
@@ -239,13 +240,10 @@ async function main () {
   }
 }
 
-Object.defineProperty(main, '__esModule', { value: true })
-
-module.exports = Object.assign(main, {
+module.exports = Object.assign(esm(main), {
   chooseScope,
   newPackage,
   newTest,
   newTool,
-  main,
-  default: main
+  main
 })
