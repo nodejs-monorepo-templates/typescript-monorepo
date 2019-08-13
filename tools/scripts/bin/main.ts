@@ -8,7 +8,16 @@ const { ExitStatusCode } = enums
 const { spawnSync } = functions
 const [cmd, ...argv] = process.argv.slice(2)
 
-main(cmd, argv)
+class Command {
+  constructor (
+    public readonly describe: string,
+    public readonly act: () => void
+  ) {}
+}
+
+function printError (message: string) {
+  console.error(chalk.red('[ERROR]'), message, '\n')
+}
 
 function main (cmd: string, argv: readonly string[]) {
   function mkspawn (...args: [string, ...string[]]) {
@@ -19,13 +28,6 @@ function main (cmd: string, argv: readonly string[]) {
   function callCmd (cmd: keyof typeof dict, ...args: string[]) {
     console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
     main(cmd, args)
-  }
-
-  class Command {
-    constructor (
-      public readonly describe: string,
-      public readonly act: () => void
-    ) {}
   }
 
   class Dict {
@@ -184,10 +186,6 @@ function main (cmd: string, argv: readonly string[]) {
 
   const dict = new Dict()
 
-  function printError (message: string) {
-    console.error(chalk.red('[ERROR]'), message, '\n')
-  }
-
   if (!cmd) {
     dict.help.act()
     printError('Insufficient Arguments')
@@ -199,3 +197,5 @@ function main (cmd: string, argv: readonly string[]) {
     process.exit(ExitStatusCode.UnknownCommand)
   }
 }
+
+main(cmd, argv)
