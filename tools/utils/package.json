@@ -5,6 +5,8 @@
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {
+    "fs-extra": "^8.1.0",
+    "@types/fs-extra": "^8.0.0",
     "@tools/preloaded-node": "file:../preloaded-node"
   }
 }
