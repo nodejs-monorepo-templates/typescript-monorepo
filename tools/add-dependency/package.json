@@ -1,0 +1,16 @@
+{
+  "name": "@tools/add-dependency",
+  "version": "0.0.0",
+  "private": true,
+  "bin": "bin.js",
+  "dependencies": {
+    "inquirer": "^6.5.1",
+    "fs-extra": "^8.1.0",
+    "ts-yargs": "^0.0.2",
+    "@types/inquirer": "^6.5.0",
+    "@types/fs-extra": "^8.0.0",
+    "@tools/preloaded-node": "file:../preloaded-node",
+    "@tools/places": "file:../places",
+    "@tools/utils": "file:../utils"
+  }
+}
