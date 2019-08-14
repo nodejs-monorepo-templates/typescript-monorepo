@@ -23,6 +23,7 @@
   },
   "scripts": {
     "new": "execute new",
+    "add": "execute add",
     "mismatches": "execute mismatches",
     "repl": "node tools/repl/bin.js",
     "console": "node tools/repl/bin.js",

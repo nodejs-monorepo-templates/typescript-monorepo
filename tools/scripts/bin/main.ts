@@ -171,6 +171,14 @@ abstract class Dict {
       await main()
     }
   )
+
+  public readonly add = new Command(
+    'Add dependencies',
+    async () => {
+      const { main } = await import('@tools/add-dependency')
+      await main()
+    }
+  )
 }
 
 function printError (message: string) {
