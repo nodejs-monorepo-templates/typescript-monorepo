@@ -160,7 +160,7 @@ export async function newPackage (name: string) {
 export async function newTest (name: string) {
   async function getSubjectDeps () {
     const subjectPath = path.join(places.packages, name, 'package.json')
-    if (!fsx.existsSync(subjectPath)) return {}
+    if (!await fsx.pathExists(subjectPath)) return {}
 
     const subjectName = JSON.parse(await fsx.readFile(subjectPath, 'utf8')).name
 
