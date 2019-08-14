@@ -4,7 +4,6 @@ import {
   Manifest,
   ManifestType,
   PackageManifest,
-  TestManifest,
   ToolManifest,
   ManifestItem,
   ManifestList,
