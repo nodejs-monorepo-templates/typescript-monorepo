@@ -27,25 +27,25 @@ async function promptManifestType (): Promise<NonRootManifestTypes.Union> {
 }
 
 interface GetVersionRequirementParam {
-  readonly item: ManifestItem<PackageManifest>
-  readonly manifest: PackageManifest
+  readonly item: ManifestItem<PackageManifest | ToolManifest>
+  readonly manifest: PackageManifest | ToolManifest
 }
 
 async function addProdDeps<Obj extends Manifest> (
   target: ManifestItem<Obj>,
-  packages: ManifestList<PackageManifest>,
+  packages: readonly ManifestItem<PackageManifest | ToolManifest>[],
   getVersionRequirement: (param: GetVersionRequirementParam) => string
 ) {
-  if (!packages.size) return
+  if (!packages.length) return
 
   const [
     manifest,
     dependencies
   ] = await Promise.all([
-    target.readManifest(),
-    Promise.all(packages.items().map(async item => ({
+    target.readManifestOnce(),
+    Promise.all(packages.map(async item => ({
       item,
-      manifest: await item.readManifest()
+      manifest: await item.readManifestOnce()
     })))
   ])
 
@@ -67,36 +67,75 @@ export async function handlePackage () {
   const list = await loadPackageList()
   const target = await list.promptItem('Choose a package')
   const dependencies = await list.promptItemList('Choose dependencies')
-  await addProdDeps(target, dependencies, param => '^' + param.manifest.version)
+
+  await addProdDeps(
+    target,
+    dependencies.items(),
+    param => '^' + param.manifest.version
+  )
 }
 
-async function handleTestOrTool<Manifest extends TestManifest | ToolManifest> (
-  loadTargetList: () => Promise<ManifestList<Manifest>>
-) {
+export async function handleTest () {
   const [
-    targetList,
+    testList,
     packageList
   ] = await Promise.all([
-    loadTargetList(),
+    loadTestList(),
     loadPackageList()
   ])
 
-  const target = await targetList.promptItem('Choose a folder')
+  const target = await testList.promptItem('Choose a folder')
   const dependencies = await packageList.promptItemList('Choose packages')
+
+  await addProdDeps(
+    target,
+    dependencies.items(),
+    param => path.relative(target.folder, param.item.folder)
+  )
+}
+
+async function joinToolPackage (
+  toolList: ManifestList<ToolManifest>,
+  packageList: ManifestList<PackageManifest>
+): Promise<ManifestItem<PackageManifest | ToolManifest>[]> {
+  const entries = await Promise.all(
+    [...packageList.values(), ...toolList.values()]
+      .map(async item => ({
+        item,
+        manifest: await item.readManifestOnce()
+      }))
+  )
+
+  const { dependencies } = await prompt({
+    name: 'dependencies',
+    message: 'Choose dependencies',
+    type: 'checkbox',
+    choices: entries.map(x => ({
+      name: x.manifest.name,
+      value: Object.assign(x.item)
+    }))
+  })
+
+  return dependencies
+}
+
+export async function handleTool () {
+  const [
+    toolList,
+    packageList
+  ] = await Promise.all([
+    loadToolList(),
+    loadPackageList()
+  ])
+
+  const target = await toolList.promptItem('Choose a folder')
+  const dependencies = await joinToolPackage(toolList, packageList)
 
   await addProdDeps(
     target,
     dependencies,
     param => path.relative(target.folder, param.item.folder)
   )
-}
-
-export async function handleTest () {
-  await handleTestOrTool(loadTestList)
-}
-
-export async function handleTool () {
-  await handleTestOrTool(loadToolList)
 }
 
 export async function main () {
