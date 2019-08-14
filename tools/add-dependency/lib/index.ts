@@ -89,7 +89,7 @@ export async function handleTest () {
   await addProdDeps(
     target,
     dependencies.items(),
-    param => path.relative(target.folder, param.item.folder)
+    param => 'file:' + path.relative(target.folder, param.item.folder)
   )
 }
 
@@ -133,7 +133,7 @@ export async function handleTool () {
   await addProdDeps(
     target,
     dependencies,
-    param => path.relative(target.folder, param.item.folder)
+    param => 'file:' + path.relative(target.folder, param.item.folder)
   )
 }
 
