@@ -61,7 +61,10 @@ export abstract class ManifestList<Obj extends Manifest> extends Map<string, Man
       choices: this.promptChoices()
     })
 
-    return new class extends ManifestList<Obj> {}(list)
+    return new class extends ManifestList<Obj> {}(
+      (list as ManifestItem<Obj>[])
+        .map(item => [item.name, item])
+    )
   }
 }
 
