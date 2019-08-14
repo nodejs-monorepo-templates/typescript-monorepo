@@ -167,7 +167,7 @@ abstract class Dict {
   public readonly new = new Command(
     'Create new folder',
     async () => {
-      const { main } = require('@tools/create-new-folder')
+      const { main } = await import('@tools/create-new-folder')
       await main()
     }
   )
