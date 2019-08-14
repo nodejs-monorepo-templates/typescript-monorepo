@@ -15,9 +15,16 @@ export abstract class ManifestItem<Obj extends Manifest> {
   abstract readonly folder: string
   abstract readonly manifest: string
   abstract readonly list: ManifestList<Obj>
+  private manifestPromise: Promise<Obj> | undefined
 
-  public readManifest (): Promise<Obj> {
-    return readJSON(this.manifest)
+  public async readManifest (): Promise<Obj> {
+    this.manifestPromise = await readJSON(this.manifest)
+    return this.manifestPromise!
+  }
+
+  public readManifestOnce (): Promise<Obj> {
+    if (this.manifestPromise) return this.manifestPromise
+    return this.readManifest()
   }
 
   public async writeManifest (manifest: Obj): Promise<void> {
