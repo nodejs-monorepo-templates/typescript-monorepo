@@ -160,7 +160,7 @@ export async function newPackage (name: string) {
 export async function newTest (name: string) {
   async function getSubjectDeps () {
     const subjectPath = path.join(places.packages, name, 'package.json')
-    if (!await fsx.pathExists(subjectPath)) return {}
+    if (!await fsx.pathExists(subjectPath)) return undefined
 
     const subjectName = JSON.parse(await fsx.readFile(subjectPath, 'utf8')).name
 
@@ -171,7 +171,7 @@ export async function newTest (name: string) {
       default: true
     })
 
-    if (!confirmation) return {}
+    if (!confirmation) return undefined
 
     const dependency = 'file:' + path.relative(
       path.join(places.test, name),
@@ -179,15 +179,13 @@ export async function newTest (name: string) {
     )
 
     return {
-      dependencies: {
-        [subjectName]: dependency
-      }
+      [subjectName]: dependency
     }
   }
 
   const manifest: TestManifest = {
     private: true,
-    ...await getSubjectDeps()
+    dependencies: await getSubjectDeps()
   }
 
   await writeManifest(places.test, name, manifest)
