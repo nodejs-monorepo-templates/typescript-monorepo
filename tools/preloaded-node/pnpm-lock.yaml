@@ -1,7 +1,7 @@
 dependencies:
   '@tools/typescript': 'link:../typescript'
   '@types/json5': 0.0.30
-  '@types/node': 12.7.1
+  '@types/node': 12.7.2
   json5: 2.1.0
   ts-node: 8.3.0_typescript@3.5.3
   tslib: 1.10.0
@@ -12,10 +12,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==
-  /@types/node/12.7.1:
+  /@types/node/12.7.2:
     dev: false
     resolution:
-      integrity: sha512-aK9jxMypeSrhiYofWWBf/T7O+KwaiAHzM4sveCdWPn71lzUSMimRnKzhXDKfKwV1kWoBo2P1aGgaIYGLf9/ljw==
+      integrity: sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==
   /arg/4.1.0:
     dev: false
     resolution:
@@ -96,7 +96,7 @@ packages:
 specifiers:
   '@tools/typescript': 'file:../typescript'
   '@types/json5': ^0.0.30
-  '@types/node': ^12.7.1
+  '@types/node': ^12.7.2
   json5: ^2.1.0
   ts-node: ^8.3.0
   tslib: ^1.10.0
