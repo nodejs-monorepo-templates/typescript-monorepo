@@ -1,7 +1,7 @@
 name: Node CI
 on: [push]
 jobs:
-  install:
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -13,13 +13,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install pnpm
-        run: |
-          curl -L https://unpkg.com/@pnpm/self-installer | node
-  test:
-    runs-on: ubuntu-latest
-    needs: install
-    steps:
-      - name: pnpm install, and test
-        run: |
-          pnpm recursive install
-          pnpm test
+        run: curl -L https://unpkg.com/@pnpm/self-installer | node
+      - name: Install dependencies
+        run: pnpm recursive install
+      - name: Test
+        run: pnpm test -- --ci
