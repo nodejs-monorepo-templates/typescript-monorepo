@@ -2,16 +2,16 @@ name: Node CI
 on:
   push:
     branches:
-      - *
-      - tmp
-      - !*.tmp
-      - !tmp.*
-      - !temp
-      - !*.temp
-      - !temp.*
-      - !draft
-      - !*.draft
-      - !draft.*
+      - '*'
+      - 'tmp'
+      - '!*.tmp'
+      - '!tmp.*'
+      - '!temp'
+      - '!*.temp'
+      - '!temp.*'
+      - '!draft'
+      - '!*.draft'
+      - '!draft.*'
   pull_request: all
 jobs:
   test:
