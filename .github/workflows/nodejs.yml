@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - '*'
-      - 'tmp'
+      - '!tmp'
       - '!*.tmp'
       - '!tmp.*'
       - '!temp'
@@ -12,7 +12,7 @@ on:
       - '!draft'
       - '!*.draft'
       - '!draft.*'
-  pull_request: all
+  pull_request: {}
 jobs:
   test:
     runs-on: ubuntu-latest
