@@ -1,5 +1,18 @@
 name: Node CI
-on: [push]
+on:
+  push:
+    branches:
+      - *
+      - tmp
+      - !*.tmp
+      - !tmp.*
+      - !temp
+      - !*.temp
+      - !temp.*
+      - !draft
+      - !*.draft
+      - !draft.*
+  pull_request: all
 jobs:
   test:
     runs-on: ubuntu-latest
