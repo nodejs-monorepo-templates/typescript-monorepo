@@ -9,6 +9,7 @@
       "es2018",
       "esnext"
     ],
+    "preserveConstEnums": true,
     "declaration": true,
     "sourceMap": true,
     "importHelpers": true,
