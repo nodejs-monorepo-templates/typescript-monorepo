@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "yargs": "^13.3.0",
+    "yargs": "^14.0.0",
     "git-ts": "^0.0.5",
     "nested-workspace-helper": "^0.2.10",
     "@types/yargs": "^13.0.2",

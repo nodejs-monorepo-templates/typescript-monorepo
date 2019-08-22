@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "tslint": "^5.18.0",
+    "tslint": "^5.19.0",
     "tslint-config-standard": "^8.0.1",
     "typescript": "^3.5.3",
     "exec-inline": "^0.0.3",
