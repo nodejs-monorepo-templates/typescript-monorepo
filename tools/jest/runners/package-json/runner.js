@@ -44,7 +44,7 @@ function main ({ testPath }) {
       }
     } else {
       if (!pkgcfg.scopes.some(x => !x)) {
-        reasons.push(`This monorepo does not allow non-scoped packages`)
+        reasons.push('This monorepo does not allow non-scoped packages')
       } else if (dirname !== pkgname) {
         reasons.push(`Expecting package's name to be "${dirname}" but received "${pkgname}" instead`)
       }
