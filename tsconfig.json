@@ -10,8 +10,7 @@
       "esnext"
     ],
     "preserveConstEnums": true,
-    "incremental": true,
-    "tsBuildInfoFile": ".tsbuildinfo",
+    "incremental": false,
     "declaration": true,
     "sourceMap": true,
     "importHelpers": true,
