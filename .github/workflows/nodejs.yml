@@ -21,6 +21,10 @@ jobs:
         node-version: [10.x, 12.x]
     steps:
       - uses: actions/checkout@v1
+      - name: Print env.CI
+        run: env | grep '^CI'
+      - name: Print Environment Variables
+        run: env
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
