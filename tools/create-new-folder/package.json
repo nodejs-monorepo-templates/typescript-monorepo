@@ -4,7 +4,7 @@
   "private": true,
   "bin": "bin.js",
   "dependencies": {
-    "inquirer": "^6.5.1",
+    "inquirer": "^7.0.0",
     "fs-extra": "^8.1.0",
     "ts-yargs": "^0.0.2",
     "@types/inquirer": "^6.5.0",

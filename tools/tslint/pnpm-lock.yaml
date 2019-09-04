@@ -1,9 +1,9 @@
 dependencies:
   '@tools/places': 'link:../places'
   exec-inline: 0.0.3
-  tslint: 5.19.0_typescript@3.5.3
-  tslint-config-standard: 8.0.1_tslint@5.19.0+typescript@3.5.3
-  typescript: 3.5.3
+  tslint: 5.19.0_typescript@3.6.2
+  tslint-config-standard: 8.0.1_tslint@5.19.0+typescript@3.6.2
+  typescript: 3.6.2
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -20,10 +20,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7dV4eu9gBxoM0dAnj/BCFDW9LFU0zvTrkq0ugM7pnHEgguOEeOz1so2ZghEdzviYzQEED0r4EAgpsBChKy1TRQ==
-  /@types/node/12.7.2:
+  /@types/node/12.7.4:
     dev: false
     resolution:
-      integrity: sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==
+      integrity: sha512-W0+n1Y+gK/8G2P/piTkBBN38Qc5Q1ZSO6B5H3QmPCUewaiXOo2GCAWZ4ElZCcNhjJuBSUSLGFUJnmlCn5+nxOQ==
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -125,7 +125,7 @@ packages:
       integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
   /exec-inline/0.0.3:
     dependencies:
-      '@types/node': 12.7.2
+      '@types/node': 12.7.4
       tslib: 1.10.0
     dev: false
     engines:
@@ -244,29 +244,29 @@ packages:
     dev: false
     resolution:
       integrity: sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
-  /tslint-config-standard/8.0.1_tslint@5.19.0+typescript@3.5.3:
+  /tslint-config-standard/8.0.1_tslint@5.19.0+typescript@3.6.2:
     dependencies:
-      tslint-eslint-rules: 5.4.0_tslint@5.19.0+typescript@3.5.3
+      tslint-eslint-rules: 5.4.0_tslint@5.19.0+typescript@3.6.2
     dev: false
     peerDependencies:
       tslint: '*'
       typescript: '*'
     resolution:
       integrity: sha512-OWG+NblgjQlVuUS/Dmq3ax2v5QDZwRx4L0kEuDi7qFY9UI6RJhhNfoCV1qI4el8Fw1c5a5BTrjQJP0/jhGXY/Q==
-  /tslint-eslint-rules/5.4.0_tslint@5.19.0+typescript@3.5.3:
+  /tslint-eslint-rules/5.4.0_tslint@5.19.0+typescript@3.6.2:
     dependencies:
       doctrine: 0.7.2
       tslib: 1.9.0
-      tslint: 5.19.0_typescript@3.5.3
-      tsutils: 3.17.1_typescript@3.5.3
-      typescript: 3.5.3
+      tslint: 5.19.0_typescript@3.6.2
+      tsutils: 3.17.1_typescript@3.6.2
+      typescript: 3.6.2
     dev: false
     peerDependencies:
       tslint: ^5.0.0
       typescript: ^2.2.0 || ^3.0.0
     resolution:
       integrity: sha512-WlSXE+J2vY/VPgIcqQuijMQiel+UtmXS+4nvK4ZzlDiqBfXse8FAvkNnTcYhnQyOTW5KFM+uRRGXxYhFpuBc6w==
-  /tslint/5.19.0_typescript@3.5.3:
+  /tslint/5.19.0_typescript@3.6.2:
     dependencies:
       '@babel/code-frame': 7.5.5
       builtin-modules: 1.1.1
@@ -280,8 +280,8 @@ packages:
       resolve: 1.12.0
       semver: 5.7.1
       tslib: 1.10.0
-      tsutils: 2.29.0_typescript@3.5.3
-      typescript: 3.5.3
+      tsutils: 2.29.0_typescript@3.6.2
+      typescript: 3.6.2
     dev: false
     engines:
       node: '>=4.8.0'
@@ -290,19 +290,19 @@ packages:
       typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
     resolution:
       integrity: sha512-1LwwtBxfRJZnUvoS9c0uj8XQtAnyhWr9KlNvDIdB+oXyT+VpsOAaEhEgKi1HrZ8rq0ki/AAnbGSv4KM6/AfVZw==
-  /tsutils/2.29.0_typescript@3.5.3:
+  /tsutils/2.29.0_typescript@3.6.2:
     dependencies:
       tslib: 1.10.0
-      typescript: 3.5.3
+      typescript: 3.6.2
     dev: false
     peerDependencies:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
     resolution:
       integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
-  /tsutils/3.17.1_typescript@3.5.3:
+  /tsutils/3.17.1_typescript@3.6.2:
     dependencies:
       tslib: 1.10.0
-      typescript: 3.5.3
+      typescript: 3.6.2
     dev: false
     engines:
       node: '>= 6'
@@ -310,13 +310,13 @@ packages:
       typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
     resolution:
       integrity: sha512-kzeQ5B8H3w60nFY2g8cJIuH7JDpsALXySGtwGJ0p2LSjLgay3NdIpqq5SoOBe46bKDW2iq25irHCr8wjomUS2g==
-  /typescript/3.5.3:
+  /typescript/3.6.2:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
+      integrity: sha512-lmQ4L+J6mnu3xweP8+rOrUwzmN+MRAj7TgtJtDaXE5PMyX2kCrklhg3rvOsOIfNeAWMQWO2F1GPc1kMD2vLAfw==
   /wrappy/1.0.2:
     dev: false
     resolution:
@@ -326,4 +326,4 @@ specifiers:
   exec-inline: ^0.0.3
   tslint: ^5.19.0
   tslint-config-standard: ^8.0.1
-  typescript: ^3.5.3
+  typescript: ^3.6.2

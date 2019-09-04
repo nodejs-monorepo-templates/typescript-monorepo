@@ -4,7 +4,7 @@ dependencies:
   '@types/fs-extra': 8.0.0
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
-  inquirer: 6.5.1
+  inquirer: 7.0.0
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.0:
@@ -98,7 +98,7 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /external-editor/3.0.3:
+  /external-editor/3.1.0:
     dependencies:
       chardet: 0.7.0
       iconv-lite: 0.4.24
@@ -107,7 +107,7 @@ packages:
     engines:
       node: '>=4'
     resolution:
-      integrity: sha512-bn71H9+qWoOQKyZDo25mOMVpSmXROAsTJVVVYzrrtol3d4y+AsKjf4Iwl2Q+IuT0kFSQ1qo166UuIwqYq7mGnA==
+      integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==
   /figures/3.0.0:
     dependencies:
       escape-string-regexp: 1.0.5
@@ -144,13 +144,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
-  /inquirer/6.5.1:
+  /inquirer/7.0.0:
     dependencies:
       ansi-escapes: 4.2.1
       chalk: 2.4.2
       cli-cursor: 3.1.0
       cli-width: 2.2.0
-      external-editor: 3.0.3
+      external-editor: 3.1.0
       figures: 3.0.0
       lodash: 4.17.15
       mute-stream: 0.0.8
@@ -163,7 +163,7 @@ packages:
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-uxNHBeQhRXIoHWTSNYUFhQVrHYFThIt6IVo2fFmSe8aBwdR3/w6b58hJpiL/fMukFkvGzjg+hSxFtwvVmKZmXw==
+      integrity: sha512-rSdC7zelHdRQFkWnhsMu2+2SO41mpv2oF2zy4tMhmiLWkcKbOAs87fWAJhVXttKVwhdZvymvnuM95EyEXg2/tQ==
   /is-fullwidth-code-point/3.0.0:
     dev: false
     engines:
@@ -301,4 +301,4 @@ specifiers:
   '@types/fs-extra': ^8.0.0
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
-  inquirer: ^6.5.1
+  inquirer: ^7.0.0
