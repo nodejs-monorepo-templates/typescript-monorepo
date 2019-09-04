@@ -14,6 +14,7 @@
     "@tools/create-new-folder": "file:../create-new-folder",
     "@tools/git-tag-versions": "file:../git-tag-versions",
     "@tools/ignore-file": "file:../ignore-file",
+    "@tools/publish-tag-push": "file:../publish-tag-push",
     "@tools/jest": "file:../jest",
     "@tools/places": "file:../places",
     "@tools/preloaded-node": "file:../preloaded-node",

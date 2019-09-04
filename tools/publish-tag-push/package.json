@@ -1,0 +1,11 @@
+{
+  "name": "@tools/publish-tag-push",
+  "version": "0.0.0",
+  "private": true,
+  "bin": "bin.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "advanced-spawn-async": "^0.1.0",
+    "@tools/preloaded-node": "file:../preloaded-node"
+  }
+}

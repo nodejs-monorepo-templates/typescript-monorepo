@@ -149,6 +149,11 @@ abstract class Dict {
     this.mkspawn(commands.gitTagVersions)
   )
 
+  public readonly publishTagPush = new Command(
+    'Publish every new package; Add git tags; Push changes to remote',
+    this.mkspawn(commands.publishTagPush)
+  )
+
   public readonly runPreloadedNode = new Command(
     'Run node with registered modules',
     this.mkspawn(commands.preloadedNode)
