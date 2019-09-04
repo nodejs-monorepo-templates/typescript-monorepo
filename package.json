@@ -41,7 +41,8 @@
     "git-tag-versions": "execute gitTagVersions",
     "git-tag-versions:dry": "execute gitTagVersions --dry",
     "project-publish": "execute publish",
-    "project-publish:dry": "execute publish --dry"
+    "project-publish:dry": "execute publish --dry",
+    "publish-tag-push": "npm run project-publish && npm run git-tag-versions && git push -u origin --tags master"
   },
   "standard": {
     "env": {
