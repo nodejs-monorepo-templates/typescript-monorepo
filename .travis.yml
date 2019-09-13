@@ -15,6 +15,7 @@ cache:
   directories:
     - $HOME/.pnpm-store
     - $HOME/.npm
+    - $HOME/.nvm
     - $HOME/.node-gyp
     - $HOME/.node_libraries
 
@@ -22,6 +23,8 @@ before_cache:
   - pnpm store prune
 
 before_install:
+  - ls $HOME/.npm
+  - ls $HOME/.nvm/versions/*
   - curl -L https://unpkg.com/@pnpm/self-installer | node
   - pnpm --version
   - bash ci/before-install.sh
