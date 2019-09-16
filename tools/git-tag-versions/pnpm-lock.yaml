@@ -3,7 +3,7 @@ dependencies:
   '@types/yargs': 13.0.2
   chalk: 2.4.2
   git-ts: 0.0.5
-  nested-workspace-helper: 0.2.11
+  nested-workspace-helper: 0.2.12
   yargs: 14.0.0
 lockfileVersion: 5.1
 packages:
@@ -47,7 +47,7 @@ packages:
       integrity: sha512-xcmtfHIgF9SYjhGdsZR1nQslxG4hu0cIpFfLQ4CWdw3KzHvl7ki1AzFLQUkbDTG42ZN3ZsQfdRzXRlkAvbIy5Q==
   /@types/ramda/0.26.21:
     dependencies:
-      ts-toolbelt: 3.8.92
+      ts-toolbelt: 3.10.0
     dev: false
     resolution:
       integrity: sha512-zMYtIZMceA6BvH+or6LmewLBgojbXg5+FGCwjO8K+Z+d/ZWxILmhhASXkehW0PqJL+V0QbyDeeAHix0dvEKXfQ==
@@ -269,7 +269,7 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
-  /nested-workspace-helper/0.2.11:
+  /nested-workspace-helper/0.2.12:
     dependencies:
       '@types/fs-extra': 8.0.0
       '@types/js-yaml': 3.12.1
@@ -286,7 +286,7 @@ packages:
       node-fetch: 2.6.0
       ramda: 0.26.1
       semver: 6.3.0
-      smart-publish: 0.0.5
+      smart-publish: 0.0.6
       tslib: 1.10.0
       yargs: 13.3.0
     dev: false
@@ -294,7 +294,7 @@ packages:
       node: '>= 8.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-9mb40v7MyeEQn75sLzMzHZhBXGXU/1E9zyhGutW75M7PARM5mP73zjF7qQnKA5vEsZoAYoEUnW9dDgj3rvvhig==
+      integrity: sha512-VGmXHiHBprIU9HiM4EwT+W5xOd7d+d4mqtFOoewYW0Cn2nOf+2c3t32jsSqlBywW8FBQk4lwWqh+6HOFR9rZFg==
   /node-fetch/2.6.0:
     dev: false
     engines:
@@ -372,7 +372,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-aP0CXrBJC09WegJ/C/IkgLX4QTM=
-  /smart-publish/0.0.5:
+  /smart-publish/0.0.6:
     dependencies:
       '@types/node': 12.7.5
       '@types/semver': 6.0.2
@@ -386,7 +386,7 @@ packages:
       node: '>= 8.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-wbxQ1d15QsSjy6Ix0TZTGwfz02kfAaOZfqIK+eewKCWcQJLyS+A9aLTVHS5XM0CuZS7OsnGh4jkNt03UAKE3rw==
+      integrity: sha512-/Aue/v6uSVCO3xK1iCU0MjZsxBvSq5ADvet0L9egBmarUHShLxTxossw5qykoUjSknPaKebPplMnnpxocY1eZw==
   /split-string-once/0.0.0:
     dependencies:
       '@types/node': 10.14.18
@@ -426,10 +426,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  /ts-toolbelt/3.8.92:
+  /ts-toolbelt/3.10.0:
     dev: false
     resolution:
-      integrity: sha512-8weyhjSrpxBdkcSZF4qV6aq/q7S795dKS3SWxGhAs7msilb3eVN8ozuXBlDR5ivQVFvp9cfgwXb+Nb4aKEg0tg==
+      integrity: sha512-bBuhxvS1ZUww3EwBooemUTargLP1EBgIcO221iTI0EjukHyHurnZckEHrpWA+P80JPp/2lvl4lv5bZN9P6AWUg==
   /tslib/1.10.0:
     dev: false
     resolution:
@@ -505,5 +505,5 @@ specifiers:
   '@types/yargs': ^13.0.2
   chalk: ^2.4.2
   git-ts: ^0.0.5
-  nested-workspace-helper: ^0.2.11
+  nested-workspace-helper: ^0.2.12
   yargs: ^14.0.0
