@@ -19,19 +19,31 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [10.x, 12.x]
+        vars:
+          - node: 10.x
+            cmd: pnpm run test:ci
+          - node: 12.x
+            cmd: pnpm run test:ci
+          - node: 12.x
+            cmd: pnpx tsc --noEmit
+          - node: 12.x
+            cmd: pnpm test:no-coverage \/package\.json$
+          - node: 12.x
+            cmd: pnpm test:no-coverage \.test\.(ts|js)$
+          - node: 12.x
+            pnpm: --frozen-lockfile
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.vars.node }}
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ matrix.vars.node }}
       - name: Install pnpm
         run: curl -L https://unpkg.com/@pnpm/self-installer | node
       - name: Install dependencies
-        run: pnpm recursive install
+        run: pnpm recursive install ${{ matrix.vars.pnpm }}
       - name: Test
         env:
           SHOW_SPAWN_CMD: 'true'
           CI: 'true'
-        run: pnpm test -- --ci
+        run: ${{ matrix.vars.cmd }}
