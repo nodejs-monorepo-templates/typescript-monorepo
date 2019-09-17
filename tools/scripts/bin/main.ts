@@ -62,13 +62,7 @@ abstract class Dict {
     'Run tests',
     () => {
       this.callCmd('clean')
-
-      spawnSync(
-        'node',
-        commands.jest,
-        '--coverage',
-        ...argv
-      ).exit.onerror()
+      this.callCmd('jest', '--coverage', ...argv)
     }
   )
 
@@ -130,6 +124,14 @@ abstract class Dict {
     () => this.callCmd('test', '--ci')
   )
 
+  public readonly testWithoutCoverage = new Command(
+    'Run tests',
+    () => {
+      this.callCmd('clean')
+      this.callCmd('jest', ...argv)
+    }
+  )
+
   public readonly buildTypescript = new Command(
     'Compile TypeScript files',
     this.mkspawn(
@@ -167,6 +169,11 @@ abstract class Dict {
   public readonly runTSLint = new Command(
     'Lint TypeScript codes with TSLint',
     this.mkspawn(commands.tslint)
+  )
+
+  public readonly jest = new Command(
+    'Run tests',
+    this.mkspawn(commands.jest)
   )
 
   public readonly new = new Command(

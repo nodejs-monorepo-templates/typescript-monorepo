@@ -36,6 +36,7 @@
     "tslint:fix": "execute runTSLint --fix",
     "test": "execute test",
     "test:ci": "execute testAll",
+    "test:no-coverage": "execute testWithoutCoverage",
     "build": "execute build",
     "clean": "execute clean",
     "clean-typescript-build": "execute cleanTypescriptBuild",
