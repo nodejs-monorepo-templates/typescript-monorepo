@@ -20,13 +20,12 @@ jobs:
       # matrix:
       #   node-version: [10.x, 12.x]
       matrix:
-        foo:
-          - string: echo abc
-            number: echo 123
-          - string: echo def
-            number: echo 456
-          - string: echo ghi
-            number: echo 789
+        - string: echo abc
+          number: echo 123
+        - string: echo def
+          number: echo 456
+        - string: echo ghi
+          number: echo 789
     steps:
       # - uses: actions/checkout@v1
       # - name: Use Node.js ${{ matrix.node-version }}
@@ -44,5 +43,5 @@ jobs:
       #   run: pnpm test -- --ci
       - name: Print
         run: |
-          ${{ matrix.foo.string }}
-          ${{ matrix.foo.number }}
+          ${{ matrix.string }}
+          ${{ matrix.number }}
