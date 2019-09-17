@@ -30,4 +30,7 @@ jobs:
       - name: Install dependencies
         run: pnpm recursive install
       - name: Test
-        run: env SHOW_SPAWN_CMD=true pnpm test -- --ci
+        env:
+          SHOW_SPAWN_CMD: 'true'
+          CI: 'true'
+        run: pnpm test -- --ci
