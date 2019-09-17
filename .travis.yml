@@ -30,7 +30,7 @@ install:
   - bash ci/install.sh
 
 script:
-  - pnpm test
+  - pnpm run test:ci
   - pnpm run build
 
 after_script:
