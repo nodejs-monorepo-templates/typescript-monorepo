@@ -27,7 +27,7 @@ abstract class Dict {
       const member = (key: string, value: string) => console.info(`  ${key}: ${chalk.dim(value)}`)
 
       title('Usage:')
-      console.info('  $ monorepo <command> [args]')
+      console.info('  $ execute <command> [args]')
 
       title('Commands:')
       for (const [key, value] of Object.entries(this)) {
