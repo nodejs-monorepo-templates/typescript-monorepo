@@ -43,6 +43,6 @@ jobs:
       #     CI: 'true'
       #   run: pnpm test -- --ci
       - name: Print
-        run:
+        run: |
           echo string ${{ matrix.foo.string }}
           echo number ${{ matrix.foo.number }}
