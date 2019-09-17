@@ -17,21 +17,27 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: ${{ matrix.vars.fail-fast }}
       matrix:
         vars:
           - node: 10.x
             cmd: pnpm run test:ci
+            fail-fast: true
           - node: 12.x
             cmd: pnpm run test:ci
+            fail-fast: true
           - node: 12.x
             cmd: pnpx tsc --noEmit
+            fail-fast: false
           - node: 12.x
             cmd: pnpm run test:no-coverage '\/package\.json$'
+            fail-fast: false
           - node: 12.x
             cmd: pnpm run test:no-coverage '\.test\.(ts|js)$'
+            fail-fast: false
           - node: 12.x
             pnpm: --frozen-lockfile
+            fail-fast: false
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.vars.node }}
