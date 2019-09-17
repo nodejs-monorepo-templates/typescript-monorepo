@@ -110,11 +110,11 @@ abstract class Dict {
 
   public readonly createIgnoreFiles = new Command(
     'Create .npmignore files in every packages',
-    () => {
+    args => {
       spawnSync(
         'node',
         require.resolve('@tools/ignore-file/bin/write'),
-        ...argv
+        ...args
       ).exit.onerror()
     }
   )
