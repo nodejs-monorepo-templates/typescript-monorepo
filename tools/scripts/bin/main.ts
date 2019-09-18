@@ -121,7 +121,7 @@ abstract class Dict {
 
   public readonly testAll = new Command(
     'Run all tests in production mode',
-    () => this.callCmd('test', '--ci')
+    () => this.callCmd('test', '--ci', '--no-cache')
   )
 
   public readonly testWithoutCoverage = new Command(
