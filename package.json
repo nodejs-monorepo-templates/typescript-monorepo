@@ -11,7 +11,7 @@
     "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo/issues"
   },
   "devDependencies": {
-    "standard": "^14.1.0",
+    "standard": "^14.3.1",
     "tslint": "^5.20.0",
     "tslint-config-standard": "^8.0.1",
     "typescript": "^3.6.3",

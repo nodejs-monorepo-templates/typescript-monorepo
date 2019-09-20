@@ -5,6 +5,6 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "standard": "^14.1.0"
+    "standard": "^14.3.1"
   }
 }
