@@ -1,7 +1,6 @@
 import path from 'path'
 import process from 'process'
 import chalk from 'chalk'
-import glob2regex from 'glob-to-regexp'
 import * as places from '@tools/places'
 import { commands, enums, functions } from '../index'
 const { ExitStatusCode } = enums
@@ -49,7 +48,9 @@ abstract class Dict {
 
   public readonly glob = new Command(
     'Run command on files that match glob',
-    ([cmd, ...args]): void => {
+    async ([cmd, ...args]): Promise<void> => {
+      const { default: glob2regex } = await import('glob-to-regexp')
+
       if (!cmd) {
         printError('Missing command')
         return process.exit(ExitStatusCode.InsufficientArguments)
