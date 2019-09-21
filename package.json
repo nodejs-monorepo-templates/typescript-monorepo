@@ -29,6 +29,7 @@
     "console": "node tools/repl/bin.js",
     "preloaded-node": "node tools/preloaded-node/bin.js",
     "execute": "execute",
+    "glob": "execute glob",
     "workspace": "execute workspace",
     "standardjs": "execute runStandardJS",
     "standardjs:fix": "execute runStandardJS --fix",
