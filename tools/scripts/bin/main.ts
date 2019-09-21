@@ -10,10 +10,10 @@ const [cmd, ...argv] = process.argv.slice(2)
 
 type MaybePromise<X> = X | Promise<X>
 
-class Command {
+class Command<Return extends MaybePromise<void>> {
   constructor (
     public readonly describe: string,
-    public readonly act: (args: readonly string[]) => MaybePromise<void>
+    public readonly act: (args: readonly string[]) => Return
   ) {}
 }
 
@@ -242,7 +242,7 @@ async function main (cmd?: string, argv: readonly string[] = []) {
   const dict = new PrvDict()
 
   if (!cmd) {
-    await dict.help.act(argv)
+    dict.help.act(argv)
     printError('Insufficient Arguments')
     return process.exit(ExitStatusCode.InsufficientArguments)
   }
