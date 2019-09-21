@@ -15,11 +15,12 @@ class Command {
   ) {}
 }
 
-type CommandName = Exclude<keyof Dict, 'mkspawn' | 'callCmd'>
+type CommandName = Exclude<keyof Dict, 'mkspawn' | 'callCmd' | 'isCmd'>
 
 abstract class Dict {
   protected abstract mkspawn (script: string, ...args: string[]): () => void
   protected abstract callCmd (command: CommandName, ...args: string[]): void
+  protected abstract isCmd (command: string): command is CommandName
 
   public readonly help = new Command(
     'Print usage',
@@ -52,7 +53,7 @@ abstract class Dict {
         return process.exit(ExitStatusCode.InsufficientArguments)
       }
 
-      if (!(cmd in this)) {
+      if (!this.isCmd(cmd)) {
         printError(`Unknown Command: ${cmd}`)
         return process.exit(ExitStatusCode.UnknownCommand)
       }
@@ -61,7 +62,7 @@ abstract class Dict {
         .map(glob => glob2regex(glob, { globstar: true, extended: true }))
         .map(glob => glob.source)
 
-      this.callCmd(cmd as any, ...regexes)
+      this.callCmd(cmd, ...regexes)
     }
   )
 
@@ -230,6 +231,10 @@ function main (cmd?: string, argv: readonly string[] = []) {
       console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
       main(cmd, args)
     }
+
+    isCmd (cmd: string): cmd is CommandName {
+      return Object.keys(this).includes(cmd)
+    }
   }
 
   const dict = new PrvDict()
@@ -240,8 +245,8 @@ function main (cmd?: string, argv: readonly string[] = []) {
     return process.exit(ExitStatusCode.InsufficientArguments)
   }
 
-  if (cmd in dict) {
-    const command = dict[cmd as keyof PrvDict]
+  if (dict.isCmd(cmd)) {
+    const command = dict[cmd]
     if (command instanceof Command) {
       return command.act(argv)
     }
