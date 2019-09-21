@@ -1,6 +1,7 @@
 import path from 'path'
 import process from 'process'
 import chalk from 'chalk'
+import glob2regex from 'glob-to-regexp'
 import * as places from '@tools/places'
 import { commands, enums, functions } from '../index'
 const { ExitStatusCode } = enums
@@ -40,6 +41,27 @@ abstract class Dict {
       }
 
       console.info()
+    }
+  )
+
+  public readonly glob = new Command(
+    'Run command on files that match glob',
+    ([cmd, ...args]): void => {
+      if (!cmd) {
+        printError('Missing command')
+        return process.exit(ExitStatusCode.InsufficientArguments)
+      }
+
+      if (!(cmd in this)) {
+        printError(`Unknown Command: ${cmd}`)
+        return process.exit(ExitStatusCode.UnknownCommand)
+      }
+
+      const regexes = args
+        .map(glob => glob2regex(glob, { globstar: true, extended: true }))
+        .map(glob => glob.source)
+
+      this.callCmd(cmd as any, ...regexes)
     }
   )
 

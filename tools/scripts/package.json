@@ -9,6 +9,8 @@
     "chalk": "^2.4.2",
     "number-enum": "^3.0.0",
     "exec-inline": "^0.0.3",
+    "glob-to-regexp": "0.4.1",
+    "@types/glob-to-regexp": "^0.4.0",
     "@tools/clean-typescript-build": "file:../clean-typescript-build",
     "@tools/add-dependency": "file:../add-dependency",
     "@tools/create-new-folder": "file:../create-new-folder",
