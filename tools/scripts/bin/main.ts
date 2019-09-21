@@ -8,10 +8,12 @@ const { ExitStatusCode } = enums
 const { spawnSync } = functions
 const [cmd, ...argv] = process.argv.slice(2)
 
+type MaybePromise<X> = X | Promise<X>
+
 class Command {
   constructor (
     public readonly describe: string,
-    public readonly act: (args: readonly string[]) => void
+    public readonly act: (args: readonly string[]) => MaybePromise<void>
   ) {}
 }
 
@@ -19,7 +21,7 @@ type CommandName = Exclude<keyof Dict, 'mkspawn' | 'callCmd' | 'isCmd'>
 
 abstract class Dict {
   protected abstract mkspawn (script: string, ...args: string[]): () => void
-  protected abstract callCmd (command: CommandName, ...args: string[]): void
+  protected abstract callCmd (command: CommandName, ...args: string[]): MaybePromise<void>
   protected abstract isCmd (command: string): command is CommandName
 
   public readonly help = new Command(
@@ -220,16 +222,16 @@ function printError (message: string) {
   console.error(chalk.red('[ERROR]'), message, '\n')
 }
 
-function main (cmd?: string, argv: readonly string[] = []) {
+async function main (cmd?: string, argv: readonly string[] = []) {
   class PrvDict extends Dict {
     mkspawn (...args: [string, ...string[]]) {
       // @ts-ignore
       return () => spawnSync('node', ...args, ...argv).exit.onerror()
     }
 
-    callCmd (cmd: CommandName, ...args: string[]) {
+    async callCmd (cmd: CommandName, ...args: string[]) {
       console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
-      main(cmd, args)
+      await main(cmd, args)
     }
 
     isCmd (cmd: string): cmd is CommandName {
@@ -240,7 +242,7 @@ function main (cmd?: string, argv: readonly string[] = []) {
   const dict = new PrvDict()
 
   if (!cmd) {
-    dict.help.act(argv)
+    await dict.help.act(argv)
     printError('Insufficient Arguments')
     return process.exit(ExitStatusCode.InsufficientArguments)
   }
@@ -256,4 +258,7 @@ function main (cmd?: string, argv: readonly string[] = []) {
   return process.exit(ExitStatusCode.UnknownCommand)
 }
 
-main(cmd, argv)
+void main(cmd, argv).catch(error => {
+  console.error(error)
+  return process.exit(ExitStatusCode.FatalError)
+})
