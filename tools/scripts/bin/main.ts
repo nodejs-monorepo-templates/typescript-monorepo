@@ -94,7 +94,10 @@ abstract class Dict {
 
   public readonly build = new Command(
     'Build all products',
-    () => this.callCmd('buildTypescript')
+    () => {
+      this.callCmd('buildDocs')
+      this.callCmd('buildTypescript')
+    }
   )
 
   public readonly clean = new Command(
@@ -165,6 +168,14 @@ abstract class Dict {
       '--project',
       path.resolve(places.packages, 'tsconfig.json')
     )
+  )
+
+  public readonly buildDocs = new Command(
+    'Generate documentation from jsdoc comments',
+    async () => {
+      const { main } = await import('@tools/docs')
+      await main()
+    }
   )
 
   public readonly cleanTypescriptBuild = new Command(

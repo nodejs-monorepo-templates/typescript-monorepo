@@ -1,6 +1,7 @@
 export const cleanTypescriptBuild = require.resolve('@tools/clean-typescript-build/bin')
 export const jest = require.resolve('@tools/jest/bin')
 export const createNewFolder = require.resolve('@tools/create-new-folder/bin')
+export const docs = require.resolve('@tools/docs/bin')
 export const gitTagVersions = require.resolve('@tools/git-tag-versions/bin')
 export const publishTagPush = require.resolve('@tools/publish-tag-push/bin')
 export const preloadedNode = require.resolve('@tools/preloaded-node/bin')

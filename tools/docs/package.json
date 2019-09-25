@@ -1,0 +1,13 @@
+{
+  "name": "@tools/docs",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "typedoc": "^0.15.0",
+    "@types/fs-extra": "^8.0.0",
+    "@tools/preloaded-node": "file:../preloaded-node",
+    "@tools/places": "file:../places",
+    "@tools/utils": "file:../utils"
+  }
+}
