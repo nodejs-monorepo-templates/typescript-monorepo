@@ -37,6 +37,8 @@ export interface Manifest {
   readonly bugs?: Bugs
   readonly main?: string
   readonly types?: string
+  readonly keywords?: readonly string[]
+  readonly sideEffects?: boolean
   readonly dependencies?: DependencyDict
   readonly devDependencies?: DependencyDict
   readonly peerDependencies?: DependencyDict

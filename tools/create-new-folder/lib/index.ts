@@ -63,6 +63,8 @@ interface Remaining {
   readonly description?: string
   readonly author: string
   readonly license: string
+  readonly keywords?: string
+  readonly sideEffects?: boolean | 'undefined'
 }
 
 async function promptRemaining (): Promise<Remaining> {
@@ -83,6 +85,21 @@ async function promptRemaining (): Promise<Remaining> {
       message: 'Field "license" of package.json',
       type: 'input',
       default: rootManifest.license || 'MIT' // empty string → 'MIT'
+    },
+    {
+      name: 'keywords',
+      message: 'Field "keywords" of package.json',
+      type: 'input'
+    },
+    {
+      name: 'sideEffects',
+      message: 'Field "sideEffects" of package.json',
+      type: 'list',
+      choices: [
+        { name: 'false', value: false },
+        { name: 'true', value: true },
+        { name: 'undefined', value: 'undefined' }
+      ]
     }
   ])
 }
@@ -132,7 +149,7 @@ async function writeManifest (container: string, name: string, manifest: any) {
  */
 export async function newPackage (name: string) {
   const scope = await chooseScope(config.scopes)
-  const { description, author, license } = await promptRemaining()
+  const { description, author, license, keywords, sideEffects } = await promptRemaining()
   const { homepage, repository, bugs, devDependencies } = rootManifest
 
   const manifest: PackageManifest = {
@@ -144,6 +161,10 @@ export async function newPackage (name: string) {
     homepage,
     repository,
     bugs,
+    keywords: keywords
+      ? String(keywords).split(' ').filter(Boolean)
+      : undefined,
+    sideEffects: sideEffects === 'undefined' ? undefined : sideEffects,
     dependencies: {
       tslib: devDependencies.tslib,
       '@types/node': devDependencies['@types/node']
