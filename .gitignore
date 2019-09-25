@@ -19,6 +19,7 @@ temp.*
 *.map
 !jest.config.js
 /*/*/.npmignore
+/docs
 *.tsbuildinfo
 .vscode
 
