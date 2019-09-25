@@ -1,9 +1,10 @@
 import path from 'path'
 import process from 'process'
-import { ensureDir, pathExists } from 'fs-extra'
+import { ensureDir, writeFile, pathExists } from 'fs-extra'
 import { Application } from 'typedoc'
 import places from '@tools/places'
 import { loadPackageList } from '@tools/utils'
+import { Child, homepage } from './homepage'
 
 export async function main () {
   const failures = []
@@ -11,7 +12,30 @@ export async function main () {
   await ensureDir(places.docs)
 
   const list = await loadPackageList()
-  for (const item of list.items()) {
+  const items = list.items()
+
+  {
+    const childrenPromises = items.map(async (item): Promise<Child> => {
+      const { name } = await item.readManifestOnce()
+      const npmAnchor = `<a
+        class='npm'
+        href='https://www.npmjs.com/package/${name}'
+      >[npm]</a>`
+      const display = `${name} ${npmAnchor}`
+      const route = `${item.name}/index.html`
+      return { display, route }
+    })
+
+    const homepageHTML = homepage({
+      title: 'Documentation',
+      children: await Promise.all(childrenPromises)
+    })
+
+    console.info('docs> Home Page')
+    await writeFile(path.join(places.docs, 'index.html'), homepageHTML)
+  }
+
+  for (const item of items) {
     console.info('docs>', item.name)
 
     const outputDir = path.join(places.docs, item.name)
