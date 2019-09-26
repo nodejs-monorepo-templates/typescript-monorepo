@@ -1,5 +1,6 @@
 {
   "name": "@scope-name/scoped-hello-world",
+  "description": "Package name with scope",
   "version": "0.0.0",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "license": "MIT",
