@@ -131,6 +131,7 @@ abstract class Dict {
         ...args
       ).exit.onerror()
 
+      await this.callCmd('publishDocs')
       await this.callCmd('postpublish')
     }
   )
