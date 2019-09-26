@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.1.1",
-    "@types/gh-pages": "^2.0.0",
+    "@tools/gh-pages": "file:../gh-pages",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/places": "file:../places"
   }
