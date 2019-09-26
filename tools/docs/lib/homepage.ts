@@ -46,6 +46,7 @@ export function homepage (options: Options) {
     }
 
     .child .name {
+      font-size: 1.0875rem;
       font-weight: bold;
     }
 
