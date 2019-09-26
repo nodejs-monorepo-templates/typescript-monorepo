@@ -53,6 +53,7 @@ export async function main () {
 
     if (!project) {
       failures.push(item)
+      console.error('Failed to generate docs for', item.name)
       continue
     }
 
