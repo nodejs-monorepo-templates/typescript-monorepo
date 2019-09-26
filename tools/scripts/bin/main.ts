@@ -86,42 +86,42 @@ abstract class Dict {
 
   public readonly test = new Command(
     'Run tests',
-    args => {
-      this.callCmd('clean')
-      this.callCmd('jest', '--coverage', ...args)
+    async args => {
+      await this.callCmd('clean')
+      await this.callCmd('jest', '--coverage', ...args)
     }
   )
 
   public readonly build = new Command(
     'Build all products',
-    () => {
-      this.callCmd('buildDocs')
-      this.callCmd('buildTypescript')
+    async () => {
+      await this.callCmd('buildDocs')
+      await this.callCmd('buildTypescript')
     }
   )
 
   public readonly clean = new Command(
     'Clean build products',
-    () => {
-      this.callCmd('cleanDocs')
-      this.callCmd('cleanTypescriptBuild')
+    async () => {
+      await this.callCmd('cleanDocs')
+      await this.callCmd('cleanTypescriptBuild')
     }
   )
 
   public readonly prepublish = new Command(
     'Commands that run before publishing packages',
-    () => {
-      this.callCmd('createIgnoreFiles')
-      this.callCmd('mismatches')
-      this.callCmd('testAll')
-      this.callCmd('build')
+    async () => {
+      await this.callCmd('createIgnoreFiles')
+      await this.callCmd('mismatches')
+      await this.callCmd('testAll')
+      await this.callCmd('build')
     }
   )
 
   public readonly publish = new Command(
     'Publish packages versions that have yet to publish',
-    args => {
-      this.callCmd('prepublish')
+    async args => {
+      await this.callCmd('prepublish')
 
       console.info('Publishing packages...')
       spawnSync(
@@ -131,7 +131,7 @@ abstract class Dict {
         ...args
       ).exit.onerror()
 
-      this.callCmd('postpublish')
+      await this.callCmd('postpublish')
     }
   )
 
@@ -158,9 +158,9 @@ abstract class Dict {
 
   public readonly testWithoutCoverage = new Command(
     'Run tests',
-    args => {
-      this.callCmd('clean')
-      this.callCmd('jest', ...args)
+    async args => {
+      await this.callCmd('clean')
+      await this.callCmd('jest', ...args)
     }
   )
 
