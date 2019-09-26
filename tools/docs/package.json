@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "json5": "^2.1.0",
     "pretty": "^2.0.0",
     "fs-extra": "^8.1.0",
     "typedoc": "^0.15.0",
-    "@types/json5": "^0.0.30",
     "@types/pretty": "^2.0.0",
     "@types/fs-extra": "^8.0.0",
     "@tools/preloaded-node": "file:../preloaded-node",

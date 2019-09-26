@@ -5,7 +5,6 @@ import { Application } from 'typedoc'
 import places from '@tools/places'
 import { loadPackageList } from '@tools/utils'
 import { Child, homepage } from './homepage'
-import tsConfig from './tsconfig'
 
 export async function main () {
   const failures = []
@@ -39,10 +38,9 @@ export async function main () {
 
     const readme = path.join(item.folder, 'README.md')
     const readmeObject = await pathExists(readme) ? { readme } : null
-    const { compilerOptions } = await tsConfig
 
     const app = new Application({
-      ...compilerOptions,
+      tsconfig: path.join(places.packages, 'tsconfig.json'),
       ignoreCompilerErrors: true,
       target: 'esnext',
       module: 'commonjs',
