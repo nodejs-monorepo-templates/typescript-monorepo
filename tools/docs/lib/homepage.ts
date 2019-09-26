@@ -28,7 +28,7 @@ export function homepage (options: Options) {
       <a class='link name' href='${child.route}'>${child.name}</a>
       <span class='version' title='version'>${child.version}</span>
       <a class='npm' title='npm page' href='${child.npm}'>[npm]</a>
-      <p class='description' title='package description'>${child.description}</p>
+      <p class='description'><span title='package description'>${child.description}</span></p>
     </article></li>
   `).join('\n')
 
