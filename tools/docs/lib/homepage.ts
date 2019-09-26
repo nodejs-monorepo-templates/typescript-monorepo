@@ -25,9 +25,9 @@ export function homepage (options: Options) {
 
   const childContent = children.map(child => `
     <li class='child' ${dataAttributes(child)}><article>
-      <a class='link name' href='${child.route}'>${child.name}</a>
+      <a class='link name' target='_blank' href='${child.route}'>${child.name}</a>
       <span class='version' title='version'>${child.version}</span>
-      <a class='npm' title='npm page' href='${child.npm}'>[npm]</a>
+      <a class='npm' title='npm page' target='_blank' href='${child.npm}'>[npm]</a>
       <p class='description'><span title='package description'>${child.description}</span></p>
     </article></li>
   `).join('\n')
