@@ -1,8 +1,11 @@
 import ghPages from 'gh-pages'
 
-export const publish = (path: string) => new Promise<void>(
+export interface Options extends ghPages.PublishOptions {}
+
+export const publish = (path: string, options: Options = {}) => new Promise<void>(
   (resolve, reject) => ghPages.publish(
     path,
+    options,
     error => error ? reject(error) : resolve()
   )
 )
