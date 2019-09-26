@@ -1,6 +1,6 @@
 import path from 'path'
 import process from 'process'
-import { ensureDir, writeFile, pathExists } from 'fs-extra'
+import { ensureFile, writeFile, pathExists } from 'fs-extra'
 import { Application } from 'typedoc'
 import places from '@tools/places'
 import { loadPackageList } from '@tools/utils'
@@ -9,7 +9,7 @@ import { Child, homepage } from './homepage'
 export async function main () {
   const failures = []
 
-  await ensureDir(places.docs)
+  await ensureFile(path.join(places.docs, '.nojekyll'))
 
   const list = await loadPackageList()
   const items = list.items()
