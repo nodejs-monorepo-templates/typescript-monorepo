@@ -195,6 +195,15 @@ abstract class Dict {
     }
   )
 
+  public readonly cleanGhPages = new Command(
+    'Clean gh-pages cache',
+    async () => {
+      const { clean } = await import('@tools/gh-pages')
+      console.info('Cleaning gh-pages cache...')
+      clean()
+    }
+  )
+
   public readonly gitTagVersions = new Command(
     'Create tags for every package based on their current version',
     this.mkspawn(commands.gitTagVersions)
