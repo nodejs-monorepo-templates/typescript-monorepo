@@ -240,6 +240,15 @@ abstract class Dict {
     this.mkspawn(commands.publishDocs)
   )
 
+  public readonly updateDocs = new Command(
+    'Rebuild and publish documentation to gh-pages',
+    async () => {
+      await this.callCmd('cleanDocs')
+      await this.callCmd('buildDocs')
+      await this.callCmd('publishDocs')
+    }
+  )
+
   public readonly new = new Command(
     'Create new folder',
     async () => {
