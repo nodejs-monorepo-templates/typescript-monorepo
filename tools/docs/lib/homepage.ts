@@ -51,6 +51,8 @@ export function homepage (options: Options) {
 
     .child .npm {
       color: red;
+      text-decoration: none;
+      font-size: 0.875rem;
     }
 
     .child .version {
