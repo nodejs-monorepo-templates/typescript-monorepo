@@ -46,6 +46,7 @@ export async function main () {
       module: 'commonjs',
       experimentalDecorators: true,
       exclude: ['**/node_modules', '**/.git'],
+      logger: 'none',
       ...readmeObject
     })
 
