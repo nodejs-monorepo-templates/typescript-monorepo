@@ -3,8 +3,10 @@ dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@tools/utils': 'link:../utils'
   '@types/fs-extra': 8.0.0
+  '@types/json5': 0.0.30
   '@types/pretty': 2.0.0
   fs-extra: 8.1.0
+  json5: 2.1.0
   pretty: 2.0.0
   typedoc: 0.15.0
 lockfileVersion: 5.1
@@ -15,6 +17,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
+  /@types/json5/0.0.30:
+    dev: false
+    resolution:
+      integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==
   /@types/minimatch/3.0.3:
     dev: false
     resolution:
@@ -189,6 +195,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-ZtBYyNUYJIsBWERnQP0rPN9KjkrDfJcMjuVGcvXOUJrD1zmOGwhRwQ4msG+HJ+Ni/FA7+sRQEMYVzdTQDvnzvQ==
+  /json5/2.1.0:
+    dependencies:
+      minimist: 1.2.0
+    dev: false
+    engines:
+      node: '>=6'
+    hasBin: true
+    resolution:
+      integrity: sha512-8Mh9h6xViijj36g7Dxi+Y4S6hNGV96vcJZr/SrlHh1LR/pEn/8j/+qIBbs44YKl69Lrfctp4QD+AdWLTMqEZAQ==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -239,6 +254,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
+  /minimist/1.2.0:
+    dev: false
+    resolution:
+      integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
   /mkdirp/0.5.1:
     dependencies:
       minimist: 0.0.8
@@ -441,7 +460,9 @@ specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@tools/utils': 'file:../utils'
   '@types/fs-extra': ^8.0.0
+  '@types/json5': ^0.0.30
   '@types/pretty': ^2.0.0
   fs-extra: ^8.1.0
+  json5: ^2.1.0
   pretty: ^2.0.0
   typedoc: ^0.15.0
