@@ -43,6 +43,7 @@ export async function main () {
 
     const app = new Application({
       ...compilerOptions,
+      ignoreCompilerErrors: true,
       target: 'esnext',
       module: 'commonjs',
       lib: [],
