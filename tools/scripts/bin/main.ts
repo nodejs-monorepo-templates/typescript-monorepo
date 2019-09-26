@@ -102,7 +102,10 @@ abstract class Dict {
 
   public readonly clean = new Command(
     'Clean build products',
-    () => this.callCmd('cleanTypescriptBuild')
+    () => {
+      this.callCmd('cleanDocs')
+      this.callCmd('cleanTypescriptBuild')
+    }
   )
 
   public readonly prepublish = new Command(
@@ -181,6 +184,15 @@ abstract class Dict {
   public readonly cleanTypescriptBuild = new Command(
     'Clean TSC build products',
     this.mkspawn(commands.cleanTypescriptBuild)
+  )
+
+  public readonly cleanDocs = new Command(
+    'Delete docs folder',
+    async () => {
+      const { remove } = await import('fs-extra')
+      console.info('Deleting', places.docs)
+      await remove(places.docs)
+    }
   )
 
   public readonly gitTagVersions = new Command(

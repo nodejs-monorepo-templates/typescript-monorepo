@@ -13,9 +13,11 @@ dependencies:
   '@tools/tslint': 'link:../tslint'
   '@tools/typescript': 'link:../typescript'
   '@tools/workspace': 'link:../workspace'
+  '@types/fs-extra': 8.0.0
   '@types/glob-to-regexp': 0.4.0
   chalk: 2.4.2
   exec-inline: 0.0.3
+  fs-extra: 8.1.0
   glob-to-regexp: 0.4.1
   number-enum: 3.0.0
 lockfileVersion: 5.1
@@ -33,6 +35,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-IvfvnMdSaLBateu0jfsYIpZTxAc2cKEXEMiezGGN75QcBcecDUKd3PgLAncT0oOgxKy8dd8hrJKj9MfzgfZd6g==
+  /@types/fs-extra/8.0.0:
+    dependencies:
+      '@types/node': 12.7.7
+    dev: false
+    resolution:
+      integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
   /@types/glob-to-regexp/0.4.0:
     dev: false
     resolution:
@@ -41,6 +49,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-aK9jxMypeSrhiYofWWBf/T7O+KwaiAHzM4sveCdWPn71lzUSMimRnKzhXDKfKwV1kWoBo2P1aGgaIYGLf9/ljw==
+  /@types/node/12.7.7:
+    dev: false
+    resolution:
+      integrity: sha512-4jUncNe2tj1nmrO/34PsRpZqYVnRV1svbU78cKhuQKkMntKB/AmdLyGgswcZKjFHEHGpiY8pVD8CuVI55nP54w==
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -92,10 +104,24 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-r+QZ65SwH5tD25rUYktVrWMLaaouuGAc9Z0WohbTVW0YQ+F592kuqdb5782hbj92roxMJEDDPNwvqn+bXuGguw==
+  /fs-extra/8.1.0:
+    dependencies:
+      graceful-fs: 4.2.2
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: false
+    engines:
+      node: '>=6 <7 || >=8'
+    resolution:
+      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
   /glob-to-regexp/0.4.1:
     dev: false
     resolution:
       integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
+  /graceful-fs/4.2.2:
+    dev: false
+    resolution:
+      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
   /has-flag/3.0.0:
     dev: false
     engines:
@@ -114,6 +140,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-CxQMjqjQVWFc2sFxFZOZ7o7mVLxWISWHS9Lt/PwwsvCzEDHQp0ksWaWgOA24Z6ziPd/0jTHBaIECdjgGUeZWcA==
+  /jsonfile/4.0.0:
+    dev: false
+    optionalDependencies:
+      graceful-fs: 4.2.2
+    resolution:
+      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /little-ds-toolkit/1.1.0:
     dev: false
     resolution:
@@ -173,6 +205,12 @@ packages:
       typescript: ^3.0.0
     resolution:
       integrity: sha512-OwK3xxtSXKhiBRzOmIqtrjV26V5X0uSkp+qvDkqRukYIhC5VXqw5QO2v57Rzi6znbkJTTAHtgWkZikIgmYshEg==
+  /universalify/0.1.2:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
   /utility-types/2.1.0:
     dev: false
     engines:
@@ -200,8 +238,10 @@ specifiers:
   '@tools/tslint': 'file:../tslint'
   '@tools/typescript': 'file:../typescript'
   '@tools/workspace': 'file:../workspace'
+  '@types/fs-extra': ^8.0.0
   '@types/glob-to-regexp': ^0.4.0
   chalk: ^2.4.2
   exec-inline: ^0.0.3
+  fs-extra: 8.1.0
   glob-to-regexp: 0.4.1
   number-enum: ^3.0.0
