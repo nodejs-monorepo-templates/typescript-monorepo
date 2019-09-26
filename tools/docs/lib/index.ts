@@ -47,6 +47,7 @@ export async function main () {
       target: 'esnext',
       module: 'commonjs',
       mode: 'file',
+      excludeExternals: true,
       exclude: ['**/node_modules', '**/.git'],
       logger: 'none',
       name: `${name} — References`,
