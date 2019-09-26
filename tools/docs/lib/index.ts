@@ -16,14 +16,10 @@ export async function main () {
 
   {
     const childrenPromises = items.map(async (item): Promise<Child> => {
-      const { name } = await item.readManifestOnce()
-      const npmAnchor = `<a
-        class='npm'
-        href='https://www.npmjs.com/package/${name}'
-      >[npm]</a>`
-      const display = `${name} ${npmAnchor}`
+      const { name, version, description = '' } = await item.readManifestOnce()
       const route = `${item.name}/index.html`
-      return { display, route }
+      const npm = `https://www.npmjs.com/package/${name}`
+      return { name, version, description, route, npm }
     })
 
     const homepageHTML = homepage({

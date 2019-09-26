@@ -1,6 +1,11 @@
+import pretty from 'pretty'
+
 export interface Child {
-  readonly display: string
+  readonly name: string
+  readonly version: string
+  readonly description: string
   readonly route: string
+  readonly npm: string
 }
 
 export interface Options {
@@ -8,13 +13,23 @@ export interface Options {
   readonly children: readonly Child[]
 }
 
+function dataAttributes (data: { readonly [_: string]: any }) {
+  return Object
+    .entries(data)
+    .map(([key, value]) => `data-${key}=${JSON.stringify(value)}`)
+    .join(' ')
+}
+
 export function homepage (options: Options) {
   const { title, children } = options
 
   const childContent = children.map(child => `
-    <li class='child'><a href='${child.route}'>
-      ${child.display}
-    </a></li>
+    <li class='child' ${dataAttributes(child)}><article>
+      <a class='link name' href='${child.route}'>${child.name}</a>
+      <span class='version' title='version'>${child.version}</span>
+      <a class='npm' title='npm page' href='${child.npm}'>[npm]</a>
+      <p class='description' title='package description'>${child.description}</p>
+    </article></li>
   `).join('\n')
 
   const css = `
@@ -30,8 +45,24 @@ export function homepage (options: Options) {
       color: #6495ed;
     }
 
-    .npm {
+    .child .name {
+      font-weight: bold;
+    }
+
+    .child .npm {
       color: red;
+    }
+
+    .child .version {
+      font-size: 0.875rem;
+      color: rgba(0,0,0,0.5);
+      font-weight: bold;
+      max-width: 90px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: middle;
     }
   `
 
@@ -47,14 +78,14 @@ export function homepage (options: Options) {
         <header>
           <h1 class='title'>${title}</h1>
         </header>
-        <main>
+        <main><nav>
           <ul>${childContent}</ul>
-        </main>
+        </nav></main>
       </body>
     </html>
   `
 
-  return html
+  return pretty(html, { ocd: true })
 }
 
 export default homepage
