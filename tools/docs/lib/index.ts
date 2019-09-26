@@ -43,7 +43,6 @@ export async function main () {
       target: 'esnext',
       module: 'commonjs',
       experimentalDecorators: true,
-      logger: 'none',
       exclude: ['**/node_modules', '**/.git'],
       ...readmeObject
     })
