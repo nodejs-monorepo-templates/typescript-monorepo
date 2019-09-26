@@ -39,6 +39,8 @@ export async function main () {
     const readme = path.join(item.folder, 'README.md')
     const readmeObject = await pathExists(readme) ? { readme } : null
 
+    const { name } = await item.readManifestOnce()
+
     const app = new Application({
       tsconfig: path.join(places.packages, 'tsconfig.json'),
       ignoreCompilerErrors: true,
@@ -46,6 +48,7 @@ export async function main () {
       module: 'commonjs',
       exclude: ['**/node_modules', '**/.git'],
       logger: 'none',
+      name: `${name} — References`,
       ...readmeObject
     })
 
