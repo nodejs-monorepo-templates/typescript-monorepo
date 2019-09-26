@@ -225,6 +225,11 @@ abstract class Dict {
     this.mkspawn(commands.jest)
   )
 
+  public readonly publishDocs = new Command(
+    'Publish documentation to gh-pages',
+    this.mkspawn(commands.publishDocs)
+  )
+
   public readonly new = new Command(
     'Create new folder',
     async () => {
