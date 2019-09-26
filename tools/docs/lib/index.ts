@@ -44,7 +44,6 @@ export async function main () {
       ignoreCompilerErrors: true,
       target: 'esnext',
       module: 'commonjs',
-      experimentalDecorators: true,
       exclude: ['**/node_modules', '**/.git'],
       logger: 'none',
       ...readmeObject
