@@ -58,6 +58,7 @@ export async function main () {
       mode: 'file',
       excludeExternals: true,
       excludeNotExported: true,
+      excludePrivate: true,
       exclude: ['**/node_modules', '**/.git'],
       entryPoint: 'index.ts',
       logger: 'none',
