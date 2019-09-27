@@ -39,6 +39,9 @@ export async function main () {
     const readme = path.join(item.folder, 'README.md')
     const readmeObject = await pathExists(readme) ? { readme } : null
 
+    const entryPoint = path.join(item.folder, 'index.ts')
+    const entryPointObject = await pathExists(entryPoint) ? { entryPoint } : null
+
     const { name } = await item.readManifestOnce()
 
     const app = new Application({
@@ -49,9 +52,11 @@ export async function main () {
       mode: 'file',
       excludeExternals: true,
       exclude: ['**/node_modules', '**/.git'],
+      entryPoint: 'index.ts',
       logger: 'none',
       name: `${name} — References`,
-      ...readmeObject
+      ...readmeObject,
+      ...entryPointObject
     })
 
     const project = app.convert(app.expandInputFiles([item.folder]))
