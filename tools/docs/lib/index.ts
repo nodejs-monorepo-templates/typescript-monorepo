@@ -46,7 +46,7 @@ export async function main () {
 
   for (const item of ignored) {
     const { default: chalk } = await import('chalk')
-    console.info(`docs> ${chalk.strikethrough(item.name)} [SKIPPED]`)
+    console.info(chalk.dim(`docs> ${chalk.strikethrough(item.name)} [SKIPPED]`))
   }
 
   for (const item of items) {
