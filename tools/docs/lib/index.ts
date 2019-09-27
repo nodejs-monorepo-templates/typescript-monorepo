@@ -32,7 +32,7 @@ export async function main () {
     })
 
     const homepageHTML = homepage({
-      title: 'Documentation',
+      title: 'API Reference',
       children: await Promise.all(childrenPromises)
     })
 
