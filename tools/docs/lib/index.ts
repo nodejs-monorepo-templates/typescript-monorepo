@@ -4,6 +4,7 @@ import { ensureFile, writeFile, pathExists } from 'fs-extra'
 import { Application } from 'typedoc'
 import places from '@tools/places'
 import { loadPackageList } from '@tools/utils'
+import * as config from './config'
 import { Child, homepage } from './homepage'
 
 async function propIfExists<Key extends string> (
@@ -32,7 +33,7 @@ export async function main () {
     })
 
     const homepageHTML = homepage({
-      title: 'API Reference',
+      title: config.title,
       children: await Promise.all(childrenPromises)
     })
 
