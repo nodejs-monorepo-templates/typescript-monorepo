@@ -57,6 +57,7 @@ export async function main () {
       module: 'commonjs',
       mode: 'file',
       excludeExternals: true,
+      excludeNotExported: true,
       exclude: ['**/node_modules', '**/.git'],
       entryPoint: 'index.ts',
       logger: 'none',
