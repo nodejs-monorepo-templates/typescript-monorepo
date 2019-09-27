@@ -64,7 +64,6 @@ export function homepage (options: Options) {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
-      display: inline-block;
       vertical-align: middle;
     }
   `
