@@ -63,7 +63,7 @@ export async function main () {
       exclude: ['**/node_modules', '**/.git'],
       entryPoint: 'index.ts',
       logger: 'none',
-      name: `${name} — References`,
+      name: `${name} — Reference`,
       ...readmeObject,
       ...entryPointObject
     })
