@@ -10,7 +10,7 @@ export async function main () {
   console.info('Publishing documentation...')
 
   for (const options of optionsList) {
-    console.info('config', options)
+    console.info('gh-pages>', options)
     await publish('docs', { ...DEFAULT_OPTIONS, ...options })
   }
 }
