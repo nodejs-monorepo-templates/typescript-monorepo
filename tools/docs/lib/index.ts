@@ -59,7 +59,6 @@ export async function main () {
     const outputDir = path.join(places.docs, item.name)
 
     const readmeObject = await propIfExists('readme', 'README.md', item.folder)
-    const entryPointObject = await propIfExists('entryPoint', 'index.ts', item.folder)
 
     const app = new Application({
       tsconfig: path.join(places.packages, 'tsconfig.json'),
@@ -73,11 +72,15 @@ export async function main () {
       exclude: ['**/node_modules', '**/.git'],
       logger: 'none',
       name: `${name} — Reference`,
-      ...readmeObject,
-      ...entryPointObject
+      ...readmeObject
     })
 
-    const project = app.convert(app.expandInputFiles([item.folder]))
+    const entryFilePath = path.join(item.folder, 'index.ts')
+    const project = app.convert(app.expandInputFiles([
+      await pathExists(entryFilePath)
+        ? entryFilePath
+        : item.folder
+    ]))
 
     if (!project) {
       failures.push(item)
