@@ -58,7 +58,7 @@ export async function main () {
 
     const outputDir = path.join(places.docs, item.name)
 
-    const readmeObject = await propIfExists('readme', 'README.md', item.folder)
+    const readmeObject = await propIfExists('readme', path.join(item.folder, 'README.md'))
 
     const app = new Application({
       tsconfig: path.join(places.packages, 'tsconfig.json'),
