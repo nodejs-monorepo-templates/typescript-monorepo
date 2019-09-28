@@ -66,7 +66,7 @@ export async function main () {
       target: 'esnext',
       module: 'commonjs',
       mode: 'file',
-      excludeExternals: true,
+      excludeExternals: false,
       excludeNotExported: true,
       excludePrivate: true,
       exclude: ['**/node_modules', '**/.git'],
