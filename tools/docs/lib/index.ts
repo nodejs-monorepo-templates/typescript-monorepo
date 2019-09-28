@@ -4,7 +4,7 @@ import ramda from 'ramda'
 import { ensureFile, writeFile, pathExists } from 'fs-extra'
 import { Application } from 'typedoc'
 import places from '@tools/places'
-import { loadPackageList } from '@tools/utils'
+import { loadPackageList, loadRepoUrl } from '@tools/utils'
 import * as config from './config'
 import combineGlobPatterns from './combine-glob-patterns'
 import { Child, homepage } from './homepage'
@@ -37,7 +37,8 @@ export async function main () {
 
     const homepageHTML = homepage({
       title: config.title,
-      children: await Promise.all(childrenPromises)
+      children: await Promise.all(childrenPromises),
+      repo: loadRepoUrl()
     })
 
     console.info('docs> Home Page')

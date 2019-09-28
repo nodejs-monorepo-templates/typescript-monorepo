@@ -11,6 +11,7 @@ export interface Child {
 export interface Options {
   readonly title: string
   readonly children: readonly Child[]
+  readonly repo: string
 }
 
 function dataAttributes (data: { readonly [_: string]: any }) {
@@ -21,7 +22,7 @@ function dataAttributes (data: { readonly [_: string]: any }) {
 }
 
 export function homepage (options: Options) {
-  const { title, children } = options
+  const { title, children, repo } = options
 
   const childContent = children.map(child => `
     <li class='child' ${dataAttributes(child)}><article>
@@ -38,6 +39,10 @@ export function homepage (options: Options) {
     }
 
     header .title {
+      text-align: center;
+    }
+
+    footer {
       text-align: center;
     }
 
@@ -83,6 +88,10 @@ export function homepage (options: Options) {
         <main><nav>
           <ul>${childContent}</ul>
         </nav></main>
+        <footer>
+          <hr />
+          <a title='Repository' target='_blank' href='${repo}'>${repo}</a>
+        </footer>
       </body>
     </html>
   `
