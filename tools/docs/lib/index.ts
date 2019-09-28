@@ -71,7 +71,6 @@ export async function main () {
       excludeNotExported: true,
       excludePrivate: true,
       exclude: ['**/node_modules', '**/.git'],
-      entryPoint: 'index.ts',
       logger: 'none',
       name: `${name} — Reference`,
       ...readmeObject,
