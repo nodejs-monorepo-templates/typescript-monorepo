@@ -1,26 +1,16 @@
-import { parse, format } from 'url'
-import { loadRootManifest } from '../manifest'
+import fs from 'fs'
 
-export function getRepoUrl (gitUrl: string) {
-  const object = parse(gitUrl)
-  const { protocol } = object
+export async function loadRepoUrl (remote = 'origin') {
+  const git = await import('isomorphic-git')
+  const { project } = await import('@tools/places')
 
-  if (!protocol) return gitUrl
+  git.plugins.set('fs', fs)
 
-  for (const newProtocol of ['http', 'https']) {
-    if (protocol.includes(newProtocol + ':') || protocol.includes(newProtocol + '+')) {
-      object.protocol = newProtocol + ':'
-      break
+  for (const item of await git.listRemotes({ dir: project })) {
+    if (item.remote === remote) {
+      return item.url
     }
   }
 
-  return format(object)
-}
-
-export function loadGitUrl () {
-  return loadRootManifest().repository.url
-}
-
-export function loadRepoUrl () {
-  return getRepoUrl(loadGitUrl())
+  throw new Error(`Cannot find remote of ${JSON.stringify(remote)}`)
 }

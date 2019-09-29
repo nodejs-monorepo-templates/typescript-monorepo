@@ -38,7 +38,7 @@ export async function main () {
     const homepageHTML = homepage({
       title: config.title,
       children: await Promise.all(childrenPromises),
-      repo: loadRepoUrl()
+      repo: await loadRepoUrl()
     })
 
     console.info('docs> Home Page')
