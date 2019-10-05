@@ -18,7 +18,7 @@ dependencies:
   '@types/fs-extra': 8.0.0
   '@types/glob-to-regexp': 0.4.0
   chalk: 2.4.2
-  exec-inline: 0.0.3
+  exec-inline: 0.0.4
   fs-extra: 8.1.0
   glob-to-regexp: 0.4.1
   number-enum: 3.0.0
@@ -47,10 +47,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-unszpTzAknG612PxqtoNUkLM0T3rIAXT8oE9Dyhhbl4eew91jLqcgJZOu5j7GztHg09R8LWCMocRU1ohDFY7Pw==
-  /@types/node/12.7.1:
+  /@types/node/12.7.11:
     dev: false
     resolution:
-      integrity: sha512-aK9jxMypeSrhiYofWWBf/T7O+KwaiAHzM4sveCdWPn71lzUSMimRnKzhXDKfKwV1kWoBo2P1aGgaIYGLf9/ljw==
+      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /@types/node/12.7.7:
     dev: false
     resolution:
@@ -97,15 +97,15 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /exec-inline/0.0.3:
+  /exec-inline/0.0.4:
     dependencies:
-      '@types/node': 12.7.1
+      '@types/node': 12.7.11
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-r+QZ65SwH5tD25rUYktVrWMLaaouuGAc9Z0WohbTVW0YQ+F592kuqdb5782hbj92roxMJEDDPNwvqn+bXuGguw==
+      integrity: sha512-mkYPrQfCuesIP/JRcFth38com6JYpeF2uGIuSojDYGx7g6bLPzPWdRYFeMqvxH5fdwriScHKnR/oThMy1o7iug==
   /fs-extra/8.1.0:
     dependencies:
       graceful-fs: 4.2.2
@@ -245,7 +245,7 @@ specifiers:
   '@types/fs-extra': ^8.0.0
   '@types/glob-to-regexp': ^0.4.0
   chalk: ^2.4.2
-  exec-inline: ^0.0.3
+  exec-inline: ^0.0.4
   fs-extra: 8.1.0
   glob-to-regexp: 0.4.1
   number-enum: ^3.0.0

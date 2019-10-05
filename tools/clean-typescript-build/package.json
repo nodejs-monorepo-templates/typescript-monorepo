@@ -7,8 +7,8 @@
     "clean-typescript-build": "bin.js"
   },
   "dependencies": {
-    "clean-typescript-build": "^0.1.2",
-    "exec-inline": "^0.0.3",
+    "clean-typescript-build": "^0.1.4",
+    "exec-inline": "^0.0.4",
     "@tools/places": "file:../places"
   }
 }

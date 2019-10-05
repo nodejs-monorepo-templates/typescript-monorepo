@@ -5,7 +5,7 @@ dependencies:
   '@types/fs-extra': 8.0.0
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
-  '@types/ramda': 0.26.25
+  '@types/ramda': 0.26.26
   chalk: 2.4.2
   fs-extra: 8.1.0
   minimatch: 3.0.4
@@ -32,12 +32,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-nojaE6CV03swMxoHnAisV2Rl0Ma6WPUtQo87hUmaotu/YPugPlmiRB60sthbyppXdMFTdJV3wm6zCENY4q1tKA==
-  /@types/ramda/0.26.25:
+  /@types/ramda/0.26.26:
     dependencies:
-      ts-toolbelt: 4.5.2
+      ts-toolbelt: 4.7.24
     dev: false
     resolution:
-      integrity: sha512-fx54Gx7Xrw+wMU7sEbUa5tjgL5Ec/vWzhKCqJHR0JVJUqwGzUtIYk8nqwyLbmX11wEx2xVdblYlNL9BzznDhvw==
+      integrity: sha512-jDx2Lp2WvziMTcDxOU21yzRr6jP/VTWvpg6SQxeM63VldSjugUY1N9p1Q8YY/wpGvqzpkstUFmg2oGJdBSp5gg==
   /abbrev/1.1.1:
     dev: false
     resolution:
@@ -427,10 +427,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  /ts-toolbelt/4.5.2:
+  /ts-toolbelt/4.7.24:
     dev: false
     resolution:
-      integrity: sha512-g7ZDTK17HhZi5qhFvHLaW/ZzaOlEB+O7GnDaW6ftCEaxhbenVEzPfmeGo2YhMgRjhlYO/dtOmUbv0yykQU5YMw==
+      integrity: sha512-jOnCkp4Yqa53CNonegmTCu7bhi9ame5iZNOZaby2wIvtgCGRKSxlr4j/7Qyabz02qY7ex4tviwj/t2irr305XQ==
   /typedoc-default-themes/0.6.0:
     dependencies:
       backbone: 1.4.0
@@ -510,7 +510,7 @@ specifiers:
   '@types/fs-extra': ^8.0.0
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
-  '@types/ramda': ^0.26.25
+  '@types/ramda': ^0.26.26
   chalk: ^2.4.2
   fs-extra: ^8.1.0
   minimatch: ^3.0.4

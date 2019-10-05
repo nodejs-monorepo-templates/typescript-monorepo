@@ -1,37 +1,19 @@
 dependencies:
   '@tools/places': 'link:../places'
-  clean-typescript-build: 0.1.2
-  exec-inline: 0.0.3
+  clean-typescript-build: 0.1.4
+  exec-inline: 0.0.4
 lockfileVersion: 5.1
 packages:
-  /@types/fs-extra/5.1.0:
-    dependencies:
-      '@types/node': 12.7.11
-    dev: false
-    resolution:
-      integrity: sha512-AInn5+UBFIK9FK5xc9yP5e3TQSPNNgjHByqYcj9g5elVBnDQcQL7PlO1CIRy2gWlbwK7UPYqi7vRvFA44dCmYQ==
   /@types/fs-extra/8.0.0:
     dependencies:
       '@types/node': 12.7.11
     dev: false
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
-  /@types/node/10.14.20:
-    dev: false
-    resolution:
-      integrity: sha512-An+MXSV8CGXz/BO9C1KKsoJ/8WDrvlNUaRMsm2h+IHZuSyQkM8U5bJJkb8ItLKA73VePG/nUK+t+EuW2IWuhsQ==
-  /@types/node/12.7.1:
-    dev: false
-    resolution:
-      integrity: sha512-aK9jxMypeSrhiYofWWBf/T7O+KwaiAHzM4sveCdWPn71lzUSMimRnKzhXDKfKwV1kWoBo2P1aGgaIYGLf9/ljw==
   /@types/node/12.7.11:
     dev: false
     resolution:
       integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
-  /@types/ramda/0.25.51:
-    dev: false
-    resolution:
-      integrity: sha512-xcmtfHIgF9SYjhGdsZR1nQslxG4hu0cIpFfLQ4CWdw3KzHvl7ki1AzFLQUkbDTG42ZN3ZsQfdRzXRlkAvbIy5Q==
   /@types/ramda/0.26.26:
     dependencies:
       ts-toolbelt: 4.7.24
@@ -68,23 +50,23 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
-  /clean-typescript-build/0.1.2:
+  /clean-typescript-build/0.1.4:
     dependencies:
       '@types/fs-extra': 8.0.0
       '@types/node': 12.7.11
       '@types/ramda': 0.26.26
       '@types/yargs': 13.0.3
       fs-extra: 8.1.0
-      fs-tree-utils: 0.1.6
+      fs-tree-utils: 0.1.7
       ramda: 0.26.1
       tslib: 1.10.0
-      yargs: 13.3.0
+      yargs: 14.0.0
     dev: false
     engines:
       node: '>= 8.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-kvS7boAhBJUk0bHLpJVfRcpmseqYHJLFI4lFVzvSvpg4CoUIAB6Uqa5f8RgDw6N/8IPY165jcKVDUP0/K9cR+w==
+      integrity: sha512-lGW8eUQMmvwgiqsAP9+DlIBnJvuEOsZ3KZh1RO2ggt7Zllni080YNpd7DHeY6mOF9s1NfMDEOtNpejsIzLbw0Q==
   /cliui/5.0.0:
     dependencies:
       string-width: 3.1.0
@@ -113,15 +95,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
-  /exec-inline/0.0.3:
+  /exec-inline/0.0.4:
     dependencies:
-      '@types/node': 12.7.1
+      '@types/node': 12.7.11
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-r+QZ65SwH5tD25rUYktVrWMLaaouuGAc9Z0WohbTVW0YQ+F592kuqdb5782hbj92roxMJEDDPNwvqn+bXuGguw==
+      integrity: sha512-mkYPrQfCuesIP/JRcFth38com6JYpeF2uGIuSojDYGx7g6bLPzPWdRYFeMqvxH5fdwriScHKnR/oThMy1o7iug==
   /find-up/3.0.0:
     dependencies:
       locate-path: 3.0.0
@@ -130,16 +112,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-1yD6RmLI1XBfxugvORwlck6f75tYL+iR0jqwsOrOxMZyGYqUuDhJ0l4AXdO1iX/FTs9cBAMEk1gWSEx1kSbylg==
-  /fs-extra/7.0.1:
-    dependencies:
-      graceful-fs: 4.2.2
-      jsonfile: 4.0.0
-      universalify: 0.1.2
-    dev: false
-    engines:
-      node: '>=6 <7 || >=8'
-    resolution:
-      integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
   /fs-extra/8.1.0:
     dependencies:
       graceful-fs: 4.2.2
@@ -150,20 +122,20 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
-  /fs-tree-utils/0.1.6:
+  /fs-tree-utils/0.1.7:
     dependencies:
-      '@types/fs-extra': 5.1.0
-      '@types/node': 10.14.20
-      '@types/ramda': 0.25.51
-      fs-extra: 7.0.1
-      monorepo-shared-assets: 0.0.17
-      ramda: 0.25.0
+      '@types/fs-extra': 8.0.0
+      '@types/node': 12.7.11
+      '@types/ramda': 0.26.26
+      fs-extra: 8.1.0
+      monorepo-shared-assets: 0.0.18
+      ramda: 0.26.1
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-qsOeiFlr2zfQXkLziZh5FLxRPHmUm3Cfwj4cTjVVVij1gtHGkS11/6nxGA1l7ndvb2d+iKiQartR0cewodT5zg==
+      integrity: sha512-UiJ5pnplv6hOAWp4k42LNjhyRm8T3++wnXHxHvo2AP3/eMQhKMl4dVe7Knj3dfFHt0EeE6IHsQucCyCW6KlARA==
   /get-caller-file/2.0.5:
     dev: false
     engines:
@@ -174,12 +146,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
-  /immutable/3.8.2:
+  /immutable/4.0.0-rc.12:
     dev: false
-    engines:
-      node: '>=0.10.0'
     resolution:
-      integrity: sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
+      integrity: sha512-0M2XxkZLx/mi3t8NVwIm1g8nHoEmM9p9UBl/G9k4+hm0kBgOVdMV/B3CY5dQ8qG8qc80NN4gDV4HQv6FTJ5q7A==
   /is-fullwidth-code-point/2.0.0:
     dev: false
     engines:
@@ -201,18 +171,18 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A==
-  /monorepo-shared-assets/0.0.17:
+  /monorepo-shared-assets/0.0.18:
     dependencies:
-      '@types/node': 10.14.20
-      '@types/ramda': 0.25.51
-      immutable: 3.8.2
-      ramda: 0.25.0
+      '@types/node': 12.7.11
+      '@types/ramda': 0.26.26
+      immutable: 4.0.0-rc.12
+      ramda: 0.26.1
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
+      integrity: sha512-xVSAGL8nrYGqutC0d958FlvmZ8Vwn9VR9kO3eS9o9vlLsqDfvYKLlb2FKLfHJiRGhs8xC9aIPqX3bhs8fE/Vvw==
   /p-limit/2.2.1:
     dependencies:
       p-try: 2.2.0
@@ -241,10 +211,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-zg6+ql94yxiSXqfYENe1mwEP1RU=
-  /ramda/0.25.0:
-    dev: false
-    resolution:
-      integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
   /ramda/0.26.1:
     dev: false
     resolution:
@@ -320,9 +286,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
-  /yargs/13.3.0:
+  /yargs/14.0.0:
     dependencies:
       cliui: 5.0.0
+      decamelize: 1.2.0
       find-up: 3.0.0
       get-caller-file: 2.0.5
       require-directory: 2.1.1
@@ -334,8 +301,8 @@ packages:
       yargs-parser: 13.1.1
     dev: false
     resolution:
-      integrity: sha512-2eehun/8ALW8TLoIl7MVaRUrg+yCnenu8B4kBlRxj3GJGDKU1Og7sMXPNm1BYyM1DOJmTZ4YeN/Nwxv+8XJsUA==
+      integrity: sha512-ssa5JuRjMeZEUjg7bEL99AwpitxU/zWGAGpdj0di41pOEmJti8NR6kyUIJBkR78DTYNPZOU08luUo0GTHuB+ow==
 specifiers:
   '@tools/places': 'file:../places'
-  clean-typescript-build: ^0.1.2
-  exec-inline: ^0.0.3
+  clean-typescript-build: ^0.1.4
+  exec-inline: ^0.0.4

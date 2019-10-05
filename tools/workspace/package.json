@@ -6,8 +6,8 @@
   "bin": "./bin.js",
   "dependencies": {
     "number-enum": "^3.0.0",
-    "nested-workspace-helper": "^0.2.12",
-    "exec-inline": "^0.0.3",
+    "nested-workspace-helper": "^0.2.14",
+    "exec-inline": "^0.0.4",
     "@tools/places": "file:../places"
   }
 }

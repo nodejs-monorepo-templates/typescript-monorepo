@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
-    "@types/gh-pages": "^2.0.0",
+    "@types/gh-pages": "^2.0.1",
     "@tools/preloaded-node": "file:../preloaded-node"
   }
 }

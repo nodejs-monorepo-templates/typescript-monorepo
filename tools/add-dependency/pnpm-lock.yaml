@@ -6,7 +6,7 @@ dependencies:
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
   inquirer: 7.0.0
-  ts-yargs: 0.1.0
+  ts-yargs: 0.1.1
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.0:
@@ -26,10 +26,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-aK9jxMypeSrhiYofWWBf/T7O+KwaiAHzM4sveCdWPn71lzUSMimRnKzhXDKfKwV1kWoBo2P1aGgaIYGLf9/ljw==
-  /@types/node/12.7.5:
+  /@types/node/12.7.11:
     dev: false
     resolution:
-      integrity: sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
+      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /@types/through/0.0.29:
     dependencies:
       '@types/node': 12.7.1
@@ -390,16 +390,16 @@ packages:
       node: '>=0.6.0'
     resolution:
       integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
-  /ts-yargs/0.1.0:
+  /ts-yargs/0.1.1:
     dependencies:
-      '@types/node': 12.7.5
+      '@types/node': 12.7.11
       tslib: 1.10.0
       yargs: 14.0.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-Ki5jqeeqeCkIPNxPAhSZoTrd2tyiLE1FzZuMoBAcIROUPEYZ7qHWd6GtIIFTdMcTzsPyQq/H4ITQuQw8h21Qow==
+      integrity: sha512-eprNdixCEcb5ibG6o7AUiIzC5um4U37e2oBPT433adIqWSGQXrYJpCaoUIlV3cku17WSrkOvaPl501u06f9H2w==
   /tslib/1.10.0:
     dev: false
     resolution:
@@ -465,4 +465,4 @@ specifiers:
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.0
-  ts-yargs: ^0.1.0
+  ts-yargs: ^0.1.1

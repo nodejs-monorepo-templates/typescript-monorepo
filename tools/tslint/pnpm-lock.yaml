@@ -1,6 +1,6 @@
 dependencies:
   '@tools/places': 'link:../places'
-  exec-inline: 0.0.3
+  exec-inline: 0.0.4
   tslint: 5.20.0_typescript@3.6.3
   tslint-config-standard: 8.0.1_tslint@5.20.0+typescript@3.6.3
   typescript: 3.6.3
@@ -20,10 +20,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7dV4eu9gBxoM0dAnj/BCFDW9LFU0zvTrkq0ugM7pnHEgguOEeOz1so2ZghEdzviYzQEED0r4EAgpsBChKy1TRQ==
-  /@types/node/12.7.5:
+  /@types/node/12.7.11:
     dev: false
     resolution:
-      integrity: sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
+      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -75,10 +75,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
-  /commander/2.20.0:
+  /commander/2.20.1:
     dev: false
     resolution:
-      integrity: sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
+      integrity: sha512-cCuLsMhJeWQ/ZpsFTbE765kvVfoeSddc4nU3up4fV+fDBcfUXnbITJ+JzhkdjzOqhURjZgujxaioam4RM9yGUg==
   /concat-map/0.0.1:
     dev: false
     resolution:
@@ -123,15 +123,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
-  /exec-inline/0.0.3:
+  /exec-inline/0.0.4:
     dependencies:
-      '@types/node': 12.7.5
+      '@types/node': 12.7.11
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-r+QZ65SwH5tD25rUYktVrWMLaaouuGAc9Z0WohbTVW0YQ+F592kuqdb5782hbj92roxMJEDDPNwvqn+bXuGguw==
+      integrity: sha512-mkYPrQfCuesIP/JRcFth38com6JYpeF2uGIuSojDYGx7g6bLPzPWdRYFeMqvxH5fdwriScHKnR/oThMy1o7iug==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -271,7 +271,7 @@ packages:
       '@babel/code-frame': 7.5.5
       builtin-modules: 1.1.1
       chalk: 2.4.2
-      commander: 2.20.0
+      commander: 2.20.1
       diff: 4.0.1
       glob: 7.1.4
       js-yaml: 3.13.1
@@ -323,7 +323,7 @@ packages:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
   '@tools/places': 'file:../places'
-  exec-inline: ^0.0.3
+  exec-inline: ^0.0.4
   tslint: ^5.20.0
   tslint-config-standard: ^8.0.1
   typescript: ^3.6.3

@@ -1,13 +1,13 @@
 dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
-  '@types/gh-pages': 2.0.0
+  '@types/gh-pages': 2.0.1
   gh-pages: 2.1.1
 lockfileVersion: 5.1
 packages:
-  /@types/gh-pages/2.0.0:
+  /@types/gh-pages/2.0.1:
     dev: false
     resolution:
-      integrity: sha512-nv697/tjlju4YlRZRc38rBTeABgnI+ZIFX1Kh9Q1QYBpq8QDSwMRnDMJMye2piRjrqJStTEYKQhjEWZ+0TG3lw==
+      integrity: sha512-Z5CJlEg6xTfLLChYb4/UpYLcN9djv2HzTDz8XJ9I8tasCw8ybkGoA2x+CBU9gyRvi1VeBmdLfcGrEDVYm1L36g==
   /array-union/1.0.2:
     dependencies:
       array-uniq: 1.0.3
@@ -300,5 +300,5 @@ packages:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
-  '@types/gh-pages': ^2.0.0
+  '@types/gh-pages': ^2.0.1
   gh-pages: ^2.1.1
