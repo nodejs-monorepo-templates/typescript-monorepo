@@ -6,7 +6,7 @@
   "dependencies": {
     "inquirer": "^7.0.0",
     "fs-extra": "^8.1.0",
-    "ts-yargs": "^0.1.1",
+    "ts-yargs": "^0.1.2",
     "@types/inquirer": "^6.5.0",
     "@types/fs-extra": "^8.0.0",
     "@tools/preloaded-node": "file:../preloaded-node",
