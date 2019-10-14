@@ -39,10 +39,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
-  /commander/2.20.0:
+  /commander/2.20.1:
     dev: false
     resolution:
-      integrity: sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
+      integrity: sha512-cCuLsMhJeWQ/ZpsFTbE765kvVfoeSddc4nU3up4fV+fDBcfUXnbITJ+JzhkdjzOqhURjZgujxaioam4RM9yGUg==
   /concat-map/0.0.1:
     dev: false
     resolution:
@@ -99,7 +99,7 @@ packages:
   /gh-pages/2.1.1:
     dependencies:
       async: 2.6.3
-      commander: 2.20.0
+      commander: 2.20.1
       email-addresses: 3.0.3
       filenamify-url: 1.0.0
       fs-extra: 7.0.1

@@ -4,13 +4,13 @@ dependencies:
   chalk: 2.4.2
 lockfileVersion: 5.1
 packages:
-  /@types/node/12.7.4:
+  /@types/node/12.7.11:
     dev: false
     resolution:
-      integrity: sha512-W0+n1Y+gK/8G2P/piTkBBN38Qc5Q1ZSO6B5H3QmPCUewaiXOo2GCAWZ4ElZCcNhjJuBSUSLGFUJnmlCn5+nxOQ==
+      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /advanced-spawn-async/0.1.0:
     dependencies:
-      '@types/node': 12.7.4
+      '@types/node': 12.7.11
       tslib: 1.10.0
     dev: false
     resolution:

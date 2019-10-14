@@ -23,17 +23,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-djYYKmdNRSBtL1x4CiE9UJb9yZhwtI1VC+UxZD0psNznrUj80ywsxKlEGAE+QL1qvLjPbfb24VosjkYM6W4RSQ==
-  /@types/node/10.14.20:
-    dev: false
-    resolution:
-      integrity: sha512-An+MXSV8CGXz/BO9C1KKsoJ/8WDrvlNUaRMsm2h+IHZuSyQkM8U5bJJkb8ItLKA73VePG/nUK+t+EuW2IWuhsQ==
   /@types/node/12.7.11:
     dev: false
     resolution:
       integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /@types/ramda/0.26.26:
     dependencies:
-      ts-toolbelt: 4.7.24
+      ts-toolbelt: 4.8.3
     dev: false
     resolution:
       integrity: sha512-jDx2Lp2WvziMTcDxOU21yzRr6jP/VTWvpg6SQxeM63VldSjugUY1N9p1Q8YY/wpGvqzpkstUFmg2oGJdBSp5gg==
@@ -303,18 +299,18 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-zg6+ql94yxiSXqfYENe1mwEP1RU=
-  /pretty-exec/0.3.3:
+  /pretty-exec/0.3.4:
     dependencies:
       '@types/node': 12.7.11
       '@types/shell-escape': 0.2.0
       chalk: 2.4.2
       shell-escape: 0.2.0
-      split-string-once: 0.0.0
+      split-string-once: 0.0.1
       tslib: 1.10.0
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-L0gFsRd7vOIw1pphWnXLByTijy8Dp7lZ9++F0hnbyWB8V5fZ837SivxqW/0pihAbTTRvSNuYgyx2yv7q/ai/ZQ==
+      integrity: sha512-S1xjHx+WPQKwl5fYA/w7s2Lmm16HFIsgG6CXdVTb5Vh5IyBR0jWEXPn1iRyto58iqQ1TmUpkrJA4dx3dSg+8wA==
   /ramda/0.26.1:
     dev: false
     resolution:
@@ -348,7 +344,7 @@ packages:
       '@types/semver': 6.0.2
       chalk: 2.4.2
       exec-inline: 0.0.4
-      pretty-exec: 0.3.3
+      pretty-exec: 0.3.4
       semver: 6.3.0
       tslib: 1.10.0
     dev: false
@@ -357,15 +353,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Jo2lnOmqZ9v93uMbQxY6I267Km/aApo8UiwuOgbvXZGToO0iE+l84nKbZjCeRKAtNwdgjS4YrvQtYity5s6cug==
-  /split-string-once/0.0.0:
+  /split-string-once/0.0.1:
     dependencies:
-      '@types/node': 10.14.20
+      '@types/node': 12.7.11
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-FrmRtP56cdaHEPAGGjV6eebDJ7QUZ+sobv2SV69Fec5G6cJ2Jwm1d8o+IE1HyweCPYz6Mf7WVl/dpSkuN6tUbQ==
+      integrity: sha512-QeZm9SxDoXrAjfxf2RSFNgm3P91aSG3pFT0/k5QlsJCuZfAj94KGudROiE1cLKb6bjE4ivK55GMzaNC+8w/9ng==
   /sprintf-js/1.0.3:
     dev: false
     resolution:
@@ -396,10 +392,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  /ts-toolbelt/4.7.24:
+  /ts-toolbelt/4.8.3:
     dev: false
     resolution:
-      integrity: sha512-jOnCkp4Yqa53CNonegmTCu7bhi9ame5iZNOZaby2wIvtgCGRKSxlr4j/7Qyabz02qY7ex4tviwj/t2irr305XQ==
+      integrity: sha512-qSC/t6vfUPqVMkH7wQmRwYbShubAJufUoUynJj8e+AlSXK3+M6rC/OnQ+Mdw6Qd/WYTf46QZDM8nUhxYVJTIPw==
   /tslib/1.10.0:
     dev: false
     resolution:
