@@ -1,19 +1,19 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
-  '@types/fs-extra': 8.0.0
+  '@types/fs-extra': 8.0.1
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
   inquirer: 7.0.0
-  isomorphic-git: 0.67.2
+  isomorphic-git: 0.70.0
 lockfileVersion: 5.1
 packages:
-  /@types/fs-extra/8.0.0:
+  /@types/fs-extra/8.0.1:
     dependencies:
-      '@types/node': 12.7.11
+      '@types/node': 12.11.2
     dev: false
     resolution:
-      integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
+      integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
   /@types/inquirer/6.5.0:
     dependencies:
       '@types/through': 0.0.29
@@ -21,13 +21,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rjaYQ9b9y/VFGOpqBEXRavc3jh0a+e6evAbI31tMda8VlPaSy0AZJfXsvmIe3wklc7W6C3zCSfleuMXR7NOyXw==
-  /@types/node/12.7.11:
+  /@types/node/12.11.2:
     dev: false
     resolution:
-      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
+      integrity: sha512-dsfE4BHJkLQW+reOS6b17xhZ/6FB1rB8eRRvO08nn5o+voxf3i74tuyFWNH6djdfgX7Sm5s6LD8t6mJug4dpDw==
   /@types/through/0.0.29:
     dependencies:
-      '@types/node': 12.7.11
+      '@types/node': 12.11.2
     dev: false
     resolution:
       integrity: sha512-9a7C5VHh+1BKblaYiq+7Tfc+EOmjMdZaD1MYtkQjSoxgB69tBjW98ry6SKsi4zEIWztLOMRuL87A3bdT/Fc/4w==
@@ -249,7 +249,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /isomorphic-git/0.67.2:
+  /isomorphic-git/0.70.0:
     dependencies:
       async-lock: 1.2.2
       clean-git-ref: 2.0.1
@@ -271,7 +271,7 @@ packages:
       node: '>=7.6.0'
     hasBin: true
     resolution:
-      integrity: sha512-bgb9+bydrbzEdLgyH1PA55mnbOT58GTTevdBJFoZ3ZpI375FwDilVhiyX0NCu89Vn8zWrgVKrSSKR+IATBvfxQ==
+      integrity: sha512-3fmUWy8E/1zEW9woSj62zwoj1eLfCbtTLUgvnZGxSYJIFeqO4ngbDM24cohKIeDzzyq/WdAT24xHHf04mzcurg==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -499,4 +499,4 @@ specifiers:
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.0
-  isomorphic-git: ^0.67.2
+  isomorphic-git: ^0.70.0
