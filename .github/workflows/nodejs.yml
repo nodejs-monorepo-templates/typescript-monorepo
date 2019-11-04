@@ -20,8 +20,6 @@ jobs:
       fail-fast: false
       matrix:
         vars:
-          - node: 10.x
-            cmd: pnpm run test:ci
           - node: 12.x
             cmd: pnpm run test:ci
           - node: 13.x
