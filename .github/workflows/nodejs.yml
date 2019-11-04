@@ -24,13 +24,15 @@ jobs:
             cmd: pnpm run test:ci
           - node: 12.x
             cmd: pnpm run test:ci
-          - node: 12.x
+          - node: 13.x
+            cmd: pnpm run test:ci
+          - node: 13.x
             cmd: pnpx tsc --noEmit
-          - node: 12.x
+          - node: 13.x
             cmd: pnpm run glob testWithoutCoverage '**/package.json'
-          - node: 12.x
+          - node: 13.x
             cmd: pnpm run glob testWithoutCoverage '**/*.ts' '**/*.js'
-          - node: 12.x
+          - node: 13.x
             pnpm: --frozen-lockfile
     steps:
       - uses: actions/checkout@v1
