@@ -12,7 +12,7 @@ dependencies:
   semver: 6.3.0
   ts-jest: 24.1.0_jest@24.9.0
   tslib: 1.10.0
-  typescript: 3.6.3
+  typescript: 3.7.2
   yaml-jest: 1.0.5
 lockfileVersion: 5.1
 packages:
@@ -3293,13 +3293,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
-  /typescript/3.6.3:
+  /typescript/3.7.2:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+      integrity: sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
   /uglify-js/3.6.0:
     dependencies:
       commander: 2.20.1
@@ -3523,5 +3523,5 @@ specifiers:
   semver: ^6.3.0
   ts-jest: ^24.1.0
   tslib: ^1.10.0
-  typescript: ^3.6.3
+  typescript: ^3.7.2
   yaml-jest: ^1.0.5

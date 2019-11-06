@@ -1,15 +1,15 @@
 dependencies:
   '@tools/test-spawn': 'link:../../tools/test-spawn'
-  typescript: 3.6.3
+  typescript: 3.7.2
 lockfileVersion: 5.1
 packages:
-  /typescript/3.6.3:
+  /typescript/3.7.2:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+      integrity: sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
 specifiers:
   '@tools/test-spawn': 'file:../../tools/test-spawn'
-  typescript: ^3.6.3
+  typescript: ^3.7.2

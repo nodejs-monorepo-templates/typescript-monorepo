@@ -8,7 +8,7 @@
   "main": "index.js",
   "dependencies": {
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.3",
+    "typescript": "^3.7.2",
     "json5": "^2.1.1",
     "tslib": "^1.10.0",
     "@tools/typescript": "file:../typescript",

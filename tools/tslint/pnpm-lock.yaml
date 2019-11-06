@@ -2,9 +2,9 @@ dependencies:
   '@babel/core': 7.6.2
   '@tools/places': 'link:../places'
   exec-inline: 0.0.4
-  tslint: 5.20.0_typescript@3.6.3
-  tslint-config-standard: 8.0.1_tslint@5.20.0+typescript@3.6.3
-  typescript: 3.6.3
+  tslint: 5.20.0_typescript@3.7.2
+  tslint-config-standard: 8.0.1_tslint@5.20.0+typescript@3.7.2
+  typescript: 3.7.2
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -402,29 +402,29 @@ packages:
     dev: false
     resolution:
       integrity: sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
-  /tslint-config-standard/8.0.1_tslint@5.20.0+typescript@3.6.3:
+  /tslint-config-standard/8.0.1_tslint@5.20.0+typescript@3.7.2:
     dependencies:
-      tslint-eslint-rules: 5.4.0_tslint@5.20.0+typescript@3.6.3
+      tslint-eslint-rules: 5.4.0_tslint@5.20.0+typescript@3.7.2
     dev: false
     peerDependencies:
       tslint: '*'
       typescript: '*'
     resolution:
       integrity: sha512-OWG+NblgjQlVuUS/Dmq3ax2v5QDZwRx4L0kEuDi7qFY9UI6RJhhNfoCV1qI4el8Fw1c5a5BTrjQJP0/jhGXY/Q==
-  /tslint-eslint-rules/5.4.0_tslint@5.20.0+typescript@3.6.3:
+  /tslint-eslint-rules/5.4.0_tslint@5.20.0+typescript@3.7.2:
     dependencies:
       doctrine: 0.7.2
       tslib: 1.9.0
-      tslint: 5.20.0_typescript@3.6.3
-      tsutils: 3.17.1_typescript@3.6.3
-      typescript: 3.6.3
+      tslint: 5.20.0_typescript@3.7.2
+      tsutils: 3.17.1_typescript@3.7.2
+      typescript: 3.7.2
     dev: false
     peerDependencies:
       tslint: ^5.0.0
       typescript: ^2.2.0 || ^3.0.0
     resolution:
       integrity: sha512-WlSXE+J2vY/VPgIcqQuijMQiel+UtmXS+4nvK4ZzlDiqBfXse8FAvkNnTcYhnQyOTW5KFM+uRRGXxYhFpuBc6w==
-  /tslint/5.20.0_typescript@3.6.3:
+  /tslint/5.20.0_typescript@3.7.2:
     dependencies:
       '@babel/code-frame': 7.5.5
       builtin-modules: 1.1.1
@@ -438,8 +438,8 @@ packages:
       resolve: 1.12.0
       semver: 5.7.1
       tslib: 1.10.0
-      tsutils: 2.29.0_typescript@3.6.3
-      typescript: 3.6.3
+      tsutils: 2.29.0_typescript@3.7.2
+      typescript: 3.7.2
     dev: false
     engines:
       node: '>=4.8.0'
@@ -448,19 +448,19 @@ packages:
       typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
     resolution:
       integrity: sha512-2vqIvkMHbnx8acMogAERQ/IuINOq6DFqgF8/VDvhEkBqQh/x6SP0Y+OHnKth9/ZcHQSroOZwUQSN18v8KKF0/g==
-  /tsutils/2.29.0_typescript@3.6.3:
+  /tsutils/2.29.0_typescript@3.7.2:
     dependencies:
       tslib: 1.10.0
-      typescript: 3.6.3
+      typescript: 3.7.2
     dev: false
     peerDependencies:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
     resolution:
       integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
-  /tsutils/3.17.1_typescript@3.6.3:
+  /tsutils/3.17.1_typescript@3.7.2:
     dependencies:
       tslib: 1.9.0
-      typescript: 3.6.3
+      typescript: 3.7.2
     dev: false
     engines:
       node: '>= 6'
@@ -468,13 +468,13 @@ packages:
       typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
     resolution:
       integrity: sha512-kzeQ5B8H3w60nFY2g8cJIuH7JDpsALXySGtwGJ0p2LSjLgay3NdIpqq5SoOBe46bKDW2iq25irHCr8wjomUS2g==
-  /typescript/3.6.3:
+  /typescript/3.7.2:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+      integrity: sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
   /wrappy/1.0.2:
     dev: false
     resolution:
@@ -485,4 +485,4 @@ specifiers:
   exec-inline: ^0.0.4
   tslint: ^5.20.0
   tslint-config-standard: ^8.0.1
-  typescript: ^3.6.3
+  typescript: ^3.7.2
