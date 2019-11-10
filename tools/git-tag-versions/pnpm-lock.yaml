@@ -4,7 +4,7 @@ dependencies:
   chalk: 3.0.0
   git-ts: 0.0.6
   nested-workspace-helper: 0.2.14
-  yargs: 14.2.0
+  yargs: 15.0.0
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.1:
@@ -29,7 +29,7 @@ packages:
       integrity: sha512-E6Zn0rffhgd130zbCbAr/JdXfXkoOUFAKNs/rF8qnafSJ8KYaA/j3oz7dcwal+lYjLA7xvdd5J4wdYpCTlP8+w==
   /@types/ramda/0.26.26:
     dependencies:
-      ts-toolbelt: 4.10.0
+      ts-toolbelt: 4.10.3
     dev: false
     resolution:
       integrity: sha512-jDx2Lp2WvziMTcDxOU21yzRr6jP/VTWvpg6SQxeM63VldSjugUY1N9p1Q8YY/wpGvqzpkstUFmg2oGJdBSp5gg==
@@ -435,10 +435,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
-  /ts-toolbelt/4.10.0:
+  /ts-toolbelt/4.10.3:
     dev: false
     resolution:
-      integrity: sha512-dxj1fcbjCCjxCMOd+RSn5UrIuPkj7mItNFurYBAL/jJZzWU/bfCXYtdfYTdGZdPPKljA94IKNFypQ0FaHwHCWw==
+      integrity: sha512-pXhmcsbZnyAZU4jWzQc73ja13dxmRIflQfEe4dSrTKy8XXMSTIFZg2GWoy7WzWEdqg54HQl+HZoOuKwZsV2RzQ==
   /tslib/1.10.0:
     dev: false
     resolution:
@@ -474,6 +474,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xLTUnCMc4JhxrPEPUYD5IBR1mWCK/aT6+RJ/K29JY2y1vD+FhtgKK0AXRWvI262q3QSffAQuTouFIKUuHX89wQ==
+  /yargs-parser/16.1.0:
+    dependencies:
+      camelcase: 5.3.1
+      decamelize: 1.2.0
+    dev: false
+    resolution:
+      integrity: sha512-H/V41UNZQPkUMIT5h5hiwg4QKIY1RPvoBV4XcjUbRM8Bk2oKqqyZ0DIEbTFZB0XjbtSPG8SAa/0DxCQmiRgzKg==
   /yargs/14.2.0:
     dependencies:
       cliui: 5.0.0
@@ -490,10 +497,26 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/is78VKbKs70bVZH7w4YaZea6xcJWOAwkhbR0CFuZBmYtfTYF0xjGJF43AYd8g2Uii1yJwmS5GR2vBmrc32sbg==
+  /yargs/15.0.0:
+    dependencies:
+      cliui: 5.0.0
+      decamelize: 1.2.0
+      find-up: 3.0.0
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      require-main-filename: 2.0.0
+      set-blocking: 2.0.0
+      string-width: 3.1.0
+      which-module: 2.0.0
+      y18n: 4.0.0
+      yargs-parser: 16.1.0
+    dev: false
+    resolution:
+      integrity: sha512-ywk8xVR7qlJQormKfBTCgN7LKtd7qpcTBY1nmiQKb4Xa9SDvqg+t98nCzXaQ++GyQII6Y6z8I+ecYjz+/tWlLQ==
 specifiers:
   '@tools/places': 'file:../places'
   '@types/yargs': ^13.0.3
   chalk: ^3.0.0
   git-ts: ^0.0.6
   nested-workspace-helper: ^0.2.14
-  yargs: ^14.0.0
+  yargs: ^15.0.0
