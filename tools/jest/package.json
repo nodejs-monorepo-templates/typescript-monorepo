@@ -6,7 +6,7 @@
   "bin": "bin.js",
   "dependencies": {
     "@babel/core": "^7.6.2",
-    "fast-deep-equal": "^2.0.1",
+    "fast-deep-equal": "^3.0.0",
     "semver": "^6.3.0",
     "create-jest-runner": "^0.5.3",
     "jest": "^24.9.0",
