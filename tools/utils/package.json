@@ -7,7 +7,7 @@
   "dependencies": {
     "inquirer": "^7.0.0",
     "fs-extra": "^8.1.0",
-    "isomorphic-git": "^0.70.0",
+    "isomorphic-git": "^0.72.0",
     "@types/fs-extra": "^8.0.0",
     "@types/inquirer": "^6.5.0",
     "@tools/places": "file:../places",
