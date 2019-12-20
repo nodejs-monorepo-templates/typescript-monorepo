@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "glob": "^7.1.4",
+    "glob": "^7.1.6",
     "glob-promise": "^3.4.0",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/places": "file:../places"

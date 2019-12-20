@@ -1,8 +1,8 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
-  glob: 7.1.4
-  glob-promise: 3.4.0_glob@7.1.4
+  glob: 7.1.6
+  glob-promise: 3.4.0_glob@7.1.6
 lockfileVersion: 5.1
 packages:
   /@types/events/1.2.0:
@@ -44,10 +44,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /glob-promise/3.4.0_glob@7.1.4:
+  /glob-promise/3.4.0_glob@7.1.6:
     dependencies:
       '@types/glob': 7.1.1
-      glob: 7.1.4
+      glob: 7.1.6
     dev: false
     engines:
       node: '>=4'
@@ -55,7 +55,7 @@ packages:
       glob: '*'
     resolution:
       integrity: sha512-q08RJ6O+eJn+dVanerAndJwIcumgbDdYiUT7zFQl3Wm1xD6fBKtah7H8ZJChj4wP+8C+QfeVy8xautR7rdmKEw==
-  /glob/7.1.4:
+  /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -65,7 +65,7 @@ packages:
       path-is-absolute: 1.0.1
     dev: false
     resolution:
-      integrity: sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A==
+      integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
   /inflight/1.0.6:
     dependencies:
       once: 1.4.0
@@ -102,5 +102,5 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
-  glob: ^7.1.4
+  glob: ^7.1.6
   glob-promise: ^3.4.0

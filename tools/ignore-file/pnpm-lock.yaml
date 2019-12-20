@@ -1,7 +1,7 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
-  '@types/fs-extra': 8.0.0
+  '@types/fs-extra': 8.0.1
   '@types/js-yaml': 3.12.1
   '@types/minimatch': 3.0.3
   fs-extra: 8.1.0
@@ -17,6 +17,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
+  /@types/fs-extra/8.0.1:
+    dependencies:
+      '@types/node': 12.12.21
+    dev: false
+    resolution:
+      integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
   /@types/js-yaml/3.12.1:
     dev: false
     resolution:
@@ -25,6 +31,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
+  /@types/node/12.12.21:
+    dev: false
+    resolution:
+      integrity: sha512-8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==
   /@types/node/12.7.11:
     dev: false
     resolution:
@@ -152,7 +162,7 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
-  '@types/fs-extra': ^8.0.0
+  '@types/fs-extra': ^8.0.1
   '@types/js-yaml': ^3.12.1
   '@types/minimatch': ^3.0.3
   fs-extra: ^8.1.0

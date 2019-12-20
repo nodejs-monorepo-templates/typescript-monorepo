@@ -1,19 +1,21 @@
 dependencies:
   '@tools/places': 'link:../../tools/places'
-  '@types/semver': 6.0.2
-  semver: 6.3.0
+  '@types/semver': 6.2.0
+  semver: 7.1.1
 lockfileVersion: 5.1
 packages:
-  /@types/semver/6.0.2:
+  /@types/semver/6.2.0:
     dev: false
     resolution:
-      integrity: sha512-G1Ggy7/9Nsa1Jt2yiBR2riEuyK2DFNnqow6R7cromXPMNynackRY1vqFTLz/gwnef1LHokbXThcPhqMRjUbkpQ==
-  /semver/6.3.0:
+      integrity: sha512-1OzrNb4RuAzIT7wHSsgZRlMBlNsJl+do6UblR7JMW4oB7bbR+uBEYtUh7gEc/jM84GGilh68lSOokyM/zNUlBA==
+  /semver/7.1.1:
     dev: false
+    engines:
+      node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+      integrity: sha512-WfuG+fl6eh3eZ2qAf6goB7nhiCd7NPXhmyFxigB/TOkQyeLP8w8GsVehvtGNtnNmyboz4TgeK40B1Kbql/8c5A==
 specifiers:
   '@tools/places': 'file:../../tools/places'
-  '@types/semver': ^6.0.2
-  semver: ^6.3.0
+  '@types/semver': ^6.2.0
+  semver: ^7.1.1
