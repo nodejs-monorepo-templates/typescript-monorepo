@@ -1,6 +1,6 @@
 dependencies:
   '@tools/places': 'link:../places'
-  '@types/yargs': 13.0.3
+  '@types/yargs': 15.0.0
   chalk: 3.0.0
   git-ts: 0.0.6
   nested-workspace-helper: 0.2.14
@@ -51,6 +51,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-K8/LfZq2duW33XW/tFwEAfnZlqIfVsoyRB3kfXdPXYhl0nfM8mmh7GS0jg7WrX2Dgq/0Ha/pR1PaR+BvmWwjiQ==
+  /@types/yargs/15.0.0:
+    dependencies:
+      '@types/yargs-parser': 13.1.0
+    dev: false
+    resolution:
+      integrity: sha512-TITCsNxRSDVmq3kPGuUdKZTPTfHeswsUGIjxSe8SB4EBKTPA0DO0y4yWI95kZ2hfqJAYxmu+gxzjOwdumB5S0g==
   /ansi-regex/4.1.0:
     dev: false
     engines:
@@ -598,7 +604,7 @@ packages:
       integrity: sha512-GH/X/hYt+x5hOat4LMnCqMd8r5Cv78heOMIJn1hr7QPPBqfeC6p89Y78+WB9yGDvfpCvgasfmWLzNzEioOUD9Q==
 specifiers:
   '@tools/places': 'file:../places'
-  '@types/yargs': ^13.0.3
+  '@types/yargs': ^15.0.0
   chalk: ^3.0.0
   git-ts: ^0.0.6
   nested-workspace-helper: ^0.2.14
