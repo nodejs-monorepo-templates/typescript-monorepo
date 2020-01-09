@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 const process = require('process')
-const chalk = require('chalk').default
+const chalk = require('chalk')
 const git = require('git-ts')
 const wrkspc = require('nested-workspace-helper')
 const places = require('@tools/places')
