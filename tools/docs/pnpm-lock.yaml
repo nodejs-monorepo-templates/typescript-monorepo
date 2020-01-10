@@ -5,7 +5,7 @@ dependencies:
   '@types/fs-extra': 8.0.1
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
-  '@types/ramda': 0.26.39
+  '@types/ramda': 0.26.38
   chalk: 3.0.0
   fs-extra: 8.1.0
   minimatch: 3.0.4
@@ -32,12 +32,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-nojaE6CV03swMxoHnAisV2Rl0Ma6WPUtQo87hUmaotu/YPugPlmiRB60sthbyppXdMFTdJV3wm6zCENY4q1tKA==
-  /@types/ramda/0.26.39:
+  /@types/ramda/0.26.38:
     dependencies:
       ts-toolbelt: 4.14.6
     dev: false
     resolution:
-      integrity: sha512-3bu32X02VpjJhsYPUWkdOQGoBXjb/UveZgGg4IYMm+SPAXio96BOYrRhVELfM4AoP00sxoi/f2tqrXdwtR4jjg==
+      integrity: sha512-legQx15y72vedr5fkVTb5xZaI/OXMzJgZYbMxVL5r269sOg7fZIeitEOumcevMPOMZdqH4cMoL35VuU13TLvVA==
   /abbrev/1.1.1:
     dev: false
     resolution:
@@ -523,7 +523,7 @@ specifiers:
   '@types/fs-extra': ^8.0.1
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
-  '@types/ramda': ^0.26.39
+  '@types/ramda': =0.26.38
   chalk: ^3.0.0
   fs-extra: ^8.1.0
   minimatch: ^3.0.4
