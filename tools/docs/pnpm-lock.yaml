@@ -5,13 +5,13 @@ dependencies:
   '@types/fs-extra': 8.0.1
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
-  '@types/ramda': 0.26.38
+  '@types/ramda': 0.26.39
   chalk: 3.0.0
   fs-extra: 8.1.0
   minimatch: 3.0.4
   pretty: 2.0.0
   ramda: 0.26.1
-  typedoc: 0.15.5
+  typedoc: 0.15.7
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.1:
@@ -32,12 +32,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-nojaE6CV03swMxoHnAisV2Rl0Ma6WPUtQo87hUmaotu/YPugPlmiRB60sthbyppXdMFTdJV3wm6zCENY4q1tKA==
-  /@types/ramda/0.26.38:
+  /@types/ramda/0.26.39:
     dependencies:
       ts-toolbelt: 4.14.6
     dev: false
     resolution:
-      integrity: sha512-legQx15y72vedr5fkVTb5xZaI/OXMzJgZYbMxVL5r269sOg7fZIeitEOumcevMPOMZdqH4cMoL35VuU13TLvVA==
+      integrity: sha512-3bu32X02VpjJhsYPUWkdOQGoBXjb/UveZgGg4IYMm+SPAXio96BOYrRhVELfM4AoP00sxoi/f2tqrXdwtR4jjg==
   /abbrev/1.1.1:
     dev: false
     resolution:
@@ -282,13 +282,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-oxMeX/Y35PNFuZoHp+jUj5OSEmLCaIH4KTFJh7a93cHBoFmpw2IoPs22VIz7vyO2YUnx2Tn9dzIwO2P/4quIRg==
-  /marked/0.7.0:
+  /marked/0.8.0:
     dev: false
     engines:
-      node: '>=0.10.0'
+      node: '>= 8.16.2'
     hasBin: true
     resolution:
-      integrity: sha512-c+yYdCZJQrsRjTPhUx7VKkApw9bwDkNbHUKo1ovgcfDjb2kc8rLuRbIFyXL5WOEUwzSSKo3IXpph2K6DqB/KZg==
+      integrity: sha512-MyUe+T/Pw4TZufHkzAfDj6HarCBWia2y27/bhuYkTaiUnfDYFnCP3KUN+9oM7Wi6JA2rymtVYbQu3spE0GCmxQ==
   /minimatch/3.0.4:
     dependencies:
       brace-expansion: 1.1.11
@@ -444,7 +444,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-SONcnRd93+LuYGfn/CZg5A5qhCODohZslAVZKHHu5bnwUxoXLqd2k2VIdwRUXYfKnY+UCeNbI2pTPz+Dno6Mpg==
-  /typedoc-default-themes/0.6.2:
+  /typedoc-default-themes/0.6.3:
     dependencies:
       backbone: 1.4.0
       jquery: 3.4.1
@@ -454,26 +454,26 @@ packages:
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-+O+1aHjVIpDLsbkIDkZSNu+kutqmg7WdzahT+4KwBC/95mUgAb0xkbwdPpEJEpRX0ov1UJoCmvEPb1/VHxnTuw==
-  /typedoc/0.15.5:
+      integrity: sha512-rouf0TcIA4M2nOQFfC7Zp4NEwoYiEX4vX/ZtudJWU9IHA29MPC+PPgSXYLPESkUo7FuB//GxigO3mk9Qe1xp3Q==
+  /typedoc/0.15.7:
     dependencies:
       '@types/minimatch': 3.0.3
       fs-extra: 8.1.0
       handlebars: 4.5.3
       highlight.js: 9.17.1
       lodash: 4.17.15
-      marked: 0.7.0
+      marked: 0.8.0
       minimatch: 3.0.4
       progress: 2.0.3
       shelljs: 0.8.3
-      typedoc-default-themes: 0.6.2
+      typedoc-default-themes: 0.6.3
       typescript: 3.7.3
     dev: false
     engines:
       node: '>= 6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-AKXLtOUCLRlSTyfXQHYp3LFPy6RiFLnxnKS5z1jwQsYXmCPbHWuhmfgS264Es2hPMZjzvHqk/ZQDzCBpb49u6w==
+      integrity: sha512-dVQ9yd/4pF3kf2OeHVkjxieoH/Exqggtw1DZ9XbVZpvZCItRA4VfOxuVoW+bMauyEk0RDvAx6y/ixDY4loNBWA==
   /typescript/3.7.3:
     dev: false
     engines:
@@ -523,10 +523,10 @@ specifiers:
   '@types/fs-extra': ^8.0.1
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
-  '@types/ramda': ^0.26.38
+  '@types/ramda': ^0.26.39
   chalk: ^3.0.0
   fs-extra: ^8.1.0
   minimatch: ^3.0.4
   pretty: ^2.0.0
   ramda: ^0.26.1
-  typedoc: ^0.15.5
+  typedoc: ^0.15.7

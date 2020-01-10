@@ -8,10 +8,10 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "yargs": "^15.0.2",
+    "yargs": "^15.1.0",
     "git-ts": "^0.0.6",
     "nested-workspace-helper": "^0.2.14",
-    "@types/yargs": "^13.0.3",
+    "@types/yargs": "^15.0.0",
     "@tools/places": "file:../places"
   }
 }

@@ -5,9 +5,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {
-    "inquirer": "^7.0.1",
+    "inquirer": "^7.0.3",
     "fs-extra": "^8.1.0",
-    "isomorphic-git": "^0.72.0",
+    "isomorphic-git": "^0.72.1",
     "@types/fs-extra": "^8.0.1",
     "@types/inquirer": "^6.5.0",
     "@tools/places": "file:../places",

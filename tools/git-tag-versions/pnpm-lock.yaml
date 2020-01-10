@@ -1,10 +1,10 @@
 dependencies:
   '@tools/places': 'link:../places'
-  '@types/yargs': 13.0.3
+  '@types/yargs': 15.0.0
   chalk: 3.0.0
   git-ts: 0.0.6
   nested-workspace-helper: 0.2.14
-  yargs: 15.0.2
+  yargs: 15.1.0
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.0:
@@ -51,6 +51,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-K8/LfZq2duW33XW/tFwEAfnZlqIfVsoyRB3kfXdPXYhl0nfM8mmh7GS0jg7WrX2Dgq/0Ha/pR1PaR+BvmWwjiQ==
+  /@types/yargs/15.0.0:
+    dependencies:
+      '@types/yargs-parser': 13.1.0
+    dev: false
+    resolution:
+      integrity: sha512-TITCsNxRSDVmq3kPGuUdKZTPTfHeswsUGIjxSe8SB4EBKTPA0DO0y4yWI95kZ2hfqJAYxmu+gxzjOwdumB5S0g==
   /ansi-regex/4.1.0:
     dev: false
     engines:
@@ -580,7 +586,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ssa5JuRjMeZEUjg7bEL99AwpitxU/zWGAGpdj0di41pOEmJti8NR6kyUIJBkR78DTYNPZOU08luUo0GTHuB+ow==
-  /yargs/15.0.2:
+  /yargs/15.1.0:
     dependencies:
       cliui: 6.0.0
       decamelize: 1.2.0
@@ -594,12 +600,14 @@ packages:
       y18n: 4.0.0
       yargs-parser: 16.1.0
     dev: false
+    engines:
+      node: '>=8'
     resolution:
-      integrity: sha512-GH/X/hYt+x5hOat4LMnCqMd8r5Cv78heOMIJn1hr7QPPBqfeC6p89Y78+WB9yGDvfpCvgasfmWLzNzEioOUD9Q==
+      integrity: sha512-T39FNN1b6hCW4SOIk1XyTOWxtXdcen0t+XYrysQmChzSipvhBO8Bj0nK1ozAasdk24dNWuMZvr4k24nz+8HHLg==
 specifiers:
   '@tools/places': 'file:../places'
-  '@types/yargs': ^13.0.3
+  '@types/yargs': ^15.0.0
   chalk: ^3.0.0
   git-ts: ^0.0.6
   nested-workspace-helper: ^0.2.14
-  yargs: ^15.0.2
+  yargs: ^15.1.0

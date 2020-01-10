@@ -4,8 +4,8 @@ dependencies:
   '@types/fs-extra': 8.0.1
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
-  inquirer: 7.0.1
-  isomorphic-git: 0.72.0
+  inquirer: 7.0.3
+  isomorphic-git: 0.72.1
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.1:
@@ -229,7 +229,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /inquirer/7.0.1:
+  /inquirer/7.0.3:
     dependencies:
       ansi-escapes: 4.2.1
       chalk: 2.4.2
@@ -248,7 +248,7 @@ packages:
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-V1FFQ3TIO15det8PijPLFR9M9baSlnRs9nL7zWu1MNVA2T9YVl9ZbrHJhYs7e9X8jeMZ3lr2JH/rdHFgNCBdYw==
+      integrity: sha512-+OiOVeVydu4hnCGLCSX+wedovR/Yzskv9BFqUNNKq9uU2qg7LCcCo3R86S2E7WLo0y/x2pnEZfZe1CoYnORUAw==
   /is-fullwidth-code-point/3.0.0:
     dev: false
     engines:
@@ -259,7 +259,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /isomorphic-git/0.72.0:
+  /isomorphic-git/0.72.1:
     dependencies:
       async-lock: 1.2.2
       clean-git-ref: 2.0.1
@@ -281,7 +281,7 @@ packages:
       node: '>=7.6.0'
     hasBin: true
     resolution:
-      integrity: sha512-9anY3ZSc5YLqWPMUauWE6cvMWq9QlzX4SrTwXieGQLucqdQ9C5LAOWyNGbrwImZUzdmKg8uFZ0GofA+AeWR3SA==
+      integrity: sha512-1I1zdlWOwO0RKbjTzOikZuNfgtiugqhOvPYNLLNDLOKaFjcp+JKo4qFmJIJm1gNg7IKBI2jyTV0sSZKn7Bc+jQ==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -516,5 +516,5 @@ specifiers:
   '@types/fs-extra': ^8.0.1
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
-  inquirer: ^7.0.1
-  isomorphic-git: ^0.72.0
+  inquirer: ^7.0.3
+  isomorphic-git: ^0.72.1
