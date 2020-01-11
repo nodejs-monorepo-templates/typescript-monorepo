@@ -1,7 +1,7 @@
 import path from 'path'
 import { spawnSync } from 'child_process'
 import { prompt } from 'inquirer'
-import yargs from 'ts-yargs'
+import yargs from 'yargs'
 import * as fsx from 'fs-extra'
 import * as config from '@tools/pkgcfg'
 import * as places from '@tools/places'
