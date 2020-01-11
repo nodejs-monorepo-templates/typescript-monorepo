@@ -2,18 +2,24 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@tools/utils': 'link:../utils'
+  '@tsfun/array': 0.0.0
   '@types/fs-extra': 8.0.1
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
-  '@types/ramda': 0.26.38
   chalk: 3.0.0
   fs-extra: 8.1.0
   minimatch: 3.0.4
   pretty: 2.0.0
-  ramda: 0.26.1
   typedoc: 0.15.7
 lockfileVersion: 5.1
 packages:
+  /@tsfun/array/0.0.0:
+    dependencies:
+      '@types/node': 13.1.6
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-y18KD65Ba1a7jXJ8PBIGjfkCtR32wd0XOPaV5D8z9uBiNE+pIF0PCnHKVHZ4+GcaRa/Y7HkTWJxmcjs283ggmw==
   /@types/fs-extra/8.0.1:
     dependencies:
       '@types/node': 12.12.21
@@ -28,16 +34,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==
+  /@types/node/13.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
   /@types/pretty/2.0.0:
     dev: false
     resolution:
       integrity: sha512-nojaE6CV03swMxoHnAisV2Rl0Ma6WPUtQo87hUmaotu/YPugPlmiRB60sthbyppXdMFTdJV3wm6zCENY4q1tKA==
-  /@types/ramda/0.26.38:
-    dependencies:
-      ts-toolbelt: 4.14.6
-    dev: false
-    resolution:
-      integrity: sha512-legQx15y72vedr5fkVTb5xZaI/OXMzJgZYbMxVL5r269sOg7fZIeitEOumcevMPOMZdqH4cMoL35VuU13TLvVA==
   /abbrev/1.1.1:
     dev: false
     resolution:
@@ -388,10 +392,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
-  /ramda/0.26.1:
-    dev: false
-    resolution:
-      integrity: sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
   /rechoir/0.6.2:
     dependencies:
       resolve: 1.12.0
@@ -440,10 +440,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
-  /ts-toolbelt/4.14.6:
+  /tslib/1.10.0:
     dev: false
     resolution:
-      integrity: sha512-SONcnRd93+LuYGfn/CZg5A5qhCODohZslAVZKHHu5bnwUxoXLqd2k2VIdwRUXYfKnY+UCeNbI2pTPz+Dno6Mpg==
+      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
   /typedoc-default-themes/0.6.3:
     dependencies:
       backbone: 1.4.0
@@ -520,13 +520,12 @@ specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@tools/utils': 'file:../utils'
+  '@tsfun/array': ^0.0.0
   '@types/fs-extra': ^8.0.1
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
-  '@types/ramda': =0.26.38
   chalk: ^3.0.0
   fs-extra: ^8.1.0
   minimatch: ^3.0.4
   pretty: ^2.0.0
-  ramda: ^0.26.1
   typedoc: ^0.15.7

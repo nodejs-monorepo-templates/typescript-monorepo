@@ -1,8 +1,8 @@
 import path from 'path'
 import process from 'process'
-import ramda from 'ramda'
 import { ensureFile, writeFile, pathExists } from 'fs-extra'
 import { Application } from 'typedoc'
+import { partition } from '@tsfun/array'
 import places from '@tools/places'
 import { loadPackageList, loadRepoUrl } from '@tools/utils'
 import * as config from './config'
@@ -25,7 +25,7 @@ export async function main () {
   await ensureFile(path.join(places.docs, '.nojekyll'))
 
   const list = await loadPackageList()
-  const [ignored, items] = ramda.partition(item => isIgnored(item.name), list.items())
+  const [ignored, items] = partition(list.items(), item => isIgnored(item.name))
 
   {
     const childrenPromises = items.map(async (item): Promise<Child> => {
