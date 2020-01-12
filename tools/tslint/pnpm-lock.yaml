@@ -1,7 +1,7 @@
 dependencies:
   '@babel/core': 7.7.7
   '@tools/places': 'link:../places'
-  exec-inline: 0.0.4
+  exec-inline: 0.0.5
   tslint: 5.20.1_typescript@3.7.4
   tslint-config-standard: 9.0.0_tslint@5.20.1+typescript@3.7.4
   typescript: 3.7.4
@@ -116,10 +116,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-cz5Ji23KCi4T+YIE/BolWosrJuSmoZeN1EFnRtBwF+KKLi8GG/Z2c2hOJJeCXPk4mwk4QFvTmwIodJowXgttRA==
-  /@types/node/12.7.11:
+  /@types/node/13.1.6:
     dev: false
     resolution:
-      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
+      integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -231,15 +231,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
-  /exec-inline/0.0.4:
+  /exec-inline/0.0.5:
     dependencies:
-      '@types/node': 12.7.11
+      '@types/node': 13.1.6
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-mkYPrQfCuesIP/JRcFth38com6JYpeF2uGIuSojDYGx7g6bLPzPWdRYFeMqvxH5fdwriScHKnR/oThMy1o7iug==
+      integrity: sha512-g7eEPrhCbkBJoYb8PG4aZeRXog1HYptBNNfwN1bRmzYWtu5dNQniqcmwClBhb6YWg3X/wrOnzmKJSPUbZYsKJg==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -482,7 +482,7 @@ packages:
 specifiers:
   '@babel/core': ^7.7.7
   '@tools/places': 'file:../places'
-  exec-inline: ^0.0.4
+  exec-inline: ^0.0.5
   tslint: ^5.20.1
   tslint-config-standard: ^9.0.0
   typescript: ^3.7.4

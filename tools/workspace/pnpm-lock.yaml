@@ -1,6 +1,6 @@
 dependencies:
   '@tools/places': 'link:../places'
-  exec-inline: 0.0.4
+  exec-inline: 0.0.5
   nested-workspace-helper: 0.2.14
   number-enum: 3.0.0
 lockfileVersion: 5.1
@@ -38,6 +38,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
+  /@types/node/13.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
   /@types/ramda/0.26.26:
     dependencies:
       ts-toolbelt: 4.8.3
@@ -157,6 +161,15 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-mkYPrQfCuesIP/JRcFth38com6JYpeF2uGIuSojDYGx7g6bLPzPWdRYFeMqvxH5fdwriScHKnR/oThMy1o7iug==
+  /exec-inline/0.0.5:
+    dependencies:
+      '@types/node': 13.1.6
+      tslib: 1.10.0
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-g7eEPrhCbkBJoYb8PG4aZeRXog1HYptBNNfwN1bRmzYWtu5dNQniqcmwClBhb6YWg3X/wrOnzmKJSPUbZYsKJg==
   /find-up/3.0.0:
     dependencies:
       locate-path: 3.0.0
@@ -517,6 +530,6 @@ packages:
       integrity: sha512-ssa5JuRjMeZEUjg7bEL99AwpitxU/zWGAGpdj0di41pOEmJti8NR6kyUIJBkR78DTYNPZOU08luUo0GTHuB+ow==
 specifiers:
   '@tools/places': 'file:../places'
-  exec-inline: ^0.0.4
+  exec-inline: ^0.0.5
   nested-workspace-helper: ^0.2.14
   number-enum: ^3.0.0

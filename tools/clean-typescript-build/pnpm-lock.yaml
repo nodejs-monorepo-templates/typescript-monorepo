@@ -1,7 +1,7 @@
 dependencies:
   '@tools/places': 'link:../places'
   clean-typescript-build: 0.1.4
-  exec-inline: 0.0.4
+  exec-inline: 0.0.5
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.0:
@@ -14,6 +14,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
+  /@types/node/13.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
   /@types/ramda/0.26.26:
     dependencies:
       ts-toolbelt: 4.8.3
@@ -95,15 +99,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
-  /exec-inline/0.0.4:
+  /exec-inline/0.0.5:
     dependencies:
-      '@types/node': 12.7.11
+      '@types/node': 13.1.6
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-mkYPrQfCuesIP/JRcFth38com6JYpeF2uGIuSojDYGx7g6bLPzPWdRYFeMqvxH5fdwriScHKnR/oThMy1o7iug==
+      integrity: sha512-g7eEPrhCbkBJoYb8PG4aZeRXog1HYptBNNfwN1bRmzYWtu5dNQniqcmwClBhb6YWg3X/wrOnzmKJSPUbZYsKJg==
   /find-up/3.0.0:
     dependencies:
       locate-path: 3.0.0
@@ -305,4 +309,4 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   clean-typescript-build: ^0.1.4
-  exec-inline: ^0.0.4
+  exec-inline: ^0.0.5
