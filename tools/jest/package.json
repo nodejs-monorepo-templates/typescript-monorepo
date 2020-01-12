@@ -16,7 +16,7 @@
     "typescript": "^3.7.4",
     "tslib": "^1.10.0",
     "parse-dependency-range": "^0.0.3",
-    "convenient-typescript-utilities": "^0.0.4",
+    "convenient-typescript-utilities": "^0.0.5",
     "just-try": "^2.1.0",
     "@tools/pkgcfg": "file:../pkgcfg",
     "@tools/places": "file:../places"
