@@ -5,18 +5,19 @@ dependencies:
   '@types/js-yaml': 3.12.1
   '@types/minimatch': 3.0.3
   fs-extra: 8.1.0
-  fs-tree-utils: 0.1.7
+  fs-tree-utils: 0.1.8
   js-yaml: 3.13.1
   minimatch: 3.0.4
   tslib: 1.10.0
 lockfileVersion: 5.1
 packages:
-  /@types/fs-extra/8.0.0:
+  /@tsfun/array/0.0.0:
     dependencies:
-      '@types/node': 12.7.11
+      '@types/node': 13.1.6
+      tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
+      integrity: sha512-y18KD65Ba1a7jXJ8PBIGjfkCtR32wd0XOPaV5D8z9uBiNE+pIF0PCnHKVHZ4+GcaRa/Y7HkTWJxmcjs283ggmw==
   /@types/fs-extra/8.0.1:
     dependencies:
       '@types/node': 12.12.21
@@ -35,16 +36,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==
-  /@types/node/12.7.11:
+  /@types/node/13.1.6:
     dev: false
     resolution:
-      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
-  /@types/ramda/0.26.26:
-    dependencies:
-      ts-toolbelt: 4.8.3
-    dev: false
-    resolution:
-      integrity: sha512-jDx2Lp2WvziMTcDxOU21yzRr6jP/VTWvpg6SQxeM63VldSjugUY1N9p1Q8YY/wpGvqzpkstUFmg2oGJdBSp5gg==
+      integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -83,20 +78,19 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
-  /fs-tree-utils/0.1.7:
+  /fs-tree-utils/0.1.8:
     dependencies:
-      '@types/fs-extra': 8.0.0
-      '@types/node': 12.7.11
-      '@types/ramda': 0.26.26
+      '@tsfun/array': 0.0.0
+      '@types/fs-extra': 8.0.1
+      '@types/node': 13.1.6
       fs-extra: 8.1.0
-      monorepo-shared-assets: 0.0.18
-      ramda: 0.26.1
+      monorepo-shared-assets: 0.0.19
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-UiJ5pnplv6hOAWp4k42LNjhyRm8T3++wnXHxHvo2AP3/eMQhKMl4dVe7Knj3dfFHt0EeE6IHsQucCyCW6KlARA==
+      integrity: sha512-iovSWg4Ch1w7TTlgD0llxrOhPo3xnVks54HnUSXHOCL7Tm1JakcoxKAb5gJVSp5q/1ag7lKcQkf+DAWdBb0tUg==
   /graceful-fs/4.2.2:
     dev: false
     resolution:
@@ -125,30 +119,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  /monorepo-shared-assets/0.0.18:
+  /monorepo-shared-assets/0.0.19:
     dependencies:
-      '@types/node': 12.7.11
-      '@types/ramda': 0.26.26
+      '@tsfun/array': 0.0.0
+      '@types/node': 13.1.6
       immutable: 4.0.0-rc.12
-      ramda: 0.26.1
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-xVSAGL8nrYGqutC0d958FlvmZ8Vwn9VR9kO3eS9o9vlLsqDfvYKLlb2FKLfHJiRGhs8xC9aIPqX3bhs8fE/Vvw==
-  /ramda/0.26.1:
-    dev: false
-    resolution:
-      integrity: sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
+      integrity: sha512-xUb+p+UnAiR5Zg34IYv8bO0FlFu84xkBJcZXHLLK5DNQS29NQwiNT/qcwS95BWgAcOGgD8M8Sqs2qoXvR9s5QQ==
   /sprintf-js/1.0.3:
     dev: false
     resolution:
       integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
-  /ts-toolbelt/4.8.3:
-    dev: false
-    resolution:
-      integrity: sha512-qSC/t6vfUPqVMkH7wQmRwYbShubAJufUoUynJj8e+AlSXK3+M6rC/OnQ+Mdw6Qd/WYTf46QZDM8nUhxYVJTIPw==
   /tslib/1.10.0:
     dev: false
     resolution:
@@ -166,7 +151,7 @@ specifiers:
   '@types/js-yaml': ^3.12.1
   '@types/minimatch': ^3.0.3
   fs-extra: ^8.1.0
-  fs-tree-utils: ^0.1.7
+  fs-tree-utils: ^0.1.8
   js-yaml: ^3.13.1
   minimatch: ^3.0.4
   tslib: ^1.10.0
