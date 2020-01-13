@@ -5,7 +5,7 @@ dependencies:
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
   inquirer: 7.0.3
-  isomorphic-git: 0.73.3
+  isomorphic-git: 0.75.0
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.1:
@@ -259,7 +259,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /isomorphic-git/0.73.3:
+  /isomorphic-git/0.75.0:
     dependencies:
       async-lock: 1.2.2
       clean-git-ref: 2.0.1
@@ -281,7 +281,7 @@ packages:
       node: '>=7.6.0'
     hasBin: true
     resolution:
-      integrity: sha512-0uIJu8gI2B+JbThA7by/amMYbajPTwscxQhUAMZuNBc0cJPv7Mgc9E5MHZ4N9qPdZokw1U9ePIFPd2oIPCBE4g==
+      integrity: sha512-DF4Act+RQsMtYv7umK7OhFywePcXuLkuN8iv+wO6YtbeFdz0i1tAQU2i4/zIh9n9vb+bZMrQtitJ4XFUkdX9fQ==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -517,4 +517,4 @@ specifiers:
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.3
-  isomorphic-git: ^0.73.3
+  isomorphic-git: ^0.75.0
