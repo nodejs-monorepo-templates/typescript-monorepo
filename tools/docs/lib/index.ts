@@ -2,6 +2,7 @@ import path from 'path'
 import process from 'process'
 import { ensureFile, writeFile, pathExists } from 'fs-extra'
 import { Application } from 'typedoc'
+import { ScriptTarget, ModuleKind } from 'typescript'
 import { partition } from '@tsfun/array'
 import places from '@tools/places'
 import { loadPackageList, loadRepoUrl } from '@tools/utils'
@@ -61,11 +62,12 @@ export async function main () {
 
     const readmeObject = await propIfExists('readme', path.join(item.folder, 'README.md'))
 
-    const app = new Application({
+    const app = new Application()
+    const { hasErrors } = app.bootstrap({
       tsconfig: path.join(places.packages, 'tsconfig.json'),
       ignoreCompilerErrors: true,
-      target: 'esnext',
-      module: 'commonjs',
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.CommonJS,
       mode: 'file',
       excludeExternals: false,
       excludeNotExported: true,
@@ -75,6 +77,10 @@ export async function main () {
       name: `${name} — Reference`,
       ...readmeObject
     })
+    if (hasErrors) {
+      console.error('[ERROR]: Failed to bootstrap typedoc')
+      throw process.exit(2)
+    }
 
     const entryFilePath = path.join(item.folder, 'index.ts')
     const project = app.convert(app.expandInputFiles([
