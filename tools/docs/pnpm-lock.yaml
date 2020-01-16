@@ -11,7 +11,7 @@ dependencies:
   minimatch: 3.0.4
   pretty: 2.0.0
   typedoc: 0.16.6
-  typescript: 3.7.4
+  typescript: 3.7.5
 lockfileVersion: 5.1
 packages:
   /@tsfun/array/0.0.0:
@@ -482,13 +482,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
-  /typescript/3.7.4:
+  /typescript/3.7.5:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
+      integrity: sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
   /uglify-js/3.6.0:
     dependencies:
       commander: 2.20.3
@@ -537,4 +537,4 @@ specifiers:
   minimatch: ^3.0.4
   pretty: ^2.0.0
   typedoc: ^0.16.6
-  typescript: 3.7.4
+  typescript: 3.7.5
