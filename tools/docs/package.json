@@ -7,7 +7,7 @@
     "pretty": "^2.0.0",
     "chalk": "^3.0.0",
     "fs-extra": "^8.1.0",
-    "typedoc": "^0.15.8",
+    "typedoc": "^0.16.6",
     "@tsfun/array": "^0.0.0",
     "@types/minimatch": "^3.0.3",
     "@types/pretty": "^2.0.0",
