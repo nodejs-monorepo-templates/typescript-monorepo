@@ -78,7 +78,7 @@ export async function main () {
       ...readmeObject
     })
     if (hasErrors) {
-      console.error('[ERROR]: Failed to bootstrap typedoc')
+      console.error('[ERROR] Failed to bootstrap typedoc')
       throw process.exit(2)
     }
 
@@ -100,7 +100,7 @@ export async function main () {
 
   if (failures.length) {
     console.error()
-    console.error('[ERROR]: Failed to generate docs for:')
+    console.error('[ERROR] Failed to generate docs for:')
 
     for (const item of failures) {
       console.error(' -', item.name)
