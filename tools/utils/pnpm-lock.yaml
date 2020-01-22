@@ -5,7 +5,7 @@ dependencies:
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
   inquirer: 7.0.3
-  isomorphic-git: 0.75.1
+  isomorphic-git: 0.78.0
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.1:
@@ -259,7 +259,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /isomorphic-git/0.75.1:
+  /isomorphic-git/0.78.0:
     dependencies:
       async-lock: 1.2.2
       clean-git-ref: 2.0.1
@@ -273,7 +273,7 @@ packages:
       minimisted: 2.0.0
       pako: 1.0.10
       pify: 4.0.1
-      readable-stream: 3.4.0
+      readable-stream: 3.5.0
       sha.js: 2.4.11
       simple-get: 3.1.0
     dev: false
@@ -281,7 +281,7 @@ packages:
       node: '>=7.6.0'
     hasBin: true
     resolution:
-      integrity: sha512-0E5P48hsMC6pc/Q2lpYhFhAL1poJrUpB6nubjRkkUs+5ERU/FUECJrPsT337oAYkoLWR/HGbbrWLrYYrQY/sNQ==
+      integrity: sha512-jpCQwp97GcfSO/ZK2Ws8ZBw4ahm0gLKnCcrsIg2jmbmsk/bmtpYPAJUYjVbOTAeSWSL7UyjKPq0wS7JmimrpoA==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -359,7 +359,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-zA2SmoLaxZyArQTOPj5LXecR+RagfPSU5Kw1qP+jkWeNlrq+eJZyY2oS68SU1Z/7/myXM4lo9716laOFAVStCQ==
-  /readable-stream/3.4.0:
+  /readable-stream/3.5.0:
     dependencies:
       inherits: 2.0.4
       string_decoder: 1.3.0
@@ -368,7 +368,7 @@ packages:
     engines:
       node: '>= 6'
     resolution:
-      integrity: sha512-jItXPLmrSR8jmTRmRWJXCnGJsfy85mB3Wd/uINMXA65yrnFo0cPClFIUWzo2najVNSl+mx7/4W8ttlLWJe99pQ==
+      integrity: sha512-gSz026xs2LfxBPudDuI41V1lka8cxg64E66SGe78zJlsUofOg/yqwezdIcdfwik6B4h8LFmWPA9ef9X3FiNFLA==
   /restore-cursor/3.1.0:
     dependencies:
       onetime: 5.1.0
@@ -517,4 +517,4 @@ specifiers:
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.3
-  isomorphic-git: ^0.75.1
+  isomorphic-git: ^0.78.0
