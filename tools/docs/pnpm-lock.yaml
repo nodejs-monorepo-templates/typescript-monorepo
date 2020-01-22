@@ -2,7 +2,7 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@tools/utils': 'link:../utils'
-  '@tsfun/array': 0.0.0
+  '@tsfun/array': 0.0.1
   '@types/fs-extra': 8.0.1
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
@@ -10,17 +10,17 @@ dependencies:
   fs-extra: 8.1.0
   minimatch: 3.0.4
   pretty: 2.0.0
-  typedoc: 0.16.6
-  typescript: 3.7.4
+  typedoc: 0.16.8
+  typescript: 3.7.5
 lockfileVersion: 5.1
 packages:
-  /@tsfun/array/0.0.0:
+  /@tsfun/array/0.0.1:
     dependencies:
-      '@types/node': 13.1.6
+      '@types/node': 13.1.8
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-y18KD65Ba1a7jXJ8PBIGjfkCtR32wd0XOPaV5D8z9uBiNE+pIF0PCnHKVHZ4+GcaRa/Y7HkTWJxmcjs283ggmw==
+      integrity: sha512-82WeMtIC8TzWAJpIjLm+N44BSnYADWZmhBNeT0PdY+mTqB61bLSsDKonHlLE36twC26fBFMYV2/sYj8uJei5uA==
   /@types/fs-extra/8.0.1:
     dependencies:
       '@types/node': 12.12.21
@@ -35,10 +35,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==
-  /@types/node/13.1.6:
+  /@types/node/13.1.8:
     dev: false
     resolution:
-      integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
+      integrity: sha512-6XzyyNM9EKQW4HKuzbo/CkOIjn/evtCmsU+MUM1xDfJ+3/rNjBttM1NgN7AOQvN6tP1Sl1D1PIKMreTArnxM9A==
   /@types/pretty/2.0.0:
     dev: false
     resolution:
@@ -445,7 +445,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
-  /typedoc-default-themes/0.7.1:
+  /typedoc-default-themes/0.7.2:
     dependencies:
       backbone: 1.4.0
       jquery: 3.4.1
@@ -455,8 +455,8 @@ packages:
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-s3jeUHc4EY8snIta6lNkUu9+36WMDUnkKm0UQ59w5iPo/4Y2d4+M9CDIKoenYKT5hkg/UnTc3oX48VZZytv8Xw==
-  /typedoc/0.16.6:
+      integrity: sha512-fiFKlFO6VTqjcno8w6WpTsbCgXmfPHVjnLfYkmByZE7moaz+E2DSpAT+oHtDHv7E0BM5kAhPrHJELP2J2Y2T9A==
+  /typedoc/0.16.8:
     dependencies:
       '@types/minimatch': 3.0.3
       fs-extra: 8.1.0
@@ -467,28 +467,21 @@ packages:
       minimatch: 3.0.4
       progress: 2.0.3
       shelljs: 0.8.3
-      typedoc-default-themes: 0.7.1
-      typescript: 3.7.3
+      typedoc-default-themes: 0.7.2
+      typescript: 3.7.5
     dev: false
     engines:
       node: '>= 6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-1k4HXW5o6/rk5U3NEXEM+UVMPWaM0xW1/WJo1wlptb0gzsqtahymLDFSBX8Nqi7cToKOuiJPUr8j8UU368UNoA==
-  /typescript/3.7.3:
+      integrity: sha512-KO5z33qZ/+dXY5e87YtrD6sr7/BjrD70L0EwzwvQEvS0vuzQRHbXfeeJHschYjpMp3D2BmX4bwEKUMEN8dHDAA==
+  /typescript/3.7.5:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
-  /typescript/3.7.4:
-    dev: false
-    engines:
-      node: '>=4.2.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
+      integrity: sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
   /uglify-js/3.6.0:
     dependencies:
       commander: 2.20.3
@@ -528,7 +521,7 @@ specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@tools/utils': 'file:../utils'
-  '@tsfun/array': ^0.0.0
+  '@tsfun/array': ^0.0.1
   '@types/fs-extra': ^8.0.1
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
@@ -536,5 +529,5 @@ specifiers:
   fs-extra: ^8.1.0
   minimatch: ^3.0.4
   pretty: ^2.0.0
-  typedoc: ^0.16.6
-  typescript: 3.7.4
+  typedoc: ^0.16.8
+  typescript: ^3.7.5

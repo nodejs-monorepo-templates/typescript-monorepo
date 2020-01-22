@@ -8,12 +8,12 @@
   "main": "index.js",
   "dependencies": {
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.4",
+    "typescript": "^3.7.5",
     "json5": "^2.1.1",
     "tslib": "^1.10.0",
     "@tools/typescript": "file:../typescript",
     "@types/json5": "^0.0.30",
-    "@types/node": "^13.1.7"
+    "@types/node": "^13.1.8"
   },
   "engines": {
     "node": ">= 8.9.0"

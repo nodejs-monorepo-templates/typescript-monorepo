@@ -5,7 +5,7 @@ dependencies:
   '@tools/utils': 'link:../utils'
   '@types/fs-extra': 8.0.1
   '@types/inquirer': 6.5.0
-  '@types/yargs': 15.0.0
+  '@types/yargs': 15.0.1
   fs-extra: 8.1.0
   inquirer: 7.0.3
   yargs: 15.1.0
@@ -46,12 +46,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gCubfBUZ6KxzoibJ+SCUc/57Ms1jz5NjHe4+dI2krNmU5zCPAphyLJYyTOg06ueIyfj+SaCUqmzun7ImlxDcKg==
-  /@types/yargs/15.0.0:
+  /@types/yargs/15.0.1:
     dependencies:
       '@types/yargs-parser': 13.1.0
     dev: false
     resolution:
-      integrity: sha512-TITCsNxRSDVmq3kPGuUdKZTPTfHeswsUGIjxSe8SB4EBKTPA0DO0y4yWI95kZ2hfqJAYxmu+gxzjOwdumB5S0g==
+      integrity: sha512-sYlwNU7zYi6eZbMzFvG6eHD7VsEvFdoDtlD7eI1JTg7YNnuguzmiGsc6MPSq5l8n+h21AsNof0je+9sgOe4+dg==
   /ansi-escapes/4.2.1:
     dependencies:
       type-fest: 0.5.2
@@ -497,7 +497,7 @@ specifiers:
   '@tools/utils': 'file:../utils'
   '@types/fs-extra': ^8.0.1
   '@types/inquirer': ^6.5.0
-  '@types/yargs': ^15.0.0
+  '@types/yargs': ^15.0.1
   fs-extra: ^8.1.0
   inquirer: ^7.0.3
   yargs: ^15.1.0

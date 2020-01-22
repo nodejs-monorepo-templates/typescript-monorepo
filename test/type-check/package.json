@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "typescript": "^3.7.4",
+    "typescript": "^3.7.5",
     "@tools/test-spawn": "file:../../tools/test-spawn"
   }
 }
