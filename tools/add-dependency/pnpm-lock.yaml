@@ -5,7 +5,7 @@ dependencies:
   '@types/fs-extra': 8.0.1
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
-  inquirer: 7.0.3
+  inquirer: 7.0.4
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.0.1:
@@ -149,7 +149,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
-  /inquirer/7.0.3:
+  /inquirer/7.0.4:
     dependencies:
       ansi-escapes: 4.2.1
       chalk: 2.4.2
@@ -168,7 +168,7 @@ packages:
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-+OiOVeVydu4hnCGLCSX+wedovR/Yzskv9BFqUNNKq9uU2qg7LCcCo3R86S2E7WLo0y/x2pnEZfZe1CoYnORUAw==
+      integrity: sha512-Bu5Td5+j11sCkqfqmUTiwv+tWisMtP0L7Q8WrqA2C/BbBhy1YTdFrvjjlrKq8oagA/tLQBski2Gcx/Sqyi2qSQ==
   /is-fullwidth-code-point/3.0.0:
     dev: false
     engines:
@@ -307,4 +307,4 @@ specifiers:
   '@types/fs-extra': ^8.0.1
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
-  inquirer: ^7.0.3
+  inquirer: ^7.0.4

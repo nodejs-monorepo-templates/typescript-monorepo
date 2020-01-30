@@ -10,7 +10,7 @@ dependencies:
   just-try: 2.1.0
   parse-dependency-range: 0.0.4
   semver: 7.1.1
-  ts-jest: 24.3.0_jest@25.1.0
+  ts-jest: 25.0.0_jest@25.1.0
   tslib: 1.10.0
   typescript: 3.7.5
   yaml-jest: 1.0.5
@@ -3412,7 +3412,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
-  /ts-jest/24.3.0_jest@25.1.0:
+  /ts-jest/25.0.0_jest@25.1.0:
     dependencies:
       bs-logger: 0.2.6
       buffer-from: 1.1.1
@@ -3430,9 +3430,9 @@ packages:
       node: '>= 6'
     hasBin: true
     peerDependencies:
-      jest: '>=24 <25'
+      jest: '>=25 <26'
     resolution:
-      integrity: sha512-Hb94C/+QRIgjVZlJyiWwouYUF+siNJHJHknyspaOcZ+OQAIdFG/UrdQVXw/0B8Z3No34xkUXZJpOTy9alOWdVQ==
+      integrity: sha512-F+hZg3j7XYOFpXJteXb4lnqy7vQzTmpTmX7AJT6pvSGeZejyXj1Lk0ArpnrEPOpv6Zu/NugHc5W7FINngC9WZQ==
   /tslib/1.10.0:
     dev: false
     resolution:
@@ -3704,7 +3704,7 @@ specifiers:
   just-try: ^2.1.0
   parse-dependency-range: ^0.0.4
   semver: ^7.1.1
-  ts-jest: ^24.3.0
+  ts-jest: ^25.0.0
   tslib: ^1.10.0
   typescript: ^3.7.5
   yaml-jest: ^1.0.5

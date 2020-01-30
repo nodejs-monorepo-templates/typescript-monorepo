@@ -1,13 +1,13 @@
 dependencies:
   '@tools/places': 'link:../places'
-  '@types/js-yaml': 3.12.1
+  '@types/js-yaml': 3.12.2
   js-yaml: 3.13.1
 lockfileVersion: 5.1
 packages:
-  /@types/js-yaml/3.12.1:
+  /@types/js-yaml/3.12.2:
     dev: false
     resolution:
-      integrity: sha512-SGGAhXLHDx+PK4YLNcNGa6goPf9XRWQNAUUbffkwVGGXIxmDKWyGGL4inzq2sPmExu431Ekb9aEMn9BkPqEYFA==
+      integrity: sha512-0CFu/g4mDSNkodVwWijdlr8jH7RoplRWNgovjFLEZeT+QEbbZXjBmCe3HwaWheAlCbHwomTwzZoSedeOycABug==
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -35,5 +35,5 @@ packages:
       integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 specifiers:
   '@tools/places': ../places
-  '@types/js-yaml': ^3.12.1
+  '@types/js-yaml': ^3.12.2
   js-yaml: ^3.13.1

@@ -13,7 +13,7 @@
     "fs-tree-utils": "^0.1.8",
     "tslib": "^1.10.0",
     "@types/minimatch": "^3.0.3",
-    "@types/js-yaml": "^3.12.1",
+    "@types/js-yaml": "^3.12.2",
     "@types/fs-extra": "^8.0.1",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/places": "file:../places"

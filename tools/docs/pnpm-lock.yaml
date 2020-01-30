@@ -10,7 +10,7 @@ dependencies:
   fs-extra: 8.1.0
   minimatch: 3.0.4
   pretty: 2.0.0
-  typedoc: 0.16.8
+  typedoc: 0.16.9
   typescript: 3.7.5
 lockfileVersion: 5.1
 packages:
@@ -456,7 +456,7 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-fiFKlFO6VTqjcno8w6WpTsbCgXmfPHVjnLfYkmByZE7moaz+E2DSpAT+oHtDHv7E0BM5kAhPrHJELP2J2Y2T9A==
-  /typedoc/0.16.8:
+  /typedoc/0.16.9:
     dependencies:
       '@types/minimatch': 3.0.3
       fs-extra: 8.1.0
@@ -474,7 +474,7 @@ packages:
       node: '>= 6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-KO5z33qZ/+dXY5e87YtrD6sr7/BjrD70L0EwzwvQEvS0vuzQRHbXfeeJHschYjpMp3D2BmX4bwEKUMEN8dHDAA==
+      integrity: sha512-UvOGoy76yqwCXwxPgatwgXWfsQ3FczyZ6ZNLjhCPK+TsDir6LiU3YB6N9XZmPv36E+7LA860mnc8a0v6YADKFw==
   /typescript/3.7.5:
     dev: false
     engines:
@@ -529,5 +529,5 @@ specifiers:
   fs-extra: ^8.1.0
   minimatch: ^3.0.4
   pretty: ^2.0.0
-  typedoc: ^0.16.8
+  typedoc: ^0.16.9
   typescript: ^3.7.5

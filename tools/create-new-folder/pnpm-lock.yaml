@@ -5,9 +5,9 @@ dependencies:
   '@tools/utils': 'link:../utils'
   '@types/fs-extra': 8.0.1
   '@types/inquirer': 6.5.0
-  '@types/yargs': 15.0.1
+  '@types/yargs': 15.0.2
   fs-extra: 8.1.0
-  inquirer: 7.0.3
+  inquirer: 7.0.4
   yargs: 15.1.0
 lockfileVersion: 5.1
 packages:
@@ -46,12 +46,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gCubfBUZ6KxzoibJ+SCUc/57Ms1jz5NjHe4+dI2krNmU5zCPAphyLJYyTOg06ueIyfj+SaCUqmzun7ImlxDcKg==
-  /@types/yargs/15.0.1:
+  /@types/yargs/15.0.2:
     dependencies:
       '@types/yargs-parser': 13.1.0
     dev: false
     resolution:
-      integrity: sha512-sYlwNU7zYi6eZbMzFvG6eHD7VsEvFdoDtlD7eI1JTg7YNnuguzmiGsc6MPSq5l8n+h21AsNof0je+9sgOe4+dg==
+      integrity: sha512-hFkuAp58M2xOc1QgJhkFrLMnqa8KWTFRTnzrI1zlEcOfg3DZ0eH3aPAo/N6QlVVu8E4KS4xD1jtEG3rdQYFmIg==
   /ansi-escapes/4.2.1:
     dependencies:
       type-fest: 0.5.2
@@ -228,7 +228,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
-  /inquirer/7.0.3:
+  /inquirer/7.0.4:
     dependencies:
       ansi-escapes: 4.2.1
       chalk: 2.4.2
@@ -240,14 +240,14 @@ packages:
       mute-stream: 0.0.8
       run-async: 2.3.0
       rxjs: 6.5.3
-      string-width: 4.1.0
+      string-width: 4.2.0
       strip-ansi: 5.2.0
       through: 2.3.8
     dev: false
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-+OiOVeVydu4hnCGLCSX+wedovR/Yzskv9BFqUNNKq9uU2qg7LCcCo3R86S2E7WLo0y/x2pnEZfZe1CoYnORUAw==
+      integrity: sha512-Bu5Td5+j11sCkqfqmUTiwv+tWisMtP0L7Q8WrqA2C/BbBhy1YTdFrvjjlrKq8oagA/tLQBski2Gcx/Sqyi2qSQ==
   /is-fullwidth-code-point/3.0.0:
     dev: false
     engines:
@@ -375,16 +375,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
-  /string-width/4.1.0:
-    dependencies:
-      emoji-regex: 8.0.0
-      is-fullwidth-code-point: 3.0.0
-      strip-ansi: 5.2.0
-    dev: false
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-NrX+1dVVh+6Y9dnQ19pR0pP4FiEIlUvdTGn8pw6CKTNq5sgib2nIhmUNT5TAmhWmvKr3WcxBcP3E8nWezuipuQ==
   /string-width/4.2.0:
     dependencies:
       emoji-regex: 8.0.0
@@ -497,7 +487,7 @@ specifiers:
   '@tools/utils': 'file:../utils'
   '@types/fs-extra': ^8.0.1
   '@types/inquirer': ^6.5.0
-  '@types/yargs': ^15.0.1
+  '@types/yargs': ^15.0.2
   fs-extra: ^8.1.0
-  inquirer: ^7.0.3
+  inquirer: ^7.0.4
   yargs: ^15.1.0
