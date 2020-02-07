@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "@babel/core": "^7.8.3",
+    "@babel/core": "^7.8.4",
     "tslint": "^6.0.0",
     "tslint-config-standard": "^9.0.0",
     "typescript": "^3.7.5",

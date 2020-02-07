@@ -9,7 +9,7 @@
     "yargs": "^15.1.0",
     "@types/inquirer": "^6.5.0",
     "@types/fs-extra": "^8.0.1",
-    "@types/yargs": "^15.0.2",
+    "@types/yargs": "^15.0.3",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/pkgcfg": "file:../pkgcfg",
     "@tools/places": "file:../places",

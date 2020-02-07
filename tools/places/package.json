@@ -8,6 +8,6 @@
     "places": "bin.js"
   },
   "dependencies": {
-    "@types/node": "^13.5.2"
+    "@types/node": "^13.7.0"
   }
 }
