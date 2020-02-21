@@ -66,8 +66,10 @@ export async function main () {
     const { hasErrors } = app.bootstrap({
       tsconfig: path.join(places.packages, 'tsconfig.json'),
       ignoreCompilerErrors: true,
-      target: ScriptTarget.ESNext,
-      module: ModuleKind.CommonJS,
+      // TODO: Remove 'as any' when https://github.com/TypeStrong/typedoc/issues/1213 is resolved
+      target: ScriptTarget.ESNext as any,
+      // TODO: Remove 'as any' when https://github.com/TypeStrong/typedoc/issues/1213 is resolved
+      module: ModuleKind.CommonJS as any,
       mode: 'file',
       excludeExternals: false,
       excludeNotExported: true,
