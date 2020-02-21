@@ -12,7 +12,7 @@ dependencies:
   semver: 7.1.2
   ts-jest: 25.2.0_jest@25.1.0
   tslib: 1.10.0
-  typescript: 3.7.5
+  typescript: 3.8.2
   yaml-jest: 1.0.5
 lockfileVersion: 5.1
 packages:
@@ -3584,13 +3584,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
-  /typescript/3.7.5:
+  /typescript/3.8.2:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
+      integrity: sha512-EgOVgL/4xfVrCMbhYKUQTdF37SQn4Iw73H5BgCrF1Abdun7Kwy/QZsE/ssAy0y4LxBbvua3PIbFsbRczWWnDdQ==
   /union-value/1.0.1:
     dependencies:
       arr-union: 3.1.0
@@ -3817,5 +3817,5 @@ specifiers:
   semver: ^7.1.2
   ts-jest: ^25.2.0
   tslib: ^1.10.0
-  typescript: ^3.7.5
+  typescript: ^3.8.2
   yaml-jest: ^1.0.5

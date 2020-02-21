@@ -8,7 +8,7 @@
     "chalk": "^3.0.0",
     "fs-extra": "^8.1.0",
     "typedoc": "^0.16.9",
-    "typescript": "^3.7.5",
+    "typescript": "^3.8.2",
     "@tsfun/array": "^0.0.1",
     "@types/minimatch": "^3.0.3",
     "@types/pretty": "^2.0.0",
