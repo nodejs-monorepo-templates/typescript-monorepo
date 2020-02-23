@@ -2,7 +2,7 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@tools/utils': 'link:../utils'
-  '@tsfun/array': 0.0.1
+  '@tsfun/array': 0.0.2
   '@types/fs-extra': 8.0.1
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
@@ -14,13 +14,13 @@ dependencies:
   typescript: 3.8.2
 lockfileVersion: 5.1
 packages:
-  /@tsfun/array/0.0.1:
+  /@tsfun/array/0.0.2:
     dependencies:
-      '@types/node': 13.1.8
-      tslib: 1.10.0
+      '@types/node': 13.7.4
+      tslib: 1.11.0
     dev: false
     resolution:
-      integrity: sha512-82WeMtIC8TzWAJpIjLm+N44BSnYADWZmhBNeT0PdY+mTqB61bLSsDKonHlLE36twC26fBFMYV2/sYj8uJei5uA==
+      integrity: sha512-Slm4H9fgnivx68Bghgv0/1r4sBrUUzcIoQlEBL6fOeUHRwa5fM0qfxQo1bbXJxSPE1cXxUpkvCXT5HIoRZMVsg==
   /@types/fs-extra/8.0.1:
     dependencies:
       '@types/node': 12.12.21
@@ -35,10 +35,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==
-  /@types/node/13.1.8:
+  /@types/node/13.7.4:
     dev: false
     resolution:
-      integrity: sha512-6XzyyNM9EKQW4HKuzbo/CkOIjn/evtCmsU+MUM1xDfJ+3/rNjBttM1NgN7AOQvN6tP1Sl1D1PIKMreTArnxM9A==
+      integrity: sha512-oVeL12C6gQS/GAExndigSaLxTrKpQPxewx9bOcwfvJiJge4rr7wNaph4J+ns5hrmIV2as5qxqN8YKthn9qh0jw==
   /@types/pretty/2.0.0:
     dev: false
     resolution:
@@ -441,10 +441,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
-  /tslib/1.10.0:
+  /tslib/1.11.0:
     dev: false
     resolution:
-      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+      integrity: sha512-BmndXUtiTn/VDDrJzQE7Mm22Ix3PxgLltW9bSNLoeCY31gnG2OPx0QqJnuc9oMIKioYrz487i6K9o4Pdn0j+Kg==
   /typedoc-default-themes/0.7.2:
     dependencies:
       backbone: 1.4.0
@@ -528,7 +528,7 @@ specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@tools/utils': 'file:../utils'
-  '@tsfun/array': ^0.0.1
+  '@tsfun/array': ^0.0.2
   '@types/fs-extra': ^8.0.1
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
