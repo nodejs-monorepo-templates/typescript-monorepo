@@ -1,19 +1,19 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
-  '@types/fs-extra': 8.0.1
+  '@types/fs-extra': 8.1.0
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
   inquirer: 7.0.4
-  isomorphic-git: 0.78.3
+  isomorphic-git: 0.78.5
 lockfileVersion: 5.1
 packages:
-  /@types/fs-extra/8.0.1:
+  /@types/fs-extra/8.1.0:
     dependencies:
       '@types/node': 12.12.21
     dev: false
     resolution:
-      integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
+      integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
   /@types/inquirer/6.5.0:
     dependencies:
       '@types/through': 0.0.29
@@ -259,7 +259,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /isomorphic-git/0.78.3:
+  /isomorphic-git/0.78.5:
     dependencies:
       async-lock: 1.2.2
       clean-git-ref: 2.0.1
@@ -281,7 +281,7 @@ packages:
       node: '>=7.6.0'
     hasBin: true
     resolution:
-      integrity: sha512-3c8uqIg9tBBXFwypdlIo7yPM1x3uc7mNt4qbUvG2NPt8QYN1OFWo0MDNgHYfRIQWsgd8aux/qC3QnKyVqaq0TQ==
+      integrity: sha512-LrF5t9x7RdFeg84NsYpZo9qF1MZeb56LpBm6Jv47qMjnWMv0Il/3wPTA8I/lUYywgVbvF/e7xypHauj5auKW3w==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -513,8 +513,8 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
-  '@types/fs-extra': ^8.0.1
+  '@types/fs-extra': ^8.1.0
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.4
-  isomorphic-git: ^0.78.3
+  isomorphic-git: ^0.78.5

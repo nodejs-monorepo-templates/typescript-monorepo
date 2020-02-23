@@ -1,14 +1,14 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
-  '@types/fs-extra': 8.0.1
+  '@types/fs-extra': 8.1.0
   '@types/js-yaml': 3.12.2
   '@types/minimatch': 3.0.3
   fs-extra: 8.1.0
   fs-tree-utils: 0.1.8
   js-yaml: 3.13.1
   minimatch: 3.0.4
-  tslib: 1.10.0
+  tslib: 1.11.0
 lockfileVersion: 5.1
 packages:
   /@tsfun/array/0.0.0:
@@ -24,6 +24,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
+  /@types/fs-extra/8.1.0:
+    dependencies:
+      '@types/node': 13.1.6
+    dev: false
+    resolution:
+      integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
   /@types/js-yaml/3.12.2:
     dev: false
     resolution:
@@ -138,6 +144,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+  /tslib/1.11.0:
+    dev: false
+    resolution:
+      integrity: sha512-BmndXUtiTn/VDDrJzQE7Mm22Ix3PxgLltW9bSNLoeCY31gnG2OPx0QqJnuc9oMIKioYrz487i6K9o4Pdn0j+Kg==
   /universalify/0.1.2:
     dev: false
     engines:
@@ -147,11 +157,11 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
-  '@types/fs-extra': ^8.0.1
+  '@types/fs-extra': ^8.1.0
   '@types/js-yaml': ^3.12.2
   '@types/minimatch': ^3.0.3
   fs-extra: ^8.1.0
   fs-tree-utils: ^0.1.8
   js-yaml: ^3.13.1
   minimatch: ^3.0.4
-  tslib: ^1.10.0
+  tslib: ^1.11.0
