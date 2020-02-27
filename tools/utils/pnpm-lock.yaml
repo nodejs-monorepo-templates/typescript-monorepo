@@ -5,7 +5,7 @@ dependencies:
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
   inquirer: 7.0.4
-  isomorphic-git: 1.0.0
+  isomorphic-git: 0.78.5
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.1.0:
@@ -193,6 +193,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-+3auFEVA15RAtSsx3gPmPJk8chk=
+  /globalyzer/0.1.4:
+    dev: false
+    resolution:
+      integrity: sha512-LeguVWaxgHN0MNbWC6YljNMzHkrCny9fzjmEUdnF1kQ7wATFD1RHFRqA1qxaX2tgxGENlcxjOflopBwj3YZiXA==
+  /globrex/0.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
   /graceful-fs/4.2.2:
     dev: false
     resolution:
@@ -251,14 +259,17 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /isomorphic-git/1.0.0:
+  /isomorphic-git/0.78.5:
     dependencies:
       async-lock: 1.2.2
       clean-git-ref: 2.0.1
       crc-32: 1.2.0
       diff3: 0.0.3
       git-apply-delta: 0.0.7
+      globalyzer: 0.1.4
+      globrex: 0.1.2
       ignore: 5.1.4
+      marky: 1.2.1
       minimisted: 2.0.0
       pako: 1.0.10
       pify: 4.0.1
@@ -267,10 +278,10 @@ packages:
       simple-get: 3.1.0
     dev: false
     engines:
-      node: '>=10'
+      node: '>=7.6.0'
     hasBin: true
     resolution:
-      integrity: sha512-YwyHqWP8ZGgb3Ul3HOg1MKSXD52ogWI4V3r58ck+EGuGKyXJYjxEjCRXeFEqOX3cxZRxvRyS1nD2J4at/l6fLQ==
+      integrity: sha512-LrF5t9x7RdFeg84NsYpZo9qF1MZeb56LpBm6Jv47qMjnWMv0Il/3wPTA8I/lUYywgVbvF/e7xypHauj5auKW3w==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -281,6 +292,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  /marky/1.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-md9k+Gxa3qLH6sUKpeC2CNkJK/Ld+bEz5X96nYwloqphQE0CKCVEKco/6jxEZixinqNdz5RFi/KaCyfbMDMAXQ==
   /mimic-fn/2.1.0:
     dev: false
     engines:
@@ -502,4 +517,4 @@ specifiers:
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.4
-  isomorphic-git: ^1.0.0
+  isomorphic-git: =0.78.5
