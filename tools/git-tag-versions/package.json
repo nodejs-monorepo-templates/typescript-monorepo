@@ -11,7 +11,7 @@
     "yargs": "^15.1.0",
     "git-ts": "^0.0.7",
     "nested-workspace-helper": "^0.2.15",
-    "@types/yargs": "^15.0.3",
+    "@types/yargs": "^15.0.4",
     "@tools/places": "file:../places"
   }
 }
