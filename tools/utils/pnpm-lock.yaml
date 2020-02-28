@@ -5,7 +5,7 @@ dependencies:
   '@types/inquirer': 6.5.0
   fs-extra: 8.1.0
   inquirer: 7.0.4
-  isomorphic-git: 0.78.5
+  isomorphic-git: 1.1.2
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/8.1.0:
@@ -132,7 +132,7 @@ packages:
       integrity: sha512-1uBwHxF+Y/4yF5G48fwnKq6QsIXheor3ZLPT80yGBV1oEUwpPojlEhQbWKVw1VwcTQyMGHK1/XMmTjmlsmTTGA==
   /decompress-response/4.2.1:
     dependencies:
-      mimic-response: 2.0.0
+      mimic-response: 2.1.0
     dev: false
     engines:
       node: '>=8'
@@ -193,14 +193,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-+3auFEVA15RAtSsx3gPmPJk8chk=
-  /globalyzer/0.1.4:
-    dev: false
-    resolution:
-      integrity: sha512-LeguVWaxgHN0MNbWC6YljNMzHkrCny9fzjmEUdnF1kQ7wATFD1RHFRqA1qxaX2tgxGENlcxjOflopBwj3YZiXA==
-  /globrex/0.1.2:
-    dev: false
-    resolution:
-      integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
   /graceful-fs/4.2.2:
     dev: false
     resolution:
@@ -259,29 +251,26 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /isomorphic-git/0.78.5:
+  /isomorphic-git/1.1.2:
     dependencies:
       async-lock: 1.2.2
       clean-git-ref: 2.0.1
       crc-32: 1.2.0
       diff3: 0.0.3
       git-apply-delta: 0.0.7
-      globalyzer: 0.1.4
-      globrex: 0.1.2
       ignore: 5.1.4
-      marky: 1.2.1
       minimisted: 2.0.0
-      pako: 1.0.10
+      pako: 1.0.11
       pify: 4.0.1
-      readable-stream: 3.4.0
+      readable-stream: 3.6.0
       sha.js: 2.4.11
       simple-get: 3.1.0
     dev: false
     engines:
-      node: '>=7.6.0'
+      node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-LrF5t9x7RdFeg84NsYpZo9qF1MZeb56LpBm6Jv47qMjnWMv0Il/3wPTA8I/lUYywgVbvF/e7xypHauj5auKW3w==
+      integrity: sha512-qXTN0E1S75ZojXwQlT6vQqRwxxyd2kXkQAvMklZYJJB5Ud9ZcN7IsXo9dazrI09f5MPSWKTPLYBahhUCyY0mkw==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
@@ -292,22 +281,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
-  /marky/1.2.1:
-    dev: false
-    resolution:
-      integrity: sha512-md9k+Gxa3qLH6sUKpeC2CNkJK/Ld+bEz5X96nYwloqphQE0CKCVEKco/6jxEZixinqNdz5RFi/KaCyfbMDMAXQ==
   /mimic-fn/2.1.0:
     dev: false
     engines:
       node: '>=6'
     resolution:
       integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
-  /mimic-response/2.0.0:
+  /mimic-response/2.1.0:
     dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-8ilDoEapqA4uQ3TwS0jakGONKXVJqpy+RpM+3b7pLdOjghCrEiGp9SRkFbUHAmZW9vdnrENWHjaweIoTIJExSQ==
+      integrity: sha512-wXqjST+SLt7R009ySCglWBCFpjUygmCIfD790/kVbiGmUgfYGuB14PiTd5DwVxSV4NcYHjzMkoj5LjQZwTQLEA==
   /minimist/1.2.0:
     dev: false
     resolution:
@@ -342,10 +327,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
-  /pako/1.0.10:
+  /pako/1.0.11:
     dev: false
     resolution:
-      integrity: sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
+      integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
   /pify/4.0.1:
     dev: false
     engines:
@@ -359,7 +344,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-zA2SmoLaxZyArQTOPj5LXecR+RagfPSU5Kw1qP+jkWeNlrq+eJZyY2oS68SU1Z/7/myXM4lo9716laOFAVStCQ==
-  /readable-stream/3.4.0:
+  /readable-stream/3.6.0:
     dependencies:
       inherits: 2.0.4
       string_decoder: 1.3.0
@@ -368,7 +353,7 @@ packages:
     engines:
       node: '>= 6'
     resolution:
-      integrity: sha512-jItXPLmrSR8jmTRmRWJXCnGJsfy85mB3Wd/uINMXA65yrnFo0cPClFIUWzo2najVNSl+mx7/4W8ttlLWJe99pQ==
+      integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
   /restore-cursor/3.1.0:
     dependencies:
       onetime: 5.1.0
@@ -517,4 +502,4 @@ specifiers:
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.4
-  isomorphic-git: =0.78.5
+  isomorphic-git: =1.1.2
