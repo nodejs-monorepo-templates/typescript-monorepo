@@ -5,7 +5,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "lib": [
-      "DOM",
       "es2018",
       "es2019",
       "es2020",
