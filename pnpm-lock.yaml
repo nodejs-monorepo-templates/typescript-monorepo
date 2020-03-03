@@ -3,7 +3,7 @@ devDependencies:
   '@types/jest': 25.1.3
   '@types/node': 13.7.7
   standard: 14.3.1
-  toolcheck: 0.1.3
+  toolcheck: 0.1.4
   tslib: 1.11.1
   tslint: 6.0.0_typescript@3.8.3
   tslint-config-standard: 9.0.0_tslint@6.0.0+typescript@3.8.3
@@ -47,7 +47,7 @@ packages:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
   /@types/cosmiconfig/5.0.3:
     dependencies:
-      '@types/node': 12.12.21
+      '@types/node': 13.7.7
     dev: true
     resolution:
       integrity: sha512-HgTGG7X5y9pLl3pixeo2XtDEFD8rq2EuH+S4mK6teCnAwWMucQl6v1D43hI4Uw1VJh6nu59lxLkqXHRl4uwThA==
@@ -87,10 +87,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
-  /@types/which/1.3.2:
-    dev: true
-    resolution:
-      integrity: sha512-8oDqyLC7eD4HM307boe2QWKyuzdzWBj56xI/imSl2cpL+U3tCMaTAkMJ4ee5JBZ/FsOJlvRGeIShiZDAl1qERA==
   /@types/yargs-parser/13.1.0:
     dev: true
     resolution:
@@ -1080,6 +1076,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  /lookpath/1.0.5:
+    dev: true
+    engines:
+      npm: =>6.13.4
+    hasBin: true
+    resolution:
+      integrity: sha512-gWS+39rcQ7xbxT9frBbfb/pg1LoDEF+w32lAmGGwQpIb7ul+ZNDNOcdLC6lRKaRn4H//ecIhTRXoP/AE0aBs/Q==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -1721,18 +1724,17 @@ packages:
       node: '>=0.6.0'
     resolution:
       integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
-  /toolcheck/0.1.3:
+  /toolcheck/0.1.4:
     dependencies:
       '@types/cosmiconfig': 5.0.3
       '@types/node': 12.12.21
-      '@types/which': 1.3.2
       cosmiconfig: 6.0.0
-      which: 2.0.1
+      lookpath: 1.0.5
     dev: true
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-Q6CUojNjqOuXTG+ZGAh2YL2/ThMCbG6UmY/NmSVAVSMDCRdSqG/yhgLRGhUWNHiMPbJhDecu3/QjUKGyHhYNYA==
+      integrity: sha512-MAZ8TOCRkz2KIWB1UKVj+eETc/emDV/8eXK1P5/UHA5L7LjLhdmEwy2RM0S2P2OzILLfF1exeOzy0eaLmxVJBA==
   /tslib/1.10.0:
     dev: true
     resolution:
@@ -1861,15 +1863,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==
-  /which/2.0.1:
-    dependencies:
-      isexe: 2.0.0
-    dev: true
-    engines:
-      node: '>= 8'
-    hasBin: true
-    resolution:
-      integrity: sha512-N7GBZOTswtB9lkQBZA4+zAXrjEIWAUOB93AvzUiudRzRxhUdLURQ7D/gAIMY1gatT/LTbmbcv8SiYazy3eYB7w==
   /wordwrap/1.0.0:
     dev: true
     resolution:
@@ -1905,7 +1898,7 @@ specifiers:
   '@types/jest': ^25.1.3
   '@types/node': ^13.7.7
   standard: ^14.3.1
-  toolcheck: ^0.1.3
+  toolcheck: ^0.1.4
   tslib: ^1.11.1
   tslint: ^6.0.0
   tslint-config-standard: ^9.0.0
