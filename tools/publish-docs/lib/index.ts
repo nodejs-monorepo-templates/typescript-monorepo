@@ -12,7 +12,7 @@ export async function main () {
   for (const options of optionsList) {
     const fullOptions = { ...DEFAULT_OPTIONS, ...options }
     console.info('gh-pages>', fullOptions)
-    await publish('docs', fullOptions)
+    await publish(places.docs, fullOptions)
   }
 }
 
