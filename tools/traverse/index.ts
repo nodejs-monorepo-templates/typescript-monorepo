@@ -30,5 +30,5 @@ export const files = pipeline(
 
 export const jsFiles = pipeline(
   files,
-  asyncFilter(item => Boolean(item.basename?.endsWith('.js')))
+  asyncFilter(item => item.basename.endsWith('.js'))
 )
