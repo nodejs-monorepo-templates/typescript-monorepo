@@ -1,5 +1,5 @@
 {
-  "name": "@tools/triple-slash-directive",
+  "name": "@tools/triple-slash-directives",
   "version": "0.0.0",
   "private": true,
   "bin": {
