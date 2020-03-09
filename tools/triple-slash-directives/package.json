@@ -1,0 +1,11 @@
+{
+  "name": "@tools/triple-slash-directive",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "@types/fs-extra": "^8.1.0",
+    "@tools/traverse": "file:../traverse",
+    "@tools/places": "file:../places"
+  }
+}
