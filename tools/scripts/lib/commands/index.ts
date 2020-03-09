@@ -1,3 +1,4 @@
+export const tripleSlashDirective = require.resolve('@tools/triple-slash-directive/bin')
 export const cleanTypescriptBuild = require.resolve('@tools/clean-typescript-build/bin')
 export const jest = require.resolve('@tools/jest/bin')
 export const createNewFolder = require.resolve('@tools/create-new-folder/bin')
