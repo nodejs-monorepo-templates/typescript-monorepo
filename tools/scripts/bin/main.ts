@@ -171,7 +171,7 @@ abstract class Dict {
     this.mkspawn(
       commands.typescript,
       '--project',
-      path.resolve(places.packages, 'tsconfig.json')
+      path.resolve(places.packages, 'tsconfig.prod.json')
     )
   )
 
