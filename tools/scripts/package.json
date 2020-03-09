@@ -10,7 +10,7 @@
     "number-enum": "^3.0.0",
     "exec-inline": "^0.0.5",
     "glob-to-regexp": "0.4.1",
-    "fs-extra": "8.1.0",
+    "fs-extra": "^8.1.0",
     "@types/glob-to-regexp": "^0.4.0",
     "@types/fs-extra": "^8.1.0",
     "@tools/gh-pages": "file:../gh-pages",
