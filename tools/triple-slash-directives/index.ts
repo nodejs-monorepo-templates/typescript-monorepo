@@ -12,7 +12,7 @@ export async function main () {
       const { name } = path.parse(item.path)
       const dtsFileName = name + '.d.ts'
       const newText = [
-        `/// <reference path="${dtsFileName}" />`,
+        `/// <reference types="./${dtsFileName}" />`,
         oldText
       ].join('\n')
       await writeFile(item.path, newText)
