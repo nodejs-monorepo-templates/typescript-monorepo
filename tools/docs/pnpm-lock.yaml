@@ -2,7 +2,7 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@tools/utils': 'link:../utils'
-  '@tsfun/array': 0.0.2
+  '@tsfun/array': 0.0.5
   '@types/fs-extra': 8.1.0
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
@@ -13,13 +13,13 @@ dependencies:
   typedoc: 0.16.11
 lockfileVersion: 5.1
 packages:
-  /@tsfun/array/0.0.2:
+  /@tsfun/array/0.0.5:
     dependencies:
-      '@types/node': 13.7.4
-      tslib: 1.10.0
+      '@types/node': 13.9.1
+      tslib: 1.11.1
     dev: false
     resolution:
-      integrity: sha512-Slm4H9fgnivx68Bghgv0/1r4sBrUUzcIoQlEBL6fOeUHRwa5fM0qfxQo1bbXJxSPE1cXxUpkvCXT5HIoRZMVsg==
+      integrity: sha512-f6IaTr16nR3oPKo2bvGd1HV2OyB7ONGZgN9uHiIsr7R0B/iaoYqMmI3CowvMo78GAUIXwM7Akx4Z/finDh/aUA==
   /@types/fs-extra/8.1.0:
     dependencies:
       '@types/node': 13.7.4
@@ -34,6 +34,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-oVeL12C6gQS/GAExndigSaLxTrKpQPxewx9bOcwfvJiJge4rr7wNaph4J+ns5hrmIV2as5qxqN8YKthn9qh0jw==
+  /@types/node/13.9.1:
+    dev: false
+    resolution:
+      integrity: sha512-E6M6N0blf/jiZx8Q3nb0vNaswQeEyn0XlupO+xN6DtJ6r6IT4nXrTry7zhIfYvFCl3/8Cu6WIysmUBKiqV0bqQ==
   /@types/pretty/2.0.0:
     dev: false
     resolution:
@@ -436,10 +440,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
-  /tslib/1.10.0:
+  /tslib/1.11.1:
     dev: false
     resolution:
-      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+      integrity: sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
   /typedoc-default-themes/0.7.2:
     dependencies:
       backbone: 1.4.0
@@ -516,7 +520,7 @@ specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@tools/utils': 'file:../utils'
-  '@tsfun/array': ^0.0.2
+  '@tsfun/array': ^0.0.5
   '@types/fs-extra': ^8.1.0
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
