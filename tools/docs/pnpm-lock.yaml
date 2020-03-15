@@ -10,7 +10,7 @@ dependencies:
   fs-extra: 8.1.0
   minimatch: 3.0.4
   pretty: 2.0.0
-  typedoc: 0.16.11
+  typedoc: 0.17.0
 lockfileVersion: 5.1
 packages:
   /@tsfun/array/0.0.2:
@@ -52,7 +52,7 @@ packages:
       integrity: sha512-Qts4KCLKG+waHc9C4m07weIY8qyeixoS0h6RnbsNVD6Fw+pEZGW3vTyObL3WXpE09Mq4Oi7/lBEyLmOiLtlYWQ==
   /backbone/1.4.0:
     dependencies:
-      underscore: 1.9.1
+      underscore: 1.9.2
     dev: false
     resolution:
       integrity: sha512-RLmDrRXkVdouTg38jcgHhyQ/2zjg7a8E6sz2zxfz21Hh17xDJYUHBZimVIt5fUyS8vbfpeSmTL3gUjTEvUV3qQ==
@@ -161,7 +161,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A==
-  /glob/7.1.5:
+  /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -171,12 +171,12 @@ packages:
       path-is-absolute: 1.0.1
     dev: false
     resolution:
-      integrity: sha512-J9dlskqUXK1OeTOYBEn5s8aMukWMwWfs+rPTn/jn50Ux4MNXVhubL1wu/j2t+H4NVI+cXEcCaYellqaPVGXNqQ==
+      integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
   /graceful-fs/4.2.2:
     dev: false
     resolution:
       integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
-  /handlebars/4.7.2:
+  /handlebars/4.7.3:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -186,21 +186,19 @@ packages:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.6.0
+      uglify-js: 3.8.0
     resolution:
-      integrity: sha512-4PwqDL2laXtTWZghzzCtunQUTLbo31pcCJrd/B/9JP8XbhVzpS5ZXuKqlOzsd1rtcaLo4KqAn8nl8mkknS4MHw==
+      integrity: sha512-SRGwSYuNfx8DwHD/6InAPzD6RgeruWLT+B8e8a7gGs8FWgHzlExpTFMEq2IA6QpAfOClpKHy6+8IqTjeBCu6Kg==
   /has-flag/4.0.0:
     dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
-  /highlight.js/9.17.1:
-    dependencies:
-      handlebars: 4.7.2
+  /highlight.js/9.18.1:
     dev: false
     resolution:
-      integrity: sha512-TA2/doAur5Ol8+iM3Ov7qy3jYcr/QiJ2eDTdRF4dfbjG7AaaB99J5G+zSl11ljbl6cIcahgPY6SKb3sC3EJ0fw==
+      integrity: sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
   /inflight/1.0.6:
     dependencies:
       once: 1.4.0
@@ -390,18 +388,18 @@ packages:
       integrity: sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
   /rechoir/0.6.2:
     dependencies:
-      resolve: 1.12.0
+      resolve: 1.15.1
     dev: false
     engines:
       node: '>= 0.10'
     resolution:
       integrity: sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
-  /resolve/1.12.0:
+  /resolve/1.15.1:
     dependencies:
       path-parse: 1.0.6
     dev: false
     resolution:
-      integrity: sha512-B/dOmuoAik5bKcD6s6nXDCjzUKnaDvdkRyAk6rsmsKLipWj4797iothd7jmmUhWTfinVMU+wc56rYKsit2Qy4w==
+      integrity: sha512-84oo6ZTtoTUpjgNEr5SJyzQhzL72gaRodsSfyxC/AXRvwu0Yse9H8eF9IpGo7b8YetZhlI6v7ZQ6bKBFV/6S7w==
   /semver/5.7.1:
     dev: false
     hasBin: true
@@ -409,7 +407,7 @@ packages:
       integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
   /shelljs/0.8.3:
     dependencies:
-      glob: 7.1.5
+      glob: 7.1.6
       interpret: 1.2.0
       rechoir: 0.6.2
     dev: false
@@ -440,44 +438,37 @@ packages:
     dev: false
     resolution:
       integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
-  /typedoc-default-themes/0.7.2:
+  /typedoc-default-themes/0.8.0:
     dependencies:
       backbone: 1.4.0
       jquery: 3.4.1
       lunr: 2.3.8
-      underscore: 1.9.1
+      underscore: 1.9.2
     dev: false
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-fiFKlFO6VTqjcno8w6WpTsbCgXmfPHVjnLfYkmByZE7moaz+E2DSpAT+oHtDHv7E0BM5kAhPrHJELP2J2Y2T9A==
-  /typedoc/0.16.11:
+      integrity: sha512-0bzAjVEX6ClhE3jLRdU7vR8Fsfbt4ZcPa+gkqyAVgTlQ1fLo/7AkCbTP+hC5XAiByDfRfsAGqj9y6FNjJh0p4A==
+  /typedoc/0.17.0:
     dependencies:
-      '@types/minimatch': 3.0.3
       fs-extra: 8.1.0
-      handlebars: 4.7.2
-      highlight.js: 9.17.1
+      handlebars: 4.7.3
+      highlight.js: 9.18.1
       lodash: 4.17.15
       marked: 0.8.0
       minimatch: 3.0.4
       progress: 2.0.3
       shelljs: 0.8.3
-      typedoc-default-themes: 0.7.2
-      typescript: 3.7.5
+      typedoc-default-themes: 0.8.0
     dev: false
     engines:
       node: '>= 8.0.0'
     hasBin: true
+    peerDependencies:
+      typescript: '>=3.8.3'
     resolution:
-      integrity: sha512-YEa5i0/n0yYmLJISJ5+po6seYfJQJ5lQYcHCPF9ffTF92DB/TAZO/QrazX5skPHNPtmlIht5FdTXCM2kC7jQFQ==
-  /typescript/3.7.5:
-    dev: false
-    engines:
-      node: '>=4.2.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
-  /uglify-js/3.6.0:
+      integrity: sha512-HviZ/SLDPAgJdYqaCor+7rmJnM80Ra2oI0Nj+L/sOIBvh9pY1aCzDtSg3p3n4cgqCmvGu6O90fvMQyjEvlqM+g==
+  /uglify-js/3.8.0:
     dependencies:
       commander: 2.20.3
       source-map: 0.6.1
@@ -487,11 +478,11 @@ packages:
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-W+jrUHJr3DXKhrsS7NUVxn3zqMOFn0hL/Ei6v0anCIMoKC93TjcflTagwIHLW7SfMFfiQuktQyFVCFHGUE0+yg==
-  /underscore/1.9.1:
+      integrity: sha512-ugNSTT8ierCsDHso2jkBHXYrU8Y5/fY2ZUprfrJUiD7YpuFvV4jODLFmb3h4btQjqr5Nh4TX4XtgDfCU1WdioQ==
+  /underscore/1.9.2:
     dev: false
     resolution:
-      integrity: sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
+      integrity: sha512-D39qtimx0c1fI3ya1Lnhk3E9nONswSKhnffBI0gME9C99fYOkNi04xs8K6pePLhvl1frbDemkaBQ5ikWllR2HQ==
   /universalify/0.1.2:
     dev: false
     engines:
@@ -524,4 +515,4 @@ specifiers:
   fs-extra: ^8.1.0
   minimatch: ^3.0.4
   pretty: ^2.0.0
-  typedoc: ^0.16.11
+  typedoc: ^0.17.0
