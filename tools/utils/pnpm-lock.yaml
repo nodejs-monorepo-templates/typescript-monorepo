@@ -3,7 +3,7 @@ dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@types/fs-extra': 8.1.0
   '@types/inquirer': 6.5.0
-  fs-extra: 8.1.0
+  fs-extra: 9.0.0
   inquirer: 7.0.5
   isomorphic-git: 1.1.4
 lockfileVersion: 5.1
@@ -66,6 +66,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-uczz62z2fMWOFbyo6rG4NlV2SdxugJT6sZA2QcfB1XaSjEiOh8CuOb/TttyMnYQCda6nkWecJe465tGQDPJiKw==
+  /at-least-node/1.0.0:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /base64-js/0.0.2:
     dev: false
     engines:
@@ -176,16 +182,17 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-ravh8VRXqHuMvZt/d8GblBeqDMkdJMBdv/2KntFH+ra5MXkO7nxNKpzQ3n6QD/2da1kH0aWmNISdvhM7gl2gVg==
-  /fs-extra/8.1.0:
+  /fs-extra/9.0.0:
     dependencies:
-      graceful-fs: 4.2.2
-      jsonfile: 4.0.0
-      universalify: 0.1.2
+      at-least-node: 1.0.0
+      graceful-fs: 4.2.3
+      jsonfile: 6.0.1
+      universalify: 1.0.0
     dev: false
     engines:
-      node: '>=6 <7 || >=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
   /git-apply-delta/0.0.7:
     dependencies:
       bops: 0.0.7
@@ -193,10 +200,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-+3auFEVA15RAtSsx3gPmPJk8chk=
-  /graceful-fs/4.2.2:
+  /graceful-fs/4.2.3:
     dev: false
     resolution:
-      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
+      integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
   /has-flag/4.0.0:
     dev: false
     engines:
@@ -271,12 +278,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-XprpL3kwqzioLTj3M3a4nL4njME8FmxszcyeS6Bybxgo0tu88xuT/47shZcCSTupUf1JSjdMHTGnJhIEuzJjJA==
-  /jsonfile/4.0.0:
+  /jsonfile/6.0.1:
+    dependencies:
+      universalify: 1.0.0
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.3
     resolution:
-      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+      integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /lodash/4.17.15:
     dev: false
     resolution:
@@ -469,12 +478,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-DWkS49EQKVX//Tbupb9TFa19c7+MK1XmzkrZUR8TAktmE/DizXoaoJV6TZ/tSIPXipqNiRI6CyAe7x69Jb6RSw==
-  /universalify/0.1.2:
+  /universalify/1.0.0:
     dev: false
     engines:
-      node: '>= 4.0.0'
+      node: '>= 10.0.0'
     resolution:
-      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+      integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
   /util-deprecate/1.0.2:
     dev: false
     resolution:
@@ -492,6 +501,6 @@ specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@types/fs-extra': ^8.1.0
   '@types/inquirer': ^6.5.0
-  fs-extra: ^8.1.0
+  fs-extra: ^9.0.0
   inquirer: ^7.0.5
   isomorphic-git: ^1.1.4

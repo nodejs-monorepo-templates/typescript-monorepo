@@ -6,7 +6,7 @@
     "minimatch": "^3.0.4",
     "pretty": "^2.0.0",
     "chalk": "^3.0.0",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "typedoc": "^0.16.11",
     "@tsfun/array": "^0.0.2",
     "@types/minimatch": "^3.0.3",
