@@ -1,9 +1,13 @@
 dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   advanced-spawn-async: 0.1.1
-  chalk: 3.0.0
+  chalk: 4.0.0
 lockfileVersion: 5.1
 packages:
+  /@types/color-name/1.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
   /@types/node/12.12.21:
     dev: false
     resolution:
@@ -15,23 +19,24 @@ packages:
     dev: false
     resolution:
       integrity: sha512-dLx3b6reKiCnBNCyJEE3HQg5FsDEh2w86zXDb68g9WFgC6rU1XjT7rJwIL8O6D+WQX4Yg6pumiPlcwiPNJA9Fg==
-  /ansi-styles/4.1.0:
+  /ansi-styles/4.2.1:
     dependencies:
+      '@types/color-name': 1.1.1
       color-convert: 2.0.1
     dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-Qts4KCLKG+waHc9C4m07weIY8qyeixoS0h6RnbsNVD6Fw+pEZGW3vTyObL3WXpE09Mq4Oi7/lBEyLmOiLtlYWQ==
-  /chalk/3.0.0:
+      integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
+  /chalk/4.0.0:
     dependencies:
-      ansi-styles: 4.1.0
+      ansi-styles: 4.2.1
       supports-color: 7.1.0
     dev: false
     engines:
-      node: '>=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -65,4 +70,4 @@ packages:
 specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   advanced-spawn-async: ^0.1.1
-  chalk: ^3.0.0
+  chalk: ^4.0.0

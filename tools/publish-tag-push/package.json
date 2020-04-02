@@ -4,7 +4,7 @@
   "private": true,
   "bin": "bin.js",
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "advanced-spawn-async": "^0.1.1",
     "@tools/preloaded-node": "file:../preloaded-node"
   }

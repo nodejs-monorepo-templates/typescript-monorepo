@@ -18,7 +18,7 @@ dependencies:
   '@tools/workspace': 'link:../workspace'
   '@types/fs-extra': 8.1.0
   '@types/glob-to-regexp': 0.4.0
-  chalk: 3.0.0
+  chalk: 4.0.0
   exec-inline: 0.0.5
   fs-extra: 8.1.0
   glob-to-regexp: 0.4.1
@@ -38,6 +38,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
+  /@types/color-name/1.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
   /@types/fs-extra/8.1.0:
     dependencies:
       '@types/node': 13.1.6
@@ -52,23 +56,24 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
-  /ansi-styles/4.1.0:
+  /ansi-styles/4.2.1:
     dependencies:
+      '@types/color-name': 1.1.1
       color-convert: 2.0.1
     dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-Qts4KCLKG+waHc9C4m07weIY8qyeixoS0h6RnbsNVD6Fw+pEZGW3vTyObL3WXpE09Mq4Oi7/lBEyLmOiLtlYWQ==
-  /chalk/3.0.0:
+      integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
+  /chalk/4.0.0:
     dependencies:
-      ansi-styles: 4.1.0
+      ansi-styles: 4.2.1
       supports-color: 7.1.0
     dev: false
     engines:
-      node: '>=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -224,7 +229,7 @@ specifiers:
   '@tools/workspace': 'file:../workspace'
   '@types/fs-extra': ^8.1.0
   '@types/glob-to-regexp': ^0.4.0
-  chalk: ^3.0.0
+  chalk: ^4.0.0
   exec-inline: ^0.0.5
   fs-extra: ^8.1.0
   glob-to-regexp: 0.4.1

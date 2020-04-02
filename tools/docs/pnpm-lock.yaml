@@ -6,7 +6,7 @@ dependencies:
   '@types/fs-extra': 8.1.0
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
-  chalk: 3.0.0
+  chalk: 4.0.0
   fs-extra: 8.1.0
   minimatch: 3.0.4
   pretty: 2.0.0
@@ -20,6 +20,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Slm4H9fgnivx68Bghgv0/1r4sBrUUzcIoQlEBL6fOeUHRwa5fM0qfxQo1bbXJxSPE1cXxUpkvCXT5HIoRZMVsg==
+  /@types/color-name/1.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
   /@types/fs-extra/8.1.0:
     dependencies:
       '@types/node': 13.7.4
@@ -42,14 +46,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
-  /ansi-styles/4.1.0:
+  /ansi-styles/4.2.1:
     dependencies:
+      '@types/color-name': 1.1.1
       color-convert: 2.0.1
     dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-Qts4KCLKG+waHc9C4m07weIY8qyeixoS0h6RnbsNVD6Fw+pEZGW3vTyObL3WXpE09Mq4Oi7/lBEyLmOiLtlYWQ==
+      integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
   /backbone/1.4.0:
     dependencies:
       underscore: 1.9.1
@@ -67,15 +72,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
-  /chalk/3.0.0:
+  /chalk/4.0.0:
     dependencies:
-      ansi-styles: 4.1.0
+      ansi-styles: 4.2.1
       supports-color: 7.1.0
     dev: false
     engines:
-      node: '>=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -520,7 +525,7 @@ specifiers:
   '@types/fs-extra': ^8.1.0
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
-  chalk: ^3.0.0
+  chalk: ^4.0.0
   fs-extra: ^8.1.0
   minimatch: ^3.0.4
   pretty: ^2.0.0
