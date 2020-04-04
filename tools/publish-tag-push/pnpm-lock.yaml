@@ -1,7 +1,7 @@
 dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   advanced-spawn-async: 0.1.1
-  chalk: 3.0.0
+  chalk: 4.0.0
 lockfileVersion: 5.1
 packages:
   /@types/node/12.12.21:
@@ -23,15 +23,15 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Qts4KCLKG+waHc9C4m07weIY8qyeixoS0h6RnbsNVD6Fw+pEZGW3vTyObL3WXpE09Mq4Oi7/lBEyLmOiLtlYWQ==
-  /chalk/3.0.0:
+  /chalk/4.0.0:
     dependencies:
       ansi-styles: 4.1.0
       supports-color: 7.1.0
     dev: false
     engines:
-      node: '>=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -65,4 +65,4 @@ packages:
 specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   advanced-spawn-async: ^0.1.1
-  chalk: ^3.0.0
+  chalk: ^4.0.0

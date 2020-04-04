@@ -1,10 +1,10 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@types/yargs': 15.0.4
-  chalk: 3.0.0
+  chalk: 4.0.0
   git-ts: 0.0.7
   nested-workspace-helper: 0.2.15
-  yargs: 15.1.0
+  yargs: 15.3.1
 lockfileVersion: 5.1
 packages:
   /@tsfun/array/0.0.0:
@@ -123,6 +123,15 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  /chalk/4.0.0:
+    dependencies:
+      ansi-styles: 4.1.0
+      supports-color: 7.1.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /cliui/6.0.0:
     dependencies:
       string-width: 4.2.0
@@ -490,6 +499,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-H/V41UNZQPkUMIT5h5hiwg4QKIY1RPvoBV4XcjUbRM8Bk2oKqqyZ0DIEbTFZB0XjbtSPG8SAa/0DxCQmiRgzKg==
+  /yargs-parser/18.1.2:
+    dependencies:
+      camelcase: 5.3.1
+      decamelize: 1.2.0
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-hlIPNR3IzC1YuL1c2UwwDKpXlNFBqD1Fswwh1khz5+d8Cq/8yc/Mn0i+rQXduu8hcrFKvO7Eryk+09NecTQAAQ==
   /yargs/15.1.0:
     dependencies:
       cliui: 6.0.0
@@ -508,10 +526,28 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-T39FNN1b6hCW4SOIk1XyTOWxtXdcen0t+XYrysQmChzSipvhBO8Bj0nK1ozAasdk24dNWuMZvr4k24nz+8HHLg==
+  /yargs/15.3.1:
+    dependencies:
+      cliui: 6.0.0
+      decamelize: 1.2.0
+      find-up: 4.1.0
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      require-main-filename: 2.0.0
+      set-blocking: 2.0.0
+      string-width: 4.2.0
+      which-module: 2.0.0
+      y18n: 4.0.0
+      yargs-parser: 18.1.2
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
 specifiers:
   '@tools/places': 'file:../places'
   '@types/yargs': ^15.0.4
-  chalk: ^3.0.0
+  chalk: ^4.0.0
   git-ts: ^0.0.7
   nested-workspace-helper: ^0.2.15
-  yargs: ^15.1.0
+  yargs: ^15.3.1

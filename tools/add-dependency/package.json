@@ -4,8 +4,8 @@
   "private": true,
   "bin": "bin.js",
   "dependencies": {
-    "inquirer": "^7.0.5",
-    "fs-extra": "^8.1.0",
+    "inquirer": "^7.1.0",
+    "fs-extra": "^9.0.0",
     "@types/inquirer": "^6.5.0",
     "@types/fs-extra": "^8.1.0",
     "@tools/preloaded-node": "file:../preloaded-node",

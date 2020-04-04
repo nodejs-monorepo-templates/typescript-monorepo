@@ -6,9 +6,9 @@ dependencies:
   '@types/fs-extra': 8.1.0
   '@types/inquirer': 6.5.0
   '@types/yargs': 15.0.4
-  fs-extra: 8.1.0
-  inquirer: 7.0.5
-  yargs: 15.1.0
+  fs-extra: 9.0.0
+  inquirer: 7.1.0
+  yargs: 15.3.1
 lockfileVersion: 5.1
 packages:
   /@types/color-name/1.1.1:
@@ -75,6 +75,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
+  /at-least-node/1.0.0:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /camelcase/5.3.1:
     dev: false
     engines:
@@ -169,16 +175,17 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==
-  /fs-extra/8.1.0:
+  /fs-extra/9.0.0:
     dependencies:
+      at-least-node: 1.0.0
       graceful-fs: 4.2.2
-      jsonfile: 4.0.0
-      universalify: 0.1.2
+      jsonfile: 6.0.1
+      universalify: 1.0.0
     dev: false
     engines:
-      node: '>=6 <7 || >=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
   /get-caller-file/2.0.5:
     dev: false
     engines:
@@ -203,7 +210,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
-  /inquirer/7.0.5:
+  /inquirer/7.1.0:
     dependencies:
       ansi-escapes: 4.2.1
       chalk: 3.0.0
@@ -222,7 +229,7 @@ packages:
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-6Z5cP+LAO0rzNE7xWjWtT84jxKa5ScLEGLgegPXeO3dGeU8lNe5Ii7SlXH6KVtLGlDuaEhsvsFjrjWjw8j5lFg==
+      integrity: sha512-5fJMWEmikSYu0nv/flMc475MhGbB7TSPd/2IpFV4I4rMklboCH2rQjYY5kKiYGHqUF9gvaambupcJFFG9dvReg==
   /is-fullwidth-code-point/3.0.0:
     dev: false
     engines:
@@ -233,12 +240,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
-  /jsonfile/4.0.0:
+  /jsonfile/6.0.1:
+    dependencies:
+      universalify: 1.0.0
     dev: false
     optionalDependencies:
       graceful-fs: 4.2.2
     resolution:
-      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+      integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /locate-path/5.0.0:
     dependencies:
       p-locate: 4.1.0
@@ -398,12 +407,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-DWkS49EQKVX//Tbupb9TFa19c7+MK1XmzkrZUR8TAktmE/DizXoaoJV6TZ/tSIPXipqNiRI6CyAe7x69Jb6RSw==
-  /universalify/0.1.2:
+  /universalify/1.0.0:
     dev: false
     engines:
-      node: '>= 4.0.0'
+      node: '>= 10.0.0'
     resolution:
-      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+      integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
   /which-module/2.0.0:
     dev: false
     resolution:
@@ -422,14 +431,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
-  /yargs-parser/16.1.0:
+  /yargs-parser/18.1.2:
     dependencies:
       camelcase: 5.3.1
       decamelize: 1.2.0
     dev: false
+    engines:
+      node: '>=6'
     resolution:
-      integrity: sha512-H/V41UNZQPkUMIT5h5hiwg4QKIY1RPvoBV4XcjUbRM8Bk2oKqqyZ0DIEbTFZB0XjbtSPG8SAa/0DxCQmiRgzKg==
-  /yargs/15.1.0:
+      integrity: sha512-hlIPNR3IzC1YuL1c2UwwDKpXlNFBqD1Fswwh1khz5+d8Cq/8yc/Mn0i+rQXduu8hcrFKvO7Eryk+09NecTQAAQ==
+  /yargs/15.3.1:
     dependencies:
       cliui: 6.0.0
       decamelize: 1.2.0
@@ -441,12 +452,12 @@ packages:
       string-width: 4.2.0
       which-module: 2.0.0
       y18n: 4.0.0
-      yargs-parser: 16.1.0
+      yargs-parser: 18.1.2
     dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-T39FNN1b6hCW4SOIk1XyTOWxtXdcen0t+XYrysQmChzSipvhBO8Bj0nK1ozAasdk24dNWuMZvr4k24nz+8HHLg==
+      integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
 specifiers:
   '@tools/pkgcfg': 'file:../pkgcfg'
   '@tools/places': 'file:../places'
@@ -455,6 +466,6 @@ specifiers:
   '@types/fs-extra': ^8.1.0
   '@types/inquirer': ^6.5.0
   '@types/yargs': ^15.0.4
-  fs-extra: ^8.1.0
-  inquirer: ^7.0.5
-  yargs: ^15.1.0
+  fs-extra: ^9.0.0
+  inquirer: ^7.1.0
+  yargs: ^15.3.1

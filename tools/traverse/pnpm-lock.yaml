@@ -1,7 +1,7 @@
 dependencies:
   '@types/fs-extra': 8.1.0
   fast-traverse: 0.1.5
-  fs-extra: 8.1.0
+  fs-extra: 9.0.0
   iter-tools: 6.2.6
   ts-pipe-compose: 0.1.11
 lockfileVersion: 5.1
@@ -33,6 +33,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Uo4chgKbnPNlxQwoFmYIwctkQVkMMmsAoGGU4JKwLuvBefF0pCq4FybNSnfkfRCpC7ZW7kttcC/TrRtAJsvGtg==
+  /at-least-node/1.0.0:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /core-js/2.6.11:
     deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
     dev: false
@@ -50,16 +56,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-KtI4ikGTH+7/Zj+P+T2kS8gGAXBgX9YX2SvLCp0qqqLZ2yp1ZIfh+5HV+9ViYx74D7/KPcvRuYc9/MClv13LHw==
-  /fs-extra/8.1.0:
+  /fs-extra/9.0.0:
     dependencies:
+      at-least-node: 1.0.0
       graceful-fs: 4.2.3
-      jsonfile: 4.0.0
-      universalify: 0.1.2
+      jsonfile: 6.0.1
+      universalify: 1.0.0
     dev: false
     engines:
-      node: '>=6 <7 || >=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
   /graceful-fs/4.2.3:
     dev: false
     resolution:
@@ -76,12 +83,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-DlBSv7cIrM214wYFxyz4vg98BmEpxFTGx37ei/ktYT05shJHoDwz7wuaPx3XhaJi1uGEc5bM+vUBWhm3z6yNIg==
-  /jsonfile/4.0.0:
+  /jsonfile/6.0.1:
+    dependencies:
+      universalify: 1.0.0
     dev: false
     optionalDependencies:
       graceful-fs: 4.2.3
     resolution:
-      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+      integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /little-ds-toolkit/1.1.1:
     dev: false
     resolution:
@@ -126,12 +135,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-pzfdtUZ8teglF69/dllzgd6yV7ikoszPHVyOkl4WGICRhTJgCTwL3+ZnnF/hvII536VbsNMQfd9GmLBNhtsmgg==
-  /universalify/0.1.2:
+  /universalify/1.0.0:
     dev: false
     engines:
-      node: '>= 4.0.0'
+      node: '>= 10.0.0'
     resolution:
-      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+      integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
   /utility-types/3.10.0:
     dev: false
     engines:
@@ -141,6 +150,6 @@ packages:
 specifiers:
   '@types/fs-extra': ^8.1.0
   fast-traverse: ^0.1.5
-  fs-extra: ^8.1.0
+  fs-extra: ^9.0.0
   iter-tools: ^6.2.6
   ts-pipe-compose: ^0.1.11

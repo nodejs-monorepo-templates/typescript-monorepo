@@ -18,9 +18,9 @@ dependencies:
   '@tools/workspace': 'link:../workspace'
   '@types/fs-extra': 8.1.0
   '@types/glob-to-regexp': 0.4.0
-  chalk: 3.0.0
+  chalk: 4.0.0
   exec-inline: 0.0.5
-  fs-extra: 8.1.0
+  fs-extra: 9.0.0
   glob-to-regexp: 0.4.1
   number-enum: 3.0.0
 lockfileVersion: 5.1
@@ -60,15 +60,21 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Qts4KCLKG+waHc9C4m07weIY8qyeixoS0h6RnbsNVD6Fw+pEZGW3vTyObL3WXpE09Mq4Oi7/lBEyLmOiLtlYWQ==
-  /chalk/3.0.0:
+  /at-least-node/1.0.0:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
+  /chalk/4.0.0:
     dependencies:
       ansi-styles: 4.1.0
       supports-color: 7.1.0
     dev: false
     engines:
-      node: '>=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -99,16 +105,17 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-g7eEPrhCbkBJoYb8PG4aZeRXog1HYptBNNfwN1bRmzYWtu5dNQniqcmwClBhb6YWg3X/wrOnzmKJSPUbZYsKJg==
-  /fs-extra/8.1.0:
+  /fs-extra/9.0.0:
     dependencies:
+      at-least-node: 1.0.0
       graceful-fs: 4.2.2
-      jsonfile: 4.0.0
-      universalify: 0.1.2
+      jsonfile: 6.0.1
+      universalify: 1.0.0
     dev: false
     engines:
-      node: '>=6 <7 || >=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
   /glob-to-regexp/0.4.1:
     dev: false
     resolution:
@@ -135,12 +142,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-DlBSv7cIrM214wYFxyz4vg98BmEpxFTGx37ei/ktYT05shJHoDwz7wuaPx3XhaJi1uGEc5bM+vUBWhm3z6yNIg==
-  /jsonfile/4.0.0:
+  /jsonfile/6.0.1:
+    dependencies:
+      universalify: 1.0.0
     dev: false
     optionalDependencies:
       graceful-fs: 4.2.2
     resolution:
-      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+      integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /little-ds-toolkit/1.1.1:
     dev: false
     resolution:
@@ -192,12 +201,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-pzfdtUZ8teglF69/dllzgd6yV7ikoszPHVyOkl4WGICRhTJgCTwL3+ZnnF/hvII536VbsNMQfd9GmLBNhtsmgg==
-  /universalify/0.1.2:
+  /universalify/1.0.0:
     dev: false
     engines:
-      node: '>= 4.0.0'
+      node: '>= 10.0.0'
     resolution:
-      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+      integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
   /utility-types/3.8.0:
     dev: false
     engines:
@@ -224,8 +233,8 @@ specifiers:
   '@tools/workspace': 'file:../workspace'
   '@types/fs-extra': ^8.1.0
   '@types/glob-to-regexp': ^0.4.0
-  chalk: ^3.0.0
+  chalk: ^4.0.0
   exec-inline: ^0.0.5
-  fs-extra: ^8.1.0
+  fs-extra: ^9.0.0
   glob-to-regexp: 0.4.1
   number-enum: ^3.0.0

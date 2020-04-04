@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "@types/fs-extra": "^8.1.0",
     "lookpath": "^1.0.5",
     "@tools/test-spawn": "file:../../tools/test-spawn",

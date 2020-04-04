@@ -5,8 +5,8 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "@babel/core": "^7.8.6",
-    "tslint": "^6.0.0",
+    "@babel/core": "^7.9.0",
+    "tslint": "^6.1.1",
     "tslint-config-standard": "^9.0.0",
     "typescript": "^3.8.3",
     "exec-inline": "^0.0.5",
