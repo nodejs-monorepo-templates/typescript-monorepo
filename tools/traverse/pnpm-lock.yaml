@@ -3,7 +3,7 @@ dependencies:
   fast-traverse: 0.1.5
   fs-extra: 9.0.0
   iter-tools: 6.2.6
-  ts-pipe-compose: 0.1.11
+  ts-pipe-compose: 0.2.0
 lockfileVersion: 5.1
 packages:
   /@babel/runtime-corejs2/7.8.4:
@@ -25,10 +25,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
-  /@types/node/12.12.29:
+  /@types/node/12.12.34:
     dev: false
     resolution:
-      integrity: sha512-yo8Qz0ygADGFptISDj3pOC9wXfln/5pQaN/ysDIzOaAWXt73cNHmtEC8zSO2Y+kse/txmwIAJzkYZ5fooaS5DQ==
+      integrity: sha512-BneGN0J9ke24lBRn44hVHNeDlrXRYF+VRp0HbSUNnEZahXGAysHZIqnf/hER6aabdBgzM4YOV4jrR8gj4Zfi0g==
   /@types/node/13.7.7:
     dev: false
     resolution:
@@ -99,15 +99,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
-  /ts-pipe-compose/0.1.11:
+  /ts-pipe-compose/0.2.0:
     dependencies:
-      '@types/node': 12.12.29
+      '@types/node': 12.12.34
       tslib: 1.11.1
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-8cP8BumReKwqeYdzV/rMSqYqL2ZN/5yL1CBiMKYp0qri489g3VJ11vOPRTiUoTfqrSQIUWhHVIeZiPrYCD/6Ug==
+      integrity: sha512-FMFVRL3Ct4+S1OHUBapg3HKOU1OY8EfF+LpWKyKz0S9P/Yrdl9krvNxuW/4RlMw42TsgkH6jF3o6Vtk5l8izLg==
   /tslib/1.11.1:
     dev: false
     resolution:
@@ -152,4 +152,4 @@ specifiers:
   fast-traverse: ^0.1.5
   fs-extra: ^9.0.0
   iter-tools: ^6.2.6
-  ts-pipe-compose: ^0.1.11
+  ts-pipe-compose: ^0.2.0
