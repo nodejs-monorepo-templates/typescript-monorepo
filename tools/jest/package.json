@@ -8,7 +8,7 @@
     "@babel/core": "^7.9.0",
     "fast-deep-equal": "^3.1.1",
     "semver": "^7.1.3",
-    "create-jest-runner": "^0.5.3",
+    "create-jest-runner": "^0.6.0",
     "jest": "^25.2.7",
     "babel-jest": "^25.2.6",
     "yaml-jest": "^1.0.5",
