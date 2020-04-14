@@ -38,6 +38,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.vars.node }}
+      - name: Cache PNPM store
+        uses: actions/cache@v1
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-${{ matrix.vars.node }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-${{ matrix.vars.node }}-${{ hashFiles('pnpm-lock.yaml') }}
+            pnpm-${{ matrix.vars.node }}-
+            pnpm-
       - name: Install pnpm
         run: curl -L https://unpkg.com/@pnpm/self-installer | node
       - name: Install dependencies
