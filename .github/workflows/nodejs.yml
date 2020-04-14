@@ -20,17 +20,23 @@ jobs:
       fail-fast: false
       matrix:
         vars:
-          - node: 12.x
+          - id: 0
+            node: 12.x
             cmd: pnpm run test:ci
-          - node: 13.x
+          - id: 1
+            node: 13.x
             cmd: pnpm run test:ci
-          - node: 13.x
+          - id: 2
+            node: 13.x
             cmd: pnpx tsc --noEmit
-          - node: 13.x
+          - id: 3
+            node: 13.x
             cmd: pnpm run glob testWithoutCoverage '**/package.json'
-          - node: 13.x
+          - id: 4
+            node: 13.x
             cmd: pnpm run glob testWithoutCoverage '**/*.ts' '**/*.js'
-          - node: 13.x
+          - id: 5
+            node: 13.x
             pnpm: --frozen-lockfile
     steps:
       - uses: actions/checkout@v1
@@ -42,10 +48,10 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.pnpm-store
-          key: pnpm-${{ matrix.vars.node }}-${{ hashFiles('pnpm-lock.yaml') }}
+          key: pnpm-${{ matrix.vars.id }}-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
-            pnpm-${{ matrix.vars.node }}-${{ hashFiles('pnpm-lock.yaml') }}
-            pnpm-${{ matrix.vars.node }}-
+            pnpm-${{ matrix.vars.id }}-${{ hashFiles('pnpm-lock.yaml') }}
+            pnpm-${{ matrix.vars.id }}-
             pnpm-
       - name: Install pnpm
         run: curl -L https://unpkg.com/@pnpm/self-installer | node
