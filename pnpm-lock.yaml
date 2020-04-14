@@ -1,7 +1,7 @@
 devDependencies:
   '@tools/scripts': 'link:tools/scripts'
   '@types/jest': 25.2.1
-  '@types/node': 13.11.0
+  '@types/node': 13.11.1
   standard: 14.3.3
   toolcheck: 0.1.4
   tslib: 1.11.1
@@ -79,10 +79,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==
-  /@types/node/13.11.0:
+  /@types/node/13.11.1:
     dev: true
     resolution:
-      integrity: sha512-uM4mnmsIIPK/yeO+42F2RQhGUIs39K2RFmugcJANppXe6J1nvH87PvzPZYpza7Xhhs8Yn9yIAVdLZ84z61+0xQ==
+      integrity: sha512-eWQGP3qtxwL8FGneRrC5DwrJLGN4/dH1clNTuLfN81HCrxVtxRjygDTUoZJ5ASlDEeo0ppYFQjQIlXhtXpOn6g==
   /@types/node/13.7.7:
     dev: true
     resolution:
@@ -1912,7 +1912,7 @@ packages:
 specifiers:
   '@tools/scripts': 'file:./tools/scripts'
   '@types/jest': ^25.2.1
-  '@types/node': ^13.11.0
+  '@types/node': ^13.11.1
   standard: ^14.3.3
   toolcheck: ^0.1.4
   tslib: ^1.11.1
