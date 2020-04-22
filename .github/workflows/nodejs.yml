@@ -57,6 +57,10 @@ jobs:
         run: curl -L https://unpkg.com/@pnpm/self-installer | node
       - name: Install dependencies
         run: pnpm recursive install ${{ matrix.vars.pnpm }}
+      - name: Inspect pnpm store
+        run: |
+          echo ls -a ~/.pnpm-store
+          ls -a ~/.pnpm-store
       - name: Test
         env:
           SHOW_SPAWN_CMD: 'true'
