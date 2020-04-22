@@ -9,7 +9,7 @@ language: node_js
 
 node_js:
   - '12.11.0'
-  - '13'
+  - '14'
 
 cache:
   directories:
