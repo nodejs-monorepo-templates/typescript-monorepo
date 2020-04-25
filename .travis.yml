@@ -11,9 +11,6 @@ node_js:
   - '12.11.0'
   - '14'
 
-env:
-  - PNPM_VERSION=4.14.0
-
 cache:
   directories:
     - $HOME/.pnpm-store
@@ -41,3 +38,4 @@ after_script:
 
 env:
   - SHOW_SPAWN_CMD=true
+    PNPM_VERSION=4.14.0
