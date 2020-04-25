@@ -11,6 +11,9 @@ node_js:
   - '12.11.0'
   - '14'
 
+env:
+  - PNPM_VERSION=1.14.0
+
 cache:
   directories:
     - $HOME/.pnpm-store
@@ -21,7 +24,7 @@ before_cache:
   - pnpm store prune
 
 before_install:
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - bash ci/install-pnpm.sh
   - pnpm --version
   - bash ci/before-install.sh
 
