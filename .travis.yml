@@ -12,7 +12,7 @@ node_js:
   - '14'
 
 env:
-  - PNPM_VERSION=1.14.0
+  - PNPM_VERSION=4.14.0
 
 cache:
   directories:
