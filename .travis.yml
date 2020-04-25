@@ -21,7 +21,7 @@ before_cache:
   - pnpm store prune
 
 before_install:
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - bash ci/install-pnpm.sh
   - pnpm --version
   - bash ci/before-install.sh
 
@@ -38,3 +38,4 @@ after_script:
 
 env:
   - SHOW_SPAWN_CMD=true
+    PNPM_VERSION=4.14.0
