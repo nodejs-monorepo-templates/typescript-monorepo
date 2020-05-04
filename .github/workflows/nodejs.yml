@@ -50,9 +50,9 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ~/.pnpm-store
-          key: pnpm-${{ matrix.vars.id }}-${{ hashFiles('pnpm-lock.yaml') }}
+          key: pnpm-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            pnpm-${{ matrix.vars.id }}-${{ hashFiles('pnpm-lock.yaml') }}
+            pnpm-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
             pnpm-${{ matrix.vars.id }}-
             pnpm-
       - name: Install pnpm
