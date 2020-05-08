@@ -13,14 +13,14 @@ on:
       - '!*.draft'
       - '!draft.*'
   pull_request: {}
-env:
-  PNPM_VERSION: 4.14.0
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
+        pnpm:
+          - 4.14.0
         vars:
           - id: 0
             node: 12.x
@@ -56,7 +56,9 @@ jobs:
             pnpm-${{ matrix.vars.id }}-
             pnpm-
       - name: Install pnpm
-        run: bash ci/install-pnpm.sh
+        uses: KSXGitHub/github-actions-setup-pnpm@v0.1.1
+        with:
+          version: ${{ matrix.pnpm }}
       - name: Install dependencies
         run: pnpm recursive install ${{ matrix.vars.pnpm }}
       - name: Test
