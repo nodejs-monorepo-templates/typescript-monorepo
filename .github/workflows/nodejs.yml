@@ -56,11 +56,12 @@ jobs:
             pnpm-${{ matrix.vars.id }}-
             pnpm-
       - name: Install pnpm
-        uses: KSXGitHub/github-actions-setup-pnpm@v0.1.1
+        uses: pnpm/action-setup@v1.2.0
         with:
           version: ${{ matrix.pnpm }}
-      - name: Install dependencies
-        run: pnpm recursive install ${{ matrix.vars.pnpm }}
+          run-install: |
+            recursive: true
+            args: [ ${{ matrix.vars.pnpm }} ]
       - name: Test
         env:
           SHOW_SPAWN_CMD: 'true'
