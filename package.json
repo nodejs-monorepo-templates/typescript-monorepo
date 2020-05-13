@@ -16,7 +16,7 @@
     "tslint-config-standard": "^9.0.0",
     "typescript": "^3.8.3",
     "toolcheck": "^0.1.4",
-    "tslib": "^1.11.1",
+    "tslib": "^2.0.0",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.11.1",
     "@tools/scripts": "file:./tools/scripts"

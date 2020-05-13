@@ -4,7 +4,7 @@ devDependencies:
   '@types/node': 13.11.1
   standard: 14.3.3
   toolcheck: 0.1.4
-  tslib: 1.11.1
+  tslib: 2.0.0
   tslint: 6.1.1_typescript@3.8.3
   tslint-config-standard: 9.0.0_tslint@6.1.1+typescript@3.8.3
   typescript: 3.8.3
@@ -1750,6 +1750,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
+  /tslib/2.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
   /tslint-config-standard/9.0.0_tslint@6.1.1+typescript@3.8.3:
     dependencies:
       tslint-eslint-rules: 5.4.0_tslint@6.1.1+typescript@3.8.3
@@ -1915,7 +1919,7 @@ specifiers:
   '@types/node': ^13.11.1
   standard: ^14.3.3
   toolcheck: ^0.1.4
-  tslib: ^1.11.1
+  tslib: ^2.0.0
   tslint: ^6.1.1
   tslint-config-standard: ^9.0.0
   typescript: ^3.8.3

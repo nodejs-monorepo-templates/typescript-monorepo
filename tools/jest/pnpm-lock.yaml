@@ -11,7 +11,7 @@ dependencies:
   parse-dependency-range: 0.0.4
   semver: 7.3.0
   ts-jest: 25.3.1_jest@26.0.0
-  tslib: 1.11.1
+  tslib: 2.0.0
   typescript: 3.8.3
   yaml-jest: 1.0.5
 lockfileVersion: 5.1
@@ -3816,10 +3816,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-BmndXUtiTn/VDDrJzQE7Mm22Ix3PxgLltW9bSNLoeCY31gnG2OPx0QqJnuc9oMIKioYrz487i6K9o4Pdn0j+Kg==
-  /tslib/1.11.1:
+  /tslib/2.0.0:
     dev: false
     resolution:
-      integrity: sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
+      integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
   /tunnel-agent/0.6.0:
     dependencies:
       safe-buffer: 5.2.0
@@ -4132,6 +4132,6 @@ specifiers:
   parse-dependency-range: ^0.0.4
   semver: ^7.3.0
   ts-jest: ^25.3.1
-  tslib: ^1.11.1
+  tslib: ^2.0.0
   typescript: ^3.8.3
   yaml-jest: ^1.0.5

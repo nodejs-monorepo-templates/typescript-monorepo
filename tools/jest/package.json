@@ -14,7 +14,7 @@
     "yaml-jest": "^1.0.5",
     "ts-jest": "^25.3.1",
     "typescript": "^3.8.3",
-    "tslib": "^1.11.1",
+    "tslib": "^2.0.0",
     "parse-dependency-range": "^0.0.4",
     "convenient-typescript-utilities": "^0.0.5",
     "just-try": "^2.1.0",
