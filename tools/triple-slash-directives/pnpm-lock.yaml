@@ -1,20 +1,20 @@
 dependencies:
   '@tools/places': 'link:../places'
   '@tools/traverse': 'link:../traverse'
-  '@types/fs-extra': 8.1.0
+  '@types/fs-extra': 9.0.0
   fs-extra: 9.0.0
 lockfileVersion: 5.1
 packages:
-  /@types/fs-extra/8.1.0:
+  /@types/fs-extra/9.0.0:
     dependencies:
-      '@types/node': 13.7.7
+      '@types/node': 14.0.1
     dev: false
     resolution:
-      integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
-  /@types/node/13.7.7:
+      integrity: sha512-xCbDUSZArlmMjiJdczt8AFNH2MwcMb/pj/HKja1hx3u1qzOUINcJktQMGoGVlgFnzxnuCahxKFlcRBkSAcm33g==
+  /@types/node/14.0.1:
     dev: false
     resolution:
-      integrity: sha512-Uo4chgKbnPNlxQwoFmYIwctkQVkMMmsAoGGU4JKwLuvBefF0pCq4FybNSnfkfRCpC7ZW7kttcC/TrRtAJsvGtg==
+      integrity: sha512-FAYBGwC+W6F9+huFIDtn43cpy7+SzG+atzRiTfdp3inUKL2hXnd4rG8hylJLIh4+hqrQy1P17kvJByE/z825hA==
   /at-least-node/1.0.0:
     dev: false
     engines:
@@ -53,5 +53,5 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   '@tools/traverse': 'file:../traverse'
-  '@types/fs-extra': ^8.1.0
+  '@types/fs-extra': ^9.0.0
   fs-extra: ^9.0.0

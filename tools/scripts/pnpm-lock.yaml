@@ -16,7 +16,7 @@ dependencies:
   '@tools/tslint': 'link:../tslint'
   '@tools/typescript': 'link:../typescript'
   '@tools/workspace': 'link:../workspace'
-  '@types/fs-extra': 8.1.0
+  '@types/fs-extra': 9.0.0
   '@types/glob-to-regexp': 0.4.0
   chalk: 4.0.0
   exec-inline: 0.0.5
@@ -38,12 +38,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
-  /@types/fs-extra/8.1.0:
+  /@types/fs-extra/9.0.0:
     dependencies:
-      '@types/node': 13.1.6
+      '@types/node': 14.0.1
     dev: false
     resolution:
-      integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
+      integrity: sha512-xCbDUSZArlmMjiJdczt8AFNH2MwcMb/pj/HKja1hx3u1qzOUINcJktQMGoGVlgFnzxnuCahxKFlcRBkSAcm33g==
   /@types/glob-to-regexp/0.4.0:
     dev: false
     resolution:
@@ -52,6 +52,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
+  /@types/node/14.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-FAYBGwC+W6F9+huFIDtn43cpy7+SzG+atzRiTfdp3inUKL2hXnd4rG8hylJLIh4+hqrQy1P17kvJByE/z825hA==
   /ansi-styles/4.1.0:
     dependencies:
       color-convert: 2.0.1
@@ -231,7 +235,7 @@ specifiers:
   '@tools/tslint': 'file:../tslint'
   '@tools/typescript': 'file:../typescript'
   '@tools/workspace': 'file:../workspace'
-  '@types/fs-extra': ^8.1.0
+  '@types/fs-extra': ^9.0.0
   '@types/glob-to-regexp': ^0.4.0
   chalk: ^4.0.0
   exec-inline: ^0.0.5
