@@ -1,7 +1,7 @@
 dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@types/gh-pages': 2.2.0
-  gh-pages: 2.2.0
+  gh-pages: 3.0.0
 lockfileVersion: 5.1
 packages:
   /@types/gh-pages/2.2.0:
@@ -96,7 +96,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /gh-pages/2.2.0:
+  /gh-pages/3.0.0:
     dependencies:
       async: 2.6.3
       commander: 2.20.1
@@ -106,10 +106,10 @@ packages:
       globby: 6.1.0
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-c+yPkNOPMFGNisYg9r4qvsMIjVYikJv7ImFOhPIVPt0+AcRUamZ7zkGRLHz7FKB0xrlZ+ddSOJsZv9XAFVXLmA==
+      integrity: sha512-oaOfVcrSwnqoWUgZ6cmCDM6mUuWyOSG+SHjqxGBawN0F3SKaF5NwbeYDG+w2RNXO2HJ/5Iam4o7dP5NAtoHuwQ==
   /glob/7.1.4:
     dependencies:
       fs.realpath: 1.0.0
@@ -292,4 +292,4 @@ packages:
 specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@types/gh-pages': ^2.2.0
-  gh-pages: ^2.2.0
+  gh-pages: ^3.0.0
