@@ -13,7 +13,7 @@ node_js:
 
 cache:
   directories:
-    - $HOME/.pnpm-store
+    - $HOME/.pnpm-store/v3
     - $HOME/.node-gyp
     - $HOME/.node_libraries
 
