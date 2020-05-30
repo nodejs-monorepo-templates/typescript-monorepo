@@ -49,7 +49,7 @@ jobs:
       - name: Cache PNPM store
         uses: actions/cache@v1.1.2
         with:
-          path: ~/.pnpm-store
+          path: ~/.pnpm-store/v3
           key: pnpm5-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             pnpm5-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
