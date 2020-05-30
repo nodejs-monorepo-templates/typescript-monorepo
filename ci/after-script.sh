@@ -11,4 +11,4 @@ echo '  → To Codecov <https://codecov.io/>'
 codecov
 ((stcode|=$?))
 
-exit $stcode
+exit "$stcode"
