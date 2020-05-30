@@ -7,6 +7,6 @@
     "fs-extra": "^9.0.0",
     "fast-traverse": "^0.1.6",
     "ts-pipe-compose": "^0.2.0",
-    "@types/fs-extra": "^8.1.0"
+    "@types/fs-extra": "^9.0.1"
   }
 }

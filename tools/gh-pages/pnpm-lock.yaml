@@ -1,7 +1,7 @@
 dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@types/gh-pages': 2.2.0
-  gh-pages: 2.2.0
+  gh-pages: 3.0.0
 lockfileVersion: 5.1
 packages:
   /@types/gh-pages/2.2.0:
@@ -39,18 +39,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
-  /commander/2.20.1:
+  /commander/2.20.3:
     dev: false
     resolution:
-      integrity: sha512-cCuLsMhJeWQ/ZpsFTbE765kvVfoeSddc4nU3up4fV+fDBcfUXnbITJ+JzhkdjzOqhURjZgujxaioam4RM9yGUg==
+      integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
   /concat-map/0.0.1:
     dev: false
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-  /email-addresses/3.0.3:
+  /email-addresses/3.1.0:
     dev: false
     resolution:
-      integrity: sha512-kUlSC06PVvvjlMRpNIl3kR1NRXLEe86VQ7N0bQeaCZb2g+InShCeHQp/JvyYNTugMnRN2NvJhHlc3q12MWbbpg==
+      integrity: sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg==
   /escape-string-regexp/1.0.5:
     dev: false
     engines:
@@ -84,7 +84,7 @@ packages:
       integrity: sha1-qfL/0RxQO+0wABUCknI3jx8TZaU=
   /fs-extra/8.1.0:
     dependencies:
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.4
       jsonfile: 4.0.0
       universalify: 0.1.2
     dev: false
@@ -96,21 +96,21 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /gh-pages/2.2.0:
+  /gh-pages/3.0.0:
     dependencies:
       async: 2.6.3
-      commander: 2.20.1
-      email-addresses: 3.0.3
+      commander: 2.20.3
+      email-addresses: 3.1.0
       filenamify-url: 1.0.0
       fs-extra: 8.1.0
       globby: 6.1.0
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-c+yPkNOPMFGNisYg9r4qvsMIjVYikJv7ImFOhPIVPt0+AcRUamZ7zkGRLHz7FKB0xrlZ+ddSOJsZv9XAFVXLmA==
-  /glob/7.1.4:
+      integrity: sha512-oaOfVcrSwnqoWUgZ6cmCDM6mUuWyOSG+SHjqxGBawN0F3SKaF5NwbeYDG+w2RNXO2HJ/5Iam4o7dP5NAtoHuwQ==
+  /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -120,11 +120,11 @@ packages:
       path-is-absolute: 1.0.1
     dev: false
     resolution:
-      integrity: sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A==
+      integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
   /globby/6.1.0:
     dependencies:
       array-union: 1.0.2
-      glob: 7.1.4
+      glob: 7.1.6
       object-assign: 4.1.1
       pify: 2.3.0
       pinkie-promise: 2.0.1
@@ -133,10 +133,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-9abXDoOV4hyFj7BInWTfAkJNUGw=
-  /graceful-fs/4.2.2:
+  /graceful-fs/4.2.4:
     dev: false
     resolution:
-      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
+      integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
   /humanize-url/1.0.1:
     dependencies:
       normalize-url: 1.9.1
@@ -166,7 +166,7 @@ packages:
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.4
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /lodash/4.17.15:
@@ -292,4 +292,4 @@ packages:
 specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@types/gh-pages': ^2.2.0
-  gh-pages: ^2.2.0
+  gh-pages: ^3.0.0

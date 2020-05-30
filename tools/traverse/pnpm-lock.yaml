@@ -1,42 +1,42 @@
 dependencies:
-  '@types/fs-extra': 8.1.0
+  '@types/fs-extra': 9.0.1
   fast-traverse: 0.1.6
   fs-extra: 9.0.0
   iter-tools: 6.2.6
   ts-pipe-compose: 0.2.0
 lockfileVersion: 5.1
 packages:
-  /@babel/runtime-corejs2/7.8.4:
+  /@babel/runtime-corejs2/7.10.1:
     dependencies:
       core-js: 2.6.11
-      regenerator-runtime: 0.13.3
+      regenerator-runtime: 0.13.5
     dev: false
     resolution:
-      integrity: sha512-7jU2FgNqNHX6yTuU/Dr/vH5/O8eVL9U85MG5aDw1LzGfCvvhXC1shdXfVzCQDsoY967yrAKeLujRv7l8BU+dZA==
-  /@babel/runtime/7.8.4:
+      integrity: sha512-94v+EvClppy9BhjnLvTqfLmcHIFdrfwvfgQ1EvfkA/604JbuLaRLOhlfzhmgKjjbaIu49sJXH9fvYtZQ9pssQg==
+  /@babel/runtime/7.10.1:
     dependencies:
-      regenerator-runtime: 0.13.3
+      regenerator-runtime: 0.13.5
     dev: false
     resolution:
-      integrity: sha512-neAp3zt80trRVBI1x0azq6c57aNBqYZH8KhMm3TaB7wEI5Q4A2SHfBHE8w9gOhI/lrqxtEbXZgQIrHP+wvSGwQ==
-  /@types/fs-extra/8.1.0:
+      integrity: sha512-nQbbCbQc9u/rpg1XCxoMYQTbSMVZjCDxErQ1ClCn9Pvcmv1lGads19ep0a2VsEiIJeHqjZley6EQGEC3Yo1xMA==
+  /@types/fs-extra/9.0.1:
     dependencies:
-      '@types/node': 13.7.7
+      '@types/node': 14.0.6
     dev: false
     resolution:
-      integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
-  /@types/node/12.12.29:
+      integrity: sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
+  /@types/node/12.12.42:
     dev: false
     resolution:
-      integrity: sha512-yo8Qz0ygADGFptISDj3pOC9wXfln/5pQaN/ysDIzOaAWXt73cNHmtEC8zSO2Y+kse/txmwIAJzkYZ5fooaS5DQ==
-  /@types/node/13.11.1:
+      integrity: sha512-R/9QdYFLL9dE9l5cWWzWIZByVGFd7lk7JVOJ7KD+E1SJ4gni7XJRLz9QTjyYQiHIqEAgku9VgxdLjMlhhUaAFg==
+  /@types/node/13.13.9:
     dev: false
     resolution:
-      integrity: sha512-eWQGP3qtxwL8FGneRrC5DwrJLGN4/dH1clNTuLfN81HCrxVtxRjygDTUoZJ5ASlDEeo0ppYFQjQIlXhtXpOn6g==
-  /@types/node/13.7.7:
+      integrity: sha512-EPZBIGed5gNnfWCiwEIwTE2Jdg4813odnG8iNPMQGrqVxrI+wL68SPtPeCX+ZxGBaA6pKAVc6jaKgP/Q0QzfdQ==
+  /@types/node/14.0.6:
     dev: false
     resolution:
-      integrity: sha512-Uo4chgKbnPNlxQwoFmYIwctkQVkMMmsAoGGU4JKwLuvBefF0pCq4FybNSnfkfRCpC7ZW7kttcC/TrRtAJsvGtg==
+      integrity: sha512-FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==
   /at-least-node/1.0.0:
     dev: false
     engines:
@@ -55,15 +55,15 @@ packages:
       integrity: sha1-EPHO8H4yNLIdyzj0v6LWYDSrZ8c=
   /fast-traverse/0.1.6:
     dependencies:
-      '@types/node': 13.11.1
-      tslib: 1.11.1
+      '@types/node': 13.13.9
+      tslib: 1.13.0
     dev: false
     resolution:
       integrity: sha512-/5Ati6Qr9r++gG4R6ANxYH8RxQkZTrUDQF6EuSShgJCIrluPrvVSQRDpVl6SA4V/5nFALlF15OfXG1A3U3U6Mw==
   /fs-extra/9.0.0:
     dependencies:
       at-least-node: 1.0.0
-      graceful-fs: 4.2.3
+      graceful-fs: 4.2.4
       jsonfile: 6.0.1
       universalify: 1.0.0
     dev: false
@@ -71,14 +71,14 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
-  /graceful-fs/4.2.3:
+  /graceful-fs/4.2.4:
     dev: false
     resolution:
-      integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
+      integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
   /iter-tools/6.2.6:
     dependencies:
-      '@babel/runtime': 7.8.4
-      '@babel/runtime-corejs2': 7.8.4
+      '@babel/runtime': 7.10.1
+      '@babel/runtime-corejs2': 7.10.1
       dequeue: 1.0.5
       little-ds-toolkit: 1.1.1
       typescript-tuple: 2.2.1
@@ -92,30 +92,30 @@ packages:
       universalify: 1.0.0
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.3
+      graceful-fs: 4.2.4
     resolution:
       integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /little-ds-toolkit/1.1.1:
     dev: false
     resolution:
       integrity: sha512-Zl5flhnd5W6nhRCyoL1bNlU8M5CWFp6SItMmK4pj39LKgzQD7LGg591OJ0jwDKat7mjHvJVkOyJT+BXOQH4iXw==
-  /regenerator-runtime/0.13.3:
+  /regenerator-runtime/0.13.5:
     dev: false
     resolution:
-      integrity: sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
+      integrity: sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
   /ts-pipe-compose/0.2.0:
     dependencies:
-      '@types/node': 12.12.29
-      tslib: 1.11.1
+      '@types/node': 12.12.42
+      tslib: 1.13.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-FMFVRL3Ct4+S1OHUBapg3HKOU1OY8EfF+LpWKyKz0S9P/Yrdl9krvNxuW/4RlMw42TsgkH6jF3o6Vtk5l8izLg==
-  /tslib/1.11.1:
+  /tslib/1.13.0:
     dev: false
     resolution:
-      integrity: sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
+      integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
   /typescript-compare/0.0.2:
     dependencies:
       typescript-logic: 0.0.0
@@ -152,7 +152,7 @@ packages:
     resolution:
       integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
 specifiers:
-  '@types/fs-extra': ^8.1.0
+  '@types/fs-extra': ^9.0.1
   fast-traverse: ^0.1.6
   fs-extra: ^9.0.0
   iter-tools: ^6.2.6

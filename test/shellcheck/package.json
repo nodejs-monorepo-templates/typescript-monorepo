@@ -2,8 +2,8 @@
   "private": true,
   "dependencies": {
     "fs-extra": "^9.0.0",
-    "@types/fs-extra": "^8.1.0",
-    "lookpath": "^1.0.5",
+    "@types/fs-extra": "^9.0.1",
+    "lookpath": "^1.0.6",
     "@tools/test-spawn": "file:../../tools/test-spawn",
     "@tools/places": "file:../../tools/places"
   }

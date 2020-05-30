@@ -1,13 +1,13 @@
 dependencies:
   '@tools/places': 'link:../places'
-  '@types/js-yaml': 3.12.3
-  js-yaml: 3.13.1
+  '@types/js-yaml': 3.12.4
+  js-yaml: 3.14.0
 lockfileVersion: 5.1
 packages:
-  /@types/js-yaml/3.12.3:
+  /@types/js-yaml/3.12.4:
     dev: false
     resolution:
-      integrity: sha512-otRe77JNNWzoVGLKw8TCspKswRoQToys4tuL6XYVBFxjgeM0RUrx7m3jkaTdxILxeGry3zM8mGYkGXMeQ02guA==
+      integrity: sha512-fYMgzN+9e28R81weVN49inn/u798ruU91En1ZnGvSZzCRc5jXx9B2EDhlRaWmcO1RIxFHL8AajRXzxDuJu93+A==
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -21,19 +21,19 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
-  /js-yaml/3.13.1:
+  /js-yaml/3.14.0:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+      integrity: sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
   /sprintf-js/1.0.3:
     dev: false
     resolution:
       integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 specifiers:
   '@tools/places': ../places
-  '@types/js-yaml': ^3.12.3
-  js-yaml: ^3.13.1
+  '@types/js-yaml': ^3.12.4
+  js-yaml: ^3.14.0

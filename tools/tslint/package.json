@@ -5,10 +5,10 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "@babel/core": "^7.9.0",
-    "tslint": "^6.1.1",
+    "@babel/core": "^7.10.1",
+    "tslint": "^6.1.2",
     "tslint-config-standard": "^9.0.0",
-    "typescript": "^3.8.3",
+    "typescript": "^3.9.3",
     "exec-inline": "^0.0.5",
     "@tools/places": "file:../places"
   }

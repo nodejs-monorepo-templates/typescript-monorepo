@@ -16,7 +16,7 @@ dependencies:
   '@tools/tslint': 'link:../tslint'
   '@tools/typescript': 'link:../typescript'
   '@tools/workspace': 'link:../workspace'
-  '@types/fs-extra': 8.1.0
+  '@types/fs-extra': 9.0.1
   '@types/glob-to-regexp': 0.4.0
   chalk: 4.0.0
   exec-inline: 0.0.5
@@ -25,41 +25,50 @@ dependencies:
   number-enum: 3.0.0
 lockfileVersion: 5.1
 packages:
-  /@babel/runtime-corejs2/7.6.2:
+  /@babel/runtime-corejs2/7.10.1:
     dependencies:
-      core-js: 2.6.9
-      regenerator-runtime: 0.13.3
+      core-js: 2.6.11
+      regenerator-runtime: 0.13.5
     dev: false
     resolution:
-      integrity: sha512-wdyVKnTv9Be4YlwF/7pByYNfcl23qC21aAQ0aIaZOo2ZOvhFEyJdBLJClYZ9i+Pmrz7sUQgg/MwbJa2RZTkygg==
-  /@babel/runtime/7.6.2:
+      integrity: sha512-94v+EvClppy9BhjnLvTqfLmcHIFdrfwvfgQ1EvfkA/604JbuLaRLOhlfzhmgKjjbaIu49sJXH9fvYtZQ9pssQg==
+  /@babel/runtime/7.10.1:
     dependencies:
-      regenerator-runtime: 0.13.3
+      regenerator-runtime: 0.13.5
     dev: false
     resolution:
-      integrity: sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
-  /@types/fs-extra/8.1.0:
-    dependencies:
-      '@types/node': 13.1.6
+      integrity: sha512-nQbbCbQc9u/rpg1XCxoMYQTbSMVZjCDxErQ1ClCn9Pvcmv1lGads19ep0a2VsEiIJeHqjZley6EQGEC3Yo1xMA==
+  /@types/color-name/1.1.1:
     dev: false
     resolution:
-      integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
+      integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+  /@types/fs-extra/9.0.1:
+    dependencies:
+      '@types/node': 14.0.6
+    dev: false
+    resolution:
+      integrity: sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
   /@types/glob-to-regexp/0.4.0:
     dev: false
     resolution:
       integrity: sha512-unszpTzAknG612PxqtoNUkLM0T3rIAXT8oE9Dyhhbl4eew91jLqcgJZOu5j7GztHg09R8LWCMocRU1ohDFY7Pw==
-  /@types/node/13.1.6:
+  /@types/node/13.13.9:
     dev: false
     resolution:
-      integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
-  /ansi-styles/4.1.0:
+      integrity: sha512-EPZBIGed5gNnfWCiwEIwTE2Jdg4813odnG8iNPMQGrqVxrI+wL68SPtPeCX+ZxGBaA6pKAVc6jaKgP/Q0QzfdQ==
+  /@types/node/14.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==
+  /ansi-styles/4.2.1:
     dependencies:
+      '@types/color-name': 1.1.1
       color-convert: 2.0.1
     dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-Qts4KCLKG+waHc9C4m07weIY8qyeixoS0h6RnbsNVD6Fw+pEZGW3vTyObL3WXpE09Mq4Oi7/lBEyLmOiLtlYWQ==
+      integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
   /at-least-node/1.0.0:
     dev: false
     engines:
@@ -68,7 +77,7 @@ packages:
       integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /chalk/4.0.0:
     dependencies:
-      ansi-styles: 4.1.0
+      ansi-styles: 4.2.1
       supports-color: 7.1.0
     dev: false
     engines:
@@ -87,19 +96,20 @@ packages:
     dev: false
     resolution:
       integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
-  /core-js/2.6.9:
+  /core-js/2.6.11:
+    deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
     dev: false
     requiresBuild: true
     resolution:
-      integrity: sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
+      integrity: sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
   /dequeue/1.0.5:
     dev: false
     resolution:
       integrity: sha1-EPHO8H4yNLIdyzj0v6LWYDSrZ8c=
   /exec-inline/0.0.5:
     dependencies:
-      '@types/node': 13.1.6
-      tslib: 1.10.0
+      '@types/node': 13.13.9
+      tslib: 1.13.0
     dev: false
     engines:
       node: '>= 8.9.0'
@@ -108,7 +118,7 @@ packages:
   /fs-extra/9.0.0:
     dependencies:
       at-least-node: 1.0.0
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.4
       jsonfile: 6.0.1
       universalify: 1.0.0
     dev: false
@@ -120,10 +130,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
-  /graceful-fs/4.2.2:
+  /graceful-fs/4.2.4:
     dev: false
     resolution:
-      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
+      integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
   /has-flag/4.0.0:
     dev: false
     engines:
@@ -132,13 +142,13 @@ packages:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
   /iter-tools/6.2.6:
     dependencies:
-      '@babel/runtime': 7.6.2
-      '@babel/runtime-corejs2': 7.6.2
+      '@babel/runtime': 7.10.1
+      '@babel/runtime-corejs2': 7.10.1
       dequeue: 1.0.5
       little-ds-toolkit: 1.1.1
       typescript-tuple: 2.2.1
       typescript-union: 0.1.2
-      utility-types: 3.8.0
+      utility-types: 3.10.0
     dev: false
     resolution:
       integrity: sha512-DlBSv7cIrM214wYFxyz4vg98BmEpxFTGx37ei/ktYT05shJHoDwz7wuaPx3XhaJi1uGEc5bM+vUBWhm3z6yNIg==
@@ -147,7 +157,7 @@ packages:
       universalify: 1.0.0
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.4
     resolution:
       integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /little-ds-toolkit/1.1.1:
@@ -162,10 +172,10 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-y1YQ+1EXdFajhhUzobNBOhnKDbX57VRfwpeUIVR3mfWQeGKR3aR252Djs0nBAu71bHb3lFYyVpMOzT8xcZgB2w==
-  /regenerator-runtime/0.13.3:
+  /regenerator-runtime/0.13.5:
     dev: false
     resolution:
-      integrity: sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
+      integrity: sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
   /supports-color/7.1.0:
     dependencies:
       has-flag: 4.0.0
@@ -174,10 +184,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
-  /tslib/1.10.0:
+  /tslib/1.13.0:
     dev: false
     resolution:
-      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+      integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
   /typescript-compare/0.0.2:
     dependencies:
       typescript-logic: 0.0.0
@@ -197,7 +207,7 @@ packages:
   /typescript-union/0.1.2:
     dependencies:
       typescript-tuple: 2.2.1
-      utility-types: 3.8.0
+      utility-types: 3.10.0
     dev: false
     resolution:
       integrity: sha512-pzfdtUZ8teglF69/dllzgd6yV7ikoszPHVyOkl4WGICRhTJgCTwL3+ZnnF/hvII536VbsNMQfd9GmLBNhtsmgg==
@@ -207,12 +217,12 @@ packages:
       node: '>= 10.0.0'
     resolution:
       integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
-  /utility-types/3.8.0:
+  /utility-types/3.10.0:
     dev: false
     engines:
       node: '>= 4'
     resolution:
-      integrity: sha512-UoKivAmVw5TL6AHuILieOJjIK9ajS0l5gyN5LbJglPuVwzfYBniDhe+3A5+ZBtS0TAHQs5qUxTwj9jXurINrcw==
+      integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
 specifiers:
   '@tools/add-dependency': 'file:../add-dependency'
   '@tools/clean-typescript-build': 'file:../clean-typescript-build'
@@ -231,7 +241,7 @@ specifiers:
   '@tools/tslint': 'file:../tslint'
   '@tools/typescript': 'file:../typescript'
   '@tools/workspace': 'file:../workspace'
-  '@types/fs-extra': ^8.1.0
+  '@types/fs-extra': ^9.0.1
   '@types/glob-to-regexp': ^0.4.0
   chalk: ^4.0.0
   exec-inline: ^0.0.5

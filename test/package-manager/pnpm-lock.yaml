@@ -1,27 +1,27 @@
 dependencies:
   '@tools/places': 'link:../../tools/places'
-  '@types/semver': 7.1.0
-  semver: 7.3.0
+  '@types/semver': 7.2.0
+  semver: 7.3.2
 lockfileVersion: 5.1
 packages:
-  /@types/node/13.5.2:
+  /@types/node/14.0.6:
     dev: false
     resolution:
-      integrity: sha512-Fr6a47c84PRLfd7M7u3/hEknyUdQrrBA6VoPmkze0tcflhU5UnpWEX2kn12ktA/lb+MNHSqFlSiPHIHsaErTPA==
-  /@types/semver/7.1.0:
+      integrity: sha512-FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==
+  /@types/semver/7.2.0:
     dependencies:
-      '@types/node': 13.5.2
+      '@types/node': 14.0.6
     dev: false
     resolution:
-      integrity: sha512-pOKLaubrAEMUItGNpgwl0HMFPrSAFic8oSVIvfu1UwcgGNmNyK9gyhBHKmBnUTwwVvpZfkzUC0GaMgnL6P86uA==
-  /semver/7.3.0:
+      integrity: sha512-TbB0A8ACUWZt3Y6bQPstW9QNbhNeebdgLX4T/ZfkrswAfUzRiXrgd9seol+X379Wa589Pu4UEx9Uok0D4RjRCQ==
+  /semver/7.3.2:
     dev: false
     engines:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-uyvgU/igkrMgNHwLgXvlpD9jEADbJhB0+JXSywoO47JgJ6c16iau9F9cjtc/E5o0PoqRYTiTIAPRKaYe84z6eQ==
+      integrity: sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 specifiers:
   '@tools/places': 'file:../../tools/places'
-  '@types/semver': ^7.1.0
-  semver: ^7.3.0
+  '@types/semver': ^7.2.0
+  semver: ^7.3.2
