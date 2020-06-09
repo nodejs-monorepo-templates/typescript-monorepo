@@ -1,6 +1,6 @@
 devDependencies:
   '@tools/scripts': 'link:tools/scripts'
-  '@types/jest': 25.2.3
+  '@types/jest': 26.0.0
   '@types/node': 14.0.6
   standard: 14.3.4
   toolcheck: 0.1.4
@@ -66,13 +66,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-P/W9yOX/3oPZSpaYOCQzGqgCQRXn0FFO/V8bWrCQs+wLmvVVxk6CRBXALEvNs9OHIatlnlFokfhuDo2ug01ciw==
-  /@types/jest/25.2.3:
+  /@types/jest/26.0.0:
     dependencies:
       jest-diff: 25.5.0
       pretty-format: 25.5.0
     dev: true
     resolution:
-      integrity: sha512-JXc1nK/tXHiDhV55dvfzqtmP4S3sy3T3ouV2tkViZgxY/zeUkcpQcQPGRlgF4KmWzWW5oiWYSZwtCB+2RsE4Fw==
+      integrity: sha512-/yeMsH9HQ1RLORlXAwoLXe8S98xxvhNtUz3yrgrwbaxYjT+6SFPZZRksmRKRA6L5vsUtSHeN71viDOTTyYAD+g==
   /@types/node/12.12.42:
     dev: true
     resolution:
@@ -1916,7 +1916,7 @@ packages:
       integrity: sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
 specifiers:
   '@tools/scripts': 'file:./tools/scripts'
-  '@types/jest': ^25.2.3
+  '@types/jest': ^26.0.0
   '@types/node': ^14.0.6
   standard: ^14.3.4
   toolcheck: ^0.1.4
