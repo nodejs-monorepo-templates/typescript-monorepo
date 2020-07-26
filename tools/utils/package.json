@@ -5,11 +5,11 @@
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {
-    "inquirer": "^7.1.0",
-    "fs-extra": "^9.0.0",
-    "isomorphic-git": "^1.4.0",
+    "inquirer": "^7.3.3",
+    "fs-extra": "^9.0.1",
+    "isomorphic-git": "^1.7.4",
     "@types/fs-extra": "^9.0.1",
-    "@types/inquirer": "^6.5.0",
+    "@types/inquirer": "^7.3.0",
     "@tools/places": "file:../places",
     "@tools/preloaded-node": "file:../preloaded-node"
   }

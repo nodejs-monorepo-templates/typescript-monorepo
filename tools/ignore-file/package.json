@@ -9,11 +9,11 @@
   "dependencies": {
     "minimatch": "^3.0.4",
     "js-yaml": "^3.14.0",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^9.0.1",
     "fs-tree-utils": "^0.1.8",
     "tslib": "^2.0.0",
     "@types/minimatch": "^3.0.3",
-    "@types/js-yaml": "^3.12.4",
+    "@types/js-yaml": "^3.12.5",
     "@types/fs-extra": "^9.0.1",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/places": "file:../places"

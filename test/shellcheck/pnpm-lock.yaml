@@ -2,8 +2,8 @@ dependencies:
   '@tools/places': 'link:../../tools/places'
   '@tools/test-spawn': 'link:../../tools/test-spawn'
   '@types/fs-extra': 9.0.1
-  fs-extra: 9.0.0
-  lookpath: 1.0.6
+  fs-extra: 9.0.1
+  lookpath: 1.1.0
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/9.0.1:
@@ -22,7 +22,7 @@ packages:
       node: '>= 4.0.0'
     resolution:
       integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
-  /fs-extra/9.0.0:
+  /fs-extra/9.0.1:
     dependencies:
       at-least-node: 1.0.0
       graceful-fs: 4.2.4
@@ -32,7 +32,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
+      integrity: sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   /graceful-fs/4.2.4:
     dev: false
     resolution:
@@ -45,13 +45,13 @@ packages:
       graceful-fs: 4.2.4
     resolution:
       integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
-  /lookpath/1.0.6:
+  /lookpath/1.1.0:
     dev: false
     engines:
       npm: '>=6.13.4'
     hasBin: true
     resolution:
-      integrity: sha512-0GBSOhCeS6s/X4WseLawmofdKLOuaknK09VHL3eBra0rCxYbZBQFx0iwH8Qfm9gaDPXiMEcd7IVXqjAjn5rEfQ==
+      integrity: sha512-B9NM7XpVfkyWqfOBI/UW0kVhGw7pJztsduch+1wkbYDi90mYK6/InFul3lG0hYko/VEcVMARVBJ5daFRc5aKCw==
   /universalify/1.0.0:
     dev: false
     engines:
@@ -62,5 +62,5 @@ specifiers:
   '@tools/places': 'file:../../tools/places'
   '@tools/test-spawn': 'file:../../tools/test-spawn'
   '@types/fs-extra': ^9.0.1
-  fs-extra: ^9.0.0
-  lookpath: ^1.0.6
+  fs-extra: ^9.0.1
+  lookpath: ^1.1.0

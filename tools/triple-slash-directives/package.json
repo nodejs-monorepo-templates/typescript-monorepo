@@ -6,7 +6,7 @@
     "triple-slash-directive": "bin.js"
   },
   "dependencies": {
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^9.0.1",
     "@types/fs-extra": "^9.0.1",
     "@tools/traverse": "file:../traverse",
     "@tools/places": "file:../places"

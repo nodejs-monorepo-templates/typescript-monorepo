@@ -6,11 +6,11 @@ dependencies:
   '@types/fs-extra': 9.0.1
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
-  chalk: 4.0.0
-  fs-extra: 9.0.0
+  chalk: 4.1.0
+  fs-extra: 9.0.1
   minimatch: 3.0.4
   pretty: 2.0.0
-  typedoc: 0.17.7
+  typedoc: 0.17.8
 lockfileVersion: 5.1
 packages:
   /@tsfun/array/0.0.5:
@@ -76,7 +76,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
-  /chalk/4.0.0:
+  /chalk/4.1.0:
     dependencies:
       ansi-styles: 4.2.1
       supports-color: 7.1.0
@@ -84,7 +84,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
+      integrity: sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -150,7 +150,7 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
-  /fs-extra/9.0.0:
+  /fs-extra/9.0.1:
     dependencies:
       at-least-node: 1.0.0
       graceful-fs: 4.2.4
@@ -160,7 +160,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
+      integrity: sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -436,15 +436,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
-  /typedoc-default-themes/0.10.1:
+  /typedoc-default-themes/0.10.2:
     dependencies:
       lunr: 2.3.8
     dev: false
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-SuqAQI0CkwhqSJ2kaVTgl37cWs733uy9UGUqwtcds8pkFK8oRF4rZmCq+FXTGIb9hIUOu40rf5Kojg0Ha6akeg==
-  /typedoc/0.17.7:
+      integrity: sha512-zo09yRj+xwLFE3hyhJeVHWRSPuKEIAsFK5r2u47KL/HBKqpwdUSanoaz5L34IKiSATFrjG5ywmIu98hPVMfxZg==
+  /typedoc/0.17.8:
     dependencies:
       fs-extra: 8.1.0
       handlebars: 4.7.6
@@ -455,7 +455,7 @@ packages:
       minimatch: 3.0.4
       progress: 2.0.3
       shelljs: 0.8.4
-      typedoc-default-themes: 0.10.1
+      typedoc-default-themes: 0.10.2
     dev: false
     engines:
       node: '>= 8.0.0'
@@ -463,7 +463,7 @@ packages:
     peerDependencies:
       typescript: '>=3.8.3'
     resolution:
-      integrity: sha512-PEnzjwQAGjb0O8a6VDE0lxyLAadqNujN5LltsTUhZETolRMiIJv6Ox+Toa8h0XhKHqAOh8MOmB0eBVcWz6nuAw==
+      integrity: sha512-/OyrHCJ8jtzu+QZ+771YaxQ9s4g5Z3XsQE3Ma7q+BL392xxBn4UMvvCdVnqKC2T/dz03/VXSLVKOP3lHmDdc/w==
   /uglify-js/3.9.4:
     dependencies:
       commander: 2.20.3
@@ -506,8 +506,8 @@ specifiers:
   '@types/fs-extra': ^9.0.1
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
-  chalk: ^4.0.0
-  fs-extra: ^9.0.0
+  chalk: ^4.1.0
+  fs-extra: ^9.0.1
   minimatch: ^3.0.4
   pretty: ^2.0.0
-  typedoc: ^0.17.7
+  typedoc: ^0.17.8

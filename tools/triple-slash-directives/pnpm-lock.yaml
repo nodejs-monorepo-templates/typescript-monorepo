@@ -2,7 +2,7 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/traverse': 'link:../traverse'
   '@types/fs-extra': 9.0.1
-  fs-extra: 9.0.0
+  fs-extra: 9.0.1
 lockfileVersion: 5.1
 packages:
   /@types/fs-extra/9.0.1:
@@ -21,7 +21,7 @@ packages:
       node: '>= 4.0.0'
     resolution:
       integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
-  /fs-extra/9.0.0:
+  /fs-extra/9.0.1:
     dependencies:
       at-least-node: 1.0.0
       graceful-fs: 4.2.4
@@ -31,7 +31,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
+      integrity: sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   /graceful-fs/4.2.4:
     dev: false
     resolution:
@@ -54,4 +54,4 @@ specifiers:
   '@tools/places': 'file:../places'
   '@tools/traverse': 'file:../traverse'
   '@types/fs-extra': ^9.0.1
-  fs-extra: ^9.0.0
+  fs-extra: ^9.0.1

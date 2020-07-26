@@ -1,7 +1,7 @@
 dependencies:
   '@types/fs-extra': 9.0.1
   fast-traverse: 0.1.6
-  fs-extra: 9.0.0
+  fs-extra: 9.0.1
   iter-tools: 6.2.6
   ts-pipe-compose: 0.2.0
 lockfileVersion: 5.1
@@ -60,7 +60,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/5Ati6Qr9r++gG4R6ANxYH8RxQkZTrUDQF6EuSShgJCIrluPrvVSQRDpVl6SA4V/5nFALlF15OfXG1A3U3U6Mw==
-  /fs-extra/9.0.0:
+  /fs-extra/9.0.1:
     dependencies:
       at-least-node: 1.0.0
       graceful-fs: 4.2.4
@@ -70,7 +70,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
+      integrity: sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   /graceful-fs/4.2.4:
     dev: false
     resolution:
@@ -154,6 +154,6 @@ packages:
 specifiers:
   '@types/fs-extra': ^9.0.1
   fast-traverse: ^0.1.6
-  fs-extra: ^9.0.0
+  fs-extra: ^9.0.1
   iter-tools: ^6.2.6
   ts-pipe-compose: ^0.2.0

@@ -1,13 +1,13 @@
 devDependencies:
   '@tools/scripts': 'link:tools/scripts'
-  '@types/jest': 25.2.3
-  '@types/node': 14.0.6
+  '@types/jest': 26.0.7
+  '@types/node': 14.0.26
   standard: 14.3.4
   toolcheck: 0.1.4
   tslib: 2.0.0
-  tslint: 6.1.2_typescript@3.9.3
-  tslint-config-standard: 9.0.0_tslint@6.1.2+typescript@3.9.3
-  typescript: 3.9.3
+  tslint: 6.1.2_typescript@3.9.7
+  tslint-config-standard: 9.0.0_tslint@6.1.2+typescript@3.9.7
+  typescript: 3.9.7
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.1:
@@ -66,17 +66,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-P/W9yOX/3oPZSpaYOCQzGqgCQRXn0FFO/V8bWrCQs+wLmvVVxk6CRBXALEvNs9OHIatlnlFokfhuDo2ug01ciw==
-  /@types/jest/25.2.3:
+  /@types/jest/26.0.7:
     dependencies:
       jest-diff: 25.5.0
       pretty-format: 25.5.0
     dev: true
     resolution:
-      integrity: sha512-JXc1nK/tXHiDhV55dvfzqtmP4S3sy3T3ouV2tkViZgxY/zeUkcpQcQPGRlgF4KmWzWW5oiWYSZwtCB+2RsE4Fw==
+      integrity: sha512-+x0077/LoN6MjqBcVOe1y9dpryWnfDZ+Xfo3EqGeBcfPRJlQp3Lw62RvNlWxuGv7kOEwlHriAa54updi3Jvvwg==
   /@types/node/12.12.42:
     dev: true
     resolution:
       integrity: sha512-R/9QdYFLL9dE9l5cWWzWIZByVGFd7lk7JVOJ7KD+E1SJ4gni7XJRLz9QTjyYQiHIqEAgku9VgxdLjMlhhUaAFg==
+  /@types/node/14.0.26:
+    dev: true
+    resolution:
+      integrity: sha512-W+fpe5s91FBGE0pEa0lnqGLL4USgpLgs4nokw16SrBBco/gQxuua7KnArSEOd5iaMqbbSHV10vUDkJYJJqpXKA==
   /@types/node/14.0.6:
     dev: true
     resolution:
@@ -1756,29 +1760,29 @@ packages:
     dev: true
     resolution:
       integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
-  /tslint-config-standard/9.0.0_tslint@6.1.2+typescript@3.9.3:
+  /tslint-config-standard/9.0.0_tslint@6.1.2+typescript@3.9.7:
     dependencies:
-      tslint-eslint-rules: 5.4.0_tslint@6.1.2+typescript@3.9.3
+      tslint-eslint-rules: 5.4.0_tslint@6.1.2+typescript@3.9.7
     dev: true
     peerDependencies:
       tslint: '*'
       typescript: '*'
     resolution:
       integrity: sha512-CAw9J743RnPMemQV/XQ4YyNreC+A1NItACfkm+cBedrOkz6CQfwlnbKn8anUXBfoa4Zo4tjAhblRbsMNcSLfSw==
-  /tslint-eslint-rules/5.4.0_tslint@6.1.2+typescript@3.9.3:
+  /tslint-eslint-rules/5.4.0_tslint@6.1.2+typescript@3.9.7:
     dependencies:
       doctrine: 0.7.2
       tslib: 1.9.0
-      tslint: 6.1.2_typescript@3.9.3
-      tsutils: 3.17.1_typescript@3.9.3
-      typescript: 3.9.3
+      tslint: 6.1.2_typescript@3.9.7
+      tsutils: 3.17.1_typescript@3.9.7
+      typescript: 3.9.7
     dev: true
     peerDependencies:
       tslint: ^5.0.0
       typescript: ^2.2.0 || ^3.0.0
     resolution:
       integrity: sha512-WlSXE+J2vY/VPgIcqQuijMQiel+UtmXS+4nvK4ZzlDiqBfXse8FAvkNnTcYhnQyOTW5KFM+uRRGXxYhFpuBc6w==
-  /tslint/6.1.2_typescript@3.9.3:
+  /tslint/6.1.2_typescript@3.9.7:
     dependencies:
       '@babel/code-frame': 7.10.1
       builtin-modules: 1.1.1
@@ -1792,8 +1796,8 @@ packages:
       resolve: 1.17.0
       semver: 5.7.1
       tslib: 1.13.0
-      tsutils: 2.29.0_typescript@3.9.3
-      typescript: 3.9.3
+      tsutils: 2.29.0_typescript@3.9.7
+      typescript: 3.9.7
     deprecated: 'TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.'
     dev: true
     engines:
@@ -1803,19 +1807,19 @@ packages:
       typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
     resolution:
       integrity: sha512-UyNrLdK3E0fQG/xWNqAFAC5ugtFyPO4JJR1KyyfQAyzR8W0fTRrC91A8Wej4BntFzcvETdCSDa/4PnNYJQLYiA==
-  /tsutils/2.29.0_typescript@3.9.3:
+  /tsutils/2.29.0_typescript@3.9.7:
     dependencies:
       tslib: 1.13.0
-      typescript: 3.9.3
+      typescript: 3.9.7
     dev: true
     peerDependencies:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
     resolution:
       integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
-  /tsutils/3.17.1_typescript@3.9.3:
+  /tsutils/3.17.1_typescript@3.9.7:
     dependencies:
       tslib: 1.13.0
-      typescript: 3.9.3
+      typescript: 3.9.7
     dev: true
     engines:
       node: '>= 6'
@@ -1849,13 +1853,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
-  /typescript/3.9.3:
+  /typescript/3.9.7:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
   /uniq/1.0.1:
     dev: true
     resolution:
@@ -1916,11 +1920,11 @@ packages:
       integrity: sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
 specifiers:
   '@tools/scripts': 'file:./tools/scripts'
-  '@types/jest': ^25.2.3
-  '@types/node': ^14.0.6
+  '@types/jest': ^26.0.7
+  '@types/node': ^14.0.26
   standard: ^14.3.4
   toolcheck: ^0.1.4
   tslib: ^2.0.0
   tslint: ^6.1.2
   tslint-config-standard: ^9.0.0
-  typescript: ^3.9.3
+  typescript: ^3.9.7

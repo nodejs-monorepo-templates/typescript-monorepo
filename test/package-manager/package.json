@@ -3,6 +3,6 @@
   "dependencies": {
     "semver": "^7.3.2",
     "@tools/places": "file:../../tools/places",
-    "@types/semver": "^7.2.0"
+    "@types/semver": "^7.3.1"
   }
 }

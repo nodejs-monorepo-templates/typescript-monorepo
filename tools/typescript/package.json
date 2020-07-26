@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "typescript": "^3.9.3",
+    "typescript": "^3.9.7",
     "@tools/places": "file:../places"
   }
 }

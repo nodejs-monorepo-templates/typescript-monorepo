@@ -2,9 +2,9 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@types/fs-extra': 9.0.1
-  '@types/js-yaml': 3.12.4
+  '@types/js-yaml': 3.12.5
   '@types/minimatch': 3.0.3
-  fs-extra: 9.0.0
+  fs-extra: 9.0.1
   fs-tree-utils: 0.1.8
   js-yaml: 3.14.0
   minimatch: 3.0.4
@@ -30,10 +30,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
-  /@types/js-yaml/3.12.4:
+  /@types/js-yaml/3.12.5:
     dev: false
     resolution:
-      integrity: sha512-fYMgzN+9e28R81weVN49inn/u798ruU91En1ZnGvSZzCRc5jXx9B2EDhlRaWmcO1RIxFHL8AajRXzxDuJu93+A==
+      integrity: sha512-JCcp6J0GV66Y4ZMDAQCXot4xprYB+Zfd3meK9+INSJeVZwJmHAW30BBEEkPzXswMXuiyReUGOP3GxrADc9wPww==
   /@types/minimatch/3.0.3:
     dev: false
     resolution:
@@ -90,7 +90,7 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
-  /fs-extra/9.0.0:
+  /fs-extra/9.0.1:
     dependencies:
       at-least-node: 1.0.0
       graceful-fs: 4.2.4
@@ -100,7 +100,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
+      integrity: sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   /fs-tree-utils/0.1.8:
     dependencies:
       '@tsfun/array': 0.0.0
@@ -189,9 +189,9 @@ specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@types/fs-extra': ^9.0.1
-  '@types/js-yaml': ^3.12.4
+  '@types/js-yaml': ^3.12.5
   '@types/minimatch': ^3.0.3
-  fs-extra: ^9.0.0
+  fs-extra: ^9.0.1
   fs-tree-utils: ^0.1.8
   js-yaml: ^3.14.0
   minimatch: ^3.0.4
