@@ -66,7 +66,7 @@ export function getString (array: IgnoreArray): string {
 export async function getDeltaContent (filename: string): Promise<LoadedDelta> {
   if (fsx.existsSync(filename)) {
     const text = await fsx.readFile(filename, 'utf8')
-    const content: Delta = { ...yaml.safeLoad(text) }
+    const content: Delta = { ...yaml.safeLoad(text) as any }
     return { filename, content }
   }
 
