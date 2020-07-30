@@ -26,6 +26,7 @@
     "@tools/jest": "file:../jest",
     "@tools/places": "file:../places",
     "@tools/preloaded-node": "file:../preloaded-node",
+    "@tools/sane-fmt": "file:../sane-fmt",
     "@tools/tslint": "file:../tslint",
     "@tools/typescript": "file:../typescript",
     "@tools/workspace": "file:../workspace"

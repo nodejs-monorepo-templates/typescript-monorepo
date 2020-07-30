@@ -229,6 +229,16 @@ abstract class Dict {
     this.mkspawn(commands.preloadedNode)
   )
 
+  public readonly runSaneFmt = new Command(
+    'Check TypeScript/JavaScript files against sane-fmt',
+    this.mkspawn(commands.saneFmt)
+  )
+
+  public readonly runSaneFmtFix = new Command(
+    'Fix code style of TypeScript/JavaScript files',
+    this.mkspawn(commands.saneFmt, '--write')
+  )
+
   public readonly runTSLint = new Command(
     'Lint TypeScript codes with TSLint',
     this.mkspawn(commands.tslint)
