@@ -7,7 +7,7 @@ import {
   PackageManifest,
   TestManifest,
   ToolManifest,
-  ManifestType
+  ManifestType,
 } from '../manifest'
 
 export abstract class ManifestItem<Obj extends Manifest> {
@@ -17,60 +17,60 @@ export abstract class ManifestItem<Obj extends Manifest> {
   abstract readonly list: ManifestList<Obj>
   private manifestPromise: Promise<Obj> | undefined
 
-  public async readManifest (): Promise<Obj> {
+  public async readManifest(): Promise<Obj> {
     this.manifestPromise = await readJSON(this.manifest)
     return this.manifestPromise!
   }
 
-  public readManifestOnce (): Promise<Obj> {
+  public readManifestOnce(): Promise<Obj> {
     if (this.manifestPromise) return this.manifestPromise
     return this.readManifest()
   }
 
-  public async writeManifest (manifest: Obj): Promise<void> {
+  public async writeManifest(manifest: Obj): Promise<void> {
     await writeJSON(this.manifest, manifest)
   }
 }
 
 export abstract class ManifestList<Obj extends Manifest> extends Map<string, ManifestItem<Obj>> {
-  private promptChoices (): { name: string, value: ManifestItem<Obj> }[] {
+  private promptChoices(): { name: string; value: ManifestItem<Obj> }[] {
     return this.items().map(value => ({ name: value.name, value }))
   }
 
-  public names () {
+  public names() {
     return Array.from(this.keys())
   }
 
-  public items () {
+  public items() {
     return Array.from(this.values())
   }
 
-  public async promptItem (message: string): Promise<ManifestItem<Obj>> {
+  public async promptItem(message: string): Promise<ManifestItem<Obj>> {
     const { prompt } = await import('inquirer')
 
     const { item } = await prompt({
       name: 'item',
       message,
       type: 'list',
-      choices: this.promptChoices()
+      choices: this.promptChoices(),
     })
 
     return item
   }
 
-  public async promptItemList (message: string): Promise<ManifestList<Obj>> {
+  public async promptItemList(message: string): Promise<ManifestList<Obj>> {
     const { prompt } = await import('inquirer')
 
     const { list } = await prompt({
       name: 'list',
       message,
       type: 'checkbox',
-      choices: this.promptChoices()
+      choices: this.promptChoices(),
     })
 
     return new class extends ManifestList<Obj> {}(
       (list as ManifestItem<Obj>[])
-        .map(item => [item.name, item])
+        .map(item => [item.name, item]),
     )
   }
 }
@@ -79,23 +79,26 @@ interface ListLoader<Obj extends Manifest> {
   (): Promise<ManifestList<Obj>>
 }
 
-function ListLoader<Obj extends Manifest> (container: string): ListLoader<Obj> {
+function ListLoader<Obj extends Manifest>(container: string): ListLoader<Obj> {
   class PrvList extends ManifestList<Obj> {
-    constructor (directories: readonly string[]) {
+    constructor(directories: readonly string[]) {
       abstract class PrvItem extends ManifestItem<Obj> {
-        get list () {
+        get list() {
           return list
         }
       }
 
-      super(directories
-        .map(name => new class extends PrvItem {
-          name = name
-          folder = path.join(container, name)
-          manifest = path.join(container, name, 'package.json')
-        }())
-        .filter(item => existsSync(item.manifest))
-        .map(item => [item.name, item])
+      super(
+        directories
+          .map(name =>
+            new class extends PrvItem {
+              name = name
+              folder = path.join(container, name)
+              manifest = path.join(container, name, 'package.json')
+            }()
+          )
+          .filter(item => existsSync(item.manifest))
+          .map(item => [item.name, item]),
       )
 
       const list = this
@@ -118,12 +121,12 @@ class ListLoaderDict {
 export type NonRootManifestTypes = [
   ManifestType.Package,
   ManifestType.Test,
-  ManifestType.Tool
+  ManifestType.Tool,
 ]
 export const NonRootManifestTypes: NonRootManifestTypes = [
   ManifestType.Package,
   ManifestType.Test,
-  ManifestType.Tool
+  ManifestType.Tool,
 ]
 export namespace NonRootManifestTypes {
   export type Union = keyof ListLoaderDict

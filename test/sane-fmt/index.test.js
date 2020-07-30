@@ -5,18 +5,18 @@ const { command, listTargets } = require('@tools/sane-fmt')
 it('Code Style: sane-fmt', async () => {
   const argvPrefix = [
     command,
-    '--hide-passed'
+    '--hide-passed',
   ]
 
   const argvSuffix = [
     '--',
-    ...await listTargets()
+    ...await listTargets(),
   ]
 
   cmd({
     argvPrefix,
     argvSuffix,
     defaultExecutable: require('process').execPath,
-    envMiddleName: 'SANE_FMT'
+    envMiddleName: 'SANE_FMT',
   })
 })

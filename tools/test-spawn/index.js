@@ -1,6 +1,6 @@
 'use strict'
 
-function main ({
+function main({
   path = require('path'),
   childProcess: { spawnSync } = require('child_process'),
   process: { env } = require('process'),
@@ -8,13 +8,13 @@ function main ({
   argvSuffix = [],
   alwaysPrintStdIO = false,
   defaultExecutable = 'echo',
-  envMiddleName = '?'
+  envMiddleName = '?',
 } = {}) {
   const {
     [`JEST_${envMiddleName}_EXECUTABLE`]: executable = defaultExecutable,
     [`JEST_${envMiddleName}_ARGV`]: spawnArguments = '[]',
     [`JEST_${envMiddleName}_SKIP`]: skipSpawnTesting = 'false',
-    PATH = ''
+    PATH = '',
   } = env
 
   const wdir = path.resolve(__dirname, '../..')
@@ -30,7 +30,7 @@ function main ({
     stderr,
     signal,
     error,
-    status
+    status,
   } = spawnSync(
     executable,
     argv,
@@ -42,9 +42,10 @@ function main ({
         PATH: PATH
           .split(path.delimiter)
           .concat(...module.paths.map(x => path.resolve(x, '.bin')))
-          .join(path.delimiter)
-      }
-    })
+          .join(path.delimiter),
+      },
+    },
+  )
 
   if (stdout === null) console.warn('respose.stdout is null')
   if (stderr === null) console.warn('respose.stderr is null')

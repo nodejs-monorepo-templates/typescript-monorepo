@@ -4,17 +4,19 @@ import { readdir, stat } from 'fs-extra'
 import { pipeline } from 'ts-pipe-compose'
 import traverse from 'fast-traverse'
 
-export async function * items (
+export async function* items(
   dirname: string,
-  ignore: readonly string[] = ['.git', 'node_modules']
+  ignore: readonly string[] = ['.git', 'node_modules'],
 ) {
-  for await (const item of traverse({
-    dirname,
-    join,
-    readdir,
-    stat,
-    deep: x => !ignore.includes(x.basename)
-  })) {
+  for await (
+    const item of traverse({
+      dirname,
+      join,
+      readdir,
+      stat,
+      deep: x => !ignore.includes(x.basename),
+    })
+  ) {
     for (const basename of item.list) {
       const path = join(item.dirname, basename)
       const stats = await stat(path)
@@ -25,10 +27,10 @@ export async function * items (
 
 export const files = pipeline(
   items,
-  asyncFilter(item => item.stats.isFile())
+  asyncFilter(item => item.stats.isFile()),
 )
 
 export const jsFiles = pipeline(
   files,
-  asyncFilter(item => item.basename.endsWith('.js'))
+  asyncFilter(item => item.basename.endsWith('.js')),
 )

@@ -14,24 +14,26 @@ export interface Options {
   readonly repo: string
 }
 
-function dataAttributes (data: { readonly [_: string]: any }) {
+function dataAttributes(data: { readonly [_: string]: any }) {
   return Object
     .entries(data)
     .map(([key, value]) => `data-${key}=${JSON.stringify(value)}`)
     .join(' ')
 }
 
-export function homepage (options: Options) {
+export function homepage(options: Options) {
   const { title, children, repo } = options
 
-  const childContent = children.map(child => `
+  const childContent = children.map(child =>
+    `
     <li class='child' ${dataAttributes(child)}><article>
       <a class='link name' target='${child.name}' href='${child.route}'>${child.name}</a>
       <span class='version' title='version'>${child.version}</span>
       <a class='npm' title='npm page' target='_blank' href='${child.npm}'>[npm]</a>
       <p class='description'><span title='package description'>${child.description}</span></p>
     </article></li>
-  `).join('\n')
+  `
+  ).join('\n')
 
   const css = `
     body {

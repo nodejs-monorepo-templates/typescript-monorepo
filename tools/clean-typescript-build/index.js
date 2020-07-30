@@ -1,3 +1,3 @@
 module.exports = {
-  bin: require.resolve('./bin.js')
+  bin: require.resolve('./bin.js'),
 }

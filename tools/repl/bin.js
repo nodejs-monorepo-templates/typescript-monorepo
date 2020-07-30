@@ -8,16 +8,16 @@ const script = require.resolve('@tools/preloaded-node/bin')
 const { NODE_PATH = '', ...envRest } = process.env
 const oldNodePath = NODE_PATH.split(path.delimiter)
 
-async function main () {
+async function main() {
   const nodePathSuffix = await glob('packages/*/node_modules', {
     absolute: true,
-    cwd: places.project
+    cwd: places.project,
   })
 
   const newNodePath = [
     places.packages,
     ...oldNodePath,
-    ...nodePathSuffix
+    ...nodePathSuffix,
   ]
 
   const { status } = spawnSync(
@@ -26,15 +26,15 @@ async function main () {
       script,
       '-r',
       require.resolve('./init.js'),
-      ...process.argv.slice(2)
+      ...process.argv.slice(2),
     ],
     {
       stdio: 'inherit',
       env: {
         NODE_PATH: newNodePath.join(path.delimiter),
-        ...envRest
-      }
-    }
+        ...envRest,
+      },
+    },
   )
 
   return status
@@ -45,5 +45,5 @@ main().then(
   error => {
     console.error(error)
     process.exit(-1)
-  }
+  },
 )

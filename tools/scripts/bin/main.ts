@@ -10,18 +10,18 @@ const [cmd, ...argv] = process.argv.slice(2)
 type MaybePromise<X> = X | Promise<X>
 
 class Command<Return extends MaybePromise<void>> {
-  constructor (
+  constructor(
     public readonly describe: string,
-    public readonly act: (args: readonly string[]) => Return
+    public readonly act: (args: readonly string[]) => Return,
   ) {}
 }
 
 type CommandName = Exclude<keyof Dict, 'mkspawn' | 'callCmd' | 'isCmd'>
 
 abstract class Dict {
-  protected abstract mkspawn (script: string, ...args: string[]): () => void
-  protected abstract callCmd (command: CommandName, ...args: string[]): MaybePromise<void>
-  protected abstract isCmd (command: string): command is CommandName
+  protected abstract mkspawn(script: string, ...args: string[]): () => void
+  protected abstract callCmd(command: CommandName, ...args: string[]): MaybePromise<void>
+  protected abstract isCmd(command: string): command is CommandName
 
   public readonly help = new Command(
     'Print usage',
@@ -43,7 +43,7 @@ abstract class Dict {
       }
 
       console.info()
-    }
+    },
   )
 
   public readonly glob = new Command(
@@ -66,12 +66,12 @@ abstract class Dict {
         .map(glob => glob.source)
 
       this.callCmd(cmd, ...regexes)
-    }
+    },
   )
 
   public readonly workspace = new Command(
     'Invoke nested-workspace-helper',
-    this.mkspawn(commands.workspace)
+    this.mkspawn(commands.workspace),
   )
 
   public readonly mismatches = new Command(
@@ -80,8 +80,8 @@ abstract class Dict {
       commands.workspace,
       'verman',
       'mismatches',
-      places.packages
-    )
+      places.packages,
+    ),
   )
 
   public readonly test = new Command(
@@ -89,7 +89,7 @@ abstract class Dict {
     async args => {
       await this.callCmd('clean')
       await this.callCmd('jest', '--coverage', ...args)
-    }
+    },
   )
 
   public readonly build = new Command(
@@ -98,7 +98,7 @@ abstract class Dict {
       await this.callCmd('buildDocs')
       await this.callCmd('buildTypescript')
       await this.callCmd('tripleSlashDirectives')
-    }
+    },
   )
 
   public readonly clean = new Command(
@@ -106,7 +106,7 @@ abstract class Dict {
     async () => {
       await this.callCmd('cleanDocs')
       await this.callCmd('cleanTypescriptBuild')
-    }
+    },
   )
 
   public readonly prepublish = new Command(
@@ -116,7 +116,7 @@ abstract class Dict {
       await this.callCmd('mismatches')
       await this.callCmd('testAll')
       await this.callCmd('build')
-    }
+    },
   )
 
   public readonly publish = new Command(
@@ -129,17 +129,17 @@ abstract class Dict {
         commands.workspace,
         'publish',
         places.packages,
-        ...args
+        ...args,
       ).exit.onerror()
 
       await this.callCmd('publishDocs')
       await this.callCmd('postpublish')
-    }
+    },
   )
 
   public readonly postpublish = new Command(
     'Commands that run after publishing packages',
-    () => this.callCmd('clean')
+    () => this.callCmd('clean'),
   )
 
   public readonly createIgnoreFiles = new Command(
@@ -148,14 +148,14 @@ abstract class Dict {
       spawnSync(
         'node',
         require.resolve('@tools/ignore-file/bin/write'),
-        ...args
+        ...args,
       ).exit.onerror()
-    }
+    },
   )
 
   public readonly testAll = new Command(
     'Run all tests in production mode',
-    () => this.callCmd('test', '--ci', '--no-cache')
+    () => this.callCmd('test', '--ci', '--no-cache'),
   )
 
   public readonly testWithoutCoverage = new Command(
@@ -163,7 +163,7 @@ abstract class Dict {
     async args => {
       await this.callCmd('clean')
       await this.callCmd('jest', ...args)
-    }
+    },
   )
 
   public readonly buildTypescript = new Command(
@@ -171,8 +171,8 @@ abstract class Dict {
     this.mkspawn(
       commands.typescript,
       '--project',
-      path.resolve(places.packages, 'tsconfig.prod.json')
-    )
+      path.resolve(places.packages, 'tsconfig.prod.json'),
+    ),
   )
 
   public readonly tripleSlashDirectives = new Command(
@@ -180,7 +180,7 @@ abstract class Dict {
     async () => {
       const { main } = await import('@tools/triple-slash-directives')
       await main()
-    }
+    },
   )
 
   public readonly buildDocs = new Command(
@@ -188,12 +188,12 @@ abstract class Dict {
     async () => {
       const { main } = await import('@tools/docs')
       await main()
-    }
+    },
   )
 
   public readonly cleanTypescriptBuild = new Command(
     'Clean TSC build products',
-    this.mkspawn(commands.cleanTypescriptBuild)
+    this.mkspawn(commands.cleanTypescriptBuild),
   )
 
   public readonly cleanDocs = new Command(
@@ -202,7 +202,7 @@ abstract class Dict {
       const { remove } = await import('fs-extra')
       console.info('Deleting', places.docs)
       await remove(places.docs)
-    }
+    },
   )
 
   public readonly cleanGhPages = new Command(
@@ -211,47 +211,47 @@ abstract class Dict {
       const { clean } = await import('@tools/gh-pages')
       console.info('Cleaning gh-pages cache...')
       clean()
-    }
+    },
   )
 
   public readonly gitTagVersions = new Command(
     'Create tags for every package based on their current version',
-    this.mkspawn(commands.gitTagVersions)
+    this.mkspawn(commands.gitTagVersions),
   )
 
   public readonly publishTagPush = new Command(
     'Publish every new package; Add git tags; Push changes to remote',
-    this.mkspawn(commands.publishTagPush)
+    this.mkspawn(commands.publishTagPush),
   )
 
   public readonly runPreloadedNode = new Command(
     'Run node with registered modules',
-    this.mkspawn(commands.preloadedNode)
+    this.mkspawn(commands.preloadedNode),
   )
 
   public readonly runSaneFmt = new Command(
     'Check TypeScript/JavaScript files against sane-fmt',
-    this.mkspawn(commands.saneFmt)
+    this.mkspawn(commands.saneFmt),
   )
 
   public readonly runSaneFmtFix = new Command(
     'Fix code style of TypeScript/JavaScript files',
-    this.mkspawn(commands.saneFmt, '--write')
+    this.mkspawn(commands.saneFmt, '--write'),
   )
 
   public readonly runTSLint = new Command(
     'Lint TypeScript codes with TSLint',
-    this.mkspawn(commands.tslint)
+    this.mkspawn(commands.tslint),
   )
 
   public readonly jest = new Command(
     'Run tests',
-    this.mkspawn(commands.jest)
+    this.mkspawn(commands.jest),
   )
 
   public readonly publishDocs = new Command(
     'Publish documentation to gh-pages',
-    this.mkspawn(commands.publishDocs)
+    this.mkspawn(commands.publishDocs),
   )
 
   public readonly updateDocs = new Command(
@@ -260,7 +260,7 @@ abstract class Dict {
       await this.callCmd('cleanDocs')
       await this.callCmd('buildDocs')
       await this.callCmd('publishDocs')
-    }
+    },
   )
 
   public readonly new = new Command(
@@ -268,7 +268,7 @@ abstract class Dict {
     async () => {
       const { main } = await import('@tools/create-new-folder')
       await main()
-    }
+    },
   )
 
   public readonly add = new Command(
@@ -276,27 +276,27 @@ abstract class Dict {
     async () => {
       const { main } = await import('@tools/add-dependency')
       await main()
-    }
+    },
   )
 }
 
-function printError (message: string) {
+function printError(message: string) {
   console.error(chalk.red('[ERROR]'), message, '\n')
 }
 
-async function main (cmd?: string, argv: readonly string[] = []) {
+async function main(cmd?: string, argv: readonly string[] = []) {
   class PrvDict extends Dict {
-    mkspawn (...args: [string, ...string[]]) {
+    mkspawn(...args: [string, ...string[]]) {
       // @ts-ignore
       return () => spawnSync('node', ...args, ...argv).exit.onerror()
     }
 
-    async callCmd (cmd: CommandName, ...args: string[]) {
+    async callCmd(cmd: CommandName, ...args: string[]) {
       console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
       await main(cmd, args)
     }
 
-    isCmd (cmd: string): cmd is CommandName {
+    isCmd(cmd: string): cmd is CommandName {
       return Object.keys(this).includes(cmd)
     }
   }

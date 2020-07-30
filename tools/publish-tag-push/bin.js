@@ -3,7 +3,7 @@ const { main, handleTerminationError } = require('./index')
 
 main({
   print: console.info,
-  process
+  process,
 })
   .catch(handleTerminationError)
   .then(
@@ -11,5 +11,5 @@ main({
     error => {
       console.error(error)
       process.exit(-1)
-    }
+    },
   )

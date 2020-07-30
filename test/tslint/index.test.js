@@ -6,6 +6,6 @@ it('TypeScript Linter', () => {
   cmd({
     defaultExecutable: 'node',
     argvPrefix: argv,
-    envMiddleName: 'TSLINT'
+    envMiddleName: 'TSLINT',
   })
 })

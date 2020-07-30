@@ -6,8 +6,8 @@ it('TypeScript: Type Check', () => {
     defaultExecutable: 'node',
     argvPrefix: [
       require.resolve('typescript/bin/tsc'),
-      '--noEmit'
+      '--noEmit',
     ],
-    envMiddleName: 'STANDARDJS'
+    envMiddleName: 'STANDARDJS',
   })
 })

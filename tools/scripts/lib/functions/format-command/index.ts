@@ -7,7 +7,7 @@ const node = chalk.dim('node')
 const projectPrfx = '<project>'
 const program = chalk.bold
 
-export function formatCommand (first: string, second: string, ...rest: string[]) {
+export function formatCommand(first: string, second: string, ...rest: string[]) {
   const formatedRest = rest.map(x => x.replace(places.project, projectPrfx))
 
   if (first === 'node') {
@@ -19,10 +19,9 @@ export function formatCommand (first: string, second: string, ...rest: string[])
 
     const [branch, pkg, ...pathRest] = right.split(path.sep)
 
-    const script =
-      ['packages', 'tools', 'test'].includes(branch)
-        ? chalk.dim(`<${branch}>` + path.sep) + program(pkg + path.sep) + pathRest.join(path.sep)
-        : chalk.dim(projectPrfx + path.sep) + program([pkg, ...pathRest].join(path.sep))
+    const script = ['packages', 'tools', 'test'].includes(branch)
+      ? chalk.dim(`<${branch}>` + path.sep) + program(pkg + path.sep) + pathRest.join(path.sep)
+      : chalk.dim(projectPrfx + path.sep) + program([pkg, ...pathRest].join(path.sep))
 
     return [prefix, node, script, ...rest]
   }
@@ -31,7 +30,7 @@ export function formatCommand (first: string, second: string, ...rest: string[])
     prefix,
     program(first),
     second,
-    ...formatedRest
+    ...formatedRest,
   ]
 }
 

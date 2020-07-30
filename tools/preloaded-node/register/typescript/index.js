@@ -9,6 +9,6 @@ require('ts-node').register({
   compilerOptions: {
     ...compilerOptions,
     noUnusedLocals: false,
-    noUnusedParameters: false
-  }
+    noUnusedParameters: false,
+  },
 })

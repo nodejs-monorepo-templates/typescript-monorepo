@@ -18,7 +18,7 @@ export interface Options {
   readonly process: Process
 }
 
-export async function main (options: Options): Promise<number> {
+export async function main(options: Options): Promise<number> {
   const { print, process } = options
   const { env } = process
   const npm = env.PUBLISH_TAG_PUSH_EXECUTOR || 'npm'

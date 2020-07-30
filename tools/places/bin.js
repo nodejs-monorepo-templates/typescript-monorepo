@@ -3,5 +3,5 @@
 console.info(JSON.stringify(
   require('./index'),
   undefined,
-  2
+  2,
 ))

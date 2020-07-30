@@ -8,8 +8,7 @@ const preloadedArgv = ['--require', register]
 const finalArgv = [...preloadedArgv, ...receivedArgv]
 const { PATH = '', NODE_PATH = '' } = env
 
-const addPath = (pathVar, ...addend) =>
-  pathVar.trim().split(path.delimiter).concat(...addend).join(path.delimiter)
+const addPath = (pathVar, ...addend) => pathVar.trim().split(path.delimiter).concat(...addend).join(path.delimiter)
 
 const { status } = spawnSync(
   'node',
@@ -19,9 +18,9 @@ const { status } = spawnSync(
     env: {
       ...env,
       PATH: addPath(PATH, path.resolve(__dirname, 'node_modules/.bin')),
-      NODE_PATH: addPath(NODE_PATH, path.resolve(__dirname, 'node_modules'))
-    }
-  }
+      NODE_PATH: addPath(NODE_PATH, path.resolve(__dirname, 'node_modules')),
+    },
+  },
 )
 
 exit(status)

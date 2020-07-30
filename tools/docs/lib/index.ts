@@ -9,16 +9,16 @@ import * as config from './config'
 import combineGlobPatterns from './combine-glob-patterns'
 import { Child, homepage } from './homepage'
 
-async function propIfExists<Key extends string> (
+async function propIfExists<Key extends string>(
   key: Key,
   basename: string,
-  folder = '.'
+  folder = '.',
 ): Promise<{ [_ in Key]: string } | null> {
   if (!await pathExists(path.join(folder, basename))) return null
   return { [key]: basename } as any
 }
 
-export async function main () {
+export async function main() {
   const isIgnored = combineGlobPatterns(config.ignoredPackages)
   const failures = []
 
@@ -38,7 +38,7 @@ export async function main () {
     const homepageHTML = homepage({
       title: config.title,
       children: await Promise.all(childrenPromises),
-      repo: await loadRepoUrl()
+      repo: await loadRepoUrl(),
     })
 
     console.info('docs> Home Page')
@@ -74,7 +74,7 @@ export async function main () {
       exclude: ['**/node_modules', '**/.git'],
       logger: 'none',
       name: `${name} — Reference`,
-      ...readmeObject
+      ...readmeObject,
     })
     if (hasErrors) {
       console.error('[ERROR] Failed to bootstrap typedoc')
@@ -83,9 +83,7 @@ export async function main () {
 
     const entryFilePath = path.join(item.folder, 'index.ts')
     const project = app.convert(app.expandInputFiles([
-      await pathExists(entryFilePath)
-        ? entryFilePath
-        : item.folder
+      await pathExists(entryFilePath) ? entryFilePath : item.folder,
     ]))
 
     if (!project) {

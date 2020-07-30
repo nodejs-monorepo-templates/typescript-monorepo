@@ -9,5 +9,5 @@ module.exports = {
   bin,
   config,
   project,
-  argv
+  argv,
 }

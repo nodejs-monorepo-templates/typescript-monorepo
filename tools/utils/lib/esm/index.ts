@@ -8,7 +8,7 @@ export type ESM<Target> = Target & {
  * @param object Object
  * @param value Value of "__esModule" property
  */
-export function setEsModule<Target> (object: Target, value = true): ESM<Target> {
+export function setEsModule<Target>(object: Target, value = true): ESM<Target> {
   Object.defineProperty(object, '__esModule', { value })
   return Object.assign(object, { default: object }) as any
 }

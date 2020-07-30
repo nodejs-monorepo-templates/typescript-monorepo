@@ -10,16 +10,16 @@ import {
   NonRootManifestTypes,
   loadPackageList,
   loadTestList,
-  loadToolList
+  loadToolList,
 } from '@tools/utils'
 
-async function promptManifestType (): Promise<NonRootManifestTypes.Union> {
+async function promptManifestType(): Promise<NonRootManifestTypes.Union> {
   const { type } = await prompt({
     name: 'type',
     message: 'Dependant container',
     type: 'list',
     choices: NonRootManifestTypes
-      .map(value => ({ name: value.toLowerCase(), value }))
+      .map(value => ({ name: value.toLowerCase(), value })),
   })
 
   return type
@@ -30,22 +30,22 @@ interface GetVersionRequirementParam {
   readonly manifest: PackageManifest | ToolManifest
 }
 
-async function addProdDeps<Obj extends Manifest> (
+async function addProdDeps<Obj extends Manifest>(
   target: ManifestItem<Obj>,
   packages: readonly ManifestItem<PackageManifest | ToolManifest>[],
-  getVersionRequirement: (param: GetVersionRequirementParam) => string
+  getVersionRequirement: (param: GetVersionRequirementParam) => string,
 ) {
   if (!packages.length) return
 
   const [
     manifest,
-    dependencies
+    dependencies,
   ] = await Promise.all([
     target.readManifestOnce(),
     Promise.all(packages.map(async item => ({
       item,
-      manifest: await item.readManifestOnce()
-    })))
+      manifest: await item.readManifestOnce(),
+    }))),
   ])
 
   if (!manifest.dependencies) {
@@ -62,7 +62,7 @@ async function addProdDeps<Obj extends Manifest> (
   await target.writeManifest(manifest)
 }
 
-export async function handlePackage () {
+export async function handlePackage() {
   const list = await loadPackageList()
   const target = await list.promptItem('Choose a package')
   const dependencies = await list.promptItemList('Choose dependencies')
@@ -70,17 +70,17 @@ export async function handlePackage () {
   await addProdDeps(
     target,
     dependencies.items(),
-    param => '^' + param.manifest.version
+    param => '^' + param.manifest.version,
   )
 }
 
-export async function handleTest () {
+export async function handleTest() {
   const [
     testList,
-    packageList
+    packageList,
   ] = await Promise.all([
     loadTestList(),
-    loadPackageList()
+    loadPackageList(),
   ])
 
   const target = await testList.promptItem('Choose a folder')
@@ -89,20 +89,20 @@ export async function handleTest () {
   await addProdDeps(
     target,
     dependencies.items(),
-    param => 'file:' + path.relative(target.folder, param.item.folder)
+    param => 'file:' + path.relative(target.folder, param.item.folder),
   )
 }
 
-async function joinToolPackage (
+async function joinToolPackage(
   toolList: ManifestList<ToolManifest>,
-  packageList: ManifestList<PackageManifest>
+  packageList: ManifestList<PackageManifest>,
 ): Promise<ManifestItem<PackageManifest | ToolManifest>[]> {
   const entries = await Promise.all(
     [...packageList.values(), ...toolList.values()]
       .map(async item => ({
         item,
-        manifest: await item.readManifestOnce()
-      }))
+        manifest: await item.readManifestOnce(),
+      })),
   )
 
   const { dependencies } = await prompt({
@@ -111,20 +111,20 @@ async function joinToolPackage (
     type: 'checkbox',
     choices: entries.map(x => ({
       name: x.manifest.name,
-      value: Object.assign(x.item)
-    }))
+      value: Object.assign(x.item),
+    })),
   })
 
   return dependencies
 }
 
-export async function handleTool () {
+export async function handleTool() {
   const [
     toolList,
-    packageList
+    packageList,
   ] = await Promise.all([
     loadToolList(),
-    loadPackageList()
+    loadPackageList(),
   ])
 
   const target = await toolList.promptItem('Choose a folder')
@@ -133,11 +133,11 @@ export async function handleTool () {
   await addProdDeps(
     target,
     dependencies,
-    param => 'file:' + path.relative(target.folder, param.item.folder)
+    param => 'file:' + path.relative(target.folder, param.item.folder),
   )
 }
 
-export async function main () {
+export async function main() {
   switch (await promptManifestType()) {
     case ManifestType.Package:
       return handlePackage()

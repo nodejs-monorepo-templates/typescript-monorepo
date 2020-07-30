@@ -11,7 +11,7 @@ const places = require('@tools/places')
 const globalManifestPath = path.resolve(places.project, 'package.json')
 const globalManifest = require(globalManifestPath)
 
-function main ({ testPath }) {
+function main({ testPath }) {
   const start = Date.now()
   const reasons = []
   const resolvedPath = path.resolve(testPath)
@@ -51,8 +51,7 @@ function main ({ testPath }) {
     }
   }
 
-  const getDependencyPath = (name, ...args) =>
-    path.resolve(container, 'node_modules', name, ...args)
+  const getDependencyPath = (name, ...args) => path.resolve(container, 'node_modules', name, ...args)
 
   const isPrivateDependency = name => {
     const dependencyManifestPath = getDependencyPath(name, 'package.json')
@@ -60,38 +59,39 @@ function main ({ testPath }) {
     return dependencyManifest.private
   }
 
-  const createDependencyTreater = privateDependant => privateDependant
-    ? {
-      local () {},
-      semver: {
-        ifLocal (name) {
-          const shortpath = getDependencyPath(name)
-          const realpath = fs.realpathSync(shortpath)
-          const dirname = path.dirname(realpath)
-          if ([places.packages, places.tools].includes(dirname)) {
-            reasons.push(`Expecting local package to use 'file:' but received semver: ${name}`)
-          }
+  const createDependencyTreater = privateDependant =>
+    privateDependant
+      ? {
+        local() {},
+        semver: {
+          ifLocal(name) {
+            const shortpath = getDependencyPath(name)
+            const realpath = fs.realpathSync(shortpath)
+            const dirname = path.dirname(realpath)
+            if ([places.packages, places.tools].includes(dirname)) {
+              reasons.push(`Expecting local package to use 'file:' but received semver: ${name}`)
+            }
+          },
+          ifPrivate(name) {
+            if (isPrivateDependency(name)) {
+              reasons.push(`Private dependencies should use "file:" protocol: ${name}`)
+            }
+          },
         },
-        ifPrivate (name) {
-          if (isPrivateDependency(name)) {
-            reasons.push(`Private dependencies should use "file:" protocol: ${name}`)
-          }
-        }
       }
-    }
-    : {
-      local (name) {
-        reasons.push(`Local dependencies should not be listed in "dependencies": ${name}`)
-      },
-      semver: {
-        ifLocal () {},
-        ifPrivate (name) {
-          if (isPrivateDependency(name)) {
-            reasons.push(`Public package should not use private dependencies: ${name}`)
-          }
-        }
+      : {
+        local(name) {
+          reasons.push(`Local dependencies should not be listed in "dependencies": ${name}`)
+        },
+        semver: {
+          ifLocal() {},
+          ifPrivate(name) {
+            if (isPrivateDependency(name)) {
+              reasons.push(`Public package should not use private dependencies: ${name}`)
+            }
+          },
+        },
       }
-    }
 
   const checkDependency = field => {
     const dependencies = manifest[field]
@@ -114,7 +114,7 @@ function main ({ testPath }) {
         const globalDependencies = Object.assign(
           {},
           globalManifest.dependencies,
-          globalManifest.devDependencies
+          globalManifest.devDependencies,
         )
 
         if (name in globalDependencies) {
@@ -125,7 +125,7 @@ function main ({ testPath }) {
 
           justTry(() => {
             const expectedVersion = require(
-              path.resolve(places.project, 'node_modules', name, 'package.json')
+              path.resolve(places.project, 'node_modules', name, 'package.json'),
             ).version
             if (version !== expectedVersion) {
               reasons.push(`Expecting ${name}@${expectedVersion} (${field}) but received ${name}@${version} (global)`)
@@ -140,8 +140,7 @@ function main ({ testPath }) {
           treatDependency.semver.ifPrivate(name)
 
           {
-            const condition =
-              actualName !== name || !semver.satisfies(version, range)
+            const condition = actualName !== name || !semver.satisfies(version, range)
 
             const message = () =>
               `Expecting ${name}@${range} (${field}) but received ${actualName}@${version} (node_modules)`
@@ -170,8 +169,7 @@ function main ({ testPath }) {
             const received = parsedVersion.protocol
             const condition = expected !== received
 
-            const message = () =>
-              `Expecting "${expected}" as protocol but received "${received}" instead`
+            const message = () => `Expecting "${expected}" as protocol but received "${received}" instead`
 
             pushif(condition, message)
           }
@@ -180,11 +178,9 @@ function main ({ testPath }) {
         }
 
         case depRange.Type.Git: {
-          const condition =
-            parsedVersion.url.protocol === depRange.GitUrl.Protocol.Local
+          const condition = parsedVersion.url.protocol === depRange.GitUrl.Protocol.Local
 
-          const message =
-            'Do not use "git+file:" protocol to link local package, use "file:" instead'
+          const message = 'Do not use "git+file:" protocol to link local package, use "file:" instead'
 
           pushif(condition, message)
           break
@@ -203,22 +199,23 @@ function main ({ testPath }) {
     }
   }
 
-  const getResult = () => reasons.length
-    ? runner.fail({
-      start,
-      end: Date.now(),
-      test: {
-        path: testPath,
-        errorMessage: reasons.map(x => '    ' + x).join('\n')
-      }
-    })
-    : runner.pass({
-      start,
-      end: Date.now(),
-      test: {
-        path: testPath
-      }
-    })
+  const getResult = () =>
+    reasons.length
+      ? runner.fail({
+        start,
+        end: Date.now(),
+        test: {
+          path: testPath,
+          errorMessage: reasons.map(x => '    ' + x).join('\n'),
+        },
+      })
+      : runner.pass({
+        start,
+        end: Date.now(),
+        test: {
+          path: testPath,
+        },
+      })
 
   checkDependency('dependencies')
   checkDependency('devDependencies')
@@ -269,7 +266,7 @@ function main ({ testPath }) {
       }
     } else {
       reasons.push(
-        ...requiredDependencies.map(name => `Missing dependency "${name}"`)
+        ...requiredDependencies.map(name => `Missing dependency "${name}"`),
       )
     }
 
@@ -282,7 +279,7 @@ function main ({ testPath }) {
     const expectedName = `@tools/${containerBaseName}`
     if (manifest.name !== expectedName) {
       reasons.push(
-        `Expecting package's name to be "${expectedName}" but received "${manifest.name}" instead`
+        `Expecting package's name to be "${expectedName}" but received "${manifest.name}" instead`,
       )
     }
 

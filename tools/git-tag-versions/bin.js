@@ -14,15 +14,13 @@ const { argv } = require('yargs')
     alias: 'u',
     describe: 'Examine tags going to be added without actually adding them',
     type: 'boolean',
-    default: false
+    default: false,
   })
   .help()
 
-const addTag = argv.dry
-  ? () => {}
-  : tagName => tags.addTag(tagName)
+const addTag = argv.dry ? () => {} : tagName => tags.addTag(tagName)
 
-async function main () {
+async function main() {
   const allTags = tags.getAllTags()
   const packages = await wrkspc.listAllPackages(places.packages)
 
@@ -42,5 +40,5 @@ main().then(
   error => {
     console.error(error)
     process.exit(-1)
-  }
+  },
 )

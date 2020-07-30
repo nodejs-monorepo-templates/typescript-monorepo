@@ -11,7 +11,7 @@ import {
   PackageManifest,
   TestManifest,
   ToolManifest,
-  loadRootManifest
+  loadRootManifest,
 } from '@tools/utils'
 const rootManifest = loadRootManifest()
 
@@ -20,13 +20,13 @@ const { editor, silent } = yargs
     alias: 'e',
     describe: 'Open file after creation',
     type: 'string',
-    default: ''
+    default: '',
   })
   .option('silent', {
     alias: ['quiet', 'q'],
     describe: 'Whether to log actions to the terminal',
     type: 'boolean',
-    default: false
+    default: false,
   })
   .help()
   .argv
@@ -37,7 +37,7 @@ const log = createLogger(silent)
  * Choose a scope from a list of scopes
  * @param choices Scopes to choose from
  */
-export async function chooseScope (choices: ReadonlyArray<string | null>): Promise<string | null> {
+export async function chooseScope(choices: ReadonlyArray<string | null>): Promise<string | null> {
   if (!choices.length) throw new Error('List of scopes is empty')
 
   if (choices.length === 1) {
@@ -50,10 +50,8 @@ export async function chooseScope (choices: ReadonlyArray<string | null>): Promi
     message: 'Which scope does the package belongs to',
     type: 'list',
     choices: choices.map(
-      scope => scope === null
-        ? { name: '<empty>', value: null }
-        : { name: '@' + scope, value: scope }
-    )
+      scope => scope === null ? { name: '<empty>', value: null } : { name: '@' + scope, value: scope },
+    ),
   })
 
   return answer.scope
@@ -67,29 +65,29 @@ interface Remaining {
   readonly sideEffects?: boolean | 'undefined'
 }
 
-async function promptRemaining (): Promise<Remaining> {
+async function promptRemaining(): Promise<Remaining> {
   return prompt([
     {
       name: 'description',
       message: 'Field "description" of package.json',
-      type: 'input'
+      type: 'input',
     },
     {
       name: 'author',
       message: 'Field "author" of package.json',
       type: 'input',
-      default: rootManifest.author
+      default: rootManifest.author,
     },
     {
       name: 'license',
       message: 'Field "license" of package.json',
       type: 'input',
-      default: rootManifest.license || 'MIT' // empty string → 'MIT'
+      default: rootManifest.license || 'MIT', // empty string → 'MIT'
     },
     {
       name: 'keywords',
       message: 'Field "keywords" of package.json',
-      type: 'input'
+      type: 'input',
     },
     {
       name: 'sideEffects',
@@ -98,14 +96,14 @@ async function promptRemaining (): Promise<Remaining> {
       choices: [
         { name: 'false', value: false },
         { name: 'true', value: true },
-        { name: 'undefined', value: 'undefined' }
-      ]
-    }
+        { name: 'undefined', value: 'undefined' },
+      ],
+    },
   ])
 }
 
-async function openEditor (filename: string) {
-  async function getOpener () {
+async function openEditor(filename: string) {
+  async function getOpener() {
     if (editor) return editor
 
     const { EDITOR } = process.env
@@ -114,7 +112,7 @@ async function openEditor (filename: string) {
     const { confirmation } = await prompt({
       name: 'confirmation',
       message: `Execute ${EDITOR} ${filename}`,
-      type: 'confirm'
+      type: 'confirm',
     })
 
     return confirmation ? EDITOR : null
@@ -134,7 +132,7 @@ async function openEditor (filename: string) {
  * @param name Name of the folder
  * @param manifest
  */
-async function writeManifest (container: string, name: string, manifest: any) {
+async function writeManifest(container: string, name: string, manifest: any) {
   const dirname = path.join(container, name)
   const filename = path.join(dirname, 'package.json')
   await fsx.mkdir(dirname)
@@ -147,7 +145,7 @@ async function writeManifest (container: string, name: string, manifest: any) {
  * Create new package folder
  * @param name Folder name
  */
-export async function newPackage (name: string) {
+export async function newPackage(name: string) {
   const scope = await chooseScope(config.scopes)
   const { description, author, license, keywords, sideEffects } = await promptRemaining()
   const { homepage, repository, bugs, devDependencies } = rootManifest
@@ -161,14 +159,12 @@ export async function newPackage (name: string) {
     homepage,
     repository,
     bugs,
-    keywords: keywords
-      ? String(keywords).split(' ').filter(Boolean)
-      : undefined,
+    keywords: keywords ? String(keywords).split(' ').filter(Boolean) : undefined,
     sideEffects: sideEffects === 'undefined' ? undefined : sideEffects,
     dependencies: {
       tslib: devDependencies.tslib,
-      '@types/node': devDependencies['@types/node']
-    }
+      '@types/node': devDependencies['@types/node'],
+    },
   }
 
   await writeManifest(places.packages, name, manifest)
@@ -178,8 +174,8 @@ export async function newPackage (name: string) {
  * Create new test folder
  * @param name Folder name
  */
-export async function newTest (name: string) {
-  async function getSubjectDeps () {
+export async function newTest(name: string) {
+  async function getSubjectDeps() {
     const subjectPath = path.join(places.packages, name, 'package.json')
     if (!await fsx.pathExists(subjectPath)) return undefined
 
@@ -189,24 +185,24 @@ export async function newTest (name: string) {
       name: 'confirmation',
       message: `Add package ${JSON.stringify(subjectName)} to "dependencies"`,
       type: 'confirm',
-      default: true
+      default: true,
     })
 
     if (!confirmation) return undefined
 
     const dependency = 'file:' + path.relative(
       path.join(places.test, name),
-      path.join(places.packages, name)
+      path.join(places.packages, name),
     )
 
     return {
-      [subjectName]: dependency
+      [subjectName]: dependency,
     }
   }
 
   const manifest: TestManifest = {
     private: true,
-    dependencies: await getSubjectDeps()
+    dependencies: await getSubjectDeps(),
   }
 
   await writeManifest(places.test, name, manifest)
@@ -216,11 +212,11 @@ export async function newTest (name: string) {
  * Create new tool folder
  * @param name Folder name
  */
-export async function newTool (name: string) {
+export async function newTool(name: string) {
   const manifest: ToolManifest = {
     name: '@tools/' + name,
     version: '0.0.0',
-    private: true
+    private: true,
   }
 
   await writeManifest(places.tools, name, manifest)
@@ -229,7 +225,7 @@ export async function newTool (name: string) {
 /**
  * Main program
  */
-export async function main () {
+export async function main() {
   const { place, name } = await prompt([
     {
       name: 'place',
@@ -238,15 +234,15 @@ export async function main () {
       choices: [
         'packages',
         'test',
-        'tools'
-      ]
+        'tools',
+      ],
     },
     {
       name: 'name',
       message: 'Folder name',
       type: 'input',
-      validate: input => Boolean(input)
-    }
+      validate: input => Boolean(input),
+    },
   ])
 
   switch (place) {

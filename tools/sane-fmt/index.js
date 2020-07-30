@@ -9,17 +9,17 @@ const { project } = require('@tools/places')
 const argvPrefix = process.argv.slice(2)
 const TARGET_REGEX = /\.(js|ts)x?$/i
 
-async function listTargets () {
+async function listTargets() {
   const allFiles = await git.listFiles({ fs, dir: project })
   return allFiles.filter(filename => TARGET_REGEX.test(filename))
 }
 
-async function createArgv () {
+async function createArgv() {
   const targets = await listTargets()
   return [...argvPrefix, '--', ...targets]
 }
 
-async function execute () {
+async function execute() {
   const argv = await createArgv()
   return spawnSync(process.execPath, command, ...argv).exit()
 }
@@ -28,5 +28,5 @@ module.exports = {
   command,
   listTargets,
   createArgv,
-  execute
+  execute,
 }

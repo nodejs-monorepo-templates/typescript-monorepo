@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-export async function loadRepoUrl (remote = 'origin') {
+export async function loadRepoUrl(remote = 'origin') {
   const git = await import('isomorphic-git')
   const { project } = await import('@tools/places')
 

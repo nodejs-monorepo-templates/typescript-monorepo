@@ -5,9 +5,10 @@ const { lookpath } = require('lookpath')
 const cmd = require('@tools/test-spawn')
 const places = require('@tools/places')
 
-const listShellFiles = async () => (await fs.readdir(path.join(places.project, 'ci')))
-  .filter(name => name.endsWith('.sh') || name.endsWith('.bash'))
-  .map(name => path.join('ci', name))
+const listShellFiles = async () =>
+  (await fs.readdir(path.join(places.project, 'ci')))
+    .filter(name => name.endsWith('.sh') || name.endsWith('.bash'))
+    .map(name => path.join('ci', name))
 
 it('ShellCheck', async () => {
   const shellcheck = await lookpath('shellcheck')
@@ -19,6 +20,6 @@ it('ShellCheck', async () => {
 
   cmd({
     defaultExecutable: shellcheck,
-    argvSuffix: await listShellFiles()
+    argvSuffix: await listShellFiles(),
   })
 })

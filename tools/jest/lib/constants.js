@@ -7,16 +7,16 @@ const moduleFileExtensions = [
   'js',
   'jsx',
   'json',
-  'node'
+  'node',
 ]
 
 const coveragePathIgnorePatterns = [
   '\\.json$',
   places.test,
-  places.tools
+  places.tools,
 ]
 
 module.exports = {
   moduleFileExtensions,
-  coveragePathIgnorePatterns
+  coveragePathIgnorePatterns,
 }
