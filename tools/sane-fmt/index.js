@@ -10,8 +10,18 @@ const argvPrefix = process.argv.slice(2)
 const TARGET_REGEX = /\.(js|ts)x?$/i
 
 async function listTargets() {
-  const allFiles = await git.listFiles({ fs, dir: project })
-  return allFiles.filter(filename => TARGET_REGEX.test(filename))
+  const fromLS = (await git.listFiles({ fs, dir: project }))
+    .filter(filename => TARGET_REGEX.test(filename))
+
+  const fromStatus = (
+    await git.statusMatrix({
+      fs,
+      dir: project,
+      filter: filename => TARGET_REGEX.test(filename),
+    })
+  ).map(([filename]) => filename)
+
+  return new Set([...fromLS, ...fromStatus])
 }
 
 async function createArgv() {
