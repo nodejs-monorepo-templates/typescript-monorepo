@@ -8,6 +8,6 @@ it('TypeScript: Type Check', () => {
       require.resolve('typescript/bin/tsc'),
       '--noEmit',
     ],
-    envMiddleName: 'STANDARDJS',
+    envMiddleName: 'TSC',
   })
 })
