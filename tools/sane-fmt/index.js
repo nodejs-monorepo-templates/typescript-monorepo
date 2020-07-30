@@ -1,4 +1,5 @@
 'use strict'
+const path = require('path')
 const fs = require('fs')
 const process = require('process')
 const git = require('isomorphic-git')
@@ -21,7 +22,8 @@ async function listTargets() {
     })
   ).map(([filename]) => filename)
 
-  return new Set([...fromLS, ...fromStatus])
+  return [...new Set([...fromLS, ...fromStatus])]
+    .filter(filename => fs.existsSync(path.resolve(project, filename)))
 }
 
 async function createArgv() {
