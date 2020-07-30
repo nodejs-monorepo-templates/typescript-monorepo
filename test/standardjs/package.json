@@ -1,7 +1,0 @@
-{
-  "private": true,
-  "dependencies": {
-    "@tools/standardjs": "file:../../tools/standardjs",
-    "@tools/test-spawn": "file:../../tools/test-spawn"
-  }
-}

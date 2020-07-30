@@ -26,7 +26,6 @@
     "@tools/jest": "file:../jest",
     "@tools/places": "file:../places",
     "@tools/preloaded-node": "file:../preloaded-node",
-    "@tools/standardjs": "file:../standardjs",
     "@tools/tslint": "file:../tslint",
     "@tools/typescript": "file:../typescript",
     "@tools/workspace": "file:../workspace"

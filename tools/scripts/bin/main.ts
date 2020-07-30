@@ -229,11 +229,6 @@ abstract class Dict {
     this.mkspawn(commands.preloadedNode)
   )
 
-  public readonly runStandardJS = new Command(
-    'Lint JavaScript codes with StandardJS',
-    this.mkspawn(commands.standardjs)
-  )
-
   public readonly runTSLint = new Command(
     'Lint TypeScript codes with TSLint',
     this.mkspawn(commands.tslint)
