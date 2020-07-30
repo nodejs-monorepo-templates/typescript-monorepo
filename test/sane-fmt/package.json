@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "@tools/test-spawn": "file:../../tools/test-spawn",
+    "@tools/sane-fmt": "file:../../tools/sane-fmt"
+  }
+}

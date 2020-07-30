@@ -1,0 +1,7 @@
+dependencies:
+  '@tools/sane-fmt': 'link:../../tools/sane-fmt'
+  '@tools/test-spawn': 'link:../../tools/test-spawn'
+lockfileVersion: 5.1
+specifiers:
+  '@tools/sane-fmt': 'file:../../tools/sane-fmt'
+  '@tools/test-spawn': 'file:../../tools/test-spawn'
