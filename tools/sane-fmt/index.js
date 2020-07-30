@@ -25,6 +25,7 @@ async function execute () {
 }
 
 module.exports = {
+  command,
   listTargets,
   createArgv,
   execute
