@@ -13,7 +13,6 @@
   "devDependencies": {
     "standard": "^14.3.4",
     "tslint": "^6.1.2",
-    "tslint-config-standard": "^9.0.0",
     "typescript": "^3.9.7",
     "toolcheck": "^0.1.4",
     "tslib": "^2.0.0",
