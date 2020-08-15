@@ -6,7 +6,7 @@
   "bin": "bin.js",
   "dependencies": {
     "isomorphic-git": "^1.7.4",
-    "@sane-fmt/wasm32-wasi": "^0.3.7",
+    "@sane-fmt/wasm32-wasi": "^0.4.0",
     "exec-inline": "^0.0.5",
     "@tools/places": "file:../places"
   }
