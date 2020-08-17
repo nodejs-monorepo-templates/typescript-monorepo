@@ -33,7 +33,7 @@ export abstract class ManifestItem<Obj extends Manifest> {
 }
 
 export abstract class ManifestList<Obj extends Manifest> extends Map<string, ManifestItem<Obj>> {
-  private promptChoices(): { name: string; value: ManifestItem<Obj> }[] {
+  private promptChoices(): { name: string, value: ManifestItem<Obj> }[] {
     return this.items().map(value => ({ name: value.name, value }))
   }
 
