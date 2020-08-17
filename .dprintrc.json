@@ -1,0 +1,21 @@
+{
+  "$schema": "https://dprint.dev/schemas/v0.json",
+  "projectType": "openSource",
+  "extends": "https://github.com/sane-fmt/sane-fmt/raw/0.4.1/exports/sane-fmt.dprintrc.json",
+  "includes": [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.jsx",
+    "**/*.tsx"
+  ],
+  "excludes": [
+    ".git",
+    "node_modules",
+    "/coverage",
+    "/docs",
+    "/dist"
+  ],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.29.0.wasm"
+  ]
+}
