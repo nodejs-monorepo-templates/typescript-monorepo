@@ -10,7 +10,7 @@ dependencies:
   fs-extra: 9.0.1
   minimatch: 3.0.4
   pretty: 2.0.0
-  typedoc: 0.17.8
+  typedoc: 0.18.0
 lockfileVersion: 5.1
 packages:
   /@tsfun/array/0.0.5:
@@ -140,16 +140,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Ua99YUrZqfYQ6huvu5idaxxWiQ8=
-  /fs-extra/8.1.0:
-    dependencies:
-      graceful-fs: 4.2.4
-      jsonfile: 4.0.0
-      universalify: 0.1.2
-    dev: false
-    engines:
-      node: '>=6 <7 || >=8'
-    resolution:
-      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
   /fs-extra/9.0.1:
     dependencies:
       at-least-node: 1.0.0
@@ -252,12 +242,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-a26B+Cx7USQGSWnz9YxgJNMmML/QG2nqIaL7VVYPCXbqiKz8PN0waSNvroMtvAK6tY7g/wPdNWGEP+JTNIBr6A==
-  /jsonfile/4.0.0:
-    dev: false
-    optionalDependencies:
-      graceful-fs: 4.2.4
-    resolution:
-      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /jsonfile/6.0.1:
     dependencies:
       universalify: 1.0.0
@@ -289,13 +273,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-oxMeX/Y35PNFuZoHp+jUj5OSEmLCaIH4KTFJh7a93cHBoFmpw2IoPs22VIz7vyO2YUnx2Tn9dzIwO2P/4quIRg==
-  /marked/1.0.0:
+  /marked/1.1.1:
     dev: false
     engines:
       node: '>= 8.16.2'
     hasBin: true
     resolution:
-      integrity: sha512-Wo+L1pWTVibfrSr+TTtMuiMfNzmZWiOPeO7rZsQUY5bgsxpHesBEcIWJloWVTFnrMXnf/TL30eTFSGJddmQAng==
+      integrity: sha512-mJzT8D2yPxoPh7h0UXkB+dBj4FykPJ2OIfxAWeIHrvoHDkFxukV/29QxoFQoPM6RLEwhIFdJpmKBlqVM3s2ZIw==
   /minimatch/3.0.4:
     dependencies:
       brace-expansion: 1.1.11
@@ -444,26 +428,26 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-zo09yRj+xwLFE3hyhJeVHWRSPuKEIAsFK5r2u47KL/HBKqpwdUSanoaz5L34IKiSATFrjG5ywmIu98hPVMfxZg==
-  /typedoc/0.17.8:
+  /typedoc/0.18.0:
     dependencies:
-      fs-extra: 8.1.0
+      fs-extra: 9.0.1
       handlebars: 4.7.6
       highlight.js: 10.0.3
       lodash: 4.17.15
       lunr: 2.3.8
-      marked: 1.0.0
+      marked: 1.1.1
       minimatch: 3.0.4
       progress: 2.0.3
       shelljs: 0.8.4
       typedoc-default-themes: 0.10.2
     dev: false
     engines:
-      node: '>= 8.0.0'
+      node: '>= 10.0.0'
     hasBin: true
     peerDependencies:
       typescript: '>=3.8.3'
     resolution:
-      integrity: sha512-/OyrHCJ8jtzu+QZ+771YaxQ9s4g5Z3XsQE3Ma7q+BL392xxBn4UMvvCdVnqKC2T/dz03/VXSLVKOP3lHmDdc/w==
+      integrity: sha512-UgDQwapCGQCCdYhEQzQ+kGutmcedklilgUGf62Vw6RdI29u6FcfAXFQfRTiJEbf16aK3YnkB20ctQK1JusCRbA==
   /uglify-js/3.9.4:
     dependencies:
       commander: 2.20.3
@@ -474,12 +458,6 @@ packages:
     optional: true
     resolution:
       integrity: sha512-8RZBJq5smLOa7KslsNsVcSH+KOXf1uDU8yqLeNuVKwmT0T3FA0ZoXlinQfRad7SDcbZZRZE4ov+2v71EnxNyCA==
-  /universalify/0.1.2:
-    dev: false
-    engines:
-      node: '>= 4.0.0'
-    resolution:
-      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
   /universalify/1.0.0:
     dev: false
     engines:
@@ -510,4 +488,4 @@ specifiers:
   fs-extra: ^9.0.1
   minimatch: ^3.0.4
   pretty: ^2.0.0
-  typedoc: ^0.17.8
+  typedoc: ^0.18.0
