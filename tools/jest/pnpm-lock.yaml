@@ -10,9 +10,9 @@ dependencies:
   just-try: 2.1.0
   parse-dependency-range: 0.0.4
   semver: 7.3.2
-  ts-jest: 26.2.0_jest@26.4.0
+  ts-jest: 26.2.0_jest@26.4.0+typescript@4.0.2
   tslib: 2.0.1
-  typescript: 3.9.7
+  typescript: 4.0.2
   yaml-jest: 1.0.5
 lockfileVersion: 5.1
 packages:
@@ -3647,7 +3647,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-3n1qG+/5kg+jrbTzwAykB5yRYtQCTqOGKq5U5PE3b0a1/mzo6snDhjGS0zJVJunO0NrT3Dg1MLy5TjWP/UJppg==
-  /ts-jest/26.2.0_jest@26.4.0:
+  /ts-jest/26.2.0_jest@26.4.0+typescript@4.0.2:
     dependencies:
       '@types/jest': 26.0.10
       bs-logger: 0.2.6
@@ -3660,6 +3660,7 @@ packages:
       make-error: 1.3.6
       mkdirp: 1.0.4
       semver: 7.3.2
+      typescript: 4.0.2
       yargs-parser: 18.1.3
     dev: false
     engines:
@@ -3726,13 +3727,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
-  /typescript/3.9.7:
+  /typescript/4.0.2:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+      integrity: sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
   /union-value/1.0.1:
     dependencies:
       arr-union: 3.1.0
@@ -3982,5 +3983,5 @@ specifiers:
   semver: ^7.3.2
   ts-jest: ^26.2.0
   tslib: ^2.0.1
-  typescript: ^3.9.7
+  typescript: ^4.0.0
   yaml-jest: ^1.0.5
