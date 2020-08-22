@@ -5,9 +5,9 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "tslint": "^6.1.3",
-    "typescript": "^3.9.7",
+    "typescript": "^4.0.2",
     "exec-inline": "^0.0.5",
     "@tools/places": "file:../places"
   }

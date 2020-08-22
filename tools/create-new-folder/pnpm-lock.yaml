@@ -4,7 +4,7 @@ dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@tools/utils': 'link:../utils'
   '@types/fs-extra': 9.0.1
-  '@types/inquirer': 7.3.0
+  '@types/inquirer': 7.3.1
   '@types/yargs': 15.0.5
   fs-extra: 9.0.1
   inquirer: 7.3.3
@@ -21,13 +21,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
-  /@types/inquirer/7.3.0:
+  /@types/inquirer/7.3.1:
     dependencies:
       '@types/through': 0.0.30
-      rxjs: 6.5.5
+      rxjs: 6.6.0
     dev: false
     resolution:
-      integrity: sha512-wcPs5jTrZYQBzzPlvUEzBcptzO4We2sijSvkBq8oAKRMJoH8PvrmP6QQnxLB5RScNUmRfujxA+ngxD4gk4xe7Q==
+      integrity: sha512-osD38QVIfcdgsPCT0V3lD7eH0OFurX71Jft18bZrsVQWVRt6TuxRzlr0GJLrxoHZR2V5ph7/qP8se/dcnI7o0g==
   /@types/node/14.0.6:
     dev: false
     resolution:
@@ -331,14 +331,6 @@ packages:
       node: '>=0.12.0'
     resolution:
       integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==
-  /rxjs/6.5.5:
-    dependencies:
-      tslib: 1.13.0
-    dev: false
-    engines:
-      npm: '>=2.0.0'
-    resolution:
-      integrity: sha512-WfQI+1gohdf0Dai/Bbmk5L5ItH5tYqm3ki2c5GdWhKjalzjg93N3avFjVStyZZz+A2Em+ZxKH5bNghw9UeylGQ==
   /rxjs/6.6.0:
     dependencies:
       tslib: 1.13.0
@@ -464,7 +456,7 @@ specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@tools/utils': 'file:../utils'
   '@types/fs-extra': ^9.0.1
-  '@types/inquirer': ^7.3.0
+  '@types/inquirer': ^7.3.1
   '@types/yargs': ^15.0.5
   fs-extra: ^9.0.1
   inquirer: ^7.3.3

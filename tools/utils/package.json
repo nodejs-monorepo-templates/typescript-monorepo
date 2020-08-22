@@ -9,7 +9,7 @@
     "fs-extra": "^9.0.1",
     "isomorphic-git": "^1.7.4",
     "@types/fs-extra": "^9.0.1",
-    "@types/inquirer": "^7.3.0",
+    "@types/inquirer": "^7.3.1",
     "@tools/places": "file:../places",
     "@tools/preloaded-node": "file:../preloaded-node"
   }
