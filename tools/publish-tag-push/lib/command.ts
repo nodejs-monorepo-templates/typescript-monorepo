@@ -1,3 +1,4 @@
+import places from '@tools/places'
 import { StyledText, dim } from './styled-text'
 import spawn, { TerminationError, SpawnFactory } from 'advanced-spawn-async'
 import { Printer } from '../utils/types'
@@ -10,6 +11,7 @@ export function displayCommand(args: readonly StyledText[]): string {
 
 const spawnOptions = {
   stdio: 'inherit',
+  cwd: places.project,
 } as const
 
 export async function executeCommand(command: StyledText, args: readonly StyledText[]) {
