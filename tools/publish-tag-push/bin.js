@@ -3,6 +3,7 @@ const { main, handleTerminationError } = require('./index')
 
 main({
   print: console.info,
+  printErr: console.error,
   process,
 })
   .catch(handleTerminationError)

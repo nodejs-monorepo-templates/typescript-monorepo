@@ -1,3 +1,6 @@
+import fs from 'fs'
+import { statusMatrix } from 'isomorphic-git'
+import places from '@tools/places'
 import { Printer } from '../utils/types'
 import { StyledText, normal, dim, bold } from './styled-text'
 import { command } from './command'
@@ -15,16 +18,25 @@ export interface Process {
 
 export interface Options {
   readonly print: Printer
+  readonly printErr: Printer
   readonly process: Process
 }
 
 export async function main(options: Options): Promise<number> {
-  const { print, process } = options
+  const { print, printErr, process } = options
   const { env } = process
   const npm = env.PUBLISH_TAG_PUSH_EXECUTOR || 'npm'
   const git = env.PUBLISH_TAG_PUSH_VCS || 'git'
   const remote = env.PUBLISH_TAG_PUSH_REMOTE || 'origin'
   const branch = env.PUBLISH_TAG_PUSH_BRANCH || 'master'
+
+  const changes = await statusMatrix({ fs, dir: places.project })
+  if (changes.length) {
+    printErr('[ERROR] Repo is not clean')
+    for (const [filename] of changes) {
+      printErr('  → ' + filename)
+    }
+  }
 
   const exec = (cmd: StyledText, ...args: StyledText[]) => command(print, cmd, args)
   await exec(dim(npm), dim('run'), bold('project-publish'))
