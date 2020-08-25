@@ -30,12 +30,14 @@ export async function main(options: Options): Promise<number> {
   const remote = env.PUBLISH_TAG_PUSH_REMOTE || 'origin'
   const branch = env.PUBLISH_TAG_PUSH_BRANCH || 'master'
 
-  const changes = await statusMatrix({ fs, dir: places.project })
+  const changes = (await statusMatrix({ fs, dir: places.project }))
+    .filter(([_, a, b, c]) => a !== 1 || b !== 1 || c !== 1)
   if (changes.length) {
     printErr('[ERROR] Repo is not clean')
     for (const [filename] of changes) {
       printErr('  → ' + filename)
     }
+    return 1
   }
 
   const exec = (cmd: StyledText, ...args: StyledText[]) => command(print, cmd, args)
