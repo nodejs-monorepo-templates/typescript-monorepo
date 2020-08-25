@@ -18,8 +18,12 @@ it('ShellCheck', async () => {
     return
   }
 
-  cmd({
-    defaultExecutable: shellcheck,
-    argvSuffix: await listShellFiles(),
-  })
+  const shellFiles = await listShellFiles()
+
+  if (shellFiles.length) {
+    cmd({
+      defaultExecutable: shellcheck,
+      argvSuffix: shellFiles,
+    })
+  }
 })
