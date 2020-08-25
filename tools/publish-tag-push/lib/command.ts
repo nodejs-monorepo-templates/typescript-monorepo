@@ -1,4 +1,4 @@
-import places from '@tools/places'
+import * as places from '@tools/places'
 import { StyledText, dim } from './styled-text'
 import spawn, { TerminationError, SpawnFactory } from 'advanced-spawn-async'
 import { Printer } from '../utils/types'

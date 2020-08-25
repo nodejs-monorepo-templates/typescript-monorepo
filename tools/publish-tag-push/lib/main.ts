@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { statusMatrix } from 'isomorphic-git'
-import places from '@tools/places'
+import * as places from '@tools/places'
 import { Printer } from '../utils/types'
 import { StyledText, normal, dim, bold } from './styled-text'
 import { command } from './command'
