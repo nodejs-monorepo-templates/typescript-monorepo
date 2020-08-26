@@ -1,11 +1,11 @@
 dependencies:
-  '@sane-fmt/wasm32-wasi': 0.4.1
+  '@sane-fmt/wasm32-wasi': 0.4.5
   '@tools/places': 'link:../places'
   exec-inline: 0.0.5
   isomorphic-git: 1.7.4
 lockfileVersion: 5.1
 packages:
-  /@sane-fmt/wasm32-wasi/0.4.1:
+  /@sane-fmt/wasm32-wasi/0.4.5:
     dependencies:
       '@types/node': 13.13.15
       '@wasmer/wasi': 0.11.2
@@ -13,7 +13,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-VPD+bqlTDuBBda03TpA28+S05IAhqXp+6JI1tx4bYnNU7hwCrbJ/HL8LPDrbF58HkYG+Rup6m9HBKIorSlJSSQ==
+      integrity: sha512-0rKREKqE1RuaIkIPpDpgOnwRWjAZEgP1RUWNgsemHkbVADdl5FFPhewS3dlVPU6chAaOCJXIjADRxLAxXTlgCA==
   /@types/node/13.13.15:
     dev: false
     resolution:
@@ -222,7 +222,7 @@ packages:
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
-  '@sane-fmt/wasm32-wasi': ^0.4.1
+  '@sane-fmt/wasm32-wasi': ^0.4.5
   '@tools/places': 'file:../places'
   exec-inline: ^0.0.5
   isomorphic-git: ^1.7.4
