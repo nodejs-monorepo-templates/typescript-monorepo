@@ -2,7 +2,7 @@ dependencies:
   '@tools/places': 'link:../places'
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@tools/utils': 'link:../utils'
-  '@tsfun/array': 0.0.5
+  '@tsfun/array': 0.0.6
   '@types/fs-extra': 9.0.1
   '@types/minimatch': 3.0.3
   '@types/pretty': 2.0.0
@@ -13,13 +13,13 @@ dependencies:
   typedoc: 0.18.0
 lockfileVersion: 5.1
 packages:
-  /@tsfun/array/0.0.5:
+  /@tsfun/array/0.0.6:
     dependencies:
-      '@types/node': 13.13.9
-      tslib: 1.13.0
+      '@types/node': 14.6.0
+      tslib: 2.0.1
     dev: false
     resolution:
-      integrity: sha512-f6IaTr16nR3oPKo2bvGd1HV2OyB7ONGZgN9uHiIsr7R0B/iaoYqMmI3CowvMo78GAUIXwM7Akx4Z/finDh/aUA==
+      integrity: sha512-8pKde1W0rPysp2JSjnuFyF+FDU6p3H+MuvQ2Z2QyA/Kdiq7VUUOmZfAGLV1YZ5R58M54H8jOTelslAPYUdTPBQ==
   /@types/color-name/1.1.1:
     dev: false
     resolution:
@@ -34,14 +34,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
-  /@types/node/13.13.9:
-    dev: false
-    resolution:
-      integrity: sha512-EPZBIGed5gNnfWCiwEIwTE2Jdg4813odnG8iNPMQGrqVxrI+wL68SPtPeCX+ZxGBaA6pKAVc6jaKgP/Q0QzfdQ==
   /@types/node/14.0.6:
     dev: false
     resolution:
       integrity: sha512-FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==
+  /@types/node/14.6.0:
+    dev: false
+    resolution:
+      integrity: sha512-mikldZQitV94akrc4sCcSjtJfsTKt4p+e/s0AGscVA6XArQ9kFclP+ZiYUMnq987rc6QlYxXv/EivqlfSLxpKA==
   /@types/pretty/2.0.0:
     dev: false
     resolution:
@@ -416,10 +416,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
-  /tslib/1.13.0:
+  /tslib/2.0.1:
     dev: false
     resolution:
-      integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+      integrity: sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
   /typedoc-default-themes/0.10.2:
     dependencies:
       lunr: 2.3.8
@@ -480,7 +480,7 @@ specifiers:
   '@tools/places': 'file:../places'
   '@tools/preloaded-node': 'file:../preloaded-node'
   '@tools/utils': 'file:../utils'
-  '@tsfun/array': ^0.0.5
+  '@tsfun/array': ^0.0.6
   '@types/fs-extra': ^9.0.1
   '@types/minimatch': ^3.0.3
   '@types/pretty': ^2.0.0
