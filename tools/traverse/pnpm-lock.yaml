@@ -1,6 +1,6 @@
 dependencies:
   '@types/fs-extra': 9.0.1
-  fast-traverse: 0.1.6
+  fast-traverse: 0.1.7
   fs-extra: 9.0.1
   iter-tools: 6.2.6
   ts-pipe-compose: 0.2.0
@@ -29,14 +29,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-R/9QdYFLL9dE9l5cWWzWIZByVGFd7lk7JVOJ7KD+E1SJ4gni7XJRLz9QTjyYQiHIqEAgku9VgxdLjMlhhUaAFg==
-  /@types/node/13.13.9:
-    dev: false
-    resolution:
-      integrity: sha512-EPZBIGed5gNnfWCiwEIwTE2Jdg4813odnG8iNPMQGrqVxrI+wL68SPtPeCX+ZxGBaA6pKAVc6jaKgP/Q0QzfdQ==
   /@types/node/14.0.6:
     dev: false
     resolution:
       integrity: sha512-FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==
+  /@types/node/14.6.1:
+    dev: false
+    resolution:
+      integrity: sha512-HnYlg/BRF8uC1FyKRFZwRaCPTPYKa+6I8QiUZFLredaGOou481cgFS4wKRFyKvQtX8xudqkSdBczJHIYSQYKrQ==
   /at-least-node/1.0.0:
     dev: false
     engines:
@@ -53,13 +53,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-EPHO8H4yNLIdyzj0v6LWYDSrZ8c=
-  /fast-traverse/0.1.6:
+  /fast-traverse/0.1.7:
     dependencies:
-      '@types/node': 13.13.9
-      tslib: 1.13.0
+      '@types/node': 14.6.1
+      tslib: 2.0.1
     dev: false
     resolution:
-      integrity: sha512-/5Ati6Qr9r++gG4R6ANxYH8RxQkZTrUDQF6EuSShgJCIrluPrvVSQRDpVl6SA4V/5nFALlF15OfXG1A3U3U6Mw==
+      integrity: sha512-gZTQvJSgrGV24F8AeeTNxip8OEkjRHwDDpGw0b51TzRVGjJsKzh6CuHf9ltVjJZzni5Ead+EEQJ0IFCuoCJUtA==
   /fs-extra/9.0.1:
     dependencies:
       at-least-node: 1.0.0
@@ -116,6 +116,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+  /tslib/2.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
   /typescript-compare/0.0.2:
     dependencies:
       typescript-logic: 0.0.0
@@ -153,7 +157,7 @@ packages:
       integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
 specifiers:
   '@types/fs-extra': ^9.0.1
-  fast-traverse: ^0.1.6
+  fast-traverse: ^0.1.7
   fs-extra: ^9.0.1
   iter-tools: ^6.2.6
   ts-pipe-compose: ^0.2.0
