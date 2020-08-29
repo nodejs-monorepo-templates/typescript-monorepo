@@ -1,16 +1,16 @@
 dependencies:
-  '@types/node': 14.6.1
+  '@types/node': 14.6.2
   tslib: 2.0.1
 lockfileVersion: 5.1
 packages:
-  /@types/node/14.6.1:
+  /@types/node/14.6.2:
     dev: false
     resolution:
-      integrity: sha512-HnYlg/BRF8uC1FyKRFZwRaCPTPYKa+6I8QiUZFLredaGOou481cgFS4wKRFyKvQtX8xudqkSdBczJHIYSQYKrQ==
+      integrity: sha512-onlIwbaeqvZyniGPfdw/TEhKIh79pz66L1q06WUQqJLnAb6wbjvOtepLYTGHTqzdXgBYIE3ZdmqHDGsRsbBz7A==
   /tslib/2.0.1:
     dev: false
     resolution:
       integrity: sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 specifiers:
-  '@types/node': ^14.6.1
+  '@types/node': ^14.6.2
   tslib: ^2.0.1
