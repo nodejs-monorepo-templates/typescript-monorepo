@@ -5,7 +5,6 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "isomorphic-git": "^1.7.4",
     "@sane-fmt/wasm32-wasi": "^0.4.5",
     "exec-inline": "^0.0.5",
     "@tools/places": "file:../places"
