@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 const process = require('process')
 const git = require('isomorphic-git')
-const { spawnSync } = require('exec-inline')
+const exec = require('exec-inline').spawnSync
 const command = require.resolve('@sane-fmt/wasm32-wasi/bin')
 const { project } = require('@tools/places')
 
@@ -33,7 +33,7 @@ async function createArgv() {
 
 async function execute() {
   const argv = await createArgv()
-  return spawnSync(process.execPath, command, ...argv).exit()
+  return exec(process.execPath, command, ...argv).exit()
 }
 
 module.exports = {
