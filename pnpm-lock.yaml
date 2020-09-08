@@ -1,7 +1,7 @@
 devDependencies:
   '@tools/scripts': 'link:tools/scripts'
-  '@types/jest': 26.0.10
-  '@types/node': 14.6.2
+  '@types/jest': 26.0.13
+  '@types/node': 14.6.4
   toolcheck: 0.1.4
   tslib: 2.0.1
   tslint: 6.1.3_typescript@4.0.2
@@ -64,13 +64,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-P/W9yOX/3oPZSpaYOCQzGqgCQRXn0FFO/V8bWrCQs+wLmvVVxk6CRBXALEvNs9OHIatlnlFokfhuDo2ug01ciw==
-  /@types/jest/26.0.10:
+  /@types/jest/26.0.13:
     dependencies:
       jest-diff: 25.5.0
       pretty-format: 25.5.0
     dev: true
     resolution:
-      integrity: sha512-i2m0oyh8w/Lum7wWK/YOZJakYF8Mx08UaKA1CtbmFeDquVhAEdA7znacsVSf2hJ1OQ/OfVMGN90pw/AtzF8s/Q==
+      integrity: sha512-sCzjKow4z9LILc6DhBvn5AkIfmQzDZkgtVVKmGwVrs5tuid38ws281D4l+7x1kP487+FlKDh5kfMZ8WSPAdmdA==
   /@types/node/12.12.42:
     dev: true
     resolution:
@@ -79,10 +79,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==
-  /@types/node/14.6.2:
+  /@types/node/14.6.4:
     dev: true
     resolution:
-      integrity: sha512-onlIwbaeqvZyniGPfdw/TEhKIh79pz66L1q06WUQqJLnAb6wbjvOtepLYTGHTqzdXgBYIE3ZdmqHDGsRsbBz7A==
+      integrity: sha512-Wk7nG1JSaMfMpoMJDKUsWYugliB2Vy55pdjLpmLixeyMi7HizW2I/9QoxsPCkXl3dO+ZOVqPumKaDUv5zJu2uQ==
   /@types/parse-json/4.0.0:
     dev: true
     resolution:
@@ -517,8 +517,8 @@ packages:
       integrity: sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
 specifiers:
   '@tools/scripts': 'file:./tools/scripts'
-  '@types/jest': ^26.0.10
-  '@types/node': ^14.6.2
+  '@types/jest': ^26.0.13
+  '@types/node': ^14.6.4
   toolcheck: ^0.1.4
   tslib: ^2.0.1
   tslint: ^6.1.3

@@ -3,7 +3,7 @@ dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   advanced-spawn-async: 0.1.3
   chalk: 4.1.0
-  isomorphic-git: 1.7.4
+  isomorphic-git: 1.7.6
 lockfileVersion: 5.1
 packages:
   /@types/color-name/1.1.1:
@@ -103,7 +103,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /isomorphic-git/1.7.4:
+  /isomorphic-git/1.7.6:
     dependencies:
       async-lock: 1.2.4
       clean-git-ref: 2.0.1
@@ -121,7 +121,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-gzVg61bZLmfojR287p+nT9bbuFhSH0Us9f6pRVp4J9CA/1A/mghBEvcsCgRxalv+XKJ1sQMxWTc90tzn8WnYVA==
+      integrity: sha512-SHT6iXcRbKEytMy2BGn7ADex0R7HAgThAvhQDaMESPpKfT9EFMhuMO5yrb7Lam5slWxOjcsLbZTTfikDiD/fow==
   /mimic-response/2.1.0:
     dev: false
     engines:
@@ -226,4 +226,4 @@ specifiers:
   '@tools/preloaded-node': 'file:../preloaded-node'
   advanced-spawn-async: ^0.1.3
   chalk: ^4.1.0
-  isomorphic-git: ^1.7.4
+  isomorphic-git: ^1.7.6

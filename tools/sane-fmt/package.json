@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "bin.js",
   "dependencies": {
-    "@sane-fmt/wasm32-wasi": "^0.4.5",
+    "@sane-fmt/wasm32-wasi": "^0.4.10",
     "exec-inline": "^0.0.5",
     "@tools/places": "file:../places"
   }
