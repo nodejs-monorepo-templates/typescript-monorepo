@@ -1,10 +1,10 @@
 dependencies:
-  '@sane-fmt/wasm32-wasi': 0.4.10
+  '@sane-fmt/wasm32-wasi': 0.5.0
   '@tools/places': 'link:../places'
   exec-inline: 0.0.5
 lockfileVersion: 5.1
 packages:
-  /@sane-fmt/wasm32-wasi/0.4.10:
+  /@sane-fmt/wasm32-wasi/0.5.0:
     dependencies:
       '@types/node': 13.13.15
       '@wasmer/wasi': 0.11.2
@@ -12,7 +12,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-Wpf+gVaN16DqO9Ixc5zbeP41Cs01W77vQ0VaDF3FxqNBcm8PsLmy4M22lMW9brTtme8FQ26WIuf84YC2TDIRQg==
+      integrity: sha512-ASSltohzKkn+vEhOM/pVEsmUjzzTeceukZR8X846u2V+u8zUVOdJgvv+rgZ5qd+FGvBREE7T1Tprhmpy5aq8Qg==
   /@types/node/13.13.15:
     dev: false
     resolution:
@@ -73,6 +73,6 @@ packages:
     resolution:
       integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
 specifiers:
-  '@sane-fmt/wasm32-wasi': ^0.4.10
+  '@sane-fmt/wasm32-wasi': ^0.5.0
   '@tools/places': 'file:../places'
   exec-inline: ^0.0.5
