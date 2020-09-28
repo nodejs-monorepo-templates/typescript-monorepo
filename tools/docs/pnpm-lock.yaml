@@ -10,7 +10,7 @@ dependencies:
   fs-extra: 9.0.1
   minimatch: 3.0.4
   pretty: 2.0.0
-  typedoc: 0.19.1
+  typedoc: 0.19.2
 lockfileVersion: 5.1
 packages:
   /@tsfun/array/0.0.8:
@@ -190,10 +190,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
-  /highlight.js/10.0.3:
+  /highlight.js/10.2.0:
     dev: false
     resolution:
-      integrity: sha512-9FG7SSzv9yOY5CGGxfI6NDm7xLYtMOjKtPBxw7Zff3t5UcRcUNTGEeS8lNjhceL34KeetLMoGMFTGoaa83HwyQ==
+      integrity: sha512-OryzPiqqNCfO/wtFo619W+nPYALM6u7iCQkum4bqRmmlcTikOkmlL06i009QelynBPAlNByTQU6cBB2cOBQtCw==
   /inflight/1.0.6:
     dependencies:
       once: 1.4.0
@@ -427,19 +427,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
-  /typedoc-default-themes/0.11.1:
-    dependencies:
-      lunr: 2.3.9
+  /typedoc-default-themes/0.11.4:
     dev: false
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-1yl8pbhjrLywqGJx9TfT+wzP+ntudPYjgJdpCj+s5ed2etBkqZPOCBMKwpaN9o6pdoFQF195PggqWTLVEkaRQQ==
-  /typedoc/0.19.1:
+      integrity: sha512-Y4Lf+qIb9NTydrexlazAM46SSLrmrQRqWiD52593g53SsmUFioAsMWt8m834J6qsp+7wHRjxCXSZeiiW5cMUdw==
+  /typedoc/0.19.2:
     dependencies:
       fs-extra: 9.0.1
       handlebars: 4.7.6
-      highlight.js: 10.0.3
+      highlight.js: 10.2.0
       lodash: 4.17.20
       lunr: 2.3.9
       marked: 1.1.1
@@ -447,7 +445,7 @@ packages:
       progress: 2.0.3
       semver: 7.3.2
       shelljs: 0.8.4
-      typedoc-default-themes: 0.11.1
+      typedoc-default-themes: 0.11.4
     dev: false
     engines:
       node: '>= 10.0.0'
@@ -455,7 +453,7 @@ packages:
     peerDependencies:
       typescript: 3.9.x || 4.0.x
     resolution:
-      integrity: sha512-EqZpRJQUnkwHA1yBhaDExEXUZIiWKddkrDXhRcfUzpnu6pizxNmVTw5IZ3mu682Noa4zQCniE0YNjaAwHQodrA==
+      integrity: sha512-oDEg1BLEzi1qvgdQXc658EYgJ5qJLVSeZ0hQ57Eq4JXy6Vj2VX4RVo18qYxRWz75ifAaYuYNBUCnbhjd37TfOg==
   /uglify-js/3.9.4:
     dependencies:
       commander: 2.20.3
@@ -496,4 +494,4 @@ specifiers:
   fs-extra: ^9.0.1
   minimatch: ^3.0.4
   pretty: ^2.0.0
-  typedoc: ^0.19.1
+  typedoc: ^0.19.2
