@@ -5,14 +5,7 @@ import yargs from 'yargs'
 import * as fsx from 'fs-extra'
 import * as config from '@tools/pkgcfg'
 import * as places from '@tools/places'
-import {
-  createLogger,
-  writeJSON,
-  PackageManifest,
-  TestManifest,
-  ToolManifest,
-  loadRootManifest,
-} from '@tools/utils'
+import { createLogger, writeJSON, PackageManifest, TestManifest, ToolManifest, loadRootManifest } from '@tools/utils'
 const rootManifest = loadRootManifest()
 
 const { editor, silent } = yargs

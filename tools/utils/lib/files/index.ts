@@ -2,13 +2,7 @@ import path from 'path'
 import { readdir, readJSON, existsSync } from 'fs-extra'
 import * as places from '@tools/places'
 import writeJSON from '../write-json'
-import {
-  Manifest,
-  PackageManifest,
-  TestManifest,
-  ToolManifest,
-  ManifestType,
-} from '../manifest'
+import { Manifest, PackageManifest, TestManifest, ToolManifest, ManifestType } from '../manifest'
 
 export abstract class ManifestItem<Obj extends Manifest> {
   abstract readonly name: string
