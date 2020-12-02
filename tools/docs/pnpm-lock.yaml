@@ -11,7 +11,7 @@ dependencies:
   minimatch: 3.0.4
   pretty: 2.0.0
   typedoc: 0.19.2
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@tsfun/array/0.0.8:
     dependencies:

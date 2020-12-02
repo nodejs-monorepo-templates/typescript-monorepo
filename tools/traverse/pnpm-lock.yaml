@@ -4,7 +4,7 @@ dependencies:
   fs-extra: 9.0.1
   iter-tools: 6.2.6
   ts-pipe-compose: 0.2.0
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@babel/runtime-corejs2/7.10.1:
     dependencies:

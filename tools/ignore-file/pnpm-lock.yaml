@@ -9,7 +9,7 @@ dependencies:
   js-yaml: 3.14.0
   minimatch: 3.0.4
   tslib: 2.0.1
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@tsfun/array/0.0.0:
     dependencies:

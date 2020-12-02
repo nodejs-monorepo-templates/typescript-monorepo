@@ -6,7 +6,7 @@ dependencies:
   '@types/inquirer': 7.3.1
   fs-extra: 9.0.1
   inquirer: 7.3.3
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@types/color-name/1.1.1:
     dev: false

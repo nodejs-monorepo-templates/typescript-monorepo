@@ -23,7 +23,7 @@ dependencies:
   fs-extra: 9.0.1
   glob-to-regexp: 0.4.1
   number-enum: 3.0.0
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@babel/runtime-corejs2/7.10.1:
     dependencies:

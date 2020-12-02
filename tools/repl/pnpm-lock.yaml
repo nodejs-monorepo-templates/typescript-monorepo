@@ -3,7 +3,7 @@ dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   glob: 7.1.6
   glob-promise: 3.4.0_glob@7.1.6
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@types/events/3.0.0:
     dev: false

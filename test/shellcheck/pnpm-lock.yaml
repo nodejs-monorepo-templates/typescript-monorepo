@@ -4,7 +4,7 @@ dependencies:
   '@types/fs-extra': 9.0.1
   fs-extra: 9.0.1
   lookpath: 1.1.0
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@types/fs-extra/9.0.1:
     dependencies:

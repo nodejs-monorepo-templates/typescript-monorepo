@@ -3,7 +3,7 @@ dependencies:
   exec-inline: 0.0.5
   nested-workspace-helper: 0.2.15
   number-enum: 3.0.0
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@babel/runtime-corejs2/7.10.1:
     dependencies:

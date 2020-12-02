@@ -1,5 +1,5 @@
 dependencies:
   hello-world: 'link:../../packages/hello-world'
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 specifiers:
   hello-world: 'file:../../packages/hello-world'
