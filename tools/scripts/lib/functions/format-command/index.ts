@@ -1,7 +1,7 @@
 'use strict'
-import path from 'path'
-import chalk from 'chalk'
 import * as places from '@tools/places'
+import chalk from 'chalk'
+import path from 'path'
 const prefix = chalk.dim('$')
 const node = chalk.dim('node')
 const projectPrfx = '<project>'

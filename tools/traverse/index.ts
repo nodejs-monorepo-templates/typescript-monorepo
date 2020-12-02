@@ -1,8 +1,8 @@
-import { join } from 'path'
-import { asyncFilter } from 'iter-tools'
-import { readdir, stat } from 'fs-extra'
-import { pipeline } from 'ts-pipe-compose'
 import traverse from 'fast-traverse'
+import { readdir, stat } from 'fs-extra'
+import { asyncFilter } from 'iter-tools'
+import { join } from 'path'
+import { pipeline } from 'ts-pipe-compose'
 
 export async function* items(
   dirname: string,

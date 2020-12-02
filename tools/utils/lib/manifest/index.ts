@@ -1,5 +1,5 @@
-import path from 'path'
 import * as places from '@tools/places'
+import path from 'path'
 import writeJSON from '../write-json'
 
 interface Repository {

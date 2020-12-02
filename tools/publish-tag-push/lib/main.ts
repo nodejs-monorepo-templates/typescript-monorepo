@@ -1,9 +1,9 @@
+import * as places from '@tools/places'
 import fs from 'fs'
 import { statusMatrix } from 'isomorphic-git'
-import * as places from '@tools/places'
 import { Printer } from '../utils/types'
-import { StyledText, normal, dim, bold } from './styled-text'
 import { command } from './command'
+import { StyledText, normal, dim, bold } from './styled-text'
 
 export interface EnvironmentVariables {
   readonly PUBLISH_TAG_PUSH_EXECUTOR?: string

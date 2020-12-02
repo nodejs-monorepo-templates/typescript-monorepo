@@ -1,7 +1,7 @@
+import * as places from '@tools/places'
+import chalk from 'chalk'
 import path from 'path'
 import process from 'process'
-import chalk from 'chalk'
-import * as places from '@tools/places'
 import { commands, enums, functions } from '../index'
 const { ExitStatusCode } = enums
 const { spawnSync } = functions

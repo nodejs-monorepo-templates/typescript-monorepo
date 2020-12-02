@@ -1,6 +1,6 @@
+import { spawnSync as execInline } from 'exec-inline'
 import process from 'process'
 import formatCommand from '../format-command'
-import { spawnSync as execInline } from 'exec-inline'
 const { SHOW_SPAWN_CMD = 'false' } = process.env
 
 interface SpawnSync {

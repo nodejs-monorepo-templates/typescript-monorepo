@@ -1,12 +1,12 @@
-import path from 'path'
-import process from 'process'
-import { ensureFile, writeFile, pathExists } from 'fs-extra'
-import { Application, TypeScript } from 'typedoc'
-import { partition } from '@tsfun/array'
 import places from '@tools/places'
 import { loadPackageList, loadRepoUrl } from '@tools/utils'
-import * as config from './config'
+import { partition } from '@tsfun/array'
+import { ensureFile, writeFile, pathExists } from 'fs-extra'
+import path from 'path'
+import process from 'process'
+import { Application, TypeScript } from 'typedoc'
 import combineGlobPatterns from './combine-glob-patterns'
+import * as config from './config'
 import { Child, homepage } from './homepage'
 
 async function propIfExists<Key extends string>(

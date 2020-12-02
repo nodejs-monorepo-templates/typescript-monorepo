@@ -1,8 +1,8 @@
-import * as path from 'path'
-import minimatch from 'minimatch'
-import * as yaml from 'js-yaml'
 import * as fsx from 'fs-extra'
 import * as fsTreeUtils from 'fs-tree-utils'
+import * as yaml from 'js-yaml'
+import minimatch from 'minimatch'
+import * as path from 'path'
 import Traverse = fsTreeUtils.Traverse
 import DeepFunc = Traverse.Options.DeepFunc
 

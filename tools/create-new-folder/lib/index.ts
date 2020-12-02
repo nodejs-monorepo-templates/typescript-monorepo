@@ -1,11 +1,11 @@
-import path from 'path'
-import { spawnSync } from 'child_process'
-import { prompt } from 'inquirer'
-import yargs from 'yargs'
-import * as fsx from 'fs-extra'
 import * as config from '@tools/pkgcfg'
 import * as places from '@tools/places'
 import { createLogger, writeJSON, PackageManifest, TestManifest, ToolManifest, loadRootManifest } from '@tools/utils'
+import { spawnSync } from 'child_process'
+import * as fsx from 'fs-extra'
+import { prompt } from 'inquirer'
+import path from 'path'
+import yargs from 'yargs'
 const rootManifest = loadRootManifest()
 
 const { editor, silent } = yargs

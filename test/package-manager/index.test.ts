@@ -1,8 +1,8 @@
-import path from 'path'
-import { existsSync } from 'fs'
-import { spawnSync } from 'child_process'
-import semver from 'semver'
 import { project } from '@tools/places'
+import { spawnSync } from 'child_process'
+import { existsSync } from 'fs'
+import path from 'path'
+import semver from 'semver'
 
 const mkfn = (file: string, pkgmgr: string) =>
   () => {

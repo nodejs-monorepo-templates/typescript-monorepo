@@ -1,7 +1,7 @@
 import * as places from '@tools/places'
-import { StyledText, dim } from './styled-text'
 import spawn, { TerminationError, SpawnFactory } from 'advanced-spawn-async'
 import { Printer } from '../utils/types'
+import { StyledText, dim } from './styled-text'
 
 export function displayCommand(args: readonly StyledText[]): string {
   return [dim('$'), ...args]

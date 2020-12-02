@@ -1,6 +1,6 @@
-import process from 'process'
 import { publish, Options } from '@tools/gh-pages'
 import places from '@tools/places'
+import process from 'process'
 import { optionsList } from './config'
 
 const DEFAULT_OPTIONS: Options = { dotfiles: true }

@@ -1,5 +1,3 @@
-import path from 'path'
-import { prompt } from 'inquirer'
 import {
   Manifest,
   ManifestType,
@@ -12,6 +10,8 @@ import {
   loadTestList,
   loadToolList,
 } from '@tools/utils'
+import { prompt } from 'inquirer'
+import path from 'path'
 
 async function promptManifestType(): Promise<NonRootManifestTypes.Union> {
   const { type } = await prompt({

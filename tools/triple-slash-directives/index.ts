@@ -1,7 +1,7 @@
-import path from 'path'
-import { readFile, writeFile } from 'fs-extra'
-import { jsFiles } from '@tools/traverse'
 import * as places from '@tools/places'
+import { jsFiles } from '@tools/traverse'
+import { readFile, writeFile } from 'fs-extra'
+import path from 'path'
 
 export async function main() {
   const promises: Promise<void>[] = []
