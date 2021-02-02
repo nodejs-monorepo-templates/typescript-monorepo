@@ -9,7 +9,7 @@
   "main": "index.js",
   "dependencies": {
     "glob": "^7.1.6",
-    "glob-promise": "^3.4.0",
+    "glob-promise": "^4.0.0",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/places": "file:../places"
   }
