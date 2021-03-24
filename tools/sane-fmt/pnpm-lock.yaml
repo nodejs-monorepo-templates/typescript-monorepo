@@ -1,10 +1,10 @@
 dependencies:
-  '@sane-fmt/wasm32-wasi': 0.7.0
-  '@tools/places': 'link:../places'
+  '@sane-fmt/wasm32-wasi': 0.8.0
+  '@tools/places': link:../places
   exec-inline: 0.0.5
 lockfileVersion: 5.2
 packages:
-  /@sane-fmt/wasm32-wasi/0.7.0:
+  /@sane-fmt/wasm32-wasi/0.8.0:
     dependencies:
       '@types/node': 13.13.15
       '@wasmer/wasi': 0.11.2
@@ -12,7 +12,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-QtQ6JhPfRRmMT38Gt1WiU+hK4ClVuFGX1nbcsiIANav/S3slm1K4SC337a87tPEZDKrwFoODrZ5DwQeAxbQKyA==
+      integrity: sha512-ld14S6zC492488HJjPy3Lb9E7eS5xxYKBrwtE9ccxSxY60BcoWAHxgmcUIcVl17xzYq5+BgH6h/z7dlX5V6BqA==
   /@types/node/13.13.15:
     dev: false
     resolution:
@@ -73,6 +73,6 @@ packages:
     resolution:
       integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
 specifiers:
-  '@sane-fmt/wasm32-wasi': ^0.7.0
-  '@tools/places': 'file:../places'
+  '@sane-fmt/wasm32-wasi': ^0.8.0
+  '@tools/places': file:../places
   exec-inline: ^0.0.5
