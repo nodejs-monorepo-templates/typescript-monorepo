@@ -1,7 +1,11 @@
 {
   "pinVersions": false,
+  "schedule": [
+    "every weekend"
+  ],
   "extends": [
     "config:base",
     "docker:disable"
-  ]
+  ],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
 }
