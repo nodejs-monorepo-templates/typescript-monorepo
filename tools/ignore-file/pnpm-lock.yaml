@@ -4,11 +4,11 @@ specifiers:
   '@tools/places': file:../places
   '@tools/preloaded-node': file:../preloaded-node
   '@types/fs-extra': ^9.0.1
-  '@types/js-yaml': ^3.12.5
+  '@types/js-yaml': ^4.0.0
   '@types/minimatch': ^3.0.3
   fs-extra: ^10.0.0
   fs-tree-utils: ^0.1.8
-  js-yaml: ^3.14.0
+  js-yaml: ^4.0.0
   minimatch: ^3.0.4
   tslib: ^2.0.1
 
@@ -16,11 +16,11 @@ dependencies:
   '@tools/places': link:../places
   '@tools/preloaded-node': link:../preloaded-node
   '@types/fs-extra': 9.0.1
-  '@types/js-yaml': 3.12.5
+  '@types/js-yaml': 4.0.1
   '@types/minimatch': 3.0.3
   fs-extra: 10.0.0
   fs-tree-utils: 0.1.8
-  js-yaml: 3.14.0
+  js-yaml: 4.1.0
   minimatch: 3.0.4
   tslib: 2.0.1
 
@@ -45,8 +45,8 @@ packages:
       '@types/node': 14.0.6
     dev: false
 
-  /@types/js-yaml/3.12.5:
-    resolution: {integrity: sha512-JCcp6J0GV66Y4ZMDAQCXot4xprYB+Zfd3meK9+INSJeVZwJmHAW30BBEEkPzXswMXuiyReUGOP3GxrADc9wPww==}
+  /@types/js-yaml/4.0.1:
+    resolution: {integrity: sha512-xdOvNmXmrZqqPy3kuCQ+fz6wA0xU5pji9cd1nDrflWaAWtYLLGk5ykW0H6yg5TVyehHP1pfmuuSaZkhP+kspVA==}
     dev: false
 
   /@types/minimatch/3.0.3:
@@ -61,10 +61,8 @@ packages:
     resolution: {integrity: sha512-FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==}
     dev: false
 
-  /argparse/1.0.10:
-    resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
-    dependencies:
-      sprintf-js: 1.0.3
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: false
 
   /balanced-match/1.0.0:
@@ -80,12 +78,6 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
-    dev: false
-
-  /esprima/4.0.1:
-    resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
-    engines: {node: '>=4'}
-    hasBin: true
     dev: false
 
   /fs-extra/10.0.0:
@@ -126,12 +118,11 @@ packages:
     resolution: {integrity: sha512-0M2XxkZLx/mi3t8NVwIm1g8nHoEmM9p9UBl/G9k4+hm0kBgOVdMV/B3CY5dQ8qG8qc80NN4gDV4HQv6FTJ5q7A==}
     dev: false
 
-  /js-yaml/3.14.0:
-    resolution: {integrity: sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==}
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
     dependencies:
-      argparse: 1.0.10
-      esprima: 4.0.1
+      argparse: 2.0.1
     dev: false
 
   /jsonfile/4.0.0:
@@ -162,10 +153,6 @@ packages:
       '@types/node': 13.13.9
       immutable: 4.0.0-rc.12
       tslib: 1.13.0
-    dev: false
-
-  /sprintf-js/1.0.3:
-    resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=}
     dev: false
 
   /tslib/1.13.0:
