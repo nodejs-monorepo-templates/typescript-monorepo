@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "iter-tools": "^6.2.6",
+    "iter-tools": "^7.0.0",
     "fs-extra": "^10.0.0",
     "fast-traverse": "^0.1.7",
     "ts-pipe-compose": "^0.2.0",
