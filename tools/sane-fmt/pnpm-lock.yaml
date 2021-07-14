@@ -1,78 +1,85 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@sane-fmt/wasm32-wasi': ^0.10.0
+  '@tools/places': file:../places
+  exec-inline: ^0.0.5
+
 dependencies:
-  '@sane-fmt/wasm32-wasi': 0.8.0
+  '@sane-fmt/wasm32-wasi': 0.10.0
   '@tools/places': link:../places
   exec-inline: 0.0.5
-lockfileVersion: 5.2
+
 packages:
-  /@sane-fmt/wasm32-wasi/0.8.0:
+
+  /@sane-fmt/wasm32-wasi/0.10.0:
+    resolution: {integrity: sha512-qgAWNjuVC2XJw58FR/wBe/XfBIijWUIzRZxMw03fRVeugS6N69Y17tCthC5l4FYH9Qg+bNypxL5Ve+G2mBz0jA==}
+    engines: {node: '>= 14.0.0'}
+    hasBin: true
     dependencies:
-      '@types/node': 13.13.15
-      '@wasmer/wasi': 0.11.2
+      '@types/node': 14.17.5
+      '@wasmer/wasi': 0.12.0
       tslib: 2.0.0
     dev: false
-    hasBin: true
-    resolution:
-      integrity: sha512-ld14S6zC492488HJjPy3Lb9E7eS5xxYKBrwtE9ccxSxY60BcoWAHxgmcUIcVl17xzYq5+BgH6h/z7dlX5V6BqA==
+
   /@types/node/13.13.15:
+    resolution: {integrity: sha512-kwbcs0jySLxzLsa2nWUAGOd/s21WU1jebrEdtzhsj1D4Yps1EOuyI1Qcu+FD56dL7NRNIJtDDjcqIG22NwkgLw==}
     dev: false
-    resolution:
-      integrity: sha512-kwbcs0jySLxzLsa2nWUAGOd/s21WU1jebrEdtzhsj1D4Yps1EOuyI1Qcu+FD56dL7NRNIJtDDjcqIG22NwkgLw==
-  /@wasmer/wasi/0.11.2:
+
+  /@types/node/14.17.5:
+    resolution: {integrity: sha512-bjqH2cX/O33jXT/UmReo2pM7DIJREPMnarixbQ57DOOzzFaI6D2+IcwaJQaJpv0M1E9TIhPCYVxrkcityLjlqA==}
+    dev: false
+
+  /@wasmer/wasi/0.12.0:
+    resolution: {integrity: sha512-FJhLZKAfLWm/yjQI7eCRHNbA8ezmb7LSpUYFkHruZXs2mXk2+DaQtSElEtOoNrVQ4vApTyVaAd5/b7uEu8w6wQ==}
     dependencies:
       browser-process-hrtime: 1.0.0
       buffer-es6: 4.9.3
       path-browserify: 1.0.1
       randomfill: 1.0.4
     dev: false
-    resolution:
-      integrity: sha512-9Oi68ZsD8HTZRjWj5VvnhN0dLL6nSacrgGvdwJeHd9q5bMrlFaXTckQAYm84zXJWg+b5yeFhaEZqGEhe7q4VFQ==
+
   /browser-process-hrtime/1.0.0:
+    resolution: {integrity: sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==}
     dev: false
-    resolution:
-      integrity: sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==
+
   /buffer-es6/4.9.3:
+    resolution: {integrity: sha1-8mNHuC33b9N+GLy1KIxJcM/VxAQ=}
     dev: false
-    resolution:
-      integrity: sha1-8mNHuC33b9N+GLy1KIxJcM/VxAQ=
+
   /exec-inline/0.0.5:
+    resolution: {integrity: sha512-g7eEPrhCbkBJoYb8PG4aZeRXog1HYptBNNfwN1bRmzYWtu5dNQniqcmwClBhb6YWg3X/wrOnzmKJSPUbZYsKJg==}
+    engines: {node: '>= 8.9.0'}
     dependencies:
       '@types/node': 13.13.15
       tslib: 1.13.0
     dev: false
-    engines:
-      node: '>= 8.9.0'
-    resolution:
-      integrity: sha512-g7eEPrhCbkBJoYb8PG4aZeRXog1HYptBNNfwN1bRmzYWtu5dNQniqcmwClBhb6YWg3X/wrOnzmKJSPUbZYsKJg==
+
   /path-browserify/1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
     dev: false
-    resolution:
-      integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==
+
   /randombytes/2.1.0:
+    resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
     dependencies:
       safe-buffer: 5.2.1
     dev: false
-    resolution:
-      integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==
+
   /randomfill/1.0.4:
+    resolution: {integrity: sha512-87lcbR8+MhcWcUiQ+9e+Rwx8MyR2P7qnt15ynUlbm3TU/fjbgz4GsvfSUDTemtCCtVCqb4ZcEFlyPNTh9bBTLw==}
     dependencies:
       randombytes: 2.1.0
       safe-buffer: 5.2.1
     dev: false
-    resolution:
-      integrity: sha512-87lcbR8+MhcWcUiQ+9e+Rwx8MyR2P7qnt15ynUlbm3TU/fjbgz4GsvfSUDTemtCCtVCqb4ZcEFlyPNTh9bBTLw==
+
   /safe-buffer/5.2.1:
+    resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
     dev: false
-    resolution:
-      integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
+
   /tslib/1.13.0:
+    resolution: {integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==}
     dev: false
-    resolution:
-      integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
   /tslib/2.0.0:
+    resolution: {integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==}
     dev: false
-    resolution:
-      integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
-specifiers:
-  '@sane-fmt/wasm32-wasi': ^0.8.0
-  '@tools/places': file:../places
-  exec-inline: ^0.0.5
