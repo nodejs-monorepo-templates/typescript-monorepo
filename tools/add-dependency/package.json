@@ -4,9 +4,9 @@
   "private": true,
   "bin": "bin.js",
   "dependencies": {
-    "inquirer": "^7.3.3",
+    "inquirer": "^8.0.0",
     "fs-extra": "^10.0.0",
-    "@types/inquirer": "^7.3.1",
+    "@types/inquirer": "^8.0.0",
     "@types/fs-extra": "^9.0.1",
     "@tools/preloaded-node": "file:../preloaded-node",
     "@tools/places": "file:../places",
