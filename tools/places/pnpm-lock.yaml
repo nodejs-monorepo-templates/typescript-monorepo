@@ -1,10 +1,13 @@
-dependencies:
-  '@types/node': 14.11.2
-lockfileVersion: 5.2
-packages:
-  /@types/node/14.11.2:
-    dev: false
-    resolution:
-      integrity: sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
+lockfileVersion: 5.3
+
 specifiers:
-  '@types/node': ^14.11.2
+  '@types/node': ^16.0.0
+
+dependencies:
+  '@types/node': 16.11.6
+
+packages:
+
+  /@types/node/16.11.6:
+    resolution: {integrity: sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==}
+    dev: false
