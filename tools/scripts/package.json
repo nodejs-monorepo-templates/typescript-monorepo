@@ -6,7 +6,7 @@
     "execute": "./bin/index.js"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
+    "chalk": "^5.0.0",
     "number-enum": "^3.0.0",
     "exec-inline": "^0.0.5",
     "glob-to-regexp": "0.4.1",
