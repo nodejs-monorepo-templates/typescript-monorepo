@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@tools/places': file:../places
-  '@types/yargs': ^15.0.7
+  '@types/yargs': ^17.0.0
   chalk: ^4.1.0
   git-ts: ^0.0.7
   nested-workspace-helper: ^0.2.15
@@ -10,7 +10,7 @@ specifiers:
 
 dependencies:
   '@tools/places': link:../places
-  '@types/yargs': 15.0.7
+  '@types/yargs': 17.0.10
   chalk: 4.1.0
   git-ts: 0.0.7
   nested-workspace-helper: 0.2.15
@@ -71,14 +71,14 @@ packages:
     resolution: {integrity: sha512-FA/BWv8t8ZWJ+gEOnLLd8ygxH/2UFbAvgEonyfN6yWGLKc7zVjbpl2Y4CTjid9h2RfgPP6SEt6uHwEOply00yw==}
     dev: false
 
-  /@types/yargs/15.0.5:
-    resolution: {integrity: sha512-Dk/IDOPtOgubt/IaevIUbTgV7doaKkoorvOyYM2CMwuDyP89bekI7H4xLIwunNYiK9jhCkmc6pUrJk3cj2AB9w==}
+  /@types/yargs/15.0.7:
+    resolution: {integrity: sha512-Gf4u3EjaPNcC9cTu4/j2oN14nSVhr8PQ+BvBcBQHAhDZfl0bVIiLgvnRXv/dn58XhTm9UXvBpvJpDlwV65QxOA==}
     dependencies:
       '@types/yargs-parser': 15.0.0
     dev: false
 
-  /@types/yargs/15.0.7:
-    resolution: {integrity: sha512-Gf4u3EjaPNcC9cTu4/j2oN14nSVhr8PQ+BvBcBQHAhDZfl0bVIiLgvnRXv/dn58XhTm9UXvBpvJpDlwV65QxOA==}
+  /@types/yargs/17.0.10:
+    resolution: {integrity: sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==}
     dependencies:
       '@types/yargs-parser': 15.0.0
     dev: false
@@ -325,7 +325,7 @@ packages:
       '@types/node': 13.13.9
       '@types/node-fetch': 2.5.7
       '@types/semver': 6.2.1
-      '@types/yargs': 15.0.5
+      '@types/yargs': 15.0.7
       chalk: 3.0.0
       fs-extra: 8.1.0
       fs-tree-utils: 0.1.8
