@@ -60,7 +60,7 @@ jobs:
             pnpm5-${{ matrix.vars.id }}-
             pnpm5-
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
+        uses: pnpm/action-setup@v2.2.2
         with:
           version: ${{ matrix.pnpm }}
           run_install: |
