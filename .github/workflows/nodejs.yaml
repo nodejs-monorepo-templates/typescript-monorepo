@@ -45,7 +45,7 @@ jobs:
             node: 14.x
             cmd: pnpm run sane-fmt -- --log-format=github-actions --details=diff
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.vars.node }}
         uses: actions/setup-node@v3
         with:
