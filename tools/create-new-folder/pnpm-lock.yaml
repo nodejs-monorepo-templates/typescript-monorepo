@@ -7,7 +7,7 @@ specifiers:
   '@tools/utils': file:../utils
   '@types/fs-extra': ^9.0.1
   '@types/inquirer': ^7.3.1
-  '@types/yargs': ^15.0.7
+  '@types/yargs': ^17.0.0
   fs-extra: ^10.0.0
   inquirer: ^7.3.3
   yargs: ^17.0.0
@@ -19,7 +19,7 @@ dependencies:
   '@tools/utils': link:../utils
   '@types/fs-extra': 9.0.1
   '@types/inquirer': 7.3.1
-  '@types/yargs': 15.0.7
+  '@types/yargs': 17.0.10
   fs-extra: 10.0.0
   inquirer: 7.3.3
   yargs: 17.0.0
@@ -57,8 +57,8 @@ packages:
     resolution: {integrity: sha512-FA/BWv8t8ZWJ+gEOnLLd8ygxH/2UFbAvgEonyfN6yWGLKc7zVjbpl2Y4CTjid9h2RfgPP6SEt6uHwEOply00yw==}
     dev: false
 
-  /@types/yargs/15.0.7:
-    resolution: {integrity: sha512-Gf4u3EjaPNcC9cTu4/j2oN14nSVhr8PQ+BvBcBQHAhDZfl0bVIiLgvnRXv/dn58XhTm9UXvBpvJpDlwV65QxOA==}
+  /@types/yargs/17.0.10:
+    resolution: {integrity: sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==}
     dependencies:
       '@types/yargs-parser': 15.0.0
     dev: false
