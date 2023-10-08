@@ -4,27 +4,21 @@ specifiers:
   '@types/fs-extra': ^9.0.1
   fast-traverse: ^0.1.7
   fs-extra: ^10.0.0
-  iter-tools: ^6.2.6
+  iter-tools: ^7.0.0
   ts-pipe-compose: ^0.2.0
 
 dependencies:
   '@types/fs-extra': 9.0.1
   fast-traverse: 0.1.7
   fs-extra: 10.0.0
-  iter-tools: 6.2.6
+  iter-tools: 7.2.0
   ts-pipe-compose: 0.2.0
 
 packages:
 
-  /@babel/runtime-corejs2/7.10.1:
-    resolution: {integrity: sha512-94v+EvClppy9BhjnLvTqfLmcHIFdrfwvfgQ1EvfkA/604JbuLaRLOhlfzhmgKjjbaIu49sJXH9fvYtZQ9pssQg==}
-    dependencies:
-      core-js: 2.6.11
-      regenerator-runtime: 0.13.5
-    dev: false
-
-  /@babel/runtime/7.10.1:
-    resolution: {integrity: sha512-nQbbCbQc9u/rpg1XCxoMYQTbSMVZjCDxErQ1ClCn9Pvcmv1lGads19ep0a2VsEiIJeHqjZley6EQGEC3Yo1xMA==}
+  /@babel/runtime/7.16.7:
+    resolution: {integrity: sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==}
+    engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.5
     dev: false
@@ -47,16 +41,6 @@ packages:
     resolution: {integrity: sha512-HnYlg/BRF8uC1FyKRFZwRaCPTPYKa+6I8QiUZFLredaGOou481cgFS4wKRFyKvQtX8xudqkSdBczJHIYSQYKrQ==}
     dev: false
 
-  /core-js/2.6.11:
-    resolution: {integrity: sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==}
-    deprecated: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
-    requiresBuild: true
-    dev: false
-
-  /dequeue/1.0.5:
-    resolution: {integrity: sha1-EPHO8H4yNLIdyzj0v6LWYDSrZ8c=}
-    dev: false
-
   /fast-traverse/0.1.7:
     resolution: {integrity: sha512-gZTQvJSgrGV24F8AeeTNxip8OEkjRHwDDpGw0b51TzRVGjJsKzh6CuHf9ltVjJZzni5Ead+EEQJ0IFCuoCJUtA==}
     dependencies:
@@ -77,16 +61,10 @@ packages:
     resolution: {integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==}
     dev: false
 
-  /iter-tools/6.2.6:
-    resolution: {integrity: sha512-DlBSv7cIrM214wYFxyz4vg98BmEpxFTGx37ei/ktYT05shJHoDwz7wuaPx3XhaJi1uGEc5bM+vUBWhm3z6yNIg==}
+  /iter-tools/7.2.0:
+    resolution: {integrity: sha512-wU0BpT8CaJCvXuhBy3WvshLhDwrsrrxWv77B4cSECnqWRm0tv2ozQRQm7M5dCkzoaQCLyRmGO0P2jDVSw5Hjvw==}
     dependencies:
-      '@babel/runtime': 7.10.1
-      '@babel/runtime-corejs2': 7.10.1
-      dequeue: 1.0.5
-      little-ds-toolkit: 1.1.1
-      typescript-tuple: 2.2.1
-      typescript-union: 0.1.2
-      utility-types: 3.10.0
+      '@babel/runtime': 7.16.7
     dev: false
 
   /jsonfile/6.0.1:
@@ -95,10 +73,6 @@ packages:
       universalify: 1.0.0
     optionalDependencies:
       graceful-fs: 4.2.4
-    dev: false
-
-  /little-ds-toolkit/1.1.1:
-    resolution: {integrity: sha512-Zl5flhnd5W6nhRCyoL1bNlU8M5CWFp6SItMmK4pj39LKgzQD7LGg591OJ0jwDKat7mjHvJVkOyJT+BXOQH4iXw==}
     dev: false
 
   /regenerator-runtime/0.13.5:
@@ -121,29 +95,6 @@ packages:
     resolution: {integrity: sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==}
     dev: false
 
-  /typescript-compare/0.0.2:
-    resolution: {integrity: sha512-8ja4j7pMHkfLJQO2/8tut7ub+J3Lw2S3061eJLFQcvs3tsmJKp8KG5NtpLn7KcY2w08edF74BSVN7qJS0U6oHA==}
-    dependencies:
-      typescript-logic: 0.0.0
-    dev: false
-
-  /typescript-logic/0.0.0:
-    resolution: {integrity: sha512-zXFars5LUkI3zP492ls0VskH3TtdeHCqu0i7/duGt60i5IGPIpAHE/DWo5FqJ6EjQ15YKXrt+AETjv60Dat34Q==}
-    dev: false
-
-  /typescript-tuple/2.2.1:
-    resolution: {integrity: sha512-Zcr0lbt8z5ZdEzERHAMAniTiIKerFCMgd7yjq1fPnDJ43et/k9twIFQMUYff9k5oXcsQ0WpvFcgzK2ZKASoW6Q==}
-    dependencies:
-      typescript-compare: 0.0.2
-    dev: false
-
-  /typescript-union/0.1.2:
-    resolution: {integrity: sha512-pzfdtUZ8teglF69/dllzgd6yV7ikoszPHVyOkl4WGICRhTJgCTwL3+ZnnF/hvII536VbsNMQfd9GmLBNhtsmgg==}
-    dependencies:
-      typescript-tuple: 2.2.1
-      utility-types: 3.10.0
-    dev: false
-
   /universalify/1.0.0:
     resolution: {integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==}
     engines: {node: '>= 10.0.0'}
@@ -152,9 +103,4 @@ packages:
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
-    dev: false
-
-  /utility-types/3.10.0:
-    resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
-    engines: {node: '>= 4'}
     dev: false
