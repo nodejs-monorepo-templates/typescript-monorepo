@@ -1,9 +1,9 @@
 dependencies:
-  '@tools/places': 'link:../places'
-  '@tools/preloaded-node': 'link:../preloaded-node'
+  '@tools/places': link:../places
+  '@tools/preloaded-node': link:../preloaded-node
   advanced-spawn-async: 0.1.3
   chalk: 4.1.0
-  isomorphic-git: 1.7.8
+  isomorphic-git: 1.8.2
 lockfileVersion: 5.2
 packages:
   /@types/color-name/1.1.1:
@@ -30,10 +30,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
-  /async-lock/1.2.4:
+  /async-lock/1.4.1:
     dev: false
     resolution:
-      integrity: sha512-UBQJC2pbeyGutIfYmErGc9RaJYnpZ1FHaxuKwb0ahvGiiCkPUf3p67Io+YLPmmv3RHY+mF6JEtNW8FlHsraAaA==
+      integrity: sha512-Az2ZTpuytrtqENulXwO3GGv1Bztugx6TT37NIo7imr/Qo0gsYiGtSdBa2B6fsXhTpVZDNfu1Qn3pk531e3q+nQ==
   /chalk/4.1.0:
     dependencies:
       ansi-styles: 4.2.1
@@ -59,16 +59,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
-  /crc-32/1.2.0:
-    dependencies:
-      exit-on-epipe: 1.0.1
-      printj: 1.1.2
+  /crc-32/1.2.2:
     dev: false
     engines:
       node: '>=0.8'
     hasBin: true
     resolution:
-      integrity: sha512-1uBwHxF+Y/4yF5G48fwnKq6QsIXheor3ZLPT80yGBV1oEUwpPojlEhQbWKVw1VwcTQyMGHK1/XMmTjmlsmTTGA==
+      integrity: sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ==
   /decompress-response/4.2.1:
     dependencies:
       mimic-response: 2.1.0
@@ -80,61 +77,55 @@ packages:
   /diff3/0.0.3:
     dev: false
     resolution:
-      integrity: sha1-1OXDpM305f4SEatC5pP8tDIVgPw=
-  /exit-on-epipe/1.0.1:
-    dev: false
-    engines:
-      node: '>=0.8'
-    resolution:
-      integrity: sha512-h2z5mrROTxce56S+pnvAV890uu7ls7f1kEvVGJbw1OlFH3/mlJ5bkXu0KRyW94v37zzHPiUd55iLn3DA7TjWpw==
+      integrity: sha512-iSq8ngPOt0K53A6eVr4d5Kn6GNrM2nQZtC740pzIriHtn4pOQ2lyzEXQMBeVcWERN0ye7fhBsk9PbLLQOnUx/g==
   /has-flag/4.0.0:
     dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
-  /ignore/5.1.8:
+  /ignore/5.3.1:
     dev: false
     engines:
       node: '>= 4'
     resolution:
-      integrity: sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
+      integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==
   /inherits/2.0.4:
     dev: false
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /isomorphic-git/1.7.8:
+  /isomorphic-git/1.8.2:
     dependencies:
-      async-lock: 1.2.4
+      async-lock: 1.4.1
       clean-git-ref: 2.0.1
-      crc-32: 1.2.0
+      crc-32: 1.2.2
       diff3: 0.0.3
-      ignore: 5.1.8
+      ignore: 5.3.1
       minimisted: 2.0.1
       pako: 1.0.11
       pify: 4.0.1
-      readable-stream: 3.6.0
+      readable-stream: 3.6.2
       sha.js: 2.4.11
-      simple-get: 3.1.0
+      simple-get: 3.1.1
     dev: false
     engines:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-fSTsgp8J4s1aIfB/woR7slOAtX9wNprxs/iJaItE3yn5a/KjDAgIDcdutes88/0uC/VdCQFyuDZq1fdtYftrDw==
+      integrity: sha512-wp3on2Kks1sE/tLUmGLPV7EEAj+JRK8WoL2ZSfJHVQfWzRqMRv96bqzDjyYpC6COGKlDQnhTNCucRf83S3cuMw==
   /mimic-response/2.1.0:
     dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-wXqjST+SLt7R009ySCglWBCFpjUygmCIfD790/kVbiGmUgfYGuB14PiTd5DwVxSV4NcYHjzMkoj5LjQZwTQLEA==
-  /minimist/1.2.5:
+  /minimist/1.2.8:
     dev: false
     resolution:
-      integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+      integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
   /minimisted/2.0.1:
     dependencies:
-      minimist: 1.2.5
+      minimist: 1.2.8
     dev: false
     resolution:
       integrity: sha512-1oPjfuLQa2caorJUM8HV8lGgWCc0qqAO1MNv/k05G4qslmsndV/5WdNZrqCiyqiz3wohia2Ij2B7w2Dr7/IyrA==
@@ -143,7 +134,7 @@ packages:
       wrappy: 1.0.2
     dev: false
     resolution:
-      integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
+      integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==
   /pako/1.0.11:
     dev: false
     resolution:
@@ -154,14 +145,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
-  /printj/1.1.2:
-    dev: false
-    engines:
-      node: '>=0.8'
-    hasBin: true
-    resolution:
-      integrity: sha512-zA2SmoLaxZyArQTOPj5LXecR+RagfPSU5Kw1qP+jkWeNlrq+eJZyY2oS68SU1Z/7/myXM4lo9716laOFAVStCQ==
-  /readable-stream/3.6.0:
+  /readable-stream/3.6.2:
     dependencies:
       inherits: 2.0.4
       string_decoder: 1.3.0
@@ -170,7 +154,7 @@ packages:
     engines:
       node: '>= 6'
     resolution:
-      integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
+      integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==
   /safe-buffer/5.2.1:
     dev: false
     resolution:
@@ -187,14 +171,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-cSFtAPtRhljv69IK0hTVZQ+OfE9nePi/rtJmw5UjHeVyVroEqJXP1sFztKUy1qU+xvz3u/sfYJLa947b7nAN2Q==
-  /simple-get/3.1.0:
+  /simple-get/3.1.1:
     dependencies:
       decompress-response: 4.2.1
       once: 1.4.0
       simple-concat: 1.0.1
     dev: false
     resolution:
-      integrity: sha512-bCR6cP+aTdScaQCnQKbPKtJOKDp/hj9EDLJo3Nw4y1QksqaovlW/bnptB6/c1e+qmNIDHRK+oXFDdEqBT8WzUA==
+      integrity: sha512-CQ5LTKGfCpvE1K0n2us+kuMPbk/q0EKl82s4aheV9oXjFEz6W/Y7oQFVJuU6QG77hRT4Ghb5RURteF5vnWjupA==
   /string_decoder/1.3.0:
     dependencies:
       safe-buffer: 5.2.1
@@ -216,14 +200,14 @@ packages:
   /util-deprecate/1.0.2:
     dev: false
     resolution:
-      integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+      integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
   /wrappy/1.0.2:
     dev: false
     resolution:
-      integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+      integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
 specifiers:
-  '@tools/places': 'file:../places'
-  '@tools/preloaded-node': 'file:../preloaded-node'
+  '@tools/places': file:../places
+  '@tools/preloaded-node': file:../preloaded-node
   advanced-spawn-async: ^0.1.3
   chalk: ^4.1.0
   isomorphic-git: ^1.7.8
